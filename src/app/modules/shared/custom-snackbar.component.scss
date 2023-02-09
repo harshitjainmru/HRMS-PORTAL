@@ -1,0 +1,16 @@
+@import "../../scss/mixins.scss";
+section {
+  @include flexbox();
+  gap: 10px;
+  padding: 0px 20px;
+  .icon {
+    .customIcon {
+      font-size: 25px;
+      font-weight: bold;
+    }
+  }
+}
+::ng-deep.mat-snack-bar-container {
+  margin: 0.5px !important;
+  border-radius: 0% !important;
+}

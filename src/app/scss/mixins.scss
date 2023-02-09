@@ -1,0 +1,71 @@
+@import "../scss/var";
+
+@mixin fpos($a-item, $j-align) {
+  @include flexbox;
+  align-items: $a-item;
+  justify-content: $j-align;
+}
+@mixin flexJustify( $j-align) {
+  @include flexbox;
+  justify-content: $j-align;
+}
+@mixin gridbox {
+  display: grid;
+}
+
+@mixin flexbox {
+display: flex;
+}
+@mixin cursor {
+  cursor: pointer;
+}
+
+@mixin textColor {
+  color: #fff;
+  font-size: .8125rem;
+  font-family: inherit;
+}
+@mixin buttonTransparent {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+@mixin buttonDiv {
+  border: 1px solid $button-color;
+  border-radius: 2px;
+  @include flexJustify(center);
+  @include cursor();
+}
+@mixin buttonHover {
+  background-color: $button-color;
+  color: #ffff;
+  transition: box-shadow rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+@mixin buttonStyle {
+ @include buttonTransparent();
+  color: $button-color;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  @include cursor();
+}
+
+@mixin jobOpeningButton(){
+  padding: 15px 0px;
+  width: 220px;
+  font-size: 16px;
+}
+
+@mixin scrollbarStyle {
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: $sidenav-scroll-color;
+  }
+}
+

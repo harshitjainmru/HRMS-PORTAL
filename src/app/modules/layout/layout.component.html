@@ -1,0 +1,19 @@
+<section>
+  <header>
+    <app-header [smallWindow]="smallWindow" (stateChange)="updateIsExpanded($event)"></app-header>
+  </header>
+  <mat-sidenav-container autosize>
+    <mat-sidenav #sidenav="matSidenav" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
+      <app-sidenav [isShowing]="isShowing"></app-sidenav>
+    </mat-sidenav>
+    <mat-sidenav-content class="sideContent">
+      <div class="content">
+        <router-outlet></router-outlet>
+      </div>
+      <footer>
+        <app-footer></app-footer>
+      </footer>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+</section>

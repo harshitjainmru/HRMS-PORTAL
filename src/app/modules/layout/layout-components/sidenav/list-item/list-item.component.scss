@@ -1,0 +1,105 @@
+@import "../../../../../scss/var";
+@import "../../../../../scss/mixins.scss";
+section {
+  cursor: pointer;
+  .sidenav-icon {
+    font-size: 20px;
+  }
+  .sidenav-label {
+    margin: 0px 15px;
+    font-size: 15px;
+    font-weight: 500;
+    width: 150px;
+    @include flexbox();
+    .new-menu{
+      margin-left: 5px;
+      color: $error-color;
+      animation: rotation 4s infinite cubic-bezier(0.89,-0.4, 0.02, 1.3);
+      &::before{
+      content: "\f0a3";
+      }
+      // transition: 1s;
+      // &:hover{
+
+      //   transform:rotate(360deg);
+      // }
+      // animation: rotation 1s infinite cubic-bezier(0.89,-0.4, 0.02, 1.3);
+    }
+}
+  .parent {
+    .list-content {
+      @include flexbox();
+    }
+    .menu-button {
+      position: absolute;
+      right: 18px;
+      margin: 0px -15px 0px 0px;
+      font-size: 25px;
+      transform: rotate(-90deg);
+      transition: 300ms ease-in-out;
+    }
+    .menu-button.rotated {
+      transform: rotate(0deg);
+    }
+
+    .submenu {
+      overflow-y: hidden;
+      transition: transform 900ms ease;
+      transform: scaleY(0);
+      transform-origin: top;
+      padding-left: 30px;
+    }
+    &.expanded {
+      transform: scaleY(1);
+    }
+  }
+}
+.sublist-content {
+  margin: 0px 10px;
+  @include flexbox();
+}
+.active {
+  color: $sidenav-hover-color;
+  &::before {
+    position: absolute;
+    content: "";
+    background: $sidenav-hover-color !important;
+    width: 3px;
+    height: 70%;
+    left: 0;
+    top: 3px;
+    bottom: 0;
+  }
+}
+.disable{
+  color: $font-color;
+  .sidenav-label{
+    position: relative;
+    &::after{
+      content: "Coming Soon";
+      position: absolute;
+      top: 15px;
+      font-size: 12px;
+    }
+  }
+}
+
+:host::ng-deep {
+  .mat-drawer .mat-sidenav {
+    position: fixed !important;
+    top: 0;
+    bottom: 0;
+    z-index: 3;
+    outline: 0;
+    box-sizing: border-box;
+    overflow-y: auto;
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0.25;
+  }
+  .mat-list-item-content {
+    padding: 1rem 1.3rem !important;
+  }
+  &:hover {
+    color: $sidenav-hover-color;
+  }
+}

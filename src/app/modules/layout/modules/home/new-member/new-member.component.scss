@@ -1,0 +1,41 @@
+section {
+  .card {
+
+    .header {
+      .text {
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+    .img-card {
+      background-image: url("../../../../../../assets/images/new-family-card.png");
+      height: 442px;
+      width: 317px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border-radius: 10px;
+      // position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 20px;
+      .content{
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        figure {
+          .defaultImage {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+          }
+        }
+        .name {
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+<section @slideInRight>
+  <mat-card class="basic-card">
+    <div class="header">
+      <p class="header-text">{{uiMessage.PROFILE_PIC_HEADER}}</p>
+    </div>
+    <div class="border"></div>
+    <div class="formgroup">
+      <form class="form">
+        <div class="container-1">
+        <p class="browse">{{uiMessage.BROWSE_VALUE}}</p>
+        <!-- <mat-card> -->
+          <input type="file">
+        <!-- </mat-card> -->
+        <br>
+        <small>{{uiMessage.FORMAT}}</small>
+      </div>
+        <img src="/src/assets/images/default_male.jpg" class="profilePreviewImg">
+      <div class="remove-pic">
+        <input type="checkbox">
+        <p class="remove-value">{{uiMessage.REMOVE_PIC_VALUE}}</p>
+      </div>
+      <div class="classyButton">
+        <button class="saveButton ">{{uiMessage.BUTTON_VALUE}}</button>
+      </div>
+      </form>
+
+    </div>
+
+  </mat-card>
+</section>
