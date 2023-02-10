@@ -7,6 +7,11 @@ import { ReferralBonusComponent } from './referral-bonus/referral-bonus.componen
 import { MatCardModule } from '@angular/material/card';
 import { NewMemberComponent } from './new-member/new-member.component';
 import { MatButtonModule } from '@angular/material/button';
+import { CarouselModule } from 'src/app/modules/shared/carousel/carousel.module';
+import { LatestAppinventivComponent } from './latest-appinventiv/latest-appinventiv.component';
+import { AwardsComponent } from './latest-appinventiv/awards/awards.component';
+import { BirthdayComponent } from './latest-appinventiv/birthday/birthday.component';
+import { WorkAnniversaryComponent } from './latest-appinventiv/work-anniversary/work-anniversary.component';
 
 
 @NgModule({
@@ -14,13 +19,18 @@ import { MatButtonModule } from '@angular/material/button';
     HomeComponent,
     LatestJobOpeningComponent,
     ReferralBonusComponent,
-    NewMemberComponent
+    NewMemberComponent,
+    LatestAppinventivComponent,
+    AwardsComponent,
+    BirthdayComponent,
+    WorkAnniversaryComponent
   ],
   imports: [
     CommonModule,
     HomeRoutingModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    CarouselModule
   ]
 })
 export class HomeModule { }

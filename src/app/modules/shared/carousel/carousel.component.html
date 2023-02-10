@@ -1,0 +1,11 @@
+
+
+  <ng-container *ngIf="wait">
+    <ngu-carousel class="crr" #myCarousel [inputs]="carouselConfig" [dataSource]="listToShow">
+      <ngu-item NguCarouselItem *nguCarouselDef="let item; let j = index">
+        <ng-container *ngTemplateOutlet="item"></ng-container>
+      </ngu-item>
+        <button NguCarouselPrev class="leftRs" *ngIf="this.buttonShow" [style.z-index]="9999" >&lt;</button>
+        <button NguCarouselNext class="rightRs" *ngIf="this.buttonShow" [style.z-index]="9999" >&gt;</button>
+      </ngu-carousel>
+    </ng-container>

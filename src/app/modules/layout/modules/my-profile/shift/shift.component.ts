@@ -13,7 +13,6 @@ import { SHIFTTABLE } from 'src/app/models/table-interface';
 })
 export class ShiftComponent implements OnInit {
 uiMessage=BASIC_INFORMATION
-pageSize!: number;
 dataSource = new MatTableDataSource<SHIFTTABLE>();
   constructor() { }
 

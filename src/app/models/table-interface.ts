@@ -10,3 +10,9 @@ export interface SHIFTTABLE {
 DATE?:string;
 shift?:string
 }
+export interface QUALIFICATIONTABLE {
+EDUCATION?:string;
+ACTION?:string;
+SCHOOL?:string;
+TIME?:string
+}

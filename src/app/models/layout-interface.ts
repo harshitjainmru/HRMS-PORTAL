@@ -30,5 +30,22 @@ export interface ILATEST_JOB {
   BUTTON_REFER?:string,
 }
 
+export interface IDIRECTORY_DATA {
+  IMAGE?:string,
+  EMP_NAME?:string,
+  EMP_DESIGNATION?:string,
+  EMP_TECHNOLOGY?:string,
+  EMAIL_ICON?:string,
+  EMAIL?:string,
+  BIRTH_ICON?:string,
+  BIRTH_DATE?:string,
+  BIRTH_MONTH?:string
+}
+export interface IAWARDDATA{
+  IMAGE?:string
+  EMP_NAME?:string,
+  DESIGNATION?:string,
+  DATE?:string,
+}
 
 

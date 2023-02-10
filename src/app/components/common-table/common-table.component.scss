@@ -1,13 +1,19 @@
 @import "../../scss/var";
+$padding:20px;
 section {
   table {
     width: 100%;
+    margin-top: 50px;
     th {
       border-top: 1px solid $border-color;
-      font-size: 16px;
-    color: black
+      font-size: 14px;
+      color: black;
+      padding-left: $padding;
     }
     tr {
+      td {
+        padding-left: $padding;
+      }
       th {
         border-right: 1px solid $border-color;
         &:last-child {
@@ -30,5 +36,27 @@ section {
         background-color: rgba(24, 28, 33, 0.025);
       }
     }
+  }
+}
+
+::ng-deep {
+  .mat-paginator-range-label {
+    position: absolute;
+    left: 0px;
+    margin: 0 32px 0 24px;
+    &::before {
+      content: "showing";
+    }
+    &::after {
+      content: "entries";
+    }
+  }
+  .mat-paginator-page-size {
+    display: flex;
+    align-items: baseline;
+    margin-right: 8px;
+    position: absolute;
+    top: 50px;
+    left: 0px;
   }
 }

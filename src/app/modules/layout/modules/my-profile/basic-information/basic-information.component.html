@@ -1,5 +1,5 @@
 <section @slideInRight>
-  <mat-card class="basic-card">
+  <div class="basic-card">
     <div class="header">
       <p class="header-text">{{uiMessage.HEADER}}</p>
     </div>
@@ -31,12 +31,12 @@
             <label class="label">{{labelMessage.GENDER}}</label>
             <mat-form-field appearance="outline" class="increaseFormfield">
               <mat-select>
-                <input type="text" [matAutocomplete]="auto">
-                <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+                <!-- <input type="text" [matAutocomplete]="auto"> -->
+                <!-- <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete"> -->
               <mat-option *ngFor="let item of genderValue" [value]="item">
                 {{item.LABEL}}
               </mat-option>
-            </mat-autocomplete>
+            <!-- </mat-autocomplete> -->
               </mat-select>
             </mat-form-field>
           </div>
@@ -44,7 +44,14 @@
           <div class="formfield 5">
             <label class="label">{{labelMessage.MARITAL_STATUS}}</label>
             <mat-form-field appearance="outline" class="increaseFormfield">
-              <input matInput>
+              <mat-select>
+                <!-- <input type="text" [matAutocomplete]="auto"> -->
+                <!-- <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete"> -->
+              <mat-option *ngFor="let item of maritalStatusValue" [value]="item">
+                {{item.LABEL}}
+              </mat-option>
+            <!-- </mat-autocomplete> -->
+              </mat-select>
             </mat-form-field>
           </div>
           <div class="formfield 6">
@@ -106,5 +113,5 @@
         </div>
       </form>
     </div>
-  </mat-card>
+  </div>
 </section>

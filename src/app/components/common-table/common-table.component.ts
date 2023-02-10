@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
 import { MatPaginator } from '@angular/material/paginator';
 import { MatSort } from '@angular/material/sort';
+import { TABLE_DATA_UNAVAILABLE } from 'src/app/constants/text';
 import { TableColumn } from 'src/app/models/table-interface';
 
 @Component({
@@ -9,7 +10,7 @@ import { TableColumn } from 'src/app/models/table-interface';
   styleUrls: ['./common-table.component.scss']
 })
 export class CommonTableComponent implements OnInit {
-
+uiMessage=TABLE_DATA_UNAVAILABLE
   @ViewChild(MatPaginator, { static: false }) matPaginator!: MatPaginator;
   @ViewChild(MatSort) set matSort(sort: MatSort) {
     this.dataSource.sort = sort;
@@ -17,9 +18,10 @@ export class CommonTableComponent implements OnInit {
   @Input() columns!: any;
   @Input() dataSource!: any;
   @Input() Table_DATA!: any;
+  @Input() PageSizeInRow!:boolean;
   @Input() checkBox!: string;
   @Input() isPageable = true;
-  @Input() paginationSizes: number[] = [10, 15];
+  @Input() paginationSizes: number[] = [10, 25, 50 ,100];
   @Input() set pageSize(size: any) {
     if(size)
       this.changePageSize(size);

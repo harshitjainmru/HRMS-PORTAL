@@ -1,4 +1,4 @@
-import { ILATEST_JOB, IPROFILE, IPROFILE_USERDETAILS, IREFERRAL } from '../models/layout-interface';
+import { IAWARDDATA, IDIRECTORY_DATA, ILATEST_JOB, IPROFILE, IPROFILE_USERDETAILS, IREFERRAL } from '../models/layout-interface';
 import { IEDUCATION_INPUT, IGENDER_INPUT, ILANGUAGE_INPUT, IMARITAL_INPUT } from '../models/myProfile-interface';
 import { ABS_BASIC_INFO } from './absolute-routes';
 import {
@@ -110,9 +110,76 @@ export const LATEST_JOB_OPENING : ILATEST_JOB[]  = [{
   EXPERIENCE_NUMBER: '5 to 9 Years',
   BUTTON_VIEW: 'View Details',
   BUTTON_REFER: 'Refer a Candidate',
-}];
-
-
+},
+{
+  image:'/assets/react-native.svg',
+  LOCATION: 'Noida, UttarPradesh',
+  DATE: '03/02/2023',
+  HEADING: 'Tech Lead -  REACT JS',
+  TEXT: 'We are looking for JavaScript developers  proficient with React.js -  ( Preferred Early Joiners)',
+  OPENING_NUMBER_TEXT: 'No. of Openings',
+  OPENING_NUMBER: '2',
+  EXPERIENCE: 'Experience',
+  EXPERIENCE_NUMBER: '5 to 9 Years',
+  BUTTON_VIEW: 'View Details',
+  BUTTON_REFER: 'Refer a Candidate',
+},
+{
+  image:'/assets/design.svg',
+  LOCATION: 'Noida, UttarPradesh',
+  DATE: '03/02/2023',
+  HEADING: 'Graphic Designer - Designing Marketing',
+  TEXT: 'We are looking for Graphic Designers to create engaging and on-brand graphics for variety of media',
+  OPENING_NUMBER_TEXT: 'No. of Openings',
+  OPENING_NUMBER: '1',
+  EXPERIENCE: 'Experience',
+  EXPERIENCE_NUMBER: '5 to 9 Years',
+  BUTTON_VIEW: 'View Details',
+  BUTTON_REFER: 'Refer a Candidate',
+},
+{
+  image:'/assets/nodejs.svg',
+  LOCATION: 'Noida, UttarPradesh',
+  DATE: '03/02/2023',
+  HEADING: 'Tech Lead - Node.js',
+  TEXT: 'TL has to oversee the technical team and all projects, identify risks & develop work schedules.',
+  OPENING_NUMBER_TEXT: 'No. of Openings',
+  OPENING_NUMBER: '1',
+  EXPERIENCE: 'Experience',
+  EXPERIENCE_NUMBER: '5 to 9 Years',
+  BUTTON_VIEW: 'View Details',
+  BUTTON_REFER: 'Refer a Candidate',
+}
+];
+export const LATEST_APPINVENTIV ={
+  HEADER_VALUE:'Latest at Appinventiv'
+}
+export const AWARDS_VALUE ={
+  HEADER_VALUE:'Awards',
+  DEAR_VALUE:'Dear',
+  MESSAGE_VALUE:'Keep spreading your awesomeness. Congratulations!',
+  CHEER_VALUE:'cheers!',
+  APPIVENTIV_TEXT:'Appinventiv'
+}
+export const BIRTHDAY_VALUE ={
+  HEADER_VALUE:'Birthday celebration',
+  DEAR_VALUE:'Dear',
+  MESSAGE_VALUE:'On behalf of the entire company I wish you a very happy birthday and send you my best wishes for much happiness in your life.',
+  CHEER_VALUE:'cheers!',
+  APPIVENTIV_TEXT:'Appinventiv'
+}
+export const AWARDS_EMP_IMAGE_DATA : IAWARDDATA[] =[
+  {IMAGE:'/assets/images/default_male.jpg', EMP_NAME:'Ashish Pal (AI1802)', DESIGNATION:'Associate Team Lead, MeanStack', DATE:'October,2022'},
+  {IMAGE:'/assets/images/default_male.jpg', EMP_NAME:'Ashish Pal (AI1802)', DESIGNATION:'Associate Team Lead, MeanStack', DATE:'October,2022'},
+  {IMAGE:'/assets/images/default_male.jpg', EMP_NAME:'Ashish Pal (AI1802)', DESIGNATION:'Associate Team Lead, MeanStack', DATE:'October,2022'},
+  {IMAGE:'/assets/images/default_male.jpg', EMP_NAME:'Ashish Pal (AI1802)', DESIGNATION:'Associate Team Lead, MeanStack', DATE:'October,2022'},
+]
+export const BIRTHDAY_EMP_IMAGE_DATA : IAWARDDATA[] =[
+  {IMAGE:'/assets/images/default_male.jpg', EMP_NAME:'Ashish Pal (AI1802)', DESIGNATION:'Associate Team Lead, MeanStack', DATE:'October,2022'},
+  {IMAGE:'/assets/images/default_male.jpg', EMP_NAME:'Ashish Pal (AI1802)', DESIGNATION:'Associate Team Lead, MeanStack', DATE:'October,2022'},
+  {IMAGE:'/assets/images/default_male.jpg', EMP_NAME:'Ashish Pal (AI1802)', DESIGNATION:'Associate Team Lead, MeanStack', DATE:'October,2022'},
+  {IMAGE:'/assets/images/default_male.jpg', EMP_NAME:'Ashish Pal (AI1802)', DESIGNATION:'Associate Team Lead, MeanStack', DATE:'October,2022'},
+]
 export const REFERRAL = {
   HEADER: 'OUR REFERRAL BONUS PROGRAM',
   AMOUNT: 'K',
@@ -224,3 +291,109 @@ export const QUALIFICATION_VALUE = {
   TIME_VALUE:FORM_LABEL.TIME,
   EDUCATION_VALUE:FORM_LABEL.EDUCATION
 }
+
+export const TABLE_DATA_UNAVAILABLE ={
+  NO_DATA: 'No data available in table',
+}
+
+export const DIRECTORY_VALUE ={
+  HEADER_VALUE:'Employee Directory',
+  NAME_LABEL:'Name',
+  NAME_PLACEHOLDER:'Search by name',
+  DEPARTMENT_LABEL:'Department',
+  BUTTON_RESET:'Reset',
+  BUTTON_SEARCH:'Search'
+
+}
+
+
+export const DIRECTORY_EMPLOYEE_DATA:IDIRECTORY_DATA[] = [{
+  IMAGE:'/assets/images/default_male.jpg',
+  EMP_NAME:'Aahan Verma',
+  EMP_DESIGNATION:'Sr. Software Engineer',
+  EMP_TECHNOLOGY:'Android',
+  EMAIL_ICON:'fas fa-at',
+  EMAIL:'aahan.verma@appinventiv.com',
+  BIRTH_ICON:'fas fa-birthday-cake',
+  BIRTH_DATE:'21st',
+  BIRTH_MONTH:'Aug'
+},
+{
+  IMAGE:'/assets/images/default_male.jpg',
+  EMP_NAME:'Deepak Yadav',
+  EMP_DESIGNATION:'Software Engineer',
+  EMP_TECHNOLOGY:'Angular',
+  EMAIL_ICON:'fas fa-at',
+  EMAIL:' deepak.yadav@appinventiv.com',
+  BIRTH_ICON:'fas fa-birthday-cake',
+  BIRTH_DATE:' 08th',
+  BIRTH_MONTH:'May'
+},
+{
+  IMAGE:'/assets/images/default_male.jpg',
+  EMP_NAME:'Harshit Kumar Jain',
+  EMP_DESIGNATION:'Software Engineer',
+  EMP_TECHNOLOGY:'Angular',
+  EMAIL_ICON:'fas fa-at',
+  EMAIL:'harshit.jain@appinventiv.com',
+  BIRTH_ICON:'fas fa-birthday-cake',
+  BIRTH_DATE:'07th',
+  BIRTH_MONTH:'Apr'
+},
+{
+  IMAGE:'/assets/images/default_female.jpg',
+  EMP_NAME:'Manisha Rawat',
+  EMP_DESIGNATION:' Quality Analyst',
+  EMP_TECHNOLOGY:' Quality Analyst',
+  EMAIL_ICON:'fas fa-at',
+  EMAIL:'manisha.rawat@appinventiv.com',
+  BIRTH_ICON:'fas fa-birthday-cake',
+  BIRTH_DATE:'16th',
+  BIRTH_MONTH:'Nov'
+},
+{
+  IMAGE:'/assets/images/default_male.jpg',
+  EMP_NAME:'Ankit Mehrotra',
+  EMP_DESIGNATION:'Sr. Software Engineer ',
+  EMP_TECHNOLOGY:'Angular',
+  EMAIL_ICON:'fas fa-at',
+  EMAIL:' ankit.mehrotra@appinventiv.com',
+  BIRTH_ICON:'fas fa-birthday-cake',
+  BIRTH_DATE:'09th',
+  BIRTH_MONTH:'May'
+},
+{
+  IMAGE:'/assets/images/default_male.jpg',
+  EMP_NAME:'Aakash Bisht',
+  EMP_DESIGNATION:'Finance Executive',
+  EMP_TECHNOLOGY:'FINANCE',
+  EMAIL_ICON:'fas fa-at',
+  EMAIL:'aakash.bisht@appinventiv.com',
+  BIRTH_ICON:'fas fa-birthday-cake',
+  BIRTH_DATE:'06th',
+  BIRTH_MONTH:'Dec'
+},
+{
+  IMAGE:'/assets/images/default_female.jpg',
+  EMP_NAME:'Aarti Verma',
+  EMP_DESIGNATION:'Software Engineer',
+  EMP_TECHNOLOGY:'Node.Js',
+  EMAIL_ICON:'fas fa-at',
+  EMAIL:' aarti.verma@appinventiv.com',
+  BIRTH_ICON:'fas fa-birthday-cake',
+  BIRTH_DATE:'17th',
+  BIRTH_MONTH:'Oct'
+},
+{
+  IMAGE:'/assets/images/default_male.jpg',
+  EMP_NAME:'Abhishek Kumar Singh',
+  EMP_DESIGNATION:'Team Lead ',
+  EMP_TECHNOLOGY:'IOS',
+  EMAIL_ICON:'fas fa-at',
+  EMAIL:' abhishek.singh@appinventiv.com',
+  BIRTH_ICON:'fas fa-birthday-cake',
+  BIRTH_DATE:'18th',
+  BIRTH_MONTH:'Jul'
+}
+
+]

@@ -1,0 +1,31 @@
+<section>
+  <mat-card class="award-card">
+    <div class="award-header">
+      <!-- <i class="fa-solid fa-period"></i>
+       -->
+      <i class="fa-solid fa-circle-small"></i>
+      <h3 class="award-title">
+        {{awardValue.HEADER_VALUE}}
+      </h3>
+    </div>
+    <span class="dear">{{awardValue.DEAR_VALUE}}</span>
+    <app-carousel  [listToShow]="dataSource"></app-carousel>
+    <ng-container *ngFor="let item of imageData">
+      <ng-template #listofDivs>
+        <figure>
+          <img [src]="item.IMAGE">
+          <p class="emp-name">{{item.EMP_NAME}}</p>
+          <p class="emp-designation">{{item.DESIGNATION}}</p>
+          <p class="emp-date">{{item.DATE}}</p>
+        </figure>
+      </ng-template>
+    </ng-container>
+    <p class="message">{{awardValue.MESSAGE_VALUE}}</p>
+
+    <footer>
+      <p class="cheers">{{awardValue.CHEER_VALUE}}</p>
+      <p class="company-name">{{awardValue.APPIVENTIV_TEXT}}</p>
+    </footer>
+
+  </mat-card>
+</section>

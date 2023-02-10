@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { CommonCarouselComponent } from './common-carousel.component';
+import { LatestAppinventivComponent } from './latest-appinventiv.component';
 
-describe('CommonCarouselComponent', () => {
-  let component: CommonCarouselComponent;
-  let fixture: ComponentFixture<CommonCarouselComponent>;
+describe('LatestAppinventivComponent', () => {
+  let component: LatestAppinventivComponent;
+  let fixture: ComponentFixture<LatestAppinventivComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ CommonCarouselComponent ]
+      declarations: [ LatestAppinventivComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CommonCarouselComponent);
+    fixture = TestBed.createComponent(LatestAppinventivComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
