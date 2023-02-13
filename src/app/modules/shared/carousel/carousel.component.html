@@ -1,7 +1,7 @@
 
 
   <ng-container *ngIf="wait">
-    <ngu-carousel class="crr" #myCarousel [inputs]="carouselConfig" [dataSource]="listToShow">
+    <ngu-carousel class="crr" #myCarousel [inputs]="carouselConfiguration" [dataSource]="listToShow">
       <ngu-item NguCarouselItem *nguCarouselDef="let item; let j = index">
         <ng-container *ngTemplateOutlet="item"></ng-container>
       </ngu-item>

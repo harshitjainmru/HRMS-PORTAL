@@ -3,7 +3,7 @@
     <div class="header">
       <p class="text">{{uiMessage.HEADER}}</p>
     </div>
-    <app-carousel [listToShow]="dataSource" [buttonShow]="buttonShow"></app-carousel>
+    <app-carousel [listToShow]="dataSource" [buttonShow]="buttonShow" [carouselConfiguration]="carouselConfig"></app-carousel>
     <ng-container *ngFor="let member of listOfNewFamilyMembers">
       <ng-template #listofDivs>
         <div class="img-card">

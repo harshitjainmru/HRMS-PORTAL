@@ -3,8 +3,8 @@
     <p class="header-text">{{uiMessage.HEADER}}</p>
     <button class="header-button classyButton">{{uiMessage.HEADER_BUTTON}}</button>
   </div>
-  <mat-card class="job-detail-card">
-  <app-carousel [listToShow]="dataSource"></app-carousel>
+  <div class="job-detail-card">
+  <app-carousel [listToShow]="dataSource" [carouselConfiguration]="carouselConfig"></app-carousel>
     <ng-container *ngFor="let item of cardLogo">
     <ng-template #listofDivs>
         <div class="image">
@@ -43,31 +43,5 @@
         </div>
       </ng-template>
     </ng-container>
-  </mat-card>
-</section>
-
-<!-- <section>
-  <div class="card">
-    <div class="header">
-      <p class="text">{{uiMessage.HEADER}}</p>
-    </div>
-    <app-carousel [listToShow]="dataSource" [buttonShow]="buttonShow"></app-carousel>
-    <ng-container *ngFor="let member of listOfNewFamilyMembers">
-      <ng-template #listofDivs>
-        <div class="img-card">
-          <div class="content">
-            <figure>
-              <img src="../../../../../../assets/images/default_male.jpg" class="defaultImage">
-            </figure>
-            <div class="name">
-              <p>{{uiMessage.EMP_NAME | titlecase}}</p>
-            </div>
-            <div class="designation">
-              <p>{{uiMessage.DESIGNATION | titlecase}}</p>
-            </div>
-          </div>
-        </div>
-      </ng-template>
-    </ng-container>
   </div>
-</section> -->
+</section>

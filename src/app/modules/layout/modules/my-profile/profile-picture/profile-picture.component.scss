@@ -13,10 +13,9 @@ section {
         font-size: 20px;
         padding: 11px 25px 11px 15px;
         font-weight: 600;
+        border-bottom: 1px solid $border-color;
+
       }
-    }
-    .border {
-      border: 1px solid $border-color;
     }
     .formgroup{
       padding: 20px;
@@ -35,8 +34,6 @@ section {
           border-radius: 5px;
         }
         .remove-pic{
-          // display: flex;
-          // align-items: baseline;
           @include fpos(baseline,'');
           gap: 10px;
           margin:10px 0px 10px 0px;

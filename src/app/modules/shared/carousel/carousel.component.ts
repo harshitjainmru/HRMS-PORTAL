@@ -10,8 +10,8 @@ import { NguCarousel, NguCarouselConfig } from '@ngu/carousel';
 export class CarouselComponent implements OnInit, AfterViewInit {
   @Input() listToShow: any;
   @Input() buttonShow:boolean= false;
+  @Input() carouselConfiguration:any;
   @ViewChild('myCarousel') carousel!: NguCarousel<any>;
-
   wait = false;
   ngOnInit() {
     console.log(this.listToShow);
@@ -26,14 +26,7 @@ export class CarouselComponent implements OnInit, AfterViewInit {
   resetAnim = true;
 
   @ViewChild('myCarousel') myCarousel!: NguCarousel<any>;
-  carouselConfig: NguCarouselConfig = {
-    grid: { xs: 1, sm: 1, md: 1, lg: 1, all: 0 },
-    load: 1,
-    interval: { timing: 4000, initialDelay: 1000 },
-    loop: true,
-    touch: true,
-    velocity: 0.2,
-  };
+
 
   constructor(private cdr: ChangeDetectorRef) { }
 

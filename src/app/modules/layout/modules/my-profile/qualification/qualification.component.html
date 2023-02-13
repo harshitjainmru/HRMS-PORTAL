@@ -3,23 +3,23 @@
     <div class="header">
       <p class="header-text">{{uiMessage.QUALIFICATION_HEADER}}</p>
     </div>
-    <div class="border"></div>
     <div class="content">
-      <form class="form">
+      <form class="form" [formGroup]="qualificationForm">
         <div class="inputs">
           <div class="formfield 1">
             <label class="label">{{labelMessage.SCHOOL}}</label>
             <mat-form-field appearance="outline" class="increaseFormfield">
-              <input [placeholder]="labelMessage.SCHOOL" matInput>
+              <input [placeholder]="labelMessage.SCHOOL" formControlName="school" matInput>
             </mat-form-field>
           </div>
 
           <div class="formfield 2">
             <label class="label">{{labelMessage.EDUCATION}}</label>
             <mat-form-field appearance="outline" class="increaseFormfield">
-              <mat-select>
-              <mat-option *ngFor="let item of educationDropdown" [value]="item">
-                {{item.LABEL}}
+              <mat-select formControlName="educationLevel">
+                <input [formControl]="myControl" class="filter">
+              <mat-option *ngFor="let item of filteredOptions | async" [value]="item" [disabled]="item=='no results Found'">
+                {{item}}
               </mat-option>
               </mat-select>
             </mat-form-field>
@@ -27,7 +27,7 @@
           <div class="formfield topField 3">
             <label class="label">{{labelMessage.TIME}}</label>
             <mat-form-field appearance="outline" class="increaseFormfield">
-              <input matInput [matDatepicker]="picker1" readonly>
+              <input matInput [matDatepicker]="picker1" formControlName="fromTime" readonly>
               <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
               <mat-datepicker #picker1></mat-datepicker>
             </mat-form-field>
@@ -35,7 +35,7 @@
           <div class="formfield topField 4">
             <label>  </label>
             <mat-form-field appearance="outline" class="increaseFormfield" style="margin-top: 15px;">
-              <input matInput [matDatepicker]="picker2" [placeholder]="labelMessage.PLACEHOLDER_TO" readonly>
+              <input matInput [matDatepicker]="picker2" formControlName="toTime" [placeholder]="labelMessage.PLACEHOLDER_TO" readonly>
               <mat-datepicker-toggle matIconSuffix [for]="picker2"></mat-datepicker-toggle>
               <mat-datepicker #picker2></mat-datepicker>
             </mat-form-field>
@@ -44,7 +44,7 @@
           <div class="formfield topField 5">
             <label class="label">{{labelMessage.LANGUAGE}}</label>
             <mat-form-field appearance="outline" class="increaseFormfield">
-              <mat-select>
+              <mat-select formControlName="language">
               <mat-option *ngFor="let item of languageDropdown" [value]="item">
                 {{item.LABEL}}
               </mat-option>
@@ -54,7 +54,7 @@
           <div class="formfield topField 6">
             <label class="label">{{labelMessage.PROFESSIONAL_COURSE}}</label>
             <mat-form-field appearance="outline" class="increaseFormfield">
-              <input matInput [placeholder]="labelMessage.PROFESSIONAL_COURSE">
+              <input matInput formControlName="professionalCourses" [placeholder]="labelMessage.PROFESSIONAL_COURSE">
             </mat-form-field>
           </div>
         </div>
@@ -62,7 +62,7 @@
           <label class="label">{{labelMessage.DESCRIPTION}}</label>
           <mat-form-field appearance="outline" class="addressFormfield">
             <textarea type="text" placeholder="Message" class="inputMessage" matInput cdkTextareaAutosize
-              cdkAutosizeMinRows="4" cdkAutosizeMaxRows="7" [placeholder]="labelMessage.DESCRIPTION"></textarea>
+              cdkAutosizeMinRows="4" cdkAutosizeMaxRows="7" [placeholder]="labelMessage.DESCRIPTION" formControlName="description"></textarea>
           </mat-form-field>
         </div>
         <div class="classyButton">

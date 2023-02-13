@@ -12,6 +12,7 @@ import { LatestAppinventivComponent } from './latest-appinventiv/latest-appinven
 import { AwardsComponent } from './latest-appinventiv/awards/awards.component';
 import { BirthdayComponent } from './latest-appinventiv/birthday/birthday.component';
 import { WorkAnniversaryComponent } from './latest-appinventiv/work-anniversary/work-anniversary.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { WorkAnniversaryComponent } from './latest-appinventiv/work-anniversary/
     LatestAppinventivComponent,
     AwardsComponent,
     BirthdayComponent,
-    WorkAnniversaryComponent
+    WorkAnniversaryComponent,
+    GalleryComponent
   ],
   imports: [
     CommonModule,

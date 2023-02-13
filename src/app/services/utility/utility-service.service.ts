@@ -30,7 +30,7 @@ export class UtilityServiceService {
         message: msg,
         icon: 'done',
       },
-      // duration: this.duration,
+      duration: this.duration,
       verticalPosition: 'top',
       horizontalPosition: 'center',
       panelClass: 'toast-success-prm',

@@ -14,6 +14,8 @@ section {
   }
   .job-detail-card {
     margin-top: 19px;
+    padding: 16px;
+    border-radius: 5px;
     border: 1px solid $border-color;
     .image {
       background: $job-background-color;

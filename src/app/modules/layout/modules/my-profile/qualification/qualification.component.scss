@@ -1,22 +1,44 @@
 @import "../basic-information/basic-information.component.scss";
 
-section{
-  .card2{
+section {
+  .card2 {
     margin-top: 20px;
   }
-  .basic-card{
-    .content{
-      .form{
-        .topField{
-          margin-top: -25px !important;
-        }
-        .increaseFormfield{
-          width: 550px;
-        }
+  .basic-card {
+    .content {
+      .form {
         .inputs {
           gap: 40px;
+          .topField {
+            margin-top: -25px !important;
+          }
+          .formfield {
+            .increaseFormfield {
+              width: 550px;
+            }
+          }
         }
       }
     }
+
+  }
+}
+.filter {
+  width: 90% !important;
+  padding: 10px 22px !important;
+}
+::ng-deep{
+  .mat-option[aria-disabled="true"] {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    font-weight: 500;
+    color: black;
+    text-transform: capitalize;
+    user-select: none;
+    cursor: default;
+  }
+  .mat-option.mat-active{
+    background: $directory-header-color;
   }
 }

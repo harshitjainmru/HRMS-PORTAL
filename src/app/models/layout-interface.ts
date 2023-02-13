@@ -47,5 +47,17 @@ export interface IAWARDDATA{
   DESIGNATION?:string,
   DATE?:string,
 }
+export interface IBIRTHDAYDATA{
+  IMAGE?:string
+  EMP_NAME?:string,
+  DESIGNATION?:string,
+  DATE?:string,
+}
+export interface IGALLERYDATA{
+  IMAGE?:string,
+  HEADING?:string,
+  BUTTON?:string,
+  NUM?:number
+}
 
 
