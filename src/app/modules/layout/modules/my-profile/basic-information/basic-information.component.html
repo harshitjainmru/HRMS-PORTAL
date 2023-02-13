@@ -26,33 +26,32 @@
               <mat-datepicker #picker1></mat-datepicker>
             </mat-form-field>
           </div>
-          <div class="formfield 4">
+          <!-- <div class="formfield 4">
             <label class="label">{{labelMessage.GENDER}}</label>
             <mat-form-field appearance="outline" class="increaseFormfield">
               <mat-select>
-                <!-- <input type="text" [matAutocomplete]="auto"> -->
-                <!-- <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete"> -->
               <mat-option *ngFor="let item of genderValue" [value]="item">
                 {{item.LABEL}}
               </mat-option>
-            <!-- </mat-autocomplete> -->
               </mat-select>
             </mat-form-field>
-          </div>
-          <!-- <app-dropdown-field [gender]="[labelMessage.GENDER]"></app-dropdown-field> -->
-          <div class="formfield 5">
+          </div> -->
+          <span>
+            <app-dropdown-field [label]="labelMessage.GENDER" [Data]="genderValue"></app-dropdown-field>
+          </span>
+          <!-- <div class="formfield 5">
             <label class="label">{{labelMessage.MARITAL_STATUS}}</label>
             <mat-form-field appearance="outline" class="increaseFormfield">
               <mat-select>
-                <!-- <input type="text" [matAutocomplete]="auto"> -->
-                <!-- <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete"> -->
               <mat-option *ngFor="let item of maritalStatusValue" [value]="item">
                 {{item.LABEL}}
               </mat-option>
-            <!-- </mat-autocomplete> -->
               </mat-select>
             </mat-form-field>
-          </div>
+          </div> -->
+          <span>
+            <app-dropdown-field [label]="labelMessage.MARITAL_STATUS" [Data]="maritalStatusValue"></app-dropdown-field>
+          </span>
           <div class="formfield 6">
             <label class="label">{{labelMessage.CONTACT}}</label>
             <mat-form-field appearance="outline" class="increaseFormfield">

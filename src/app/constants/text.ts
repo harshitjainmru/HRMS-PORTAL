@@ -8,12 +8,6 @@ import {
   IPROFILE_USERDETAILS,
   IREFERRAL,
 } from '../models/layout-interface';
-import {
-  IEDUCATION_INPUT,
-  IGENDER_INPUT,
-  ILANGUAGE_INPUT,
-  IMARITAL_INPUT,
-} from '../models/myProfile-interface';
 import { ABS_BASIC_INFO } from './absolute-routes';
 import {
   APPRAISAL,
@@ -319,16 +313,12 @@ export const FORM_LABEL = {
   PLACEHOLDER_TO: 'to',
 };
 
-export const GENDER_INPUT_DROPDOWN: IGENDER_INPUT[] = [
-  { LABEL: 'Male' },
-  { LABEL: 'Female' },
+export const GENDER_INPUT_DROPDOWN= [
+  'Male','Female' ,
 ];
 
-export const MARITAL_DROPDOWN: IMARITAL_INPUT[] = [
-  { LABEL: 'Single' },
-  { LABEL: 'Married' },
-  { LABEL: 'Widowed' },
-  { LABEL: 'Divorced or Separated' },
+export const MARITAL_DROPDOWN = [
+  'Single', 'Married', 'Widowed', 'Divorced or Separated',
 ];
 export const EDUCATION_DROPDOWN= [
    'High School Diploma / GED' ,
@@ -346,9 +336,8 @@ export const EDUCATION_DROPDOWN= [
    'Diloma',
    'B.Sc Animation & Film Making',
 ];
-export const LANGUAGE_DROPDOWN: ILANGUAGE_INPUT[] = [
-  { LABEL: 'English' },
-  { LABEL: 'Hindi' },
+export const LANGUAGE_DROPDOWN = [
+  'English','Hindi',
 ];
 
 export const SHIFT_VALUE = {

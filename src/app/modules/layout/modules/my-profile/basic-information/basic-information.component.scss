@@ -25,6 +25,10 @@ section {
           @include flexbox();
           flex-direction: column;
         }
+        .mat-form-field{
+          width: 369px;
+
+        }
         .increaseFormfield {
           width: 369px;
         }

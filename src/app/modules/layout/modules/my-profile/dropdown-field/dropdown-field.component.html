@@ -1,6 +1,12 @@
-<div class="formfield 4">
-  <label class="label">{{gender}}</label>
-  <mat-form-field appearance="outline">
-    <input matInput>
+<div class="formfield 2">
+  <label class="label">{{label}}</label>
+  <mat-form-field appearance="outline" class="increaseFormfield">
+    <!-- class="increaseFormfield" -->
+    <mat-select>
+      <input [formControl]="myControl" class="filter">
+    <mat-option *ngFor="let item of filteredOptions | async" [value]="item" [disabled]="item=='no results Found'">
+      {{item}}
+    </mat-option>
+    </mat-select>
   </mat-form-field>
 </div>

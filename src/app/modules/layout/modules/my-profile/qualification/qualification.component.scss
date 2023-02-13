@@ -18,27 +18,11 @@ section {
             }
           }
         }
+        .addressFormfield{
+          width: auto;
+        }
       }
     }
+  }
+}
 
-  }
-}
-.filter {
-  width: 90% !important;
-  padding: 10px 22px !important;
-}
-::ng-deep{
-  .mat-option[aria-disabled="true"] {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    font-weight: 500;
-    color: black;
-    text-transform: capitalize;
-    user-select: none;
-    cursor: default;
-  }
-  .mat-option.mat-active{
-    background: $directory-header-color;
-  }
-}

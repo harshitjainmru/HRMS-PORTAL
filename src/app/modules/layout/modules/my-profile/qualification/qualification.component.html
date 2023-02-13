@@ -13,8 +13,8 @@
             </mat-form-field>
           </div>
 
-          <div class="formfield 2">
-            <label class="label">{{labelMessage.EDUCATION}}</label>
+          <span>
+            <!-- <label class="label">{{labelMessage.EDUCATION}}</label>
             <mat-form-field appearance="outline" class="increaseFormfield">
               <mat-select formControlName="educationLevel">
                 <input [formControl]="myControl" class="filter">
@@ -22,8 +22,10 @@
                 {{item}}
               </mat-option>
               </mat-select>
-            </mat-form-field>
-          </div>
+            </mat-form-field> -->
+            <app-dropdown-field [label]="labelMessage.EDUCATION" [Data]="educationDropdown"></app-dropdown-field>
+
+          </span>
           <div class="formfield topField 3">
             <label class="label">{{labelMessage.TIME}}</label>
             <mat-form-field appearance="outline" class="increaseFormfield">
@@ -40,17 +42,17 @@
               <mat-datepicker #picker2></mat-datepicker>
             </mat-form-field>
           </div>
-          <!-- <app-dropdown-field [gender]="[labelMessage.GENDER]"></app-dropdown-field> -->
-          <div class="formfield topField 5">
-            <label class="label">{{labelMessage.LANGUAGE}}</label>
+          <span class="topField">
+            <!-- <label class="label">{{labelMessage.LANGUAGE}}</label>
             <mat-form-field appearance="outline" class="increaseFormfield">
               <mat-select formControlName="language">
               <mat-option *ngFor="let item of languageDropdown" [value]="item">
                 {{item.LABEL}}
               </mat-option>
               </mat-select>
-            </mat-form-field>
-          </div>
+            </mat-form-field> -->
+            <app-dropdown-field [label]="labelMessage.LANGUAGE" [Data]="languageDropdown"></app-dropdown-field>
+          </span>
           <div class="formfield topField 6">
             <label class="label">{{labelMessage.PROFESSIONAL_COURSE}}</label>
             <mat-form-field appearance="outline" class="increaseFormfield">
