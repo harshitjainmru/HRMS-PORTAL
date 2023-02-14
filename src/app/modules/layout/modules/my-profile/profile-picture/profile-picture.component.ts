@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 import { slideInRight } from 'src/animations/slideInRight';
 import { PROFILE_PICTURE_VALUE } from 'src/app/constants/text';
 
@@ -10,9 +11,16 @@ import { PROFILE_PICTURE_VALUE } from 'src/app/constants/text';
 })
 export class ProfilePictureComponent implements OnInit {
 uiMessage=PROFILE_PICTURE_VALUE
-  constructor() { }
+pictureForm!:FormGroup
+  constructor(private _formBuilder:FormBuilder) { }
 
   ngOnInit(): void {
+    this.createForm()
+  }
+  createForm(){
+this.pictureForm = this._formBuilder.group({
+image:[]
+})
   }
 
 }

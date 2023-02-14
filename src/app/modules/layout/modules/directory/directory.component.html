@@ -14,12 +14,6 @@
         <label class="label">{{headerValue.DEPARTMENT_LABEL}}</label>
         <mat-form-field appearance="outline" class="increaseFormfield">
           <mat-select>
-            <!-- <input type="text" [matAutocomplete]="auto"> -->
-            <!-- <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete"> -->
-          <!-- <mat-option *ngFor="let item of genderValue" [value]="item">
-            {{item.LABEL}}
-          </mat-option> -->
-        <!-- </mat-autocomplete> -->
           </mat-select>
         </mat-form-field>
       </div>
@@ -37,8 +31,9 @@
     </form>
   </div>
   <div class="directory-card">
-    <div class="emp-directory-card" *ngFor="let item of empData">
+    <ng-container *ngFor="let item of empData">
       <div class="our-team">
+        <!-- <div class="social"></div> -->
         <div class="img picture">
           <img [src]="item.IMAGE" class="emp-pic">
         </div>
@@ -56,9 +51,8 @@
             <p class="birth value">{{item.BIRTH_DATE}},{{item.BIRTH_MONTH}}</p>
           </div>
         </div>
-        <div class="social">
-        </div>
+        <span class="social">&nbsp;</span>
       </div>
-    </div>
+    </ng-container>
   </div>
 </section>

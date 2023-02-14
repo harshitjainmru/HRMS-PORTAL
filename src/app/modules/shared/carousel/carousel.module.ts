@@ -12,6 +12,6 @@ import { NguCarouselModule } from '@ngu/carousel';
     CommonModule,
     NguCarouselModule
   ],
-  exports:[CarouselComponent]
+  exports:[CarouselComponent,NguCarouselModule]
 })
 export class CarouselModule { }

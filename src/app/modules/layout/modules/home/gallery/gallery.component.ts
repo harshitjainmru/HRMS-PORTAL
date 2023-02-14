@@ -11,6 +11,7 @@ export class GalleryComponent implements OnInit, AfterViewInit {
 headerValue=GALLER_VALUE
 imageData=Gallery_DATA
 buttonShow: boolean = true;
+showList: boolean = true;
 @ViewChildren('listofDivs', { read: TemplateRef }) listToShow!: QueryList<
   ElementRef<HTMLDivElement>
 >;

@@ -1,0 +1,17 @@
+.image1{
+  position: absolute;
+  top: -10%;
+  left: -15px;
+}
+  .image2{
+    position: relative;
+  }
+
+.imagecard{
+  margin: 0 auto;
+  width: 600px;
+  box-shadow: 48px 16px 48px rgb(24 37 56 / 12%);
+  border-radius: 4px;
+  -webkit-transform: perspective(1000px) rotateY(16deg) rotateX(2deg) rotateZ(-7deg) scaleY(0.95) translatex(2%);
+  transform: perspective(1000px) rotateY(16deg) rotateX(2deg) rotateZ(-7deg) scaleY(0.95) translatex(2%);
+}

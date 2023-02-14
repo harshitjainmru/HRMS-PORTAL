@@ -10,26 +10,42 @@
             <label class="label">{{labelMessage.SCHOOL}}</label>
             <mat-form-field appearance="outline" class="increaseFormfield">
               <input [placeholder]="labelMessage.SCHOOL" formControlName="school" matInput>
+              <mat-error *ngFor="let error of errorMessage?.school">
+                <mat-error *ngIf="qualificationForm?.get('school')?.hasError(error?.type)" class="alertMessage">
+                  <span class="errorMessage">{{error.message}}</span>
+                </mat-error>
+              </mat-error>
             </mat-form-field>
           </div>
 
-          <span>
-            <!-- <label class="label">{{labelMessage.EDUCATION}}</label>
+          <div class="formfield 2">
+            <label class="label">{{labelMessage.EDUCATION}}</label>
             <mat-form-field appearance="outline" class="increaseFormfield">
               <mat-select formControlName="educationLevel">
+
                 <input [formControl]="myControl" class="filter">
-              <mat-option *ngFor="let item of filteredOptions | async" [value]="item" [disabled]="item=='no results Found'">
+              <mat-option *ngFor="let item of filteredOptions | async" [value]="item[0]"[disabled]="item=='no results Found'">
                 {{item}}
               </mat-option>
               </mat-select>
-            </mat-form-field> -->
-            <app-dropdown-field [label]="labelMessage.EDUCATION" [Data]="educationDropdown"></app-dropdown-field>
+              <mat-error *ngFor="let error of errorMessage?.educationLevel">
+                <mat-error *ngIf="qualificationForm?.get('educationLevel')?.hasError(error?.type)" class="alertMessage">
+                  <span class="errorMessage">{{error.message}}</span>
+                </mat-error>
+              </mat-error>
+            </mat-form-field>
+            <!-- <app-dropdown [label]="labelMessage.EDUCATION" [Data]="educationDropdown"></app-dropdown> -->
 
-          </span>
+          </div>
           <div class="formfield topField 3">
             <label class="label">{{labelMessage.TIME}}</label>
             <mat-form-field appearance="outline" class="increaseFormfield">
               <input matInput [matDatepicker]="picker1" formControlName="fromTime" readonly>
+              <mat-error *ngFor="let error of errorMessage?.fromTime">
+                <mat-error *ngIf="qualificationForm?.get('fromTime')?.hasError(error?.type)" class="alertMessage">
+                  <span class="errorMessage">{{error.message}}</span>
+                </mat-error>
+              </mat-error>
               <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
               <mat-datepicker #picker1></mat-datepicker>
             </mat-form-field>
@@ -38,25 +54,41 @@
             <label>  </label>
             <mat-form-field appearance="outline" class="increaseFormfield" style="margin-top: 15px;">
               <input matInput [matDatepicker]="picker2" formControlName="toTime" [placeholder]="labelMessage.PLACEHOLDER_TO" readonly>
+              <mat-error *ngFor="let error of errorMessage?.toTime">
+                <mat-error *ngIf="qualificationForm?.get('toTime')?.hasError(error?.type)" class="alertMessage">
+                  <span class="errorMessage">{{error.message}}</span>
+                </mat-error>
+              </mat-error>
               <mat-datepicker-toggle matIconSuffix [for]="picker2"></mat-datepicker-toggle>
               <mat-datepicker #picker2></mat-datepicker>
             </mat-form-field>
           </div>
-          <span class="topField">
-            <!-- <label class="label">{{labelMessage.LANGUAGE}}</label>
+          <div class="formfield topField 5">
+            <label class="label">{{labelMessage.LANGUAGE}}</label>
             <mat-form-field appearance="outline" class="increaseFormfield">
               <mat-select formControlName="language">
+
               <mat-option *ngFor="let item of languageDropdown" [value]="item">
-                {{item.LABEL}}
+                {{item}}
               </mat-option>
               </mat-select>
-            </mat-form-field> -->
-            <app-dropdown-field [label]="labelMessage.LANGUAGE" [Data]="languageDropdown"></app-dropdown-field>
-          </span>
+                <mat-error *ngFor="let error of errorMessage?.language">
+                  <mat-error *ngIf="qualificationForm?.get('language')?.hasError(error?.type)" class="alertMessage">
+                    <span class="errorMessage">{{error.message}}</span>
+                  </mat-error>
+                </mat-error>
+            </mat-form-field>
+            <!-- <app-dropdown [label]="labelMessage.LANGUAGE" [Data]="languageDropdown"></app-dropdown> -->
+          </div>
           <div class="formfield topField 6">
             <label class="label">{{labelMessage.PROFESSIONAL_COURSE}}</label>
             <mat-form-field appearance="outline" class="increaseFormfield">
               <input matInput formControlName="professionalCourses" [placeholder]="labelMessage.PROFESSIONAL_COURSE">
+              <mat-error *ngFor="let error of errorMessage?.professionalCourses">
+                <mat-error *ngIf="qualificationForm?.get('professionalCourses')?.hasError(error?.type)" class="alertMessage">
+                  <span class="errorMessage">{{error.message}}</span>
+                </mat-error>
+              </mat-error>
             </mat-form-field>
           </div>
         </div>
@@ -65,6 +97,11 @@
           <mat-form-field appearance="outline" class="addressFormfield">
             <textarea type="text" placeholder="Message" class="inputMessage" matInput cdkTextareaAutosize
               cdkAutosizeMinRows="4" cdkAutosizeMaxRows="7" [placeholder]="labelMessage.DESCRIPTION" formControlName="description"></textarea>
+              <mat-error *ngFor="let error of errorMessage?.description">
+                <mat-error *ngIf="qualificationForm?.get('description')?.hasError(error?.type)" class="alertMessage">
+                  <span class="errorMessage">{{error.message}}</span>
+                </mat-error>
+              </mat-error>
           </mat-form-field>
         </div>
         <div class="classyButton">

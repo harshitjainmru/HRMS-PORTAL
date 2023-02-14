@@ -1,10 +1,8 @@
 @import "../../../../../scss/mixins.scss";
 @import "../../../../../scss/var";
 section {
-  // height: 100%;
   .basic-card {
     padding: 0px !important;
-
     .header {
       .header-text {
         color: $header-text-color;
@@ -35,13 +33,71 @@ section {
           .mat-form-field-appearance-outline .mat-form-field-infix {
             padding: 12px 0px 12px 0px;
           }
-          .mat-select-disabled .mat-select-trigger{
+          .mat-select-disabled .mat-select-trigger {
             cursor: not-allowed !important;
           }
         }
-        .inputs{
+        .inputs {
           display: flex;
           gap: 30px;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 1050px) and (max-width: 1390px) {
+  section {
+    .basic-card {
+      .content {
+        .form {
+          .increaseFormfield {
+            width: 250px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 525px) and (max-width: 1050px) {
+  section {
+    .basic-card {
+      .content {
+        .form {
+          .inputs {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 525px) {
+  section {
+    .basic-card {
+      .content {
+        .form {
+          .increaseFormfield {
+            width: auto;
+          }
+          .inputs {
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 150px) and (max-width: 320px) {
+  section {
+    .basic-card {
+      .content {
+        .form {
+          .increaseFormfield {
+            width: 100px;
+          }
+          .inputs {
+            flex-direction: column;
+          }
         }
       }
     }

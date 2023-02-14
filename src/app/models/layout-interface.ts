@@ -53,11 +53,26 @@ export interface IBIRTHDAYDATA{
   DESIGNATION?:string,
   DATE?:string,
 }
+export interface IWORKANNIVERSARY{
+  IMAGE?:string
+  EMP_NAME?:string,
+  DESIGNATION?:string,
+  DATE?:string,
+}
 export interface IGALLERYDATA{
   IMAGE?:string,
   HEADING?:string,
   BUTTON?:string,
   NUM?:number
+}
+export interface IAPPRECIATIONDATA{
+  HEADER_VALUE?:string,
+  TEXT?:string,
+  DEAR_VALUE?:string,
+  MESSAGE?:string,
+  BUTTON?:string,
+  GREET?:string,
+
 }
 
 

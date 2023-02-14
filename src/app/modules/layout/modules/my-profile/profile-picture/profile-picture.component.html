@@ -4,11 +4,11 @@
       <p class="header-text">{{uiMessage.PROFILE_PIC_HEADER}}</p>
     </div>
     <div class="formgroup">
-      <form class="form">
+      <form class="form" [formGroup]="pictureForm">
         <div class="container-1">
         <p class="browse">{{uiMessage.BROWSE_VALUE}}</p>
         <!-- <mat-card> -->
-          <input type="file">
+          <input type="file" formControlName="image">
         <!-- </mat-card> -->
         <br>
         <small>{{uiMessage.FORMAT}}</small>

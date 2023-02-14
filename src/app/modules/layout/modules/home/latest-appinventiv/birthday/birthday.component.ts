@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, QueryList, TemplateRef, ViewChildren } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, OnInit, QueryList, TemplateRef, ViewChildren } from '@angular/core';
 import { NguCarouselConfig } from '@ngu/carousel';
 import { BIRTHDAY_EMP_IMAGE_DATA, BIRTHDAY_VALUE } from 'src/app/constants/text';
 
@@ -7,7 +7,7 @@ import { BIRTHDAY_EMP_IMAGE_DATA, BIRTHDAY_VALUE } from 'src/app/constants/text'
   templateUrl: './birthday.component.html',
   styleUrls: ['./birthday.component.scss']
 })
-export class BirthdayComponent implements OnInit {
+export class BirthdayComponent implements OnInit,AfterViewInit {
   birthdayValue=BIRTHDAY_VALUE
   imageData = BIRTHDAY_EMP_IMAGE_DATA
   dataSource: any = [];

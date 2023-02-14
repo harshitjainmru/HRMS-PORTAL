@@ -2,7 +2,7 @@
   <div class="heading">
     <h3 class="header">{{headerValue.HEADER}}</h3>
   </div>
-  <app-carousel [listToShow]="dataSource" [buttonShow]="buttonShow" [carouselConfiguration]="carouselConfig"></app-carousel>
+  <app-carousel [listToShow]="dataSource" [buttonShow]="buttonShow" [showList]="showList" [carouselConfiguration]="carouselConfig"></app-carousel>
   <ng-container *ngFor="let item of imageData">
     <ng-template #listofDivs>
     <figure>

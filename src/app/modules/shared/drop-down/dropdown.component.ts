@@ -4,19 +4,18 @@ import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 
 @Component({
-  selector: 'app-dropdown-field',
-  templateUrl: './dropdown-field.component.html',
-  styleUrls: ['./dropdown-field.component.scss'],
+  selector: 'app-dropdown',
+  templateUrl: './dropdown.component.html',
+  styleUrls: ['./dropdown.component.scss']
 })
-export class DropdownFieldComponent implements OnInit {
+export class DropdownComponent implements OnInit {
+
   @Input() label!: any;
   @Input() Data!:any;
   @Input() CSSClass!:any;
-  Table_DATA: any;
   myControl = new FormControl('');
-  pageSize = false;
-  constructor() {}
   filteredOptions!: Observable<string[]>;
+  constructor() {}
 
   ngOnInit(): void {
     this.filteredOptions = this.myControl.valueChanges.pipe(
@@ -40,4 +39,5 @@ export class DropdownFieldComponent implements OnInit {
       return res;
     });
   }
+
 }

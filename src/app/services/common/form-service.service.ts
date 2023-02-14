@@ -16,6 +16,28 @@ export class FormServiceService {
       Validators.maxLength(LIMIT.MAX_EMAIL_LENGTH),
     ],
     password: [Validators.pattern(PATTERN.PASSWORD_PATTERN)],
+    firstName:[Validators.pattern(PATTERN.FIRST_NAME)],
+    lastName:[Validators.pattern(PATTERN.LAST_NAME)],
+    dob:[],
+    gender:[],
+    maritalStatus:[],
+    contact:[Validators.pattern(PATTERN.PHONE_NUMBER)],
+    total_year:[],
+    total_month:[],
+    relevant_year:[],
+    relevant_month:[],
+    address:[],
+    oldPassword:[Validators.pattern(PATTERN.PASSWORD_PATTERN)],
+    newPassword:[Validators.pattern(PATTERN.PASSWORD_PATTERN)],
+    confirmPassword:[Validators.pattern(PATTERN.PASSWORD_PATTERN)],
+    school: [],
+    educationLevel: [],
+    fromTime: [],
+    toTime: [],
+    language: [],
+    professionalCourses: [],
+    description: [],
+
   };
 
   getControl(name: string, required = true) {

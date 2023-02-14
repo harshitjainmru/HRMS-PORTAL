@@ -14,12 +14,12 @@ import { MatButtonModule } from '@angular/material/button';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import { DropdownFieldComponent } from './dropdown-field/dropdown-field.component';
 import {MatSelectModule} from '@angular/material/select';
 import {MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { SharedModule } from 'src/app/modules/shared/shared.module';
+import { DropDownModule } from 'src/app/modules/shared/drop-down/drop-down.module';
 @NgModule({
     declarations: [
         MyProfileComponent,
@@ -29,7 +29,6 @@ import { SharedModule } from 'src/app/modules/shared/shared.module';
         ShiftComponent,
         ChangePasswordComponent,
         AppraisalComponent,
-        DropdownFieldComponent,
     ],
     imports: [
         CommonModule,
@@ -46,6 +45,7 @@ import { SharedModule } from 'src/app/modules/shared/shared.module';
         MatNativeDateModule,
         MatAutocompleteModule,
         SharedModule,
+        DropDownModule
     ]
 })
 export class MyProfileModule {}

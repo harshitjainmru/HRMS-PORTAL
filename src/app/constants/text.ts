@@ -1,4 +1,5 @@
 import {
+  IAPPRECIATIONDATA,
   IAWARDDATA,
   IBIRTHDAYDATA,
   IDIRECTORY_DATA,
@@ -7,6 +8,7 @@ import {
   IPROFILE,
   IPROFILE_USERDETAILS,
   IREFERRAL,
+  IWORKANNIVERSARY,
 } from '../models/layout-interface';
 import { ABS_BASIC_INFO } from './absolute-routes';
 import {
@@ -176,6 +178,23 @@ export const BIRTHDAY_VALUE = {
   CHEER_VALUE: 'cheers!',
   APPIVENTIV_TEXT: 'Appinventiv',
 };
+export const WORK_ANNIVERSARY_VALUE = {
+  HEADER_VALUE: 'Work Anniversary',
+  DEAR_VALUE: 'Dear',
+  MESSAGE_VALUE:
+    'Wishing you many more years of success, good luck, and joy! On this blissful and charming day of your Corporate anniversary may you continue the journey of achievements with pride! ',
+  CHEER_VALUE: 'cheers!',
+  APPIVENTIV_TEXT: 'Appinventiv',
+};
+
+export const APPRECIATION_DATA: IAPPRECIATIONDATA[] =[
+  { HEADER_VALUE: 'Appreciation for UStandBy',TEXT:'Hello All,',MESSAGE:`With immense pleasure, we would like to take this moment and appreciate Ustandby Team. The team demonstrated outstanding performance and we are happy to announce that the client has appreciated the team's dedication and commitment due to which the project was a great success.`, GREET:'Kudos to the team!',  BUTTON:'View More'},
+  { HEADER_VALUE: 'Appreciation| ABP NEWS', DEAR_VALUE: 'Dear',TEXT:' Aashima Anand,',MESSAGE:`We would like to congratulate you all on making ABP live. We are aware of the hard work put in by each team member because of which the client is very satisfied, and we are working on future phases of the application and even other projects too. The client is committed to make this application a big success, and it gives me great joy to see that we share the same passion. `, GREET:'Thank you for all the hard work and commitment. Keep up the excellent work.',  BUTTON:'View More'},
+  { HEADER_VALUE: 'Appreciation for UStandBy',TEXT:'Hello All,',MESSAGE:`With immense pleasure, we would like to take this moment and appreciate Ustandby Team. The team demonstrated outstanding performance and we are happy to announce that the client has appreciated the team's dedication and commitment due to which the project was a great success.`, GREET:'Kudos to the team!',  BUTTON:'View More'},
+  { HEADER_VALUE: 'Appreciation| ABP NEWS', DEAR_VALUE: 'Dear',TEXT:' Aashima Anand,',MESSAGE:`We would like to congratulate you all on making ABP live. We are aware of the hard work put in by each team member because of which the client is very satisfied, and we are working on future phases of the application and even other projects too. The client is committed to make this application a big success, and it gives me great joy to see that we share the same passion. `, GREET:'Thank you for all the hard work and commitment. Keep up the excellent work.',  BUTTON:'View More'},
+
+
+]
 export const AWARDS_EMP_IMAGE_DATA: IAWARDDATA[] = [
   {
     IMAGE: '/assets/images/.jpg',
@@ -203,6 +222,32 @@ export const AWARDS_EMP_IMAGE_DATA: IAWARDDATA[] = [
   },
 ];
 export const BIRTHDAY_EMP_IMAGE_DATA: IBIRTHDAYDATA[] = [
+  {
+    IMAGE: '/assets/images/default_male.jpg',
+    EMP_NAME: 'Ashish Pal (AI1802)',
+    DESIGNATION: 'Associate Team Lead, MeanStack',
+    DATE: 'October,2022',
+  },
+  {
+    IMAGE: '/assets/images/default_male.jpg',
+    EMP_NAME: 'Ashish Pal (AI1802)',
+    DESIGNATION: 'Associate Team Lead, MeanStack',
+    DATE: 'October,2022',
+  },
+  {
+    IMAGE: '/assets/images/default_male.jpg',
+    EMP_NAME: 'Ashish Pal (AI1802)',
+    DESIGNATION: 'Associate Team Lead, MeanStack',
+    DATE: 'October,2022',
+  },
+  {
+    IMAGE: '/assets/images/default_male.jpg',
+    EMP_NAME: 'Ashish Pal (AI1802)',
+    DESIGNATION: 'Associate Team Lead, MeanStack',
+    DATE: 'October,2022',
+  },
+];
+export const WORKANNIVERSARY_EMP_IMAGE_DATA: IWORKANNIVERSARY[] = [
   {
     IMAGE: '/assets/images/default_male.jpg',
     EMP_NAME: 'Ashish Pal (AI1802)',

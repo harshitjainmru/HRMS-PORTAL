@@ -9,53 +9,82 @@
           <div class="formfield 1">
             <label class="label">{{labelMessage.FIRST_NAME}}</label>
             <mat-form-field appearance="outline" class="increaseFormfield">
-              <input [placeholder]="labelMessage.FIRST_NAME" formControlName="firstName" matInput>
+              <input [placeholder]="labelMessage.FIRST_NAME" formControlName="firstName" value="Harshit" matInput>
+              <mat-error *ngFor="let error of errorMessage?.firstName">
+                <mat-error *ngIf="basicForm?.get('firstName')?.hasError(error?.type)" class="alertMessage">
+                  <span class="errorMessage">{{error.message}}</span>
+                </mat-error>
+              </mat-error>
             </mat-form-field>
           </div>
           <div class="formfield 2">
             <label class="label">{{labelMessage.LAST_NAME}}</label>
             <mat-form-field appearance="outline" class="increaseFormfield">
               <input [placeholder]="labelMessage.LAST_NAME" formControlName="lastName" matInput>
+              <mat-error *ngFor="let error of errorMessage?.lastName">
+                <mat-error *ngIf="basicForm?.get('lastName')?.hasError(error?.type)" class="alertMessage">
+                  <span class="errorMessage">{{error.message}}</span>
+                </mat-error>
+              </mat-error>
             </mat-form-field>
           </div>
           <div class="formfield 3">
             <label class="label">{{labelMessage.DATE_OF_BIRTH}}</label>
             <mat-form-field appearance="outline" class="increaseFormfield">
               <input matInput [matDatepicker]="picker1" [min]="minDate" [max]="maxDate" formControlName="dob" readonly>
+              <mat-error *ngFor="let error of errorMessage?.dob">
+                <mat-error *ngIf="basicForm?.get('dob')?.hasError(error?.type)" class="alertMessage">
+                  <span class="errorMessage">{{error.message}}</span>
+                </mat-error>
+              </mat-error>
               <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
               <mat-datepicker #picker1></mat-datepicker>
             </mat-form-field>
           </div>
           <!-- <div class="formfield 4">
             <label class="label">{{labelMessage.GENDER}}</label>
-            <mat-form-field appearance="outline" class="increaseFormfield">
+            <app-dropdown  [Data]="genderValue"></app-dropdown> -->
+
+           <!--  <mat-form-field appearance="outline" class="increaseFormfield">
               <mat-select>
               <mat-option *ngFor="let item of genderValue" [value]="item">
                 {{item.LABEL}}
               </mat-option>
               </mat-select>
-            </mat-form-field>
-          </div> -->
+            </mat-form-field>-->
+          <!-- </div> -->
           <span>
-            <app-dropdown-field [label]="labelMessage.GENDER" [Data]="genderValue"></app-dropdown-field>
+            <app-dropdown [label]="labelMessage.GENDER" [Data]="genderValue"></app-dropdown>
+            <!-- <mat-error *ngFor="let error of errorMessage?.firstName">
+              <mat-error *ngIf="basicForm?.get('firstName')?.hasError(error?.type)" class="alertMessage">
+                <span class="errorMessage">{{error.message}}</span>
+              </mat-error>
+            </mat-error> -->
           </span>
           <!-- <div class="formfield 5">
             <label class="label">{{labelMessage.MARITAL_STATUS}}</label>
-            <mat-form-field appearance="outline" class="increaseFormfield">
+              <app-dropdown [Data]="maritalStatusValue"></app-dropdown> -->
+
+            <!-- <mat-form-field appearance="outline" class="increaseFormfield">
               <mat-select>
               <mat-option *ngFor="let item of maritalStatusValue" [value]="item">
                 {{item.LABEL}}
               </mat-option>
               </mat-select>
-            </mat-form-field>
-          </div> -->
+            </mat-form-field>-->
+          <!-- </div> -->
           <span>
-            <app-dropdown-field [label]="labelMessage.MARITAL_STATUS" [Data]="maritalStatusValue"></app-dropdown-field>
+            <app-dropdown [label]="labelMessage.MARITAL_STATUS" [Data]="maritalStatusValue"></app-dropdown>
           </span>
           <div class="formfield 6">
             <label class="label">{{labelMessage.CONTACT}}</label>
             <mat-form-field appearance="outline" class="increaseFormfield">
               <input [placeholder]="labelMessage.CONTACT" formControlName="contact" matInput>
+              <mat-error *ngFor="let error of errorMessage?.contact">
+                <mat-error *ngIf="basicForm?.get('contact')?.hasError(error?.type)" class="alertMessage">
+                  <span class="errorMessage">{{error.message}}</span>
+                </mat-error>
+              </mat-error>
             </mat-form-field>
           </div>
         </div>
@@ -69,12 +98,22 @@
                 <label class="label">{{labelMessage.YEAR}}</label>
                 <mat-form-field appearance="outline" class="yearFormfield">
                   <input min="0" type="number" [placeholder]="labelMessage.YEAR" formControlName="total_year" matInput>
+                  <mat-error *ngFor="let error of errorMessage?.total_year">
+                    <mat-error *ngIf="basicForm?.get('total_year')?.hasError(error?.type)" class="alertMessage">
+                      <span class="errorMessage">{{error.message}}</span>
+                    </mat-error>
+                  </mat-error>
                 </mat-form-field>
               </div>
               <div class="formfield 8">
                 <label class="label">{{labelMessage.MONTH}}</label>
                 <mat-form-field appearance="outline" class="yearFormfield">
                   <input min="0" max="11" type="number" [placeholder]="labelMessage.MONTH" formControlName="total_month" matInput>
+                  <mat-error *ngFor="let error of errorMessage?.total_month">
+                    <mat-error *ngIf="basicForm?.get('total_month')?.hasError(error?.type)" class="alertMessage">
+                      <span class="errorMessage">{{error.message}}</span>
+                    </mat-error>
+                  </mat-error>
                 </mat-form-field>
               </div>
             </div>
@@ -88,12 +127,22 @@
                 <label class="label">{{labelMessage.YEAR}}</label>
                 <mat-form-field appearance="outline" class="yearFormfield">
                   <input min="0" type="number" [placeholder]="labelMessage.YEAR" formControlName="relevant_year" matInput>
+                  <mat-error *ngFor="let error of errorMessage?.total_year">
+                    <mat-error *ngIf="basicForm?.get('relevant_year')?.hasError(error?.type)" class="alertMessage">
+                      <span class="errorMessage">{{error.message}}</span>
+                    </mat-error>
+                  </mat-error>
                 </mat-form-field>
               </div>
               <div class="formfield 10">
                 <label class="label">{{labelMessage.MONTH}}</label>
                 <mat-form-field appearance="outline" class="yearFormfield">
                   <input min="0" max="11" type="number" [placeholder]="labelMessage.MONTH" formControlName="relevant_month" matInput>
+                  <mat-error *ngFor="let error of errorMessage?.total_month">
+                    <mat-error *ngIf="basicForm?.get('relevant_month')?.hasError(error?.type)" class="alertMessage">
+                      <span class="errorMessage">{{error.message}}</span>
+                    </mat-error>
+                  </mat-error>
                 </mat-form-field>
               </div>
             </div>
@@ -104,6 +153,11 @@
           <mat-form-field appearance="outline" class="addressFormfield">
             <textarea type="text" placeholder="Message" class="inputMessage" matInput cdkTextareaAutosize
               cdkAutosizeMinRows="4" cdkAutosizeMaxRows="7" [placeholder]="labelMessage.ADDRESS" formControlName="address"></textarea>
+              <mat-error *ngFor="let error of errorMessage?.address">
+                <mat-error *ngIf="basicForm?.get('address')?.hasError(error?.type)" class="alertMessage">
+                  <span class="errorMessage">{{error.message}}</span>
+                </mat-error>
+              </mat-error>
           </mat-form-field>
         </div>
         <div class="classyButton">

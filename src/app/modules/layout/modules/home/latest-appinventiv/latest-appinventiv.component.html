@@ -1,16 +1,53 @@
 <section>
-    <div class="heading">
-      <h3 class="header">{{headerValue.HEADER_VALUE}} </h3>
-    </div>
+  <div class="heading">
+    <h3 class="header">{{headerValue.HEADER_VALUE}} </h3>
+  </div>
+  <app-carousel [listToShow]="dataSource" [carouselConfiguration]="carouselConfig" [showList]="showList"></app-carousel>
+  <ng-container *ngFor="let member of listOfNewFamilyMembers">
+    <ng-template #listofDivs>
+      <div class="container">
+        <div class="appreciation">
+          <app-appreciation></app-appreciation>
+        </div>
+        <div class="awards">
+          <app-awards></app-awards>
+        </div>
+        <div class="birthday">
+          <app-birthday></app-birthday>
+        </div>
+        <div class="work">
+          <app-work-anniversary></app-work-anniversary>
+        </div>
+      </div>
+    </ng-template>
+  </ng-container>
+  <!-- <ngu-carousel #myCarousel [inputs]="carouselConfig">
     <div class="container">
-      <div class="awards">
-        <app-awards></app-awards>
-      </div>
-      <div class="birthday">
-        <app-birthday></app-birthday>
-      </div>
-      <div class="work">
-        <app-work-anniversary></app-work-anniversary>
-      </div>
+      <ngu-item NguCarouselItem class="bannerStyle">
+        <div class="appreciation">
+          <app-appreciation></app-appreciation>
+        </div>
+      </ngu-item>
+
+      <ngu-item NguCarouselItem class="bannerStyle">
+        <div class="awards">
+          <app-awards></app-awards>
+        </div>
+      </ngu-item>
+
+      <ngu-item NguCarouselItem class="bannerStyle">
+        <div class="birthday">
+          <app-birthday></app-birthday>
+        </div>
+      </ngu-item>
+      <ngu-item NguCarouselItem class="bannerStyle">
+        <div class="work">
+          <app-work-anniversary></app-work-anniversary>
+        </div>
+      </ngu-item>
     </div>
+    <ul class="myPoint" NguCarouselPoint *ngIf="this.showList">
+      <li  *ngFor="let j of myCarousel.pointNumbers; let i=index" [class.active]="j==myCarousel.activePoint" (click)="myCarousel.moveTo(j)"></li>
+    </ul>
+  </ngu-carousel> -->
 </section>
