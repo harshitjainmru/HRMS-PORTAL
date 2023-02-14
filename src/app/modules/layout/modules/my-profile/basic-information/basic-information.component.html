@@ -54,7 +54,7 @@
             </mat-form-field>-->
           <!-- </div> -->
           <span>
-            <app-dropdown [label]="labelMessage.GENDER" [Data]="genderValue"></app-dropdown>
+            <app-dropdown [label]="labelMessage.GENDER" [myControlName]="basicForm.controls.gender" [Data]="genderValue"></app-dropdown>
             <!-- <mat-error *ngFor="let error of errorMessage?.firstName">
               <mat-error *ngIf="basicForm?.get('firstName')?.hasError(error?.type)" class="alertMessage">
                 <span class="errorMessage">{{error.message}}</span>

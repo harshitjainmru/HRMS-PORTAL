@@ -9,7 +9,7 @@ import { map, startWith } from 'rxjs/operators';
   styleUrls: ['./dropdown.component.scss']
 })
 export class DropdownComponent implements OnInit {
-
+  @Input() myControlName!:any;
   @Input() label!: any;
   @Input() Data!:any;
   @Input() CSSClass!:any;

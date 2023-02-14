@@ -187,14 +187,40 @@ export const WORK_ANNIVERSARY_VALUE = {
   APPIVENTIV_TEXT: 'Appinventiv',
 };
 
-export const APPRECIATION_DATA: IAPPRECIATIONDATA[] =[
-  { HEADER_VALUE: 'Appreciation for UStandBy',TEXT:'Hello All,',MESSAGE:`With immense pleasure, we would like to take this moment and appreciate Ustandby Team. The team demonstrated outstanding performance and we are happy to announce that the client has appreciated the team's dedication and commitment due to which the project was a great success.`, GREET:'Kudos to the team!',  BUTTON:'View More'},
-  { HEADER_VALUE: 'Appreciation| ABP NEWS', DEAR_VALUE: 'Dear',TEXT:' Aashima Anand,',MESSAGE:`We would like to congratulate you all on making ABP live. We are aware of the hard work put in by each team member because of which the client is very satisfied, and we are working on future phases of the application and even other projects too. The client is committed to make this application a big success, and it gives me great joy to see that we share the same passion. `, GREET:'Thank you for all the hard work and commitment. Keep up the excellent work.',  BUTTON:'View More'},
-  { HEADER_VALUE: 'Appreciation for UStandBy',TEXT:'Hello All,',MESSAGE:`With immense pleasure, we would like to take this moment and appreciate Ustandby Team. The team demonstrated outstanding performance and we are happy to announce that the client has appreciated the team's dedication and commitment due to which the project was a great success.`, GREET:'Kudos to the team!',  BUTTON:'View More'},
-  { HEADER_VALUE: 'Appreciation| ABP NEWS', DEAR_VALUE: 'Dear',TEXT:' Aashima Anand,',MESSAGE:`We would like to congratulate you all on making ABP live. We are aware of the hard work put in by each team member because of which the client is very satisfied, and we are working on future phases of the application and even other projects too. The client is committed to make this application a big success, and it gives me great joy to see that we share the same passion. `, GREET:'Thank you for all the hard work and commitment. Keep up the excellent work.',  BUTTON:'View More'},
-
-
-]
+export const APPRECIATION_DATA: IAPPRECIATIONDATA[] = [
+  {
+    HEADER_VALUE: 'Appreciation for UStandBy',
+    TEXT: 'Hello All,',
+    MESSAGE: `With immense pleasure, we would like to take this moment and appreciate Ustandby Team. The team demonstrated outstanding performance and we are happy to announce that the client has appreciated the team's dedication and commitment due to which the project was a great success.`,
+    GREET: 'Kudos to the team!',
+    BUTTON: 'View More',
+  },
+  {
+    HEADER_VALUE: 'Appreciation| ABP NEWS',
+    DEAR_VALUE: 'Dear',
+    TEXT: ' Aashima Anand,',
+    MESSAGE: `We would like to congratulate you all on making ABP live. We are aware of the hard work put in by each team member because of which the client is very satisfied, and we are working on future phases of the application and even other projects too. The client is committed to make this application a big success, and it gives me great joy to see that we share the same passion. `,
+    GREET:
+      'Thank you for all the hard work and commitment. Keep up the excellent work.',
+    BUTTON: 'View More',
+  },
+  {
+    HEADER_VALUE: 'Appreciation for UStandBy',
+    TEXT: 'Hello All,',
+    MESSAGE: `With immense pleasure, we would like to take this moment and appreciate Ustandby Team. The team demonstrated outstanding performance and we are happy to announce that the client has appreciated the team's dedication and commitment due to which the project was a great success.`,
+    GREET: 'Kudos to the team!',
+    BUTTON: 'View More',
+  },
+  {
+    HEADER_VALUE: 'Appreciation| ABP NEWS',
+    DEAR_VALUE: 'Dear',
+    TEXT: ' Aashima Anand,',
+    MESSAGE: `We would like to congratulate you all on making ABP live. We are aware of the hard work put in by each team member because of which the client is very satisfied, and we are working on future phases of the application and even other projects too. The client is committed to make this application a big success, and it gives me great joy to see that we share the same passion. `,
+    GREET:
+      'Thank you for all the hard work and commitment. Keep up the excellent work.',
+    BUTTON: 'View More',
+  },
+];
 export const AWARDS_EMP_IMAGE_DATA: IAWARDDATA[] = [
   {
     IMAGE: '/assets/images/.jpg',
@@ -303,17 +329,36 @@ export const REFERRAL_DATA: IREFERRAL[] = [
     toYear: 'last',
   },
 ];
-export const GALLER_VALUE ={
-  HEADER:'Appinventiv Gallery',
-}
+export const GALLER_VALUE = {
+  HEADER: 'Appinventiv Gallery',
+};
 
-export const Gallery_DATA :IGALLERYDATA[]=[
-  {IMAGE:'/assets/gallery/award_1674822333816.jpg',HEADING:'Republic Day-2023',NUM:5,BUTTON:'View'},
-  {IMAGE:'/assets/gallery/award_1672378171227.jpg',HEADING:'Best Place To Work Award',NUM:5,BUTTON:'View'},
-  {IMAGE:'/assets/gallery/award_1672292016846.jpg',HEADING:'Christmas Celebration -2022',NUM:5,BUTTON:'View'},
-  {IMAGE:'/assets/gallery/award_166719426194.jpeg',HEADING:'Diwali Party -2022',NUM:5,BUTTON:'View'},
-
-]
+export const Gallery_DATA: IGALLERYDATA[] = [
+  {
+    IMAGE: '/assets/gallery/award_1674822333816.jpg',
+    HEADING: 'Republic Day-2023',
+    NUM: 5,
+    BUTTON: 'View',
+  },
+  {
+    IMAGE: '/assets/gallery/award_1672378171227.jpg',
+    HEADING: 'Best Place To Work Award',
+    NUM: 5,
+    BUTTON: 'View',
+  },
+  {
+    IMAGE: '/assets/gallery/award_1672292016846.jpg',
+    HEADING: 'Christmas Celebration -2022',
+    NUM: 5,
+    BUTTON: 'View',
+  },
+  {
+    IMAGE: '/assets/gallery/award_166719426194.jpeg',
+    HEADING: 'Diwali Party -2022',
+    NUM: 5,
+    BUTTON: 'View',
+  },
+];
 
 export const BASIC_INFORMATION = {
   BUTTON: 'Save',
@@ -358,32 +403,31 @@ export const FORM_LABEL = {
   PLACEHOLDER_TO: 'to',
 };
 
-export const GENDER_INPUT_DROPDOWN= [
-  'Male','Female' ,
-];
+export const GENDER_INPUT_DROPDOWN = ['Male', 'Female'];
 
 export const MARITAL_DROPDOWN = [
-  'Single', 'Married', 'Widowed', 'Divorced or Separated',
+  'Single',
+  'Married',
+  'Widowed',
+  'Divorced or Separated',
 ];
-export const EDUCATION_DROPDOWN= [
-   'High School Diploma / GED' ,
-    'B.Tech' ,
-   'M.Tech',
-   'BCA',
-   'MCA',
-   'BBA',
-   'MBA',
-   'B.Sc.',
-   'M.Sc.',
-   'BA',
-   'MA',
-   'Phd',
-   'Diloma',
-   'B.Sc Animation & Film Making',
+export const EDUCATION_DROPDOWN = [
+  'High School Diploma / GED',
+  'B.Tech',
+  'M.Tech',
+  'BCA',
+  'MCA',
+  'BBA',
+  'MBA',
+  'B.Sc.',
+  'M.Sc.',
+  'BA',
+  'MA',
+  'Phd',
+  'Diloma',
+  'B.Sc Animation & Film Making',
 ];
-export const LANGUAGE_DROPDOWN = [
-  'English','Hindi',
-];
+export const LANGUAGE_DROPDOWN = ['English', 'Hindi'];
 
 export const SHIFT_VALUE = {
   DATE_OF_JOIN_VALUE: 'Date of Joining',
@@ -502,3 +546,26 @@ export const DIRECTORY_EMPLOYEE_DATA: IDIRECTORY_DATA[] = [
     BIRTH_MONTH: 'Jul',
   },
 ];
+
+export const ENTREPRENEURSHIP_VALUE = {
+  HEADER_VALUE: 'Objective :',
+  IDEA_MESSAGE:
+    'Share your innovative startup ideas with us, get funding from us and grow on your own. We want to give the young and brilliant ideas some shape and nurture them to the fullest to become potential competitors in the market. Validate your idea, learn and grow from here.',
+  ANGEL_INVESTOR_HEADLINE:'Story about our Angel Investor (AI)',
+  NAME:'Saurabh Singh',
+  BUTTON_VALUE:'Share Your Idea',
+  FOUNDED_MESSAGE:`Founded passion driven niche startups where he served many Top Fortune companies & leading brands in making their Mobile Strategy successful as a CEO & Founder of 250+ people company AppStudioz "India's leading mobile app development company" ​(★Acquired in 2014). He also Co-founded TechAhead in 2009 & was founding partner at C&B Electronics.`
+};
+
+export const LIST_DATA1 = [
+  'Followed by @NarendraModi Prime Minister of India | @BarackObama Ex-President US | @PiyushGoyal Railway Minister India on Twitter',
+  `Listed on INDIA's Top 25 Most Inspiring Startup Stories of 2013 by YourStory`,
+  'The Companies he has led have created over 4,000 jobs during his leadership tenure.',
+  `In Past, He has built successful companies from startup (Bootstrapped) to multi-million dollar in revenue.`
+]
+export const LIST_DATA2 = [
+  '16+ years of professional experience of which 11+ years are as Founding Partner of lean startups across diverse domains with an entrepreneurial drive. Always looking to innovate by bringing smart people together.',
+  'Passionate for building and scaling businesses',
+  'Strong experience in working in ambiguity to solve complex problems. Skilled at designing and executing successful innovative strategies.',
+  `Extensive experience in developing many successful products for the entire spectrum of users, from conceptualising the business ideas to preparing product feature road map, from consumer facing front-end to business facing back-end, designing & wire framing with unmatched track record of Success & Performance.`
+]

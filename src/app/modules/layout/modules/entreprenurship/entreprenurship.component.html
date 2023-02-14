@@ -1,6 +1,35 @@
-<div class="image1">
-  <img src="../../../../../assets/gallery/hero-media-illustration-light.svg">
-</div>
-<div class="image2">
-  <img class="imagecard" src="../../../../../assets/gallery/start.png">
-</div>
+<section>
+  <div class="container">
+    <div class="left-content">
+      <h3 class="header">{{uimessage.HEADER_VALUE}}</h3>
+      <p class="idea-message">{{uimessage.IDEA_MESSAGE}}</p>
+      <div class="investor">
+        <h4 class="angel-investor">{{uimessage.ANGEL_INVESTOR_HEADLINE}}</h4>
+        <h1 class="name">{{uimessage.NAME}}</h1>
+      </div>
+      <div class="list 1">
+        <ul *ngFor="let item of list1Data">
+          <li class="list-item">{{item}}</li>
+        </ul>
+      </div>
+      <span class="founded-detail">
+        <p class="message">{{uimessage.FOUNDED_MESSAGE}}</p>
+      </span>
+      <div class="list 1">
+        <ul *ngFor="let item of list2Data">
+          <li class="list-item">{{item}}</li>
+        </ul>
+      </div>
+        <button class="classyButton" [routerLink]="['ABS_LAYOUT_EXPLORE' | absoluteRouting]">{{uimessage.BUTTON_VALUE}}</button>
+    </div>
+    <div class="right-content">
+      <div class="image1">
+        <img src="../../../../../assets/gallery/hero-media-illustration-light.svg">
+      </div>
+      <div class="image2">
+        <img class="imagecard" src="../../../../../assets/gallery/start.png">
+      </div>
+    </div>
+  </div>
+  <router-outlet></router-outlet>
+</section>

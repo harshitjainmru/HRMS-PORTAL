@@ -12,4 +12,6 @@ export const QUALIFICATION = 'qualification';
 export const SHIFT = 'shift';
 export const CHANGE_PASSWORD = 'change-password';
 export const APPRAISAL = 'appraisal';
+export const STARTUP = 'startup';
+export const EXPLORE = 'add_pitch'
 

@@ -16,8 +16,8 @@
   </mat-list-item>
   <ng-container *ngIf="navlist.options">
     <div class="submenu" [ngClass]="{'expanded' : showSubmenu}" *ngIf="showSubmenu && isShowing">
-      <span *ngFor="let item of navlist.options">
-        <mat-list-item>
+      <span *ngFor="let item of navlist.options" >
+        <mat-list-item [routerLink]="item.routerLink"  [ngClass]="{'disable':!item.isActive}" routerLinkActive="active">
           <span class="sublist-content">
             <mat-icon class="sidenav-icon">{{item.subicon}}</mat-icon>
             <span class="sidenav-label">{{item.subTitle}}</span>

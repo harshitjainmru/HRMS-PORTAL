@@ -2,6 +2,7 @@ import { RoutesRecognized } from '@angular/router';
 import {
   ABS_LAYOUT_DIRECTORY,
   ABS_LAYOUT_ENTREPRENURSHIP,
+  ABS_LAYOUT_EXPLORE,
   ABS_LAYOUT_HOME,
   ABS_LAYOUT_MYPROFILE,
 } from './absolute-routes';
@@ -10,10 +11,10 @@ import { LAYOUT, SIDENAV } from './text';
 export interface IsideNav {
   title?: string;
   icon?: string;
-  isActive?:any;
+  isActive?: any;
   options?: Array<any>;
   routerLink?: string;
-  rightIcon?:string
+  rightIcon?: string;
 }
 
 export const sideNavList = [
@@ -28,24 +29,29 @@ export const sideNavList = [
     icon: 'fas fa-user',
     isActive: true,
     routerLink: ABS_LAYOUT_MYPROFILE.path,
-    rightIcon:'fas fa-certificate'
+    rightIcon: 'fas fa-certificate',
   },
   {
     title: SIDENAV.Directory_LABEL,
     icon: 'fas fa-book',
     isActive: true,
     routerLink: ABS_LAYOUT_DIRECTORY.path,
-    rightIcon:'fas fa-certificate'
-
+    rightIcon: 'fas fa-certificate',
   },
   {
     title: SIDENAV.Enterpreneurship_Program_LABEL,
     icon: 'fas fa-money-check',
-    options: [{ subTitle: 'Explore', subicon: 'horizontal_rule' }],
+    options: [
+      {
+        subTitle: 'Explore',
+        subicon: 'horizontal_rule',
+        routerLink: ABS_LAYOUT_EXPLORE.fullUrl,
+        isActive: true,
+      },
+    ],
     isActive: true,
-    routerLink:ABS_LAYOUT_ENTREPRENURSHIP.path,
-    rightIcon:'fas fa-certificate'
-
+    routerLink: ABS_LAYOUT_ENTREPRENURSHIP.path,
+    rightIcon: 'fas fa-certificate',
   },
   {
     title: SIDENAV.My_Links_LABEL,
@@ -115,7 +121,11 @@ export const sideNavList = [
     options: [],
     isActive: true,
   },
-  { title: SIDENAV.Projects_LABEL, icon: 'fa-brands fa-buffer', isActive: true },
+  {
+    title: SIDENAV.Projects_LABEL,
+    icon: 'fa-brands fa-buffer',
+    isActive: true,
+  },
   {
     title: SIDENAV.Expense_LABEL,
     icon: 'fas fa-hand-holding-usd',
@@ -135,9 +145,7 @@ export const sideNavList = [
 ];
 
 export const profileMenuData = [
-  { title: LAYOUT.HEADER_MENU_LABEL1, icon: 'person_filled'},
+  { title: LAYOUT.HEADER_MENU_LABEL1, icon: 'person_filled' },
   { title: LAYOUT.HEADER_MENU_LABEL2, icon: 'key' },
   { title: LAYOUT.HEADER_MENU_LABEL3, icon: 'iconut' },
 ];
-
-
