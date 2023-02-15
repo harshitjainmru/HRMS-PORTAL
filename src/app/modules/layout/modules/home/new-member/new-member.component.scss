@@ -1,6 +1,6 @@
+@import "../../../../../scss/mixins.scss";
 section {
   .card {
-
     .header {
       .text {
         font-size: 20px;
@@ -19,12 +19,12 @@ section {
       align-items: center;
       justify-content: center;
       margin: 0 20px;
-      .content{
-
+      .content {
         display: flex;
         align-items: center;
-        flex-direction: column;
         justify-content: center;
+        flex-direction: column;
+
         figure {
           .defaultImage {
             width: 120px;
@@ -32,9 +32,23 @@ section {
             border-radius: 50%;
           }
         }
-        .name {
-        }
       }
+    }
+  }
+}
+@media (min-width:1025px) and (max-width:1219px){
+  section{
+    .img-card{
+      height: 380px;
+    margin: 0px;
+    }
+  }
+}
+@media (min-width:700px) and (max-width:1024px){
+  section{
+    .img-card{
+      height: 300px;
+    margin: 0px;
     }
   }
 }

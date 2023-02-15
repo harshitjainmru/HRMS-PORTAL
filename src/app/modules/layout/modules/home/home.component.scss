@@ -39,7 +39,7 @@ $font-size: 24px;
     @include gridbox();
     gap: 20px;
     grid-template-columns: auto 26%;
-    margin: 20px 0px ;
+    margin: 20px 0px;
     .mat-card {
       padding: 0px !important;
     }
@@ -62,15 +62,130 @@ $font-size: 24px;
       border: 1px solid $border-color;
     }
   }
-  .latest-news{
-    margin: 20px 0px ;
-    .program{
+  .latest-news {
+    margin: 20px 0px;
+    .program {
       padding: 0px !important;
     }
   }
-  .gallery{
-    .program-gallery{
-      padding:0px !important;
+  .gallery {
+    .program-gallery {
+      padding: 0px !important;
+    }
+  }
+}
+
+@media (min-width: 1220px) and (max-width: 1780px) {
+  .container {
+    .joining {
+      max-width: 300px !important;
+    }
+    .middle-container {
+      grid-template-columns: auto;
+      .program {
+        width: 840px;
+      }
+    }
+    .new-member {
+      width: 800px;
+    }
+  }
+}
+@media (min-width: 1025px) and (max-width: 1219px) {
+  .container {
+    .joining {
+      max-width: 300px !important;
+    }
+    .middle-container {
+      grid-template-columns: auto;
+      .program {
+        width: 650px;
+      }
+    }
+    .new-member {
+      width: 600px;
+    }
+  }
+}
+@media (min-width: 700px) and (max-width: 1024px) {
+  .container {
+    .joining {
+      max-width: 300px !important;
+    }
+    .middle-container {
+      grid-template-columns: auto;
+      .program {
+        width: 805px;
+      }
+    }
+    .new-member {
+      width: 770px;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    .joining {
+      max-width: 300px !important;
+    }
+    .middle-container {
+      grid-template-columns: auto;
+      .program {
+        width: 660px;
+      }
+    }
+    .new-member {
+      width: 625px;
+    }
+  }
+}
+@media (max-width: 1280px) {
+  .container {
+    .joining {
+      max-width: 300px !important;
+    }
+    .middle-container {
+      grid-template-columns: auto;
+      .program {
+        width: 930px;
+      }
+    }
+    .new-member {
+      width: 890px;
+    }
+  }
+}
+@media (min-width: 520px) and (max-width: 699px) {
+  .container {
+    .joining {
+      max-width: 300px !important;
+    }
+    .middle-container {
+      grid-template-columns: auto;
+      .program {
+        flex-direction: column;
+        width: 450px;
+      }
+    }
+    .new-member {
+      width: 400px;
+    }
+  }
+}
+@media (min-width: 300px) and (max-width: 519px) {
+  .container {
+    .joining {
+      max-width: 300px !important;
+    }
+    .middle-container {
+      grid-template-columns: auto;
+      .program {
+        flex-direction: column;
+        width: 315px;
+      }
+    }
+    .new-member {
+      width: 275px;
     }
   }
 }

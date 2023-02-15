@@ -16,7 +16,7 @@ showList: boolean = true;
   ElementRef<HTMLDivElement>
 >;
 carouselConfig: NguCarouselConfig = {
-  grid: { xs: 1, sm: 3, md: 3, lg: 3, all: 0 },
+  grid: { xs: 1, sm: 1, md:1, lg: 3, all: 0 },
   load: 1,
   interval: { timing: 4000, initialDelay: 1000 },
   loop: true,

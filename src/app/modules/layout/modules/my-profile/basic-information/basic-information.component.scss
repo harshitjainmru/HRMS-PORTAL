@@ -6,6 +6,7 @@ section {
   .basic-card {
     padding: 0px !important;
     background-color: $button-text-color;
+    border-radius: 10px;
     .header {
       .header-text {
         color: $header-text-color;

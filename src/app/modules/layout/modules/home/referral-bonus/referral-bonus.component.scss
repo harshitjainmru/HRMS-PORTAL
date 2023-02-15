@@ -32,3 +32,43 @@ section {
     }
   }
 }
+@media (min-width: 1220px) and (max-width: 1570px) {
+  section {
+    .referral-list {
+      grid-template-columns: auto;
+      .list-data {
+        // width: 50vh;
+      }
+    }
+  }
+}
+@media (min-width: 1025px) and (max-width: 1219px) {
+  section {
+    .referral-list {
+      grid-template-columns: auto;
+      .list-data {
+        // width: 50vh;
+      }
+    }
+  }
+}
+@media (min-width: 700px) and (max-width: 1024px) {
+  section {
+    .referral-list {
+      grid-template-columns: auto;
+      .list-data {
+        // width: 50vh;
+      }
+    }
+  }
+}
+@media (min-width: 300px) and (max-width: 699px) {
+  section {
+    .referral-list {
+      grid-template-columns: auto;
+      .list-data {
+        width: 90%;
+      }
+    }
+  }
+}

@@ -77,3 +77,17 @@
     }
   }
 }
+@media (min-width: 300px) and (max-width: 519px) {
+  .buttonGroup{
+    flex-direction: column;
+    padding: 0px;
+    .button-view {
+    //  padding: 0px !important;
+     width: 130px !important;
+    }
+    .button-refer {
+      // padding: 0px !important;
+     width: 130px !important;
+    }
+  }
+}
