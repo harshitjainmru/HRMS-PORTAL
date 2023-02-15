@@ -1,1 +1,63 @@
-<p>explore works!</p>
+<section>
+  <div class="header">
+    <h3 class="heading">{{uiText.HEADER}}</h3>
+    <div class="buttonGroup">
+      <button class="cancelButton">{{uiText.CANCEL_BUTTON}}</button>
+      <button class="classyButton">{{uiText.SUBMIT_BUTTON}}</button>
+    </div>
+  </div>
+  <div class="detail-card">
+    <div class="hash-heading">
+      <h3 class="mydetails">{{uiText.MY_DETAIL}}</h3>
+    </div>
+    <div class="form">
+      <form>
+        <div class="formfield 2">
+          <label class="label">{{uiText.NAME_LABEL}}</label>
+          <mat-form-field appearance="outline">
+            <input value="Harshit Kumar Jain" matInput disabled>
+          </mat-form-field>
+        </div>
+        <div class="inputs">
+          <div class="formfield 2">
+            <label class="label">{{uiText.ID_LABEL}}</label>
+            <mat-form-field appearance="outline" class="idFormField personalDetail">
+              <input value="AI1611" matInput disabled>
+            </mat-form-field>
+          </div>
+          <div class="formfield 2">
+            <label class="label">{{uiText.DOB_LABEL}}</label>
+            <mat-form-field appearance="outline" class="dobFormField personalDetail">
+              <input value="2000-04-07" matInput disabled>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="hash-heading">
+          <h3 class="mydetails">{{uiText.PITCH_DETAIL}}</h3>
+        </div>
+        <div class="formfield 2">
+          <label class="label">{{uiText.PITCH_LABEL}}</label>
+          <mat-form-field appearance="outline">
+            <input  matInput>
+          </mat-form-field>
+        </div>
+        <span>
+          <app-dropdown [label]="uiText.INDUSTRY_LABEL" [labelStyle]="'labelStyle'" [Data]="industryDropdownValue"></app-dropdown>
+        </span>
+        <span>
+          <app-dropdown [label]="uiText.TYPE_LABEL" [labelStyle]="'labelStyle'" [Data]="typeDropdownValue"></app-dropdown>
+        </span>
+        <div class="formfield 2">
+          <label class="label">{{uiText.IDEA_LABEL}}</label>
+
+        </div>
+        <div class="formfield 2">
+          <label class="label">{{uiText.PRESENTATION_LABEL}}</label>
+          <div class="input-file">
+            <input type="file">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

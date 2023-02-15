@@ -26,9 +26,8 @@ section {
           @include flexbox();
           flex-direction: column;
         }
-        .mat-form-field{
+        .mat-form-field {
           width: 369px;
-
         }
         .increaseFormfield {
           width: 369px;
@@ -49,11 +48,10 @@ section {
           .mat-select-arrow {
             width: 0;
             height: 0;
-            border-left: 10px solid transparent;
-            border-right: 10px solid transparent;
-            border-top: 11px solid;
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-top: 6px solid;
             margin: 0 4px;
-            /* transform: rotate(-90deg); */
           }
         }
 
@@ -81,9 +79,8 @@ section {
           @include flexbox();
           flex-direction: column;
           margin-top: 10px;
-          .addressFormfield{
-            width: auto
-
+          .addressFormfield {
+            width: auto;
           }
 
           .inputMessage {
@@ -108,7 +105,7 @@ section {
     .basic-card {
       .content {
         .form {
-          .mat-form-field{
+          .mat-form-field {
             width: 369px;
           }
           .increaseFormfield {
@@ -134,7 +131,7 @@ section {
     .basic-card {
       .content {
         .form {
-          .mat-form-field{
+          .mat-form-field {
             width: auto;
           }
           .increaseFormfield {
@@ -160,7 +157,7 @@ section {
     .basic-card {
       .content {
         .form {
-          .mat-form-field{
+          .mat-form-field {
             width: 100px;
           }
           .increaseFormfield {
@@ -178,6 +175,12 @@ section {
           }
         }
       }
+    }
+  }
+  ::ng-deep {
+    .mat-select-panel {
+      width: 200px !important;
+      margin: 0rem !important;
     }
   }
 }

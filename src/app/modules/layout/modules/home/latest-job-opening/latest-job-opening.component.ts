@@ -7,7 +7,9 @@ import {
   TemplateRef,
   ViewChildren,
 } from '@angular/core';
+import { Router } from '@angular/router';
 import { NguCarouselConfig } from '@ngu/carousel';
+import { ABS_LAYOUT_JOB_OPENING } from 'src/app/constants/absolute-routes';
 import { JOB_OPENING, LATEST_JOB_OPENING } from 'src/app/constants/text';
 
 @Component({
@@ -31,12 +33,15 @@ export class LatestJobOpeningComponent implements OnInit, AfterViewInit {
     touch: true,
     velocity: 0.2,
   };
-  constructor() {}
+  constructor(private _route: Router) {}
 
   ngOnInit(): void {}
   ngAfterViewInit(): void {
     this.listToShow.forEach((item: any) => {
       this.dataSource.push(item);
     });
+  }
+  routeToJobOpening(){
+    this._route.navigate([ABS_LAYOUT_JOB_OPENING.fullUrl])
   }
 }

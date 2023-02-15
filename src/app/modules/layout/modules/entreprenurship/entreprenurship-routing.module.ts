@@ -4,14 +4,8 @@ import { ABS_LAYOUT_EXPLORE } from 'src/app/constants/absolute-routes';
 import { EntreprenurshipComponent } from './entreprenurship.component';
 
 const routes: Routes = [
-  {path:'',component:EntreprenurshipComponent,children:[
-    {
-      path: ABS_LAYOUT_EXPLORE.path,
-      loadChildren: () =>
-        import('./explore/explore.module').then((m) => m.ExploreModule),
-    },
-  ]}
-];
+  {path:'',component:EntreprenurshipComponent,pathMatch:'full'},
+  ]
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

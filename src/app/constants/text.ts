@@ -59,6 +59,11 @@ export const SIDENAV = {
   Announcements_LABEL: 'Announcements',
   Travels_LABEL: 'Travels',
   Logout_LABEL: 'Logout',
+  Insurance_LABEL:'Insurance Verification Details',
+  CALENDER_LABEL:'Holiday Calendar 2023 ',
+  POLICY_LABEL:'Policy Documents',
+  JOB_OPENING_LABEL:'Job Openings'
+
 };
 
 export const LAYOUT = {
@@ -568,4 +573,38 @@ export const LIST_DATA2 = [
   'Passionate for building and scaling businesses',
   'Strong experience in working in ambiguity to solve complex problems. Skilled at designing and executing successful innovative strategies.',
   `Extensive experience in developing many successful products for the entire spectrum of users, from conceptualising the business ideas to preparing product feature road map, from consumer facing front-end to business facing back-end, designing & wire framing with unmatched track record of Success & Performance.`
+]
+
+export const EXPOLRE_VALUE ={
+  HEADER:'Add Pitch',
+  CANCEL_BUTTON:'Cancel',
+  SUBMIT_BUTTON:'Submit',
+  MY_DETAIL:'My Details',
+  PITCH_DETAIL:'Pitch Details',
+  NAME_LABEL:'Name',
+  ID_LABEL:'Employee Id',
+  DOB_LABEL:'Date of birth',
+  PITCH_LABEL:'Pitch Title',
+  INDUSTRY_LABEL:'Industry',
+  TYPE_LABEL:'Type',
+  IDEA_LABEL:'Idea - (Share your idea in brief)',
+  PRESENTATION_LABEL:'Presentation - (Share your detailed presentation on the idea) (ppt,pdf)'
+}
+
+export const INDUSTRY_DATA=[
+  'Select Industry',
+  'Industry Domain',
+  'Advertising',
+  'Agriculture',
+  'Analytics',
+  'Education',
+  'Engineering',
+  'Food',
+  'Healthcare',
+  'Hospitality'
+]
+
+export const TYPE_DATA=[
+  'Technical',
+  'Non-Technical'
 ]

@@ -67,14 +67,17 @@ export class QualificationComponent implements OnInit {
       return res;
     });
   }
+  get qualificationFormControl(){
+    return this.qualificationForm.controls;
+  }
 
   createForm() {
     this.qualificationForm = this._formBuilder.group({
       school: this._formService.getControl('school'),
-      educationLevel: this._formService.getControl('educationLevel'),
+      educationLevel: this._formService.getControl('educationLevel',true,this.educationDropdown[0]),
       fromTime: this._formService.getControl('fromTime'),
       toTime: this._formService.getControl('toTime'),
-      language: this._formService.getControl('language'),
+      language: this._formService.getControl('language',true,this.languageDropdown[0]),
       professionalCourses: this._formService.getControl('professionalCourses'),
       description: this._formService.getControl('description'),
     });

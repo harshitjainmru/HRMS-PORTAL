@@ -14,6 +14,7 @@ import { BirthdayComponent } from './latest-appinventiv/birthday/birthday.compon
 import { WorkAnniversaryComponent } from './latest-appinventiv/work-anniversary/work-anniversary.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { AppreciationComponent } from './latest-appinventiv/appreciation/appreciation.component';
+import { AbsoluteRoutingModule } from 'src/app/pipes/absolute-routing/absolute-routing.module';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { AppreciationComponent } from './latest-appinventiv/appreciation/appreci
     HomeRoutingModule,
     MatCardModule,
     MatButtonModule,
-    CarouselModule
+    CarouselModule,
+    AbsoluteRoutingModule
   ]
 })
 export class HomeModule { }

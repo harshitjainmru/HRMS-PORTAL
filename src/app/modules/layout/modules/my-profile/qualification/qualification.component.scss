@@ -25,29 +25,6 @@ section {
     }
   }
 }
-.filter {
-  width: 90% !important;
-  padding: 10px 12px !important;
-  overflow: hidden;
-}
-
-// @media (min-width:1720px){
-//   section {
-//     .basic-card {
-//       .content {
-//         .form {
-//           .inputs {
-//             .formfield {
-//               .increaseFormfield {
-//                 width: 500px;
-//               }
-//             }
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
 @media (min-width: 1025px) and (max-width: 1320px) {
   section {
     .basic-card {
@@ -65,7 +42,7 @@ section {
     }
   }
 }
-@media (min-width: 320px) and (max-width:660px) {
+@media (min-width: 320px) and (max-width: 660px) {
   section {
     .basic-card {
       .content {
@@ -82,7 +59,7 @@ section {
     }
   }
 }
-@media (min-width: 150px) and (max-width:320px) {
+@media (min-width: 150px) and (max-width: 320px) {
   section {
     .basic-card {
       .content {

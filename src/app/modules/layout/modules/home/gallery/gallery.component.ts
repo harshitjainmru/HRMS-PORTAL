@@ -22,16 +22,25 @@ carouselConfig: NguCarouselConfig = {
   loop: true,
   touch: true,
   velocity: 0.2,
+  point: {
+    visible: true,
+    hideOnSingleSlide: true
+  }
 };
 dataSource: any = [];
 
 constructor() {}
 
-ngOnInit(): void {}
+ngOnInit(): void {
+
+}
 ngAfterViewInit(): void {
-  this.listToShow.forEach((item: any) => {
-    this.dataSource.push(item);
-  });
+  setTimeout(() => {
+    this.listToShow.forEach((item: any) => {
+      this.dataSource.push(item);
+    });
+  }, 500);
+
 }
 
 }

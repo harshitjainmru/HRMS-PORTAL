@@ -1,7 +1,7 @@
 
 export const validationMessage =
 {
-
+  required:"This field is required",
   email:[
     {type:'required',message:'Email is required'},
     {type:'pattern',message:'Enter a valid email'},

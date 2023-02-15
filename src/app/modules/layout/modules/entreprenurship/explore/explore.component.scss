@@ -1,0 +1,99 @@
+@import "src/app/scss/_var.scss";
+@import "src/app/scss/mixins.scss";
+@import "src/app/scss/_job-opening-button.scss";
+
+@mixin buttonSize(){
+  padding:0 25px;
+  height: 40px;
+}
+section {
+  margin: 1rem 3rem;
+  .header {
+    @include flexbox();
+    justify-content: space-between;
+    .heading {
+      color: $directory-header-color;
+      font-size: 24px;
+      font-weight: 500;
+      margin-top: 5px
+    }
+    .buttonGroup {
+      @include flexbox();
+      gap: 20px;
+      .cancelButton {
+        @include buttonTransparent();
+        border-radius: 10px;
+        background: $cancel-button-color;
+        border: 1.5px solid rgba(150, 165, 184, 0.5);
+       @include buttonSize();
+      }
+      .classyButton {
+        @include buttonSize();
+
+
+      }
+    }
+  }
+  .detail-card {
+    background-color: $button-text-color;
+    padding: 1rem;
+    margin: 2rem 0;
+    .hash-heading {
+      position: relative;
+      @include flexbox();
+      width: 100%;
+      .mydetails {
+        font-size: 24px;
+        color: $award-text-color;
+        font-weight: 500;
+        line-height: 1.5;
+        padding: 4px 5px;
+        background-color: $button-text-color;
+        z-index: 1;
+        margin: 0px 10px;
+      }
+      &::after {
+        content: "";
+        width: 100%;
+        bottom: 20px;
+        border-top: 1px dashed $directory-font-color;
+        position: absolute;
+        transform: translateY(-50%);
+      }
+    }
+    .form{
+      .formfield{
+        display: flex;
+        flex-direction: column;
+         .label{
+          font-family: "Lato";
+          font-size: 14px;
+          color: $directory-font-color;
+          font-weight: 500;
+          line-height: 1.4;
+          margin-bottom: 4px;
+        }
+        .input-file{
+          border: 0.5px solid $formField-border-color;
+          padding: 14px;
+          border-radius: 5px;
+
+        }
+        .personalDetail{
+          width: 725px;
+        }
+        ::ng-deep .mat-form-field-appearance-outline.mat-form-field-disabled .mat-form-field-outline{
+          background-color: #F8F8F8 !important;
+          box-shadow: 0px 4px 8px rgb(44 39 56 / 4%) !important;
+          border: 0.5px solid $formField-border-color;
+          border-radius: 5px;
+        }
+      }
+      .inputs{
+        display: flex;
+        gap: 20px;
+
+      }
+    }
+  }
+}

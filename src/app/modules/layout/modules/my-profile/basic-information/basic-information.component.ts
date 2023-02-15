@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { slideInRight } from 'src/animations/slideInRight';
 import { validationMessage } from 'src/app/constants/error-messages';
 import { BASIC_INFORMATION, FORM_LABEL, GENDER_INPUT_DROPDOWN, MARITAL_DROPDOWN } from 'src/app/constants/text';
@@ -39,8 +39,8 @@ errorMessage:any
       firstName:this._formService.getControl('firstName'),
       lastName:this._formService.getControl('lastName'),
       dob:this._formService.getControl('dob'),
-      gender:this._formService.getControl('gender'),
-      maritalStatus:this._formService.getControl('maritalStatus'),
+      gender: this._formService.getControl('gender',true,this.genderValue[0]),
+      maritalStatus:this._formService.getControl('maritalStatus',true, this.maritalStatusValue[0]),
       contact:this._formService.getControl('contact'),
       total_year:this._formService.getControl('total_year'),
       total_month:this._formService.getControl('total_month'),
@@ -49,17 +49,23 @@ errorMessage:any
       address:this._formService.getControl('address')
     })
   }
-  get formControl() {
+  get basicFormControl() {
     return this.basicForm.controls;
   }
 
   submitHandler(){
-    this.formControl['firstName'].patchValue(
-      this.formControl['firstName'].value?.trim().toLowerCase()
+    console.log(this.basicForm.value);
+
+    this.basicFormControl['firstName'].patchValue(
+      this.basicFormControl['firstName'].value?.trim().toLowerCase()
     );
-    this.formControl['lastName'].patchValue(
-      this.formControl['lastName'].value?.trim().toLowerCase()
+    this.basicFormControl['lastName'].patchValue(
+      this.basicFormControl['lastName'].value?.trim().toLowerCase()
     );
+    if(this.basicForm.valid){
+      console.log(this.basicForm,'this. basicform');
+
+    }
   }
 
 

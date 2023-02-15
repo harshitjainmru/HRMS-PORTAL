@@ -1,7 +1,7 @@
 <section>
   <div class="header">
     <p class="header-text">{{uiMessage.HEADER}}</p>
-    <button class="header-button classyButton">{{uiMessage.HEADER_BUTTON}}</button>
+    <button class="header-button classyButton"  (click)="routeToJobOpening()">{{uiMessage.HEADER_BUTTON}}</button>
   </div>
   <div class="job-detail-card">
   <app-carousel [listToShow]="dataSource" [carouselConfiguration]="carouselConfig"></app-carousel>

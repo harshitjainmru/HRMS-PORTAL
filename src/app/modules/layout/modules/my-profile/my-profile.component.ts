@@ -24,13 +24,13 @@ export class MyProfileComponent implements OnInit {
   changeTab(data: any) {
     this.detailData = data;
   }
-  isActive(item: any) {
-    // return this.detailData === item ? item : null;
-    if(this.detailData.routerLink==='details'){
-      return this.detailData ===item ? item :null
-    }else{
-      return this.detailData === item ? item : null
-    }
+  // isActive(item: any) {
+  //   // return this.detailData === item ? item : null;
+  //   if(this.detailData.routerLink==='details'){
+  //     return this.detailData ===item ? item :null
+  //   }else{
+  //     return this.detailData === item ? item : null
+  //   }
 
-  }
+  // }
 }

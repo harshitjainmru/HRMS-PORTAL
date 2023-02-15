@@ -1,7 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormControl, FormControlName } from '@angular/forms';
 import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
+import { validationMessage } from 'src/app/constants/error-messages';
 
 @Component({
   selector: 'app-dropdown',
@@ -9,12 +10,17 @@ import { map, startWith } from 'rxjs/operators';
   styleUrls: ['./dropdown.component.scss']
 })
 export class DropdownComponent implements OnInit {
-  @Input() myControlName!:any;
+  @Input() myControlName;
   @Input() label!: any;
   @Input() Data!:any;
-  @Input() CSSClass!:any;
+  @Input() errorType:any;
+  @Input() form;
+  @Input() formfieldCSS;
+  @Input() labelStyle;
+  selected = 'test';
   myControl = new FormControl('');
   filteredOptions!: Observable<string[]>;
+  errorMessage = validationMessage
   constructor() {}
 
   ngOnInit(): void {

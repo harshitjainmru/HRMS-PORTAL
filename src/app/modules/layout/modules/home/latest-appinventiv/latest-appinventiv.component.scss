@@ -9,11 +9,6 @@ section {
     }
   }
   .container {
-    // display: flex;
-    display: grid;
-    grid-template-columns: 32% 32% 32% 32%;
-    gap: 20px;
     padding: 16px;
-    overflow-x: scroll;
   }
 }

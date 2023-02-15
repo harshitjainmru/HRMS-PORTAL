@@ -12,6 +12,7 @@ export const QUALIFICATION = 'qualification';
 export const SHIFT = 'shift';
 export const CHANGE_PASSWORD = 'change-password';
 export const APPRAISAL = 'appraisal';
-export const STARTUP = 'startup';
-export const EXPLORE = 'add_pitch'
+export const EXPLORE = 'startup/add_pitch';
+export const HOLIDAY_CALENDER ='holiday-calender'
+export const JOB_OPENING ='refer-candidate/job_openings'
 

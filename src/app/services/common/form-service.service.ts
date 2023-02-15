@@ -40,7 +40,7 @@ export class FormServiceService {
 
   };
 
-  getControl(name: string, required = true) {
+  getControl(name: string, required = true ,drop:any = '') {
     //@ts-ignore: unreachable code error
 
     let compose = [...this.VALIDATION[name]];
@@ -51,6 +51,10 @@ export class FormServiceService {
         compose.splice(0, 0, Validators.required);
       }
     }
-    return [null, compose];
+    if(drop){
+      return [drop,compose]
+    }else{
+      return [null, compose];
+    }
   }
 }

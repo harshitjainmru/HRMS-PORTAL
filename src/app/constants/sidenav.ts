@@ -3,7 +3,9 @@ import {
   ABS_LAYOUT_DIRECTORY,
   ABS_LAYOUT_ENTREPRENURSHIP,
   ABS_LAYOUT_EXPLORE,
+  ABS_LAYOUT_HOLIDAY_CALENDER,
   ABS_LAYOUT_HOME,
+  ABS_LAYOUT_JOB_OPENING,
   ABS_LAYOUT_MYPROFILE,
 } from './absolute-routes';
 import { LAYOUT, SIDENAV } from './text';
@@ -45,7 +47,7 @@ export const sideNavList = [
       {
         subTitle: 'Explore',
         subicon: 'horizontal_rule',
-        routerLink: ABS_LAYOUT_EXPLORE.fullUrl,
+        routerLink: ABS_LAYOUT_EXPLORE.path,
         isActive: true,
       },
     ],
@@ -57,7 +59,24 @@ export const sideNavList = [
     title: SIDENAV.My_Links_LABEL,
     icon: 'fa-solid fa-cube',
     options: [
-      { subTitle: 'Insurance Verification Details', subicon: 'checklist' },
+      {
+        subTitle: SIDENAV.Insurance_LABEL,
+        subicon: 'checklist' ,
+        routerLink: '',
+        isActive: true,
+      },
+      {
+        subTitle: SIDENAV.CALENDER_LABEL,
+        subicon: 'calendar_today' ,
+        routerLink: ABS_LAYOUT_HOLIDAY_CALENDER.path,
+        isActive: true,
+      },
+      {
+        subTitle: SIDENAV.POLICY_LABEL,
+        subicon: 'insert_drive_file' ,
+        routerLink: '',
+        isActive: true,
+      },
     ],
     isActive: true,
   },
@@ -76,7 +95,12 @@ export const sideNavList = [
   {
     title: SIDENAV.Refer_Friend_LABEL,
     icon: 'fas fa-users',
-    options: [],
+    options: [
+      { subTitle: SIDENAV.JOB_OPENING_LABEL,
+      subicon: '' ,
+      routerLink: ABS_LAYOUT_JOB_OPENING.path,
+      isActive: true,}
+    ],
     isActive: true,
   },
   {

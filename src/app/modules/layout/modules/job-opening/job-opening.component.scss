@@ -1,0 +1,20 @@
+@import "../../../../scss/var";
+@import "../../../../scss/mixins.scss";
+@import "../../../../scss/job-opening-card";
+
+section {
+  margin: 1rem 2rem;
+  .header {
+    .heading {
+      color: $directory-header-color;
+      font-size: 24px;
+      font-weight: 500;
+      margin-top: 5px;
+    }
+  }
+  .card-content {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+  }
+}

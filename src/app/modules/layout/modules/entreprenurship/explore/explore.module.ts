@@ -3,6 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { ExploreRoutingModule } from './explore-routing.module';
 import { ExploreComponent } from './explore.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { DropDownModule } from 'src/app/modules/shared/drop-down/drop-down.module';
 
 
 @NgModule({
@@ -11,7 +15,11 @@ import { ExploreComponent } from './explore.component';
   ],
   imports: [
     CommonModule,
-    ExploreRoutingModule
+    ExploreRoutingModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatSelectModule,
+    DropDownModule
   ]
 })
 export class ExploreModule { }
