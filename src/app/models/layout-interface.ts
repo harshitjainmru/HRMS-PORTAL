@@ -75,6 +75,12 @@ export interface IAPPRECIATIONDATA{
   MESSAGE?:string,
   BUTTON?:string,
   GREET?:string,
+  VIEW_MORE?:Array<any>,
+  HEAD_NAME?:string,
+  TEAM_MEMBER?:string,
+  HEAD_GREET?:string,
+  APPRECIATION_NAME?:string,
+  IMAGES?:string
 
 }
 

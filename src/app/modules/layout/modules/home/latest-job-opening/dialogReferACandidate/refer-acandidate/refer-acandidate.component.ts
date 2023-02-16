@@ -12,6 +12,7 @@ export class ReferACandidateComponent implements OnInit {
 uiText=REFER_A_CANDIDATE_DIALOG
 disableValue:boolean=true
 referCandidateForm!:FormGroup
+maxLength=200;
   constructor(
     private dialogRef: MatDialogRef<ReferACandidateComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,

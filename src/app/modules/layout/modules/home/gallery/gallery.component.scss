@@ -73,7 +73,14 @@ section {
     }
   }
 }
-@media (max-width:685px){
+// @media (max-width:1385px){
+//   .event{
+//     .event-text {
+//       width: 190px !important;
+//     }
+//   }
+// }
+@media (max-width:699px){
   .event{
     flex-direction: column;
     .event-text {

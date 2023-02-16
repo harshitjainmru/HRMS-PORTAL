@@ -105,7 +105,6 @@ $font-size: 24px;
 @media (max-width:1385px){
   .container {
   margin: 15px 45px;
-
     .joining {
       max-width: 300px !important;
     }
@@ -114,10 +113,20 @@ $font-size: 24px;
       .program {
         width: fit-content;
       }
+      .new-member {
+        width: 840px;
+      }
     }
-    .new-member {
-      width: 840px;
-    }
+    // .latest-news{
+    //   .program-news{
+    //     width: 850px;
+    //   }
+    // }
+    // .gallery{
+    //   .program-gallery{
+    //     width: 890px;
+    //   }
+    // }
   }
 }
 @media (max-width:1219px){
@@ -149,7 +158,7 @@ $font-size: 24px;
     }
   }
 }
-@media (max-width:685px){
+@media (max-width:699px){
   .container {
     margin: 15px 85px;
     display: flex;

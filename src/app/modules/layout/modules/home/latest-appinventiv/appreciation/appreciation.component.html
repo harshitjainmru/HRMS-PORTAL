@@ -19,7 +19,7 @@
         <p class="greetings text-message">{{item.GREET}}</p>
         <span>...</span>
       </div>
-      <button class="classyButton">{{item.BUTTON}}</button>
+      <button class="classyButton" (click)="openDialog(item)">{{item.BUTTON}}</button>
     </div>
     </ng-template>
   </ng-container>

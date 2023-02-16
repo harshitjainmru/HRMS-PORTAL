@@ -207,6 +207,11 @@ export const APPRECIATION_DATA: IAPPRECIATIONDATA[] = [
     MESSAGE: `With immense pleasure, we would like to take this moment and appreciate Ustandby Team. The team demonstrated outstanding performance and we are happy to announce that the client has appreciated the team's dedication and commitment due to which the project was a great success.`,
     GREET: 'Kudos to the team!',
     BUTTON: 'View More',
+    TEAM_MEMBER:'@Shubham K @Aditya S @Arjun singh A @Abhishek S @Faisal K @Pankaj C @Sandeep G @Sakshi Bhatia, Rajat Maheshwari, Sanjay Parida and Pankaj Thapliyal',
+    HEAD_NAME:'Surya (Ustandby)',
+    HEAD_GREET:'Your hard work and diligence is really admirable, keep growing and achieving!',
+    APPRECIATION_NAME:'Ustandby Team',
+    IMAGES:'/assets/images/default_male.jpg'
   },
   {
     HEADER_VALUE: 'Appreciation| ABP NEWS',
@@ -216,6 +221,9 @@ export const APPRECIATION_DATA: IAPPRECIATIONDATA[] = [
     GREET:
       'Thank you for all the hard work and commitment. Keep up the excellent work.',
     BUTTON: 'View More',
+    HEAD_NAME:'Dileep Gupta',
+    APPRECIATION_NAME:'Aashima Anand',
+    IMAGES:'/assets/images/ASHIMA.jpeg'
   },
   {
     HEADER_VALUE: 'Appreciation for UStandBy',
@@ -223,6 +231,12 @@ export const APPRECIATION_DATA: IAPPRECIATIONDATA[] = [
     MESSAGE: `With immense pleasure, we would like to take this moment and appreciate Ustandby Team. The team demonstrated outstanding performance and we are happy to announce that the client has appreciated the team's dedication and commitment due to which the project was a great success.`,
     GREET: 'Kudos to the team!',
     BUTTON: 'View More',
+    TEAM_MEMBER:'@Shubham K @Aditya S @Arjun singh A @Abhishek S @Faisal K @Pankaj C @Sandeep G @Sakshi Bhatia, Rajat Maheshwari, Sanjay Parida and Pankaj Thapliyal',
+    HEAD_NAME:'Surya (Ustandby)',
+    HEAD_GREET:'Your hard work and diligence is really admirable, keep growing and achieving!',
+    APPRECIATION_NAME:'Ustandby Team',
+    IMAGES:'/assets/images/default_male.jpg'
+
   },
   {
     HEADER_VALUE: 'Appreciation| ABP NEWS',
@@ -232,6 +246,11 @@ export const APPRECIATION_DATA: IAPPRECIATIONDATA[] = [
     GREET:
       'Thank you for all the hard work and commitment. Keep up the excellent work.',
     BUTTON: 'View More',
+    HEAD_NAME:'Dileep Gupta',
+    APPRECIATION_NAME:'Aashima Anand',
+    IMAGES:'/assets/images/ASHIMA.jpeg'
+
+
   },
 ];
 export const AWARDS_EMP_IMAGE_DATA: IAWARDDATA[] = [

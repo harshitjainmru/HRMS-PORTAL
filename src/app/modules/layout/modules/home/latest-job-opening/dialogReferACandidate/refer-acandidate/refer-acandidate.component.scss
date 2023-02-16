@@ -34,13 +34,8 @@ section{
       }
     }
   }
-  // .hash-heading{
-  // padding: 16px;
-
-  // }
   .form{
   padding: 16px;
-
     .inputs{
       @include gridbox();
       grid-template-columns: auto auto;
@@ -58,6 +53,11 @@ section{
         .mat-form-field{
           width: 385px;
         }
+      }
+      .maxlength{
+        color: $error-color;
+        margin-top: -22px;
+        font-weight: 600
       }
     }
     .buttonGroup {
@@ -80,5 +80,8 @@ section{
 ::ng-deep{
   .mat-dialog-container{
     padding: 0px !important;
+  }
+  .cdk-overlay-dark-backdrop{
+    background: rgba(0, 0, 0, 0.80);
   }
 }

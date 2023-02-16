@@ -1,6 +1,8 @@
 import { AfterViewInit, Component, ElementRef, OnInit, QueryList, TemplateRef, ViewChildren } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { NguCarouselConfig } from '@ngu/carousel';
 import { APPRECIATION_DATA } from 'src/app/constants/text';
+import { ViewMoreComponent } from './view-more/view-more.component';
 
 @Component({
   selector: 'app-appreciation',
@@ -23,7 +25,9 @@ carouselConfig: NguCarouselConfig = {
   easing: 'cubic-bezier(0, 0, 0.2, 1)',
   animation:'lazy'
 };
-constructor() {}
+constructor(
+  private dialog:MatDialog
+) {}
 
 ngOnInit(): void {}
 ngAfterViewInit(): void {
@@ -31,5 +35,11 @@ ngAfterViewInit(): void {
     this.dataSource.push(item);
   });
 }
-
+openDialog(item):void{
+  console.log(item,'iuten');
+  const dialogRef = this.dialog.open(ViewMoreComponent, {
+    // disableClose:true,
+    data:item
+  })
+}
 }

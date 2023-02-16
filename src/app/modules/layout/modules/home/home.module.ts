@@ -19,6 +19,7 @@ import { SharedModule } from 'src/app/modules/shared/shared.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { GalleryDialogComponent } from './gallery/gallery-dialog/gallery-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { ViewMoreComponent } from './latest-appinventiv/appreciation/view-more/view-more.component';
 // import { ReferACandidateComponent } from './latest-job-opening/dialogReferACandidate/refer-acandidate/refer-acandidate.component';
 
 
@@ -35,6 +36,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     GalleryComponent,
     AppreciationComponent,
     GalleryDialogComponent,
+    ViewMoreComponent,
   ],
   imports: [
     CommonModule,

@@ -2,7 +2,7 @@
   <label class="label" [ngClass]="labelStyle">{{label}}</label>
   <mat-form-field appearance="outline" [ngClass]="formfieldCSS">
     <mat-select [formControl]="myControlName">
-      <input class="filter">
+      <input [formControl]="myControl"  class="filter">
       <mat-option *ngFor="let item of filteredOptions | async" [value]="item" [disabled]="item=='no results Found'">
         {{item}}
       </mat-option>

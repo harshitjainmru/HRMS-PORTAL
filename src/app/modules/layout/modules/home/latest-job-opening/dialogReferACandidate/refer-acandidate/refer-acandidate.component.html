@@ -86,8 +86,10 @@
         <div class="formfield 12">
           <label class="label">{{uiText.LABEL_SKILL}}</label>
           <mat-form-field appearance="outline">
-            <textarea matInput></textarea>
+            <textarea [maxLength]="maxLength" #textarea matInput></textarea>
           </mat-form-field>
+          <p class="maxlength">
+          {{textarea.value.length}}/{{maxLength}}</p>
         </div>
       </div>
         <div class="buttonGroup">
