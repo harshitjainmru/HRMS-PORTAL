@@ -10,7 +10,6 @@ section {
     .img-card {
       background-image: url("../../../../../../assets/images/new-family-card.png");
       height: 442px;
-      width: 300px;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -36,19 +35,28 @@ section {
     }
   }
 }
-@media (min-width:1025px) and (max-width:1219px){
+
+@media (min-width:686px)and (max-width:991px){
   section{
     .img-card{
-      height: 380px;
-    margin: 0px;
+    width: 300px;
     }
   }
 }
-@media (min-width:700px) and (max-width:1024px){
+@media (max-width:685px){
   section{
     .img-card{
-      height: 300px;
-    margin: 0px;
+      width: none !important
+      ;
+    }
+  }
+}
+@media (max-width:392px){
+  section {
+    .card {
+      .header {
+        width: 120px;
+      }
     }
   }
 }

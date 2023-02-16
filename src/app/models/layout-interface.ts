@@ -20,8 +20,10 @@ export interface ILATEST_JOB {
   image?: string,
   LOCATION?: string,
   HEADING?:string,
+  DEPARTMENT_VALUE?:string,
   DATE?:string,
   TEXT?:string,
+  JOB_CODE?:string,
   OPENING_NUMBER_TEXT?:string,
   OPENING_NUMBER?:string,
   EXPERIENCE?:string,
@@ -63,7 +65,8 @@ export interface IGALLERYDATA{
   IMAGE?:string,
   HEADING?:string,
   BUTTON?:string,
-  NUM?:number
+  NUM?:number,
+  SUBIMAGE?:Array<any>
 }
 export interface IAPPRECIATIONDATA{
   HEADER_VALUE?:string,

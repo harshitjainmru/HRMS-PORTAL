@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { slideInRight } from 'src/animations/slideInRight';
 import { PROFILE_PICTURE_VALUE } from 'src/app/constants/text';
 
@@ -19,8 +19,14 @@ pictureForm!:FormGroup
   }
   createForm(){
 this.pictureForm = this._formBuilder.group({
-image:[]
+image:['',Validators.required]
 })
+  }
+  submitHandler(){
+    if(this.pictureForm.valid){
+      console.log(this.pictureForm);
+
+    }
   }
 
 }

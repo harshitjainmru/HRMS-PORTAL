@@ -107,19 +107,7 @@ section {
     }
   }
 }
-@media (min-width: 320px) and (max-width: 725px) {
-  section{
-    .card {
-      .card-content {
-        flex-direction: column;
-      }
-    }
-    .container{
-    grid-template-columns:  auto;
-    }
-  }
-}
-@media (min-width: 150px) and (max-width: 320px) {
+@media (min-width: 150px) and (max-width: 725px) {
   section{
     .card {
       .card-content {

@@ -117,9 +117,11 @@ export const LATEST_JOB_OPENING: ILATEST_JOB[] = [
     LOCATION: 'Noida, UttarPradesh',
     DATE: '03/02/2023',
     HEADING: 'Graphic Designer - Designing Marketing',
+    DEPARTMENT_VALUE: ' Marketing',
     TEXT: 'We are looking for Graphic Designers to create engaging and on-brand graphics for variety of media',
     OPENING_NUMBER_TEXT: 'No. of Openings',
     OPENING_NUMBER: '1',
+    JOB_CODE:'#AP0052',
     EXPERIENCE: 'Experience',
     EXPERIENCE_NUMBER: '5 to 9 Years',
     BUTTON_VIEW: 'View Details',
@@ -130,9 +132,11 @@ export const LATEST_JOB_OPENING: ILATEST_JOB[] = [
     LOCATION: 'Noida, UttarPradesh',
     DATE: '03/02/2023',
     HEADING: 'Tech Lead -  REACT JS',
+    DEPARTMENT_VALUE: ' REACT JS',
     TEXT: 'We are looking for JavaScript developers  proficient with React.js -  ( Preferred Early Joiners)',
     OPENING_NUMBER_TEXT: 'No. of Openings',
     OPENING_NUMBER: '2',
+    JOB_CODE:'#AP0014',
     EXPERIENCE: 'Experience',
     EXPERIENCE_NUMBER: '5 to 9 Years',
     BUTTON_VIEW: 'View Details',
@@ -143,9 +147,11 @@ export const LATEST_JOB_OPENING: ILATEST_JOB[] = [
     LOCATION: 'Noida, UttarPradesh',
     DATE: '03/02/2023',
     HEADING: 'Graphic Designer - Designing Marketing',
+    DEPARTMENT_VALUE: ' Marketing',
     TEXT: 'We are looking for Graphic Designers to create engaging and on-brand graphics for variety of media',
     OPENING_NUMBER_TEXT: 'No. of Openings',
     OPENING_NUMBER: '1',
+    JOB_CODE:'#AP0052',
     EXPERIENCE: 'Experience',
     EXPERIENCE_NUMBER: '5 to 9 Years',
     BUTTON_VIEW: 'View Details',
@@ -156,6 +162,8 @@ export const LATEST_JOB_OPENING: ILATEST_JOB[] = [
     LOCATION: 'Noida, UttarPradesh',
     DATE: '03/02/2023',
     HEADING: 'Tech Lead - Node.js',
+    DEPARTMENT_VALUE: ' Node.js',
+    JOB_CODE:'#AP0037',
     TEXT: 'TL has to oversee the technical team and all projects, identify risks & develop work schedules.',
     OPENING_NUMBER_TEXT: 'No. of Openings',
     OPENING_NUMBER: '1',
@@ -344,24 +352,49 @@ export const Gallery_DATA: IGALLERYDATA[] = [
     HEADING: 'Republic Day-2023',
     NUM: 5,
     BUTTON: 'View',
+    SUBIMAGE:[
+      {IMAGES:'/assets/republic-day/award_1674822333816.jpg'},
+      {IMAGES:'/assets/republic-day/award_1674822348103.jpg'},
+      {IMAGES:'/assets/republic-day/award_1674822356821.jpg'},
+      {IMAGES:'/assets/republic-day/award_1674822361280.jpg'},
+      {IMAGES:'/assets/republic-day/award_1674822366389.jpg'}
+    ]
   },
   {
     IMAGE: '/assets/gallery/award_1672378171227.jpg',
     HEADING: 'Best Place To Work Award',
     NUM: 5,
     BUTTON: 'View',
+    SUBIMAGE:[
+      {IMAGES:'/assets/best-place/award_1672378171227.jpg'},
+      {IMAGES:'/assets/best-place/award_1672378174176.jpeg'},
+      {IMAGES:'/assets/best-place/award_1672378175316.jpg'},
+      {IMAGES:'/assets/best-place/award_1672378183848.jpeg'},
+    ]
   },
   {
     IMAGE: '/assets/gallery/award_1672292016846.jpg',
     HEADING: 'Christmas Celebration -2022',
     NUM: 5,
     BUTTON: 'View',
+    SUBIMAGE:[
+      {IMAGES:'/assets/christmas/award_167229202066.jpg'},
+      {IMAGES:'/assets/christmas/award_1672292028335.jpg'},
+      {IMAGES:'/assets/christmas/award_1672292037579.jpg'},
+      {IMAGES:'/assets/christmas/award_1672292037704.jpg'}
+    ]
   },
   {
     IMAGE: '/assets/gallery/award_166719426194.jpeg',
     HEADING: 'Diwali Party -2022',
     NUM: 5,
     BUTTON: 'View',
+    SUBIMAGE:[
+      {IMAGES:'/assets/diwali/award_1667194276825.jpeg'},
+      {IMAGES:'/assets/diwali/award_1667194285355.jpeg'},
+      {IMAGES:'/assets/diwali/award_1672292329158.jpg'},
+      {IMAGES:'/assets/diwali/award_1672292333107.jpg'},
+    ]
   },
 ];
 
@@ -608,3 +641,26 @@ export const TYPE_DATA=[
   'Technical',
   'Non-Technical'
 ]
+export const REFER_A_CANDIDATE_DIALOG ={
+  HEADER_VALUE:'Refer a Candidate',
+  JOB_DETAIL_VALUE:'Job Details',
+  LABEL_DEPARTMENT:'Department Name',
+  LABEL_JOBCODE:'Job Code',
+  LABEL_LOCATION:'Location',
+  LABEL_EXPERIENCE:'Experience',
+  CANDIDATE_VALUE:'Candidate Details',
+  LABEL_JOBLOC:'Job Location',
+  LABEL_CANDIDATE_NAME:'Candidate Name',
+  PLACEHOLDER_CANDIDATE_NAME:'Candidate Name',
+  LABEL_POSITION:'Position Title',
+  PLACEHOLDER_EXPERIENCE:'Enter Years of experience',
+  LABEL_EMAIL:'Email ID',
+  PLACEHOLDER_EMAIL:'Enter Email ID',
+  LABEL_PHONE:'Phone Number',
+  PLACEHOLDER_PHONE:'Enter Phone Number',
+  LABEL_UPLOAD:'Upload CV (pdf,doc)',
+  LABEL_SKILL:'Skill Set',
+  PLACEHOLDER_SKILL:'Enter Skills',
+  BUTTON_CANCEL:'Cancel',
+  BUTTON_SUBMIT:'Submit'
+}

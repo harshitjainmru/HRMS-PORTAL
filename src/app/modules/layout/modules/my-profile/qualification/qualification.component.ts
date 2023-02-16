@@ -82,4 +82,10 @@ export class QualificationComponent implements OnInit {
       description: this._formService.getControl('description'),
     });
   }
+  submitHandler(){
+    if(this.qualificationForm.valid){
+      console.log(this.qualificationForm);
+
+    }
+  }
 }

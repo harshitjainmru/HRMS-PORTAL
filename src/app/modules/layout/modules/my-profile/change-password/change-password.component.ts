@@ -37,4 +37,11 @@ errorMessage:any
     )
   }
 
+  submitHandler(){
+    if(this.forgotForm.valid){
+      console.log(this.forgotForm);
+
+    }
+  }
+
 }

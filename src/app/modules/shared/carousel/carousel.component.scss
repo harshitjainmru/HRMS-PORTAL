@@ -1,36 +1,27 @@
 @import "src/app/scss/_var.scss";
+@import "src/app/scss/mixins.scss";
 .leftRs {
-  position: absolute;
   top: -40px;
   bottom: 0;
-  // color:var( --caurosel-button-color);
-  color: $button-color;
-  font-weight: bold;
-  font-size: 20px;
-  background-color: #f1f1f1;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
   right: 50px;
-  border: none;
+  @include carouselButton();
 }
 
 .rightRs {
-  position: absolute;
   top: -40px;
   bottom: 0;
-  // color:var( --caurosel-button-color);
-  color: $button-color;
-  font-weight: bold;
-  font-size: 20px;
-  background-color: #f1f1f1;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
   right: 10px;
-  border: none;
+  @include carouselButton();
 }
-
+.bottomLeftRs{
+  bottom: -35px;
+  left: 263px;
+  @include carouselButton();
+}
+.bottomRightRs{
+  bottom: -35px;
+  right: 265px;
+  @include carouselButton();}
 :host::ng-deep {
   .ngucarousel {
     position: initial !important;
@@ -58,4 +49,16 @@
 .myPoint li.active {
   background: #6b6b6b;
   transform: scale(1.2);
+}
+@media (max-width:778px){
+  .bottomLeftRs{
+    top: -40px;
+    bottom: 0;
+    left: 50px;
+  }
+  .bottomRightRs{
+    top: -40px;
+    bottom: 0;
+    right: 20px;
+}
 }

@@ -7,10 +7,18 @@ import { CommonTableComponent } from 'src/app/components/common-table/common-tab
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { ReferACandidateComponent } from '../layout/modules/home/latest-job-opening/dialogReferACandidate/refer-acandidate/refer-acandidate.component';
+import {MatDialogModule} from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     CustomSnackbarComponent,
     CommonTableComponent,
+    ReferACandidateComponent
+
   ],
   imports: [CommonModule,
      MatIconModule,
@@ -18,7 +26,16 @@ import { MatSortModule } from '@angular/material/sort';
      MatTableModule,
      MatPaginatorModule,
      MatSortModule,
+     MatDialogModule,
+     MatFormFieldModule,
+     MatInputModule,
+     MatSelectModule,
+     FormsModule,
+     ReactiveFormsModule
     ],
-    exports: [CommonTableComponent]
+    exports: [CommonTableComponent,
+      ReferACandidateComponent
+
+    ]
 })
 export class SharedModule {}

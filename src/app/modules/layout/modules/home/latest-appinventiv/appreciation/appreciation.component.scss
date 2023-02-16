@@ -49,3 +49,37 @@ section {
     }
   }
 }
+@media (min-width:415px) and (max-width:539px){
+  section {
+    .award-card {
+      .award-header {
+        margin-bottom: 5px;
+      }
+      .message{
+        margin: 10px 0px;
+      }
+      .thnks{
+        margin-top: 0px;
+        padding:0px;
+      }
+    }
+  }
+}
+@media (max-width:415px){
+  section {
+    .award-card {
+      .award-header {
+        margin-bottom: 0px;
+        .award-title {
+          font-size: 10px;
+        }
+      }
+      .message{
+        margin:0px;
+      }
+      .thnks{
+       display: none;
+      }
+    }
+  }
+}

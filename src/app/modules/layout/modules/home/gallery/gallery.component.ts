@@ -1,6 +1,8 @@
 import { AfterViewInit, Component, ElementRef, OnInit, QueryList, TemplateRef, ViewChildren } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { NguCarouselConfig } from '@ngu/carousel';
 import { Gallery_DATA, GALLER_VALUE } from 'src/app/constants/text';
+import { GalleryDialogComponent } from './gallery-dialog/gallery-dialog.component';
 
 @Component({
   selector: 'app-gallery',
@@ -16,7 +18,8 @@ showList: boolean = true;
   ElementRef<HTMLDivElement>
 >;
 carouselConfig: NguCarouselConfig = {
-  grid: { xs: 1, sm: 1, md:1, lg: 3, all: 0 },
+  grid: { xs: 1, sm: 1, md:1, lg: 2, xl:3,all: 0 },
+  gridBreakpoints:{sm: 768, md: 992, lg: 1200, xl: 1798},
   load: 1,
   interval: { timing: 4000, initialDelay: 1000 },
   loop: true,
@@ -29,7 +32,7 @@ carouselConfig: NguCarouselConfig = {
 };
 dataSource: any = [];
 
-constructor() {}
+constructor(private dialog:MatDialog) {}
 
 ngOnInit(): void {
 
@@ -41,6 +44,13 @@ ngAfterViewInit(): void {
     });
   }, 500);
 
+}
+openDialog(item):void{
+  console.log(item,'iuten');
+  const dialogRef = this.dialog.open(GalleryDialogComponent, {
+    // disableClose:true,
+    data:item
+  })
 }
 
 }

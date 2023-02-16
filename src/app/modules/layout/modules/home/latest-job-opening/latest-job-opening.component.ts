@@ -11,7 +11,8 @@ import { Router } from '@angular/router';
 import { NguCarouselConfig } from '@ngu/carousel';
 import { ABS_LAYOUT_JOB_OPENING } from 'src/app/constants/absolute-routes';
 import { JOB_OPENING, LATEST_JOB_OPENING } from 'src/app/constants/text';
-
+import { MatDialog } from '@angular/material/dialog';
+import { ReferACandidateComponent } from './dialogReferACandidate/refer-acandidate/refer-acandidate.component';
 @Component({
   selector: 'app-latest-job-opening',
   templateUrl: './latest-job-opening.component.html',
@@ -33,7 +34,10 @@ export class LatestJobOpeningComponent implements OnInit, AfterViewInit {
     touch: true,
     velocity: 0.2,
   };
-  constructor(private _route: Router) {}
+    constructor(private _route: Router,
+    private dialog: MatDialog,
+
+      ) {}
 
   ngOnInit(): void {}
   ngAfterViewInit(): void {
@@ -44,4 +48,13 @@ export class LatestJobOpeningComponent implements OnInit, AfterViewInit {
   routeToJobOpening(){
     this._route.navigate([ABS_LAYOUT_JOB_OPENING.fullUrl])
   }
+  openDialog(item):void{
+    console.log(item,'iuten');
+
+    const dialogRef = this.dialog.open(ReferACandidateComponent, {
+      disableClose:true,
+      data:item
+    })
+  }
 }
+

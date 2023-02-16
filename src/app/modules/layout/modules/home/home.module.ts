@@ -15,6 +15,11 @@ import { WorkAnniversaryComponent } from './latest-appinventiv/work-anniversary/
 import { GalleryComponent } from './gallery/gallery.component';
 import { AppreciationComponent } from './latest-appinventiv/appreciation/appreciation.component';
 import { AbsoluteRoutingModule } from 'src/app/pipes/absolute-routing/absolute-routing.module';
+import { SharedModule } from 'src/app/modules/shared/shared.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { GalleryDialogComponent } from './gallery/gallery-dialog/gallery-dialog.component';
+import { MatDialogModule } from '@angular/material/dialog';
+// import { ReferACandidateComponent } from './latest-job-opening/dialogReferACandidate/refer-acandidate/refer-acandidate.component';
 
 
 @NgModule({
@@ -28,7 +33,8 @@ import { AbsoluteRoutingModule } from 'src/app/pipes/absolute-routing/absolute-r
     BirthdayComponent,
     WorkAnniversaryComponent,
     GalleryComponent,
-    AppreciationComponent
+    AppreciationComponent,
+    GalleryDialogComponent,
   ],
   imports: [
     CommonModule,
@@ -36,7 +42,13 @@ import { AbsoluteRoutingModule } from 'src/app/pipes/absolute-routing/absolute-r
     MatCardModule,
     MatButtonModule,
     CarouselModule,
-    AbsoluteRoutingModule
+    AbsoluteRoutingModule,
+    SharedModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatDialogModule,
+
+
   ]
 })
 export class HomeModule { }

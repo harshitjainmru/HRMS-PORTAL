@@ -21,7 +21,7 @@ display: flex;
 }
 
 @mixin textColor {
-  color: #fff;
+  color: $button-text-color;
   font-size: .8125rem;
   font-family: inherit;
 }
@@ -41,7 +41,7 @@ display: flex;
 }
 @mixin buttonHover {
   background-color: $button-color;
-  color: #ffff;
+  color: $button-text-color;
   transition: box-shadow rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 @mixin buttonStyle {
@@ -69,3 +69,15 @@ display: flex;
   }
 }
 
+@mixin carouselButton{
+  position: absolute;
+  // color:var( --caurosel-button-color);
+  color: $button-color;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: $carousel-button-bacground;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+}

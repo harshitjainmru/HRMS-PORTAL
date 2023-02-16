@@ -30,7 +30,8 @@ showList:boolean = true
   ElementRef<HTMLDivElement>
 >;
 carouselConfig: NguCarouselConfig = {
-  grid: { xs: 1, sm: 2, md: 2, lg: 3, all: 0 },
+  grid: { xs: 1, sm: 2, md: 2, lg: 2, xl:3, all: 0 },
+  gridBreakpoints:{sm: 768, md: 992, lg: 1220, xl: 1221},
   load: 2,
   interval: { timing: 4000, initialDelay: 1000 },
   loop: false,

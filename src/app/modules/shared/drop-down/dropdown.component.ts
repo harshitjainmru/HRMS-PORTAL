@@ -14,7 +14,6 @@ export class DropdownComponent implements OnInit {
   @Input() label!: any;
   @Input() Data!:any;
   @Input() errorType:any;
-  @Input() form;
   @Input() formfieldCSS;
   @Input() labelStyle;
   selected = 'test';

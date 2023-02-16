@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 import { LAYOUT_HOME } from 'src/app/constants/text';
 
 @Component({
@@ -8,9 +9,13 @@ import { LAYOUT_HOME } from 'src/app/constants/text';
 })
 export class HomeComponent implements OnInit {
 uiMessage=LAYOUT_HOME
-  constructor() { }
+  constructor(
+
+  ) { }
 
   ngOnInit(): void {
   }
+
+
 
 }

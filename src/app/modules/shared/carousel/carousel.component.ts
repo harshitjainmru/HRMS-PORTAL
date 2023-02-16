@@ -18,6 +18,7 @@ export class CarouselComponent implements OnInit, AfterViewInit {
   @Input() buttonShow: boolean = false;
   @Input() showList: boolean = false;
   @Input() carouselConfiguration: any;
+  @Input() bottomButtonShow:boolean = false
   @ViewChild('myCarousel') carousel!: NguCarousel<any>;
   wait = false;
   ngOnInit() {

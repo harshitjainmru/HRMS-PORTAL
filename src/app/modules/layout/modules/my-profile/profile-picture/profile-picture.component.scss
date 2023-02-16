@@ -41,9 +41,12 @@ section {
             font-weight: 500
           }
         }
-        .saveButton {
-          @include buttonTransparent();
-          color: $button-text-color;
+        .classyButton{
+          padding: 8px 15px;
+          .saveButton {
+            @include buttonTransparent();
+            color: $button-text-color;
+          }
         }
       }
     }
