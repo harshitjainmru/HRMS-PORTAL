@@ -92,13 +92,37 @@ section {
 }
 @media (max-width:431px){
   .heading {
+  // width: 120px;
+  }
+  .gallery-info {
+    width: 275px;
+  .event{
+    flex-direction: column;
+    .event-text {
+      width: 200px !important;
+      padding: 0px !important;
+    }
+    .view {
+      width: 95px;
+    }
+  }
+}
+}
+@media (max-width:370px){
+  .heading {
   width: 120px;
   }
+  .gallery-info {
+    width: 160px;
   .event{
     flex-direction: column;
     .event-text {
       width: 100px !important;
       padding: 0px !important;
     }
+    .view {
+      width: 95px;
+    }
   }
+}
 }

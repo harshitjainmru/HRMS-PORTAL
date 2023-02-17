@@ -1,5 +1,5 @@
 <section>
-  <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent" [routerLink]="[navlist.routerLink]"
+  <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent" [routerLink]=navlist.routerLink
     [ngClass]="{'disable':!navlist.isActive}" routerLinkActive="active">
     <!-- <mat-icon>{{navlist.icon}}</mat-icon> -->
     <span class="list-content">

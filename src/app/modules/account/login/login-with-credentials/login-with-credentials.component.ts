@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Title } from '@angular/platform-browser';
 import { Router } from '@angular/router';
+import { ABS_LAYOUT_HOME } from 'src/app/constants/absolute-routes';
 import { validationMessage } from 'src/app/constants/error-messages';
 import { LAYOUT } from 'src/app/constants/routes';
 import { MESSAGES } from 'src/app/constants/snackbar-messages';
@@ -58,7 +59,7 @@ export class LoginWithCredentialsComponent implements OnInit {
     );
     if (this.loginForm.valid) {
       this.showMessage()
-     this._router.navigate([LAYOUT])
+     this._router.navigate([ABS_LAYOUT_HOME.fullUrl])
     }
   }
 }

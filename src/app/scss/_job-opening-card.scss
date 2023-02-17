@@ -78,6 +78,18 @@
     }
   }
 }
+@media (max-width:1385px){
+  .experiencenumber{
+    margin-right: 100px;
+  }
+  .experience{
+    margin-right: 100px;
+  }
+  .buttonGroup{
+    flex-direction: column;
+    padding: 0px;
+  }
+}
 @media (min-width: 200px) and (max-width: 519px) {
   .buttonGroup{
     flex-direction: column;

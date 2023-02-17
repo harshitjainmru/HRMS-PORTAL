@@ -68,10 +68,23 @@ section {
 }
 .disable{
   color: $font-color;
+  &::before{
+    position: absolute;
+    content: "";
+    background: none !important;
+    width: 3px;
+    height: 70%;
+    margin: 4px;
+    left: 0;
+    top: 3px;
+    bottom: 0;
+  }
+  border-right: none;
   .sidenav-label{
     position: relative;
     &::after{
-      content: "Coming Soon";
+      // content: "Coming Soon";
+
       position: absolute;
       top: 15px;
       font-size: 12px;

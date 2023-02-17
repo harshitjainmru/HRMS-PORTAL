@@ -1,7 +1,7 @@
 @import "../../../../../../scss/var";
 @import "../../../../../../scss/mixins.scss";
 $font-size:12px;
-$fontweight:500;
+$fontweight:600;
 section {
   .award-card {
     border: 1px solid $border-color;
@@ -40,20 +40,27 @@ section {
       .emp-info {
         position: absolute;
         bottom: -15px;
-        margin-left: 10px;
+        width:fit-content;
+        padding: 5px 10px;
+        // margin-left: 10px;
         font-size: $font-size;
+        background: linear-gradient(180deg, rgba(22, 22, 22, 0) 0%, #151515 100%);
         .emp-name {
-          color:$award-img-name-color ;
+          // color:$award-img-name-color ;
+          color: $button-text-color;
           font-weight: 700;
           margin-bottom: 0px !important;
         }
         .emp-designation {
-          color: $directory-font-color;
+          // color: $directory-font-color;
+          color: $image-text-color;
           font-weight: $fontweight;
           margin-bottom: 0px !important;
         }
         .emp-date {
-          color: $directory-font-color;
+          // color: $directory-font-color;
+          color: $image-text-color;
+
           font-weight: $fontweight;
         }
       }

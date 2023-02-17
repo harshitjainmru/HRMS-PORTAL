@@ -78,19 +78,19 @@ export const sideNavList = [
         isActive: true,
       },
     ],
-    isActive: true,
+    // isActive: true,
   },
   {
     title: SIDENAV.Finance_LABEL,
     icon: 'fas fa-money-bill-wave',
     options: [],
-    isActive: true,
+    // isActive: true,
   },
   {
     title: SIDENAV.Reviews_LABEL,
     icon: 'fa-solid fa-cube',
     options: [],
-    isActive: true,
+    // isActive: true,
   },
   {
     title: SIDENAV.Refer_Friend_LABEL,
@@ -99,73 +99,74 @@ export const sideNavList = [
       { subTitle: SIDENAV.JOB_OPENING_LABEL,
       subicon: '' ,
       routerLink: ABS_LAYOUT_JOB_OPENING.path,
-      isActive: true,}
+      // isActive: true,
+    }
     ],
-    isActive: true,
+    // isActive: true,
   },
-  {
-    title: SIDENAV.Freshers_TrainingLABEL,
-    icon: 'fas fa-graduation-cap',
-    options: [],
-    isActive: true,
-  },
-  {
-    title: SIDENAV.Training_LABEL,
-    icon: 'fas fa-graduation-cap',
-    options: [],
-    isActive: true,
-  },
-  {
-    title: SIDENAV.Assests_LABEL,
-    icon: 'fa-solid fa-flask',
-    options: [],
-    isActive: true,
-  },
-  {
-    title: SIDENAV.Attendance_LABEL,
-    icon: 'fa-solid fa-clock',
-    options: [],
-    isActive: true,
-  },
-  {
-    title: SIDENAV.Leave_LABEL,
-    icon: 'fa-regular fa-calendar',
-    options: [],
-    isActive: true,
-  },
-  {
-    title: SIDENAV.Tickets_LABEL,
-    icon: 'fa-solid fa-ticket',
-    options: [],
-    isActive: true,
-  },
-  {
-    title: SIDENAV.DSR_LABEL,
-    icon: 'fa-solid fa-ticket',
-    options: [],
-    isActive: true,
-  },
-  {
-    title: SIDENAV.Projects_LABEL,
-    icon: 'fa-brands fa-buffer',
-    isActive: true,
-  },
+  // {
+  //   title: SIDENAV.Freshers_TrainingLABEL,
+  //   icon: 'fas fa-graduation-cap',
+  //   options: [],
+  //   // isActive: true,
+  // },
+  // {
+  //   title: SIDENAV.Training_LABEL,
+  //   icon: 'fas fa-graduation-cap',
+  //   options: [],
+  //   isActive: true,
+  // },
+  // {
+  //   title: SIDENAV.Assests_LABEL,
+  //   icon: 'fa-solid fa-flask',
+  //   options: [],
+  //   isActive: true,
+  // },
+  // {
+  //   title: SIDENAV.Attendance_LABEL,
+  //   icon: 'fa-solid fa-clock',
+  //   options: [],
+  //   isActive: true,
+  // },
+  // {
+  //   title: SIDENAV.Leave_LABEL,
+  //   icon: 'fa-regular fa-calendar',
+  //   options: [],
+  //   isActive: true,
+  // },
+  // {
+  //   title: SIDENAV.Tickets_LABEL,
+  //   icon: 'fa-solid fa-ticket',
+  //   options: [],
+  //   isActive: true,
+  // },
+  // {
+  //   title: SIDENAV.DSR_LABEL,
+  //   icon: 'fa-solid fa-ticket',
+  //   options: [],
+  //   isActive: true,
+  // },
+  // {
+  //   title: SIDENAV.Projects_LABEL,
+  //   icon: 'fa-brands fa-buffer',
+  //   isActive: true,
+  // },
   {
     title: SIDENAV.Expense_LABEL,
     icon: 'fas fa-hand-holding-usd',
     isActive: false,
   },
-  {
-    title: SIDENAV.Announcements_LABEL,
-    icon: 'fas fa-bullhorn',
-    isActive: false,
-  },
-  { title: SIDENAV.Travels_LABEL, icon: 'fas fa-plane', isActive: false },
-  {
-    title: SIDENAV.Logout_LABEL,
-    icon: 'fa-solid fa-right-from-bracket',
-    isActive: true,
-  },
+  // {
+  //   title: SIDENAV.Announcements_LABEL,
+  //   icon: 'fas fa-bullhorn',
+  //   isActive: false,
+  // },
+  // { title: SIDENAV.Travels_LABEL, icon: 'fas fa-plane', isActive: false },
+  // {
+  //   title: SIDENAV.Logout_LABEL,
+  //   icon: 'fa-solid fa-right-from-bracket',
+  //   isActive: true,
+  // },
 ];
 
 export const profileMenuData = [

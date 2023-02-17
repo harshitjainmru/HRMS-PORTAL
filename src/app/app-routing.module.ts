@@ -17,6 +17,8 @@ const routes: Routes = [
       import('./modules/layout/layout.module').then((m) => m.LayoutModule),
   },
   // { path: '**', redirectTo:ABS_ACCOUNT_LOGIN.fullUrl , pathMatch: 'full' },
+  { path: '**', loadChildren: () => import('./modules/not-found/not-found.module').then(m => m.NotFoundModule) },
+
 ];
 
 @NgModule({

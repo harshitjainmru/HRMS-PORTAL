@@ -1,25 +1,9 @@
 @import "src/app/scss/_var.scss";
+@import "../../../../../../../scss/dialog-cancel-icon";
 section{
   max-width: 500px;
-  // position: relative;
-  margin: 20px;
-  .cancel-icon {
-    border-radius: 50%;
-    display: flex;
-    justify-content: flex-end;
-    cursor: pointer;
-    // position: absolute;
-
-    .fa-xmark {
-      font-size: 25px;
-      margin-right: -18px;
-      margin-top: -25px;
-      background-color: $button-text-color;
-      padding: 10px;
-      border-radius: 50%;
-      color: $font-color;
-    }
-  }
+  padding: 16px;
+  overflow: hidden;
   .employee{
     display: flex;
     align-items: center;

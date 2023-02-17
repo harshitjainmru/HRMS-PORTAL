@@ -13,26 +13,26 @@
       <div class="inputs">
         <div class="formfield 1">
           <label class="label">{{uiText.LABEL_DEPARTMENT}}</label>
-          <mat-form-field appearance="outline" >
-            <input formControlName="department_name"  matInput >
+          <mat-form-field appearance="outline" class="disabledField">
+            <input formControlName="department_name" readonly  matInput >
           </mat-form-field>
         </div>
 
         <div class="formfield 2">
           <label class="label">{{uiText.LABEL_JOBCODE}}</label>
-          <mat-form-field appearance="outline">
+          <mat-form-field appearance="outline" class="disabledField">
             <input formControlName="job_code" readonly matInput >
           </mat-form-field>
         </div>
         <div class="formfield 3">
           <label class="label">{{uiText.LABEL_LOCATION}}</label>
-          <mat-form-field appearance="outline">
+          <mat-form-field appearance="outline" class="disabledField">
             <input formControlName="location" readonly matInput >
           </mat-form-field>
         </div>
         <div class="formfield 4">
           <label class="label">{{uiText.LABEL_EXPERIENCE}}</label>
-          <mat-form-field appearance="outline">
+          <mat-form-field appearance="outline" class="disabledField">
             <input formControlName="experience" readonly matInput >
           </mat-form-field>
         </div>
@@ -93,7 +93,7 @@
         </div>
       </div>
         <div class="buttonGroup">
-          <button class="cancelButton">{{uiText.BUTTON_CANCEL}}</button>
+          <button class="cancelButton" (click)="crossClick()">{{uiText.BUTTON_CANCEL}}</button>
           <button class="classyButton">{{uiText.BUTTON_SUBMIT}}</button>
         </div>
     </form>

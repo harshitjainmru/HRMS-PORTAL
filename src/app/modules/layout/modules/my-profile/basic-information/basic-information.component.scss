@@ -157,10 +157,10 @@ section {
       .content {
         .form {
           .mat-form-field {
-            width: 100px;
+            width: 150px;
           }
           .increaseFormfield {
-            width: 100px !important;
+            width: 150px !important;
           }
           .inputs {
             grid-template-columns: auto;
@@ -172,7 +172,7 @@ section {
               .inputs {
                 grid-template-columns: auto;
                 .yearFormfield {
-                  width: 100px !important;
+                  width: 150px !important;
                 }
               }
             }

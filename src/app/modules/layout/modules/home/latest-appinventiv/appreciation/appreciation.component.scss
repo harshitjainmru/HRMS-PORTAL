@@ -49,31 +49,7 @@ section {
     }
   }
 }
-@media (max-width:1201px){
-  section {
-    .award-card {
-      .thnks{
-       display: none;
-      }
-    }
-  }
-}
-@media (min-width:767px)and (max-width:1200px){
-  section {
-    .award-card {
-      .award-header {
-        margin-bottom: 0px;
-      }
-      .message{
-        margin:0px;
-      }
-      .thnks{
-       display: none;
-      }
-    }
-  }
-}
-@media (min-width:415px) and (max-width:539px){
+@media (min-width:400px) and (max-width:539px){
   section {
     .award-card {
       .award-header {
@@ -89,7 +65,7 @@ section {
     }
   }
 }
-@media (max-width:414px){
+@media (max-width:399px){
   section {
     .award-card {
       .award-header {
@@ -97,12 +73,11 @@ section {
         .award-title {
           font-size: 10px;
         }
-      }
-      .message{
-        margin-top:-10px;
+      }  .message{
+        margin:10px 0px;
       }
       .thnks{
-       display: none;
+        display: none;
       }
       .classyButton{
         margin-top: -10px;
