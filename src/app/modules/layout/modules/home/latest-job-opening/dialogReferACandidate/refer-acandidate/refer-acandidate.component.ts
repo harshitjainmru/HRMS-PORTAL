@@ -34,7 +34,7 @@ maxLength=200;
   }
   createForm(){
 this.referCandidateForm = this._formBuilder.group({
-  department_name:[''],
+  department_name:['',{disabled: this.disableValue}],
   job_code:[''],
   location:[''],
   experience:[''],

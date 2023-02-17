@@ -1,16 +1,28 @@
 <section>
-  <header></header>
-  <!-- <ng-container *ngFor="let item of data"> -->
-    <div class="employee">
-      <figure>
-        <img [src]="[data.IMAGES]">
-      </figure>
-      <div class="heading">
-        <h2 class="emp-name">{{data.APPRECIATION_NAME}}</h2>
-        <h4 class="project">{{data.HEADER_VALUE}}</h4>
-      </div>
+  <div class="cancel-icon" (click)="crossClick()">
+    <i class="fa-solid fa-xmark"></i>
+  </div>
+  <div class="employee">
+    <figure>
+      <img [src]="[data.IMAGES]" class="emp-image">
+    </figure>
+    <div class="heading">
+      <span class="emp-name">{{data.APPRECIATION_NAME}}</span>
+      <span class="project">{{data.HEADER_VALUE}}</span>
     </div>
+  </div>
+  <span>
+    <p class="message">{{data.MESSAGE}}</p>
+  </span>
+  <span class="greet">
+    <p class="greet-message">
+      {{data.GREET}}
+    </p>
 
-
-  <!-- </ng-container> -->
+  </span>
+  <p class="team-name">{{data.TEAM_MEMBER}}</p>
+  <p class="head-greet">{{data.HEAD_GREET}}</p>
+  <footer>
+    <p class="head-name">{{data.HEAD_NAME}}</p>
+  </footer>
 </section>

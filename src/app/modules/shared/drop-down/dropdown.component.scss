@@ -7,82 +7,68 @@
   .label {
     font-weight: 500;
   }
-  .labelStyle{
+  .labelStyle {
     font-size: 14px;
     color: $directory-font-color;
     font-weight: 500;
     line-height: 1.4;
     margin-bottom: 4px;
   }
-    .increaseFormfield {
-      width: 369px;
-    }
-    .qualificationDropdown{
-      width: 550px;
-    }
+  .increaseFormfield {
+    width: 369px;
+  }
+  .qualificationDropdown {
+    width: 550px;
+  }
+  ::ng-deep {
+   .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+    color: $button-color!important;
 
   }
-  .filter {
-    width: 90% !important;
-    padding: 10px 12px !important;
-    overflow: hidden;
   }
-::ng-deep {
-
+}
+.filter {
+  width: 98% !important;
+  padding: 10px 0px !important;
+  overflow: hidden;
+}
+::ng-deep{
   .mat-option[aria-disabled="true"] {
-    font-weight: 500;
     color: black;
     text-transform: capitalize;
     user-select: none;
     cursor: default;
     overflow: hidden;
   }
-
-  .mat-option:hover{
+  .mat-option:hover {
     background: $directory-header-color;
-    &:focus{
-    background: $directory-header-color;
-
+    &:focus {
+      background: $directory-header-color;
     }
   }
   .mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
     background: $directory-header-color;
     color: $button-text-color !important;
+  }
 }
-}
-@media (min-width: 1025px) and (max-width: 1320px) {
-  .formfield {
-      .qualificationDropdown{
-        width: auto;
-      }
-    }
-}
-@media (min-width: 550px) and (max-width: 680px) {
-  .formfield {
-      .increaseFormfield {
-        width: 369px;
-      }
-      .qualificationDropdown{
-        width: auto;
-      }
-    }
-}
-@media (min-width: 320px) and (max-width: 550px) {
+
+
+@media (max-width: 1798px) {
   .formfield {
     .increaseFormfield {
       width: auto;
     }
-    .qualificationDropdown{
+    .qualificationDropdown {
       width: auto;
     }
   }
 }
-@media (min-width: 150px) and (max-width: 320px) {
+@media (min-width: 150px) and (max-width: 319px) {
   .formfield {
     .increaseFormfield {
       width: 100px;
     }
-    .qualificationDropdown{
+    .qualificationDropdown {
       width: 100px;
     }
   }

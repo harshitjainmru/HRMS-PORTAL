@@ -38,7 +38,7 @@ ngAfterViewInit(): void {
 openDialog(item):void{
   console.log(item,'iuten');
   const dialogRef = this.dialog.open(ViewMoreComponent, {
-    // disableClose:true,
+    disableClose:true,
     data:item
   })
 }

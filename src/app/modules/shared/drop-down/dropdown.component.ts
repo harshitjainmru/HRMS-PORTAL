@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { FormControl, FormControlName } from '@angular/forms';
+import { FormControl} from '@angular/forms';
 import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 import { validationMessage } from 'src/app/constants/error-messages';

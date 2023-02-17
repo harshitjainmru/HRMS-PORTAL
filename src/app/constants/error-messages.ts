@@ -31,7 +31,7 @@ export const validationMessage =
   ],
   contact:[
     {type:'required',message:'Contact field is required'},
-    {type:'pattern',message:'Only numeric values are allowed'},
+    {type:'pattern',message:'Phone number must be atleast 10 numbers'},
   ],
   total_year:[
     {type:'required',message:'Year field is required'},

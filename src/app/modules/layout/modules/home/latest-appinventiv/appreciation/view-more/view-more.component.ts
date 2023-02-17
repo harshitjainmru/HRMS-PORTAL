@@ -16,5 +16,8 @@ export class ViewMoreComponent implements OnInit {
   ngOnInit(): void {
 
   }
+  crossClick() {
+    this.dialogRef.close('cancel');
+  }
 
 }

@@ -57,19 +57,18 @@ section {
         }
 
         .inputs {
-          @include flexbox();
-          flex-wrap: wrap;
+          display: grid;
+          grid-template-columns: auto auto auto;
           gap: 20px;
         }
         .mid-container {
           @include flexbox();
 
-          gap: 20px;
           .total-exp {
             .inputs {
-              @include flexbox();
-              flex-wrap: wrap;
-              gap: 20px;
+              display: grid;
+              grid-template-columns: auto auto auto auto;
+              gap: 14px;
               .yearFormfield {
                 width: 272px;
               }
@@ -83,11 +82,8 @@ section {
           .addressFormfield {
             width: auto;
           }
-
-          .inputMessage {
-          }
         }
-        .classyButton{
+        .classyButton {
           padding: 8px 15px;
           .saveButton {
             @include buttonTransparent();
@@ -104,24 +100,22 @@ section {
     margin: 2.5rem 0rem 0rem 0.425rem !important;
   }
 }
-@media (min-width: 550px) and (max-width: 680px) {
+@media (max-width: 1798px) {
   section {
     .basic-card {
       .content {
         .form {
-          .mat-form-field {
-            width: 369px;
-          }
-          .increaseFormfield {
-            width: 369px;
+          .increaseFormfield{
+            width: auto !important;
           }
           .mid-container {
             flex-direction: column;
             .total-exp {
               .inputs {
-                .yearFormfield {
-                  width: 369px;
-                }
+                grid-template-columns: auto auto;
+              }
+              .yearFormfield{
+                width: auto !important;
               }
             }
           }
@@ -130,24 +124,25 @@ section {
     }
   }
 }
-@media (min-width: 320px) and (max-width: 550px) {
+@media (max-width:1228px){
   section {
     .basic-card {
       .content {
         .form {
-          .mat-form-field {
-            width: auto;
+          .inputs {
+            grid-template-columns: auto;
           }
-          .increaseFormfield {
+          .increaseFormfield{
             width: auto;
           }
           .mid-container {
             flex-direction: column;
             .total-exp {
               .inputs {
-                .yearFormfield {
-                  width: auto;
-                }
+                grid-template-columns: auto;
+              }
+              .yearFormfield{
+                width: auto !important;
               }
             }
           }
@@ -156,7 +151,7 @@ section {
     }
   }
 }
-@media (min-width: 150px) and (max-width: 320px) {
+@media (min-width: 150px) and (max-width: 319px) {
   section {
     .basic-card {
       .content {
@@ -165,14 +160,19 @@ section {
             width: 100px;
           }
           .increaseFormfield {
-            width: 100px;
+            width: 100px !important;
+          }
+          .inputs {
+            grid-template-columns: auto;
+
           }
           .mid-container {
             flex-direction: column;
             .total-exp {
               .inputs {
+                grid-template-columns: auto;
                 .yearFormfield {
-                  width: 100px;
+                  width: 100px !important;
                 }
               }
             }

@@ -24,6 +24,7 @@ section {
         }
         .increaseFormfield {
           width: 369px;
+          box-shadow: 0px 4px 8px rgb(44 39 56 / 4%) !important;
         }
 
         ::ng-deep {
@@ -45,39 +46,13 @@ section {
     }
   }
 }
-@media (min-width: 1050px) and (max-width: 1390px) {
+@media (min-width: 320px) and (max-width: 1390px) {
   section {
     .basic-card {
       .content {
         .form {
           .increaseFormfield {
-            width: 250px;
-          }
-        }
-      }
-    }
-  }
-}
-@media (min-width: 525px) and (max-width: 1050px) {
-  section {
-    .basic-card {
-      .content {
-        .form {
-          .inputs {
-            flex-direction: column;
-          }
-        }
-      }
-    }
-  }
-}
-@media (min-width: 320px) and (max-width: 525px) {
-  section {
-    .basic-card {
-      .content {
-        .form {
-          .increaseFormfield {
-            width: auto;
+            width: auto !important;
           }
           .inputs {
             flex-direction: column;

@@ -89,20 +89,24 @@ section {
     }
   }
 }
-@media (max-width:415px){
+@media (max-width:414px){
   section {
     .award-card {
       .award-header {
-        margin-bottom: 0px;
+        margin:-10px;
         .award-title {
           font-size: 10px;
         }
       }
       .message{
-        margin:0px;
+        margin-top:-10px;
       }
       .thnks{
        display: none;
+      }
+      .classyButton{
+        margin-top: -10px;
+        padding: 5px 20px !important;
       }
     }
   }

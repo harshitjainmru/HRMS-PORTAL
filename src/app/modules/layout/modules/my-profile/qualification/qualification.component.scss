@@ -8,6 +8,8 @@ section {
     .content {
       .form {
         .inputs {
+          display: grid;
+          grid-template-columns: auto auto;
           gap: 40px;
           .topField {
             margin-top: -25px !important;
@@ -25,49 +27,57 @@ section {
     }
   }
 }
-@media (min-width: 1025px) and (max-width: 1320px) {
+::ng-deep {
+  .mat-select-panel {
+    min-width: calc(100% + 15px) !important;
+    margin: 2.5rem 0rem 0rem 0.425rem !important;
+  }
+}
+@media (max-width: 1798px) {
   section {
     .basic-card {
       .content {
         .form {
           .inputs {
-            .formfield {
-              .increaseFormfield {
-                width: auto;
-              }
-            }
+            grid-template-columns: auto auto;
+          }
+          .increaseFormfield{
+            width: auto !important;
           }
         }
       }
     }
   }
 }
-@media (min-width: 320px) and (max-width: 660px) {
+@media (min-width: 320px) and (max-width: 745px) {
   section {
     .basic-card {
       .content {
         .form {
           .inputs {
-            .formfield {
-              .increaseFormfield {
-                width: auto;
-              }
-            }
+            grid-template-columns: auto !important;
           }
         }
       }
     }
   }
+  ::ng-deep {
+    .mat-select-panel {
+      width: 200px !important;
+      margin: 0rem !important;
+    }
+  }
 }
-@media (min-width: 150px) and (max-width: 320px) {
+@media (min-width: 150px) and (max-width: 319px) {
   section {
     .basic-card {
       .content {
         .form {
           .inputs {
+            grid-template-columns: auto !important;
             .formfield {
               .increaseFormfield {
-                width: 100px;
+                width: 100px !important;
               }
             }
           }

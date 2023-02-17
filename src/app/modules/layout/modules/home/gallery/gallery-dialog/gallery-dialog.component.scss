@@ -4,6 +4,10 @@ section {
   width: 600px;
   height: 600px;
   overflow: hidden;
+  .mat-dialog-container{
+    border-radius: 20px;
+    padding: 0px !important;
+  }
   .cancel-icon {
     border-radius: 50%;
     display: flex;
@@ -25,19 +29,20 @@ section {
     height: 550px;
   }
 }
-::ng-deep{
-  .cdk-overlay-dark-backdrop{
-    background: rgba(0, 0, 0, 0.80);
+  ::ng-deep{
+    .mat-dialog-container{
+      border-radius: 20px;
+      padding: 0px !important;
+    }
+    .cdk-overlay-dark-backdrop{
+      background: rgba(0, 0, 0, 0.80);
+    }
   }
-  .mat-dialog-container{
-    padding: 0px !important;
-  }
-}
 @media (max-width:798px){
   section{
     width:auto;
     .image{
-      width: auto;
+      width: fit-content;
     }
   }
 }

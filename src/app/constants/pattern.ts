@@ -4,7 +4,8 @@ export const PATTERN ={
   ONLY_NUMBER: /^\d+$/,
   FIRST_NAME:/^[a-zA-Z ]{3,25}$/,
   LAST_NAME:/^[a-zA-Z ]{3,25}$/,
-  PHONE_NUMBER:/^\d+$/
+  // PHONE_NUMBER:/^\d+$/
+  PHONE_NUMBER:/^(?:(?:\+{0,2})91(\s*[\-]\s*)?|[0]?)?[6789]\d{9}$/
 
 }
 

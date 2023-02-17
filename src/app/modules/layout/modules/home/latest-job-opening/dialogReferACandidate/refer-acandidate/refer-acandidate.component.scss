@@ -76,12 +76,15 @@ section{
       }
     }
   }
+
 }
 ::ng-deep{
   .mat-dialog-container{
+    border-radius: 20px;
     padding: 0px !important;
   }
   .cdk-overlay-dark-backdrop{
     background: rgba(0, 0, 0, 0.80);
   }
 }
+
