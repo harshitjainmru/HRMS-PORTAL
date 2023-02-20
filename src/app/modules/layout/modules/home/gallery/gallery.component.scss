@@ -66,6 +66,16 @@ section {
     }
   }
 }
+@media (max-width:1798px){
+  .gallery-info {
+    width: 380px;
+  }
+}
+@media (max-width:1784px){
+  .gallery-info {
+    width: 580px;
+  }
+}
 @media (max-width:1199px){
   .event{
     .event-text {
@@ -74,10 +84,16 @@ section {
   }
 }
 @media (max-width:699px){
+  .gallery-info{
+    width: 400px;
+  }
   .event{
     flex-direction: column;
     .event-text {
       width: 240px !important;
+    }
+    .view{
+      width: 100px;
     }
   }
 }

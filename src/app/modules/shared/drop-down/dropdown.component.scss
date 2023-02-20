@@ -20,6 +20,9 @@
   .qualificationDropdown {
     width: 550px;
   }
+  .departmentDropdown{
+    width: 400px;
+  }
   ::ng-deep {
    .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
     color: $button-color!important;
@@ -50,8 +53,15 @@
     background: $directory-header-color;
     color: $button-text-color !important;
   }
+  .mat-form-field-appearance-outline .mat-form-field-outline {
+    background: $button-text-color;
+  }
 }
 
+// ::ng-deep .mat-form-field-outline .ng-tns-c66-3 .mat-form-field-appearance-outline {
+//   background-color: $button-text-color !important;
+
+// }
 
 @media (max-width: 1798px) {
   .formfield {
@@ -59,6 +69,13 @@
       width: auto;
     }
     .qualificationDropdown {
+      width: auto;
+    }
+  }
+}
+@media (max-width:1411px){
+  .formfield {
+    .departmentDropdown{
       width: auto;
     }
   }

@@ -37,6 +37,8 @@ export class FormServiceService {
     language: [],
     professionalCourses: [],
     description: [],
+    employeename:[],
+    departmentname:[]
 
   };
 

@@ -12,7 +12,7 @@ import { SharedModule } from './modules/shared/shared.module';
 
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent,],
   imports: [
     BrowserModule,
     AppRoutingModule,

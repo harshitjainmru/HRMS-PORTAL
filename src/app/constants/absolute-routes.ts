@@ -36,48 +36,60 @@ export const ABS_LAYOUT: IRoute = {
 export const ABS_LAYOUT_HOME: IRoute = {
   path: routes.HOME,
   get fullUrl(): string {
-    return `${ABS_LAYOUT.fullUrl}/${this.path}`;
+    return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
   },
 };
 export const ABS_LAYOUT_MYPROFILE: IRoute = {
   path: routes.MY_PROFILE,
   get fullUrl(): string {
-    return `${ABS_LAYOUT.fullUrl}/${this.path}`;
+    return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
   },
 };
 export const ABS_LAYOUT_DIRECTORY: IRoute = {
   path: routes.DIRECTORY,
   get fullUrl(): string {
-    return `${ABS_LAYOUT.fullUrl}/${this.path}`;
+    return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
   },
 };
 export const ABS_LAYOUT_ENTREPRENURSHIP: IRoute = {
   path: routes.ENTREPRENURSHIP,
   get fullUrl(): string {
-    return `${ABS_LAYOUT.fullUrl}/${this.path}`;
+    return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
   },
 };
 export const ABS_BASIC_INFO: IRoute = {
   path: routes.BASIC,
   get fullUrl(): string {
-    return `${ABS_LAYOUT.fullUrl}/${this.path}`;
+    return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
+  },
+};
+export const ABS_CHANGE_PASSWORD: IRoute = {
+  path: routes.CHANGE_PASSWORD,
+  get fullUrl(): string {
+    return `/${ABS_LAYOUT_MYPROFILE.fullUrl}/${this.path}`;
   },
 };
 export const ABS_LAYOUT_EXPLORE: IRoute = {
   path: routes.EXPLORE,
   get fullUrl(): string {
-    return `${ABS_LAYOUT.fullUrl}/${this.path}`;
+    return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
   },
 };
 export const ABS_LAYOUT_HOLIDAY_CALENDER: IRoute = {
   path: routes.HOLIDAY_CALENDER,
   get fullUrl(): string {
-    return `${ABS_LAYOUT.fullUrl}/${this.path}`;
+    return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
   },
 };
 export const ABS_LAYOUT_JOB_OPENING: IRoute = {
   path: routes.JOB_OPENING,
   get fullUrl(): string {
-    return `${ABS_LAYOUT.fullUrl}/${this.path}`;
+    return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
+  },
+};
+export const ABS_LAYOUT_REFER_LIST: IRoute = {
+  path: routes.JOB_LIST,
+  get fullUrl(): string {
+    return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
   },
 };

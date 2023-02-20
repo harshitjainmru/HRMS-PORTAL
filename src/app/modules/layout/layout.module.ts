@@ -11,6 +11,9 @@ import { SidenavComponent } from './layout-components/sidenav/sidenav.component'
 import {MatListModule} from '@angular/material/list';
 import { ListItemComponent } from './layout-components/sidenav/list-item/list-item.component';
 import { FooterComponent } from './layout-components/footer/footer.component';
+import { HelpDialogComponent } from 'src/app/components/help-dialog/help-dialog.component';
+import { AbsoluteRoutingModule } from 'src/app/pipes/absolute-routing/absolute-routing.module';
+import { LogoutConfirmationComponent } from 'src/app/components/logout-confirmation/logout-confirmation.component';
 @NgModule({
   declarations: [
     LayoutComponent,
@@ -18,6 +21,8 @@ import { FooterComponent } from './layout-components/footer/footer.component';
     SidenavComponent,
     ListItemComponent,
     FooterComponent,
+    HelpDialogComponent,
+    LogoutConfirmationComponent
 
   ],
   imports: [
@@ -27,7 +32,8 @@ import { FooterComponent } from './layout-components/footer/footer.component';
     MatIconModule,
     MatSidenavModule,
     MatMenuModule,
-    MatListModule
+    MatListModule,
+    AbsoluteRoutingModule
 
 
   ]

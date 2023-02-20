@@ -21,7 +21,7 @@ export class LayoutComponent implements OnInit, AfterViewInit {
 
   ngAfterViewInit() {
     this.observer
-      .observe(['(max-width: 1030px)'])
+      .observe(['(max-width: 1000px)'])
       .pipe(delay(1))
       .subscribe((res: any) => {
         if (res.matches) {

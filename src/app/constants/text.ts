@@ -62,7 +62,8 @@ export const SIDENAV = {
   Insurance_LABEL:'Insurance Verification Details',
   CALENDER_LABEL:'Holiday Calendar 2023 ',
   POLICY_LABEL:'Policy Documents',
-  JOB_OPENING_LABEL:'Job Openings'
+  JOB_OPENING_LABEL:'Job Openings',
+  REFFER_LIST_LABEL:'Referral List'
 
 };
 
@@ -249,7 +250,6 @@ export const APPRECIATION_DATA: IAPPRECIATIONDATA[] = [
     HEAD_NAME:'Dileep Gupta',
     APPRECIATION_NAME:'Aashima Anand',
     IMAGES:'/assets/images/ASHIMA.jpeg'
-
 
   },
 ];
@@ -512,6 +512,18 @@ export const DIRECTORY_VALUE = {
   BUTTON_RESET: 'Reset',
   BUTTON_SEARCH: 'Search',
 };
+export const DIRECTORY_DROPDOWN_VALUE = [
+  'All',
+  '.NET',
+  'Android',
+  'Angular',
+  'iOS',
+  'HTML',
+  'Marketing',
+  'Quality Analyst',
+  'Node.js',
+  'FINANCE'
+]
 
 export const DIRECTORY_EMPLOYEE_DATA: IDIRECTORY_DATA[] = [
   {
@@ -682,4 +694,21 @@ export const REFER_A_CANDIDATE_DIALOG ={
   PLACEHOLDER_SKILL:'Enter Skills',
   BUTTON_CANCEL:'Cancel',
   BUTTON_SUBMIT:'Submit'
+}
+
+export const REFER_LIST_VALUE={
+  HEADER_VALUE:'No referrals yet! Checkout current job openings and refer.',
+  BUTTON_VALUE:'Job Openings'
+}
+export const HELP_DIALOG_VALUE={
+HEADING_VALUE:'Please Mail Us',
+QUERY_VALUE:'For any query regarding HRMS, Please mail us to',
+EMAIL_VALUE:'hrms-helpdesk@appinventiv.com',
+BUTTON_VALUE:'OK'
+}
+
+export const CONFIRMATION_LOGOUT_VALUE={
+  QUESTION_VALUE:'Are you sure want to logout ?',
+  BUTTON1:'No',
+  BUTTON2:'Yes'
 }

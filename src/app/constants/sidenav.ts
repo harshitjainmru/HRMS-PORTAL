@@ -7,6 +7,7 @@ import {
   ABS_LAYOUT_HOME,
   ABS_LAYOUT_JOB_OPENING,
   ABS_LAYOUT_MYPROFILE,
+  ABS_LAYOUT_REFER_LIST,
 } from './absolute-routes';
 import { LAYOUT, SIDENAV } from './text';
 
@@ -17,6 +18,7 @@ export interface IsideNav {
   options?: Array<any>;
   routerLink?: string;
   rightIcon?: string;
+  active?:any
 }
 
 export const sideNavList = [
@@ -62,7 +64,7 @@ export const sideNavList = [
       {
         subTitle: SIDENAV.Insurance_LABEL,
         subicon: 'checklist' ,
-        routerLink: '',
+        routerLink: ABS_LAYOUT_HOME.path,
         isActive: true,
       },
       {
@@ -99,10 +101,16 @@ export const sideNavList = [
       { subTitle: SIDENAV.JOB_OPENING_LABEL,
       subicon: '' ,
       routerLink: ABS_LAYOUT_JOB_OPENING.path,
-      // isActive: true,
+      isActive: true,
+    },
+      { subTitle: SIDENAV.REFFER_LIST_LABEL,
+      subicon: '' ,
+      routerLink: ABS_LAYOUT_REFER_LIST.path,
+      isActive: true,
     }
     ],
-    // isActive: true,
+    active: true,
+    // routerLink:'/route'
   },
   // {
   //   title: SIDENAV.Freshers_TrainingLABEL,

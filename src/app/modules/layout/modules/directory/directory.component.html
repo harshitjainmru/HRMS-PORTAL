@@ -3,26 +3,21 @@
     <h1 class="heading-text">{{headerValue.HEADER_VALUE}}</h1>
   </div>
   <div class="filter-field">
-    <form class="form">
+    <form class="form" [formGroup]="directoryFilterformGroup">
       <div class="formfield 3">
         <label class="label">{{headerValue.NAME_LABEL}}</label>
         <mat-form-field appearance="outline" class="increaseFormfield">
-          <input [placeholder]="headerValue.NAME_PLACEHOLDER" matInput >
+          <input [placeholder]="headerValue.NAME_PLACEHOLDER" formControlName="employeename" matInput >
         </mat-form-field>
       </div>
-      <div class="formfield 4">
-        <label class="label">{{headerValue.DEPARTMENT_LABEL}}</label>
-        <mat-form-field appearance="outline" class="increaseFormfield">
-          <mat-select>
-          </mat-select>
-        </mat-form-field>
-      </div>
+      <span>
+        <app-dropdown [formfieldCSS]="'departmentDropdown'" [label]="headerValue.DEPARTMENT_LABEL" [myControlName]="directoryFilterformGroupControl.departmentname" [Data]="dropDownData"></app-dropdown>
+      </span>
       <div class="buttonGroup">
         <button class="button-view" >
           {{headerValue.BUTTON_RESET}}
         </button>
         <div class="search">
-
           <button class="button-refer classyButton">
             <i class="fas fa-search"></i>  {{headerValue.BUTTON_SEARCH}}
           </button>
@@ -33,6 +28,7 @@
   <div class="directory-card">
     <ng-container *ngFor="let item of empData">
       <div class="our-team">
+        <div class="card-hover">&nbsp;</div>
         <div class="img picture">
           <img [src]="item.IMAGE" class="emp-pic">
         </div>
@@ -43,14 +39,14 @@
         <div class="emp-detail">
           <div class="emp email">
             <i [class]="item.EMAIL_ICON" class="icon"></i>
-            <p class="email value">{{item.EMAIL}}</p>
+            <p class="email emailvalue">{{item.EMAIL}}</p>
           </div>
           <div class="emp birthday">
             <i [class]="item.BIRTH_ICON" class="icon"></i>
             <p class="birth value">{{item.BIRTH_DATE}},{{item.BIRTH_MONTH}}</p>
           </div>
         </div>
-        <span class="social">&nbsp;</span>
+        <div class="social">&nbsp;</div>
       </div>
     </ng-container>
   </div>

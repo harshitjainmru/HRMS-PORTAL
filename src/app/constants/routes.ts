@@ -13,6 +13,7 @@ export const SHIFT = 'shift';
 export const CHANGE_PASSWORD = 'change-password';
 export const APPRAISAL = 'appraisal';
 export const EXPLORE = 'startup/add_pitch';
-export const HOLIDAY_CALENDER ='holiday-calender'
-export const JOB_OPENING ='refer-candidate/job_openings'
+export const HOLIDAY_CALENDER ='holiday-calender';
+export const JOB_OPENING ='refer-candidate/job_openings';
+export const JOB_LIST= 'refer-candidate/list'
 

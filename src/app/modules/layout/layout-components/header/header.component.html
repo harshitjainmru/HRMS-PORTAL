@@ -27,23 +27,23 @@
             <mat-icon class="keyboard_arrow_down icon">keyboard_arrow_down</mat-icon>
           </button>
           <mat-menu #menu="matMenu">
-            <button mat-menu-item>
+            <button mat-menu-item [routerLink]="['ABS_LAYOUT_MYPROFILE'|absoluteRouting]">
               <mat-icon class="icon person">person</mat-icon>
               <span>{{uiText.HEADER_MENU_LABEL1 | titlecase}}</span>
             </button>
-            <button mat-menu-item>
+            <button mat-menu-item [routerLink]="['ABS_CHANGE_PASSWORD'|absoluteRouting]">
               <mat-icon> <i class="fa-solid fa-key icon"></i></mat-icon>
               <span>{{uiText.HEADER_MENU_LABEL2 | titlecase}}</span>
             </button>
             <hr class="horizontal">
-            <button mat-menu-item class="sign">
+            <button mat-menu-item class="sign" (click)="openLogoutDialog() ">
               <mat-icon class="icon" style="color: red;">logout</mat-icon>
               <span>{{uiText.HEADER_MENU_LABEL3 | titlecase}}</span>
             </button>
           </mat-menu>
         </span>
       </div>
-      <div class="helpButton">
+      <div class="helpButton" (click)="openDialog()">
         <button class="help button">
           {{uiText.HEADER_BUTTON | titlecase}}
         </button>

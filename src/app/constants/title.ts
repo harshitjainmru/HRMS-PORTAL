@@ -6,5 +6,6 @@ LAYOUT_TITLE:'HRMS | Appinventiv HRMS',
 ENTREPRENEURSHIP_TITLE:'Share Your Idea',
 EXPLORE_TITLE:'Add Pitch',
 JOB_OPENING_TITLE:'Current Job Openings',
+CANDIDATE_REFERRAL:'Candidate Referral Portal'
 
 }

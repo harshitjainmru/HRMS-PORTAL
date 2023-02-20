@@ -29,7 +29,7 @@ section {
   .mat-drawer-backdrop.mat-drawer-shown {
     background-color: $border-color;
   }
-  @media only screen and (max-width: 1030px) {
+  @media only screen and (max-width: 1000px) {
     .mat-drawer {
       position: fixed !important;
       top: 0;

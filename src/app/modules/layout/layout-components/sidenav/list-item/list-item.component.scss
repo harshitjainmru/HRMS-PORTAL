@@ -66,6 +66,9 @@ section {
     bottom: 0;
   }
 }
+.active1 {
+  color: $sidenav-hover-color;
+}
 .disable{
   color: $font-color;
   &::before{
@@ -83,8 +86,7 @@ section {
   .sidenav-label{
     position: relative;
     &::after{
-      // content: "Coming Soon";
-
+      content: "Coming Soon";
       position: absolute;
       top: 15px;
       font-size: 12px;
