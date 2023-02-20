@@ -7,6 +7,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { DropDownModule } from 'src/app/modules/shared/drop-down/drop-down.module';
+import { EditorModule } from '@tinymce/tinymce-angular';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,7 +21,10 @@ import { DropDownModule } from 'src/app/modules/shared/drop-down/drop-down.modul
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
-    DropDownModule
+    DropDownModule,
+    EditorModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class ExploreModule { }

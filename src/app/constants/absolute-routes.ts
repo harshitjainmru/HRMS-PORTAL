@@ -93,3 +93,9 @@ export const ABS_LAYOUT_REFER_LIST: IRoute = {
     return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
   },
 };
+export const ABS_LAYOUT_POLICY_DOC: IRoute = {
+  path: routes.POLICY_DOC,
+  get fullUrl(): string {
+    return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
+  },
+};

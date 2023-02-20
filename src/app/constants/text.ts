@@ -63,7 +63,10 @@ export const SIDENAV = {
   CALENDER_LABEL:'Holiday Calendar 2023 ',
   POLICY_LABEL:'Policy Documents',
   JOB_OPENING_LABEL:'Job Openings',
-  REFFER_LIST_LABEL:'Referral List'
+  REFFER_LIST_LABEL:'Referral List',
+  FINANCE_SUBLABEL:'Salary Slip',
+  FINANCE_SUBLABEL_FORM: 'Form 16',
+  FINANCE_SUBLABEL_INVESTMENT:'Investment Declaration'
 
 };
 

@@ -49,8 +49,6 @@ import { ViewMoreComponent } from './latest-appinventiv/appreciation/view-more/v
     FormsModule,
     ReactiveFormsModule,
     MatDialogModule,
-
-
   ]
 })
 export class HomeModule { }

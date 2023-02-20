@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import { TITLE } from 'src/app/constants/title';
 
 @Component({
   selector: 'app-holiday-calender',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HolidayCalenderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _title:Title) { }
 
   ngOnInit(): void {
+    this._title.setTitle(TITLE.CALENDAR_TITLE)
   }
 
 }

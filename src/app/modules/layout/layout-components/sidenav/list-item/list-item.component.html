@@ -1,6 +1,6 @@
 <section>
   <mat-list-item (click)="showSubmenu = !showSubmenu" class="parent" [routerLink]=navlist.routerLink
-    [ngClass]="{'disable':!navlist.isActive}" routerLinkActive="active">
+    [ngClass]="{'disable':!navlist.isActive}" [routerLinkActive]="navlist.routerLink ? 'active':''">
     <!-- <mat-icon>{{navlist.icon}}</mat-icon> -->
     <span class="list-content">
       <i class="sidenav-icon" [class]="navlist.icon"></i>
@@ -14,15 +14,25 @@
       </span>
     </span>
   </mat-list-item>
-  <ng-container *ngIf="navlist.options">
+  <ng-container *ngIf="navlist.options;">
     <div class="submenu" [ngClass]="{'expanded' : showSubmenu}" *ngIf="showSubmenu && isShowing">
       <span *ngFor="let item of navlist.options" >
-        <mat-list-item [routerLink]="item.routerLink"  [ngClass]="{'disable':!item.isActive}" routerLinkActive="active">
-          <span class="sublist-content">
-            <mat-icon class="sidenav-icon">{{item.subicon}}</mat-icon>
-            <span class="sidenav-label">{{item.subTitle}}</span>
-          </span>
-        </mat-list-item>
+        <ng-container *ngIf="item.routerLink; else anchor">
+          <mat-list-item [routerLink]="item.routerLink"  [ngClass]="{'disable':!item.isActive}" [routerLinkActive]="item.routerLink ? 'active':''">
+            <span class="sublist-content">
+              <mat-icon class="sidenav-icon">{{item.subicon}}</mat-icon>
+              <span class="sublabel">{{item.subTitle}}</span>
+            </span>
+          </mat-list-item>
+        </ng-container>
+        <ng-template #anchor>
+          <mat-list-item >
+            <a [href]="item.link" target="_blank" class="sublist-content anchorLink">
+              <mat-icon class="sidenav-icon">{{item.subicon}}</mat-icon>
+              <span class=" sublabel">{{item.subTitle}}</span>
+            </a>
+          </mat-list-item>
+        </ng-template>
       </span>
     </div>
   </ng-container>

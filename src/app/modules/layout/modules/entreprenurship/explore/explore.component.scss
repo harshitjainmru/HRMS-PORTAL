@@ -2,8 +2,8 @@
 @import "src/app/scss/mixins.scss";
 @import "src/app/scss/_job-opening-button.scss";
 @import "src/app/scss/_hash-heading.scss";
-@mixin buttonSize(){
-  padding:0 25px;
+@mixin buttonSize() {
+  padding: 0 25px;
   height: 40px;
 }
 section {
@@ -15,7 +15,7 @@ section {
       color: $directory-header-color;
       font-size: 24px;
       font-weight: 500;
-      margin-top: 5px
+      margin-top: 5px;
     }
     .buttonGroup {
       @include flexbox();
@@ -25,12 +25,10 @@ section {
         border-radius: 10px;
         background: $cancel-button-color;
         border: 1.5px solid rgba(150, 165, 184, 0.5);
-       @include buttonSize();
+        @include buttonSize();
       }
       .classyButton {
         @include buttonSize();
-
-
       }
     }
   }
@@ -38,11 +36,11 @@ section {
     background-color: $button-text-color;
     padding: 1rem;
     margin: 2rem 0;
-    .form{
-      .formfield{
+    .form {
+      .formfield {
         display: flex;
         flex-direction: column;
-         .label{
+        .label {
           font-family: "Lato";
           font-size: 14px;
           color: $directory-font-color;
@@ -50,26 +48,48 @@ section {
           line-height: 1.4;
           margin-bottom: 4px;
         }
-        .input-file{
+        .input-file {
           border: 0.5px solid $formField-border-color;
           padding: 14px;
           border-radius: 5px;
-
         }
-        .personalDetail{
+        .personalDetail {
           width: 725px;
         }
-        ::ng-deep .mat-form-field-appearance-outline.mat-form-field-disabled .mat-form-field-outline{
-          background-color: #F8F8F8 !important;
+        ::ng-deep .mat-form-field-appearance-outline.mat-form-field-disabled .mat-form-field-outline {
+          background-color: #f8f8f8 !important;
           box-shadow: 0px 4px 8px rgb(44 39 56 / 4%) !important;
           border: 0.5px solid $formField-border-color;
           border-radius: 5px;
         }
       }
-      .inputs{
+      .inputs {
         display: flex;
         gap: 20px;
+      }
+    }
+  }
+}
 
+::ng-deep {
+  .tox {
+    .tox-editor-container {
+      .tox-editor-header {
+        background-color: #f8f8f8 !important;
+        .tox-menubar {
+          background-color: #f8f8f8;
+        }
+        .tox-toolbar-overlord {
+          border-top: none !important;
+          padding-bottom: 0px ;
+          padding-top: 0px;
+          .tox-toolbar__primary {
+            background-color: #f8f8f8;
+          }
+        }
+      }
+      .tox-statusbar {
+        background-color: #f8f8f8;
       }
     }
   }

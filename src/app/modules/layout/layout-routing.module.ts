@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ABS_LAYOUT_DIRECTORY, ABS_LAYOUT_ENTREPRENURSHIP, ABS_LAYOUT_EXPLORE, ABS_LAYOUT_HOLIDAY_CALENDER, ABS_LAYOUT_HOME, ABS_LAYOUT_JOB_OPENING, ABS_LAYOUT_MYPROFILE, ABS_LAYOUT_REFER_LIST } from 'src/app/constants/absolute-routes';
+import { ABS_LAYOUT_DIRECTORY, ABS_LAYOUT_ENTREPRENURSHIP, ABS_LAYOUT_EXPLORE, ABS_LAYOUT_HOLIDAY_CALENDER, ABS_LAYOUT_HOME, ABS_LAYOUT_JOB_OPENING, ABS_LAYOUT_MYPROFILE, ABS_LAYOUT_POLICY_DOC, ABS_LAYOUT_REFER_LIST } from 'src/app/constants/absolute-routes';
 import { LayoutComponent } from './layout.component';
 
 const routes: Routes = [
@@ -48,7 +48,12 @@ const routes: Routes = [
         path:ABS_LAYOUT_REFER_LIST.path,
         loadChildren:() =>
         import('./modules/referlist/referlist.module').then((m)=>m.ReferlistModule)
-      }
+      },
+      {
+        path:ABS_LAYOUT_POLICY_DOC.path,
+        loadChildren:() =>
+        import('./modules/policy-doc/policy-doc.module').then((m)=>m.PolicyDocModule)
+      },
     ],
   },
 ];

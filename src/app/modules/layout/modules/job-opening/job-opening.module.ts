@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { JobOpeningRoutingModule } from './job-opening-routing.module';
 import { JobOpeningComponent } from './job-opening.component';
+import { SharedModule } from 'src/app/modules/shared/shared.module';
 
 
 @NgModule({
@@ -11,7 +12,8 @@ import { JobOpeningComponent } from './job-opening.component';
   ],
   imports: [
     CommonModule,
-    JobOpeningRoutingModule
+    JobOpeningRoutingModule,
+    SharedModule
   ]
 })
 export class JobOpeningModule { }

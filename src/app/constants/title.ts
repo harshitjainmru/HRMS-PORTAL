@@ -6,6 +6,9 @@ LAYOUT_TITLE:'HRMS | Appinventiv HRMS',
 ENTREPRENEURSHIP_TITLE:'Share Your Idea',
 EXPLORE_TITLE:'Add Pitch',
 JOB_OPENING_TITLE:'Current Job Openings',
-CANDIDATE_REFERRAL:'Candidate Referral Portal'
+DIRECTORY_TITLE:'Employee Directory',
+CANDIDATE_REFERRAL:'Candidate Referral Portal',
+CALENDAR_TITLE:'Holiday Calendar | 2023',
+POLICY_TITLE:'Policy Documents'
 
 }

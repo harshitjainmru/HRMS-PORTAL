@@ -15,5 +15,6 @@ export const APPRAISAL = 'appraisal';
 export const EXPLORE = 'startup/add_pitch';
 export const HOLIDAY_CALENDER ='holiday-calender';
 export const JOB_OPENING ='refer-candidate/job_openings';
-export const JOB_LIST= 'refer-candidate/list'
+export const JOB_LIST= 'refer-candidate/list';
+export const POLICY_DOC='policy-documents'
 

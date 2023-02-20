@@ -5,24 +5,27 @@ section {
   .sidenav-icon {
     font-size: 20px;
   }
-  .sidenav-label {
-    margin: 0px 15px;
-    font-size: 15px;
-    font-weight: 500;
-    width: 150px;
-    @include flexbox();
-    .new-menu{
-      margin-left: 5px;
-      color: $error-color;
-      animation: rotation 4s infinite cubic-bezier(0.89,-0.4, 0.02, 1.3);
-      &::before{
-      content: "\f0a3";
-      }
-    }
-}
   .parent {
     .list-content {
       @include flexbox();
+      &:hover {
+        color: $sidenav-hover-color;
+      }
+      .sidenav-label {
+        margin: 0px 15px;
+        font-size: 15px;
+        font-weight: 500;
+        width: 150px;
+        @include flexbox();
+        .new-menu{
+          margin-left: 5px;
+          color: $error-color;
+          animation: rotation 4s infinite cubic-bezier(0.89,-0.4, 0.02, 1.3);
+          &::before{
+          content: "\f0a3";
+          }
+        }
+    }
     }
     .menu-button {
       position: absolute;
@@ -48,12 +51,32 @@ section {
     }
   }
 }
+.anchorLink{
+  text-decoration: none;
+  color: black;
+  &:active{
+    color: $sidenav-hover-color;
+
+  }
+}
 .sublist-content {
   margin: 0px 10px;
   @include flexbox();
+
+  text-decoration: none;
+
+  .sublabel{
+    width: auto !important;
+    margin: 0px 0px 0px 5px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  &:hover {
+    color: $sidenav-hover-color;
+  }
 }
 .active {
-  color: $sidenav-hover-color;
+  color: $sidenav-hover-color !important;
   &::before {
     position: absolute;
     content: "";
@@ -65,9 +88,6 @@ section {
     top: 3px;
     bottom: 0;
   }
-}
-.active1 {
-  color: $sidenav-hover-color;
 }
 .disable{
   color: $font-color;
@@ -109,7 +129,5 @@ section {
   .mat-list-item-content {
     padding: 1rem 1.3rem !important;
   }
-  &:hover {
-    color: $sidenav-hover-color;
-  }
+
 }

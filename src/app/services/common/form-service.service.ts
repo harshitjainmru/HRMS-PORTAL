@@ -38,7 +38,15 @@ export class FormServiceService {
     professionalCourses: [],
     description: [],
     employeename:[],
-    departmentname:[]
+    departmentname:[],
+    name:[],
+    emp_id:[],
+    pitch_title:[],
+    industry:[],
+    pitch_type:[],
+    editor:[],
+    presentation:[]
+
 
   };
 

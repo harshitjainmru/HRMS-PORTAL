@@ -11,7 +11,7 @@
       <h3 class="mydetails">{{uiText.MY_DETAIL}}</h3>
     </div>
     <div class="form">
-      <form>
+      <form [formGroup]="ideaForm">
         <div class="formfield 2">
           <label class="label">{{uiText.NAME_LABEL}}</label>
           <mat-form-field appearance="outline">
@@ -38,23 +38,37 @@
         <div class="formfield 2">
           <label class="label">{{uiText.PITCH_LABEL}}</label>
           <mat-form-field appearance="outline">
-            <input  matInput>
+            <input formControlName="pitch_title" matInput>
           </mat-form-field>
         </div>
         <span>
-          <app-dropdown [label]="uiText.INDUSTRY_LABEL" [labelStyle]="'labelStyle'" [Data]="industryDropdownValue"></app-dropdown>
+          <app-dropdown [label]="uiText.INDUSTRY_LABEL" [labelStyle]="'labelStyle'" [myControlName]="ideaFormControl.industry" [Data]="industryDropdownValue"></app-dropdown>
         </span>
         <span>
-          <app-dropdown [label]="uiText.TYPE_LABEL" [labelStyle]="'labelStyle'" [Data]="typeDropdownValue"></app-dropdown>
+          <app-dropdown [label]="uiText.TYPE_LABEL" [labelStyle]="'labelStyle'" [myControlName]="ideaFormControl.pitch_type" [Data]="typeDropdownValue"></app-dropdown>
         </span>
         <div class="formfield 2">
           <label class="label">{{uiText.IDEA_LABEL}}</label>
-
+          <editor
+          [init]="{
+            height: 300,
+            plugins: [
+               'a11ychecker','advlist','advcode','advtable','autolink','checklist','export',
+              'lists','link','image','charmap','preview','anchor','searchreplace','visualblocks',
+              'powerpaste','fullscreen','formatpainter','insertdatetime','media','table','help','wordcount'
+            ],
+            toolbar:
+             'undo redo | casechange blocks | bold italic backcolor | \
+             alignleft aligncenter alignright alignjustify | \
+             bullist numlist checklist outdent indent | removeformat | a11ycheck code table help'
+          }"
+          formControlName="editor"
+        ></editor>
         </div>
         <div class="formfield 2">
           <label class="label">{{uiText.PRESENTATION_LABEL}}</label>
           <div class="input-file">
-            <input type="file">
+            <input type="file" formControlName="presentation">
           </div>
         </div>
       </form>

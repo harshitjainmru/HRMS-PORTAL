@@ -12,9 +12,9 @@
           <ng-container *ngSwitchCase="'text'">
             {{element[row.key]}}
           </ng-container>
-          <!-- <ng-container *ngSwitchCase="'link'">
-            <a [routerLink]="row.link" class="dataLink">{{element[row.key]}}</a>
-          </ng-container> -->
+          <ng-container *ngSwitchCase="'link'">
+            <a [href]="row.link" class="dataLink">{{element[row.key]}}</a>
+          </ng-container>
           <ng-container *ngSwitchCase="'action'">
             <div class="actionIcon">
               <ng-container *ngFor="let icon of row.action; let i=index;">

@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { Title } from '@angular/platform-browser';
 import { DIRECTORY_DROPDOWN_VALUE, DIRECTORY_EMPLOYEE_DATA, DIRECTORY_VALUE } from 'src/app/constants/text';
+import { TITLE } from 'src/app/constants/title';
 import { FormServiceService } from 'src/app/services/common/form-service.service';
 
 @Component({
@@ -13,10 +15,11 @@ headerValue=DIRECTORY_VALUE
 empData=DIRECTORY_EMPLOYEE_DATA
 dropDownData=DIRECTORY_DROPDOWN_VALUE
 directoryFilterformGroup!:FormGroup
-  constructor(private _formBuilder:FormBuilder,private _formService:FormServiceService) { }
+  constructor(private _formBuilder:FormBuilder,private _formService:FormServiceService,private title:Title) { }
 
   ngOnInit(): void {
     this.createForm();
+    this.title.setTitle(TITLE.DIRECTORY_TITLE)
   }
   createForm(){
     this.directoryFilterformGroup = this._formBuilder.group({

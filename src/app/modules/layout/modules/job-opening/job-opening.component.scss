@@ -18,3 +18,11 @@ section {
     gap: 20px;
   }
 }
+
+@media (max-width:1109px){
+  section {
+    .card-content {
+      grid-template-columns: auto auto;
+    }
+  }
+}

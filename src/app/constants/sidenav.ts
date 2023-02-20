@@ -7,6 +7,7 @@ import {
   ABS_LAYOUT_HOME,
   ABS_LAYOUT_JOB_OPENING,
   ABS_LAYOUT_MYPROFILE,
+  ABS_LAYOUT_POLICY_DOC,
   ABS_LAYOUT_REFER_LIST,
 } from './absolute-routes';
 import { LAYOUT, SIDENAV } from './text';
@@ -76,23 +77,42 @@ export const sideNavList = [
       {
         subTitle: SIDENAV.POLICY_LABEL,
         subicon: 'insert_drive_file' ,
-        routerLink: '',
         isActive: true,
+        routerLink:ABS_LAYOUT_POLICY_DOC.path
       },
     ],
-    // isActive: true,
+    isActive: true,
   },
   {
     title: SIDENAV.Finance_LABEL,
     icon: 'fas fa-money-bill-wave',
-    options: [],
-    // isActive: true,
+    options: [
+      { subTitle: SIDENAV.FINANCE_SUBLABEL,
+        subicon: 'horizontal_rule' ,
+        type:'external',
+        link:'https://hrms.easysourceindia.com/Payroll/',
+        isActive: true,
+      },
+      { subTitle: SIDENAV.FINANCE_SUBLABEL_FORM,
+        subicon: 'horizontal_rule' ,
+        type:'external',
+        link:'https://hrms.easysourceindia.com/Payroll/',
+        isActive: true,
+      },
+      { subTitle: SIDENAV.FINANCE_SUBLABEL_INVESTMENT,
+        subicon: 'horizontal_rule' ,
+        type:'external',
+        link:'https://hrms.easysourceindia.com/Payroll/',
+        isActive: true,
+      },
+    ],
+    isActive: true,
   },
   {
     title: SIDENAV.Reviews_LABEL,
     icon: 'fa-solid fa-cube',
     options: [],
-    // isActive: true,
+    isActive: true,
   },
   {
     title: SIDENAV.Refer_Friend_LABEL,
@@ -109,8 +129,7 @@ export const sideNavList = [
       isActive: true,
     }
     ],
-    active: true,
-    // routerLink:'/route'
+    isActive: true,
   },
   // {
   //   title: SIDENAV.Freshers_TrainingLABEL,
