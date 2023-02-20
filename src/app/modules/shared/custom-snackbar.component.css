@@ -1,0 +1,18 @@
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  padding: 0px 20px;
+}
+
+section .icon .customIcon {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+::ng-deep.mat-snack-bar-container {
+  margin: 0.5px !important;
+  border-radius: 0% !important;
+}
+/*# sourceMappingURL=custom-snackbar.component.css.map */
