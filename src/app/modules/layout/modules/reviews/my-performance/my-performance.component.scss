@@ -1,0 +1,126 @@
+@import "../../../../../scss/var";
+@import "../../../../../scss/mixins.scss";
+$borderRadius: 10px;
+section {
+  margin: 35px;
+  .breadcrumb {
+    .breadcrumb-text {
+    }
+  }
+  .heading {
+    .header {
+      font-size: 20px;
+      color: $purple-color;
+      border-bottom: 1px solid #f3f7fc;
+      font-weight: 600;
+    }
+  }
+  .rating-card {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    .left-content {
+      .emp-detail {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-left: 35px;
+        .defaultImage {
+          width: 70px;
+          height: 70px;
+          border: 1px solid $border-color;
+        }
+        .content {
+          .emp-name {
+            margin: 0px !important;
+            font-size: 15px;
+            font-weight: 500;
+          }
+          .emp-designation {
+            color: $directory-font-color;
+            font-size: 13px;
+          }
+          .years {
+            background-color: $experience-background-color-review;
+            width: 40%;
+            padding: 5px;
+            font-weight: 600;
+            text-align: center;
+          }
+        }
+      }
+      .award {
+        display: grid;
+        grid-template-columns: 50% 30%;
+        gap: 20px;
+        margin-left: 35px;
+        .text {
+          font-size: 15px;
+          margin: 0 0 12px !important;
+          font-weight: 500;
+        }
+        .award-any {
+          background-color: $award-background-color-review;
+          padding: 20px;
+          border-radius: $borderRadius;
+          height: 50px;
+        }
+        .honour-any {
+          background-color: $honour-background-color-review;
+          padding: 20px;
+          border-radius: $borderRadius;
+          height: 50px;
+        }
+      }
+    }
+    .criteria {
+      background-color: $rating-criteria-background-color;
+      padding: 20px;
+      margin-right: 50px;
+      border-radius: $borderRadius;
+      .upper-content {
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        .overall-rating {
+          .number {
+            background: transparent;
+            padding: 0;
+            font-size: 50px;
+            line-height: 1.2;
+          }
+        }
+        .date {
+          .date-text {
+            background-color: $button-text-color;
+            border-radius: 30px;
+            border: 1px solid $border-color-rating-date;
+            width: 260px;
+            font-size: 13px;
+            font-weight: 600 !important;
+            text-align: center;
+          }
+        }
+      }
+      .dividers {
+        display: grid;
+        grid-template-columns: 45% 45% 45% 45%;
+        gap: 20px;
+        width: 50%;
+        .tech {
+          background-color: $rating-divider-background-color;
+          padding: 15px;
+          border-radius: $borderRadius;
+          .value {
+            font-size: 12px;
+            color: $font-color;
+            font-weight: 300;
+            text-align: center;
+          }
+          .rating-number {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

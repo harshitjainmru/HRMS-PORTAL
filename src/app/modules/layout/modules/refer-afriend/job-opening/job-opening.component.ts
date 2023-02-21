@@ -3,7 +3,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { Title } from '@angular/platform-browser';
 import { JOB_OPENING, LATEST_JOB_OPENING } from 'src/app/constants/text';
 import { TITLE } from 'src/app/constants/title';
-import { ReferACandidateComponent } from '../home/latest-job-opening/dialogReferACandidate/refer-acandidate/refer-acandidate.component';
+import { ReferACandidateComponent } from '../../home/latest-job-opening/dialogReferACandidate/refer-acandidate/refer-acandidate.component';
 
 @Component({
   selector: 'app-job-opening',

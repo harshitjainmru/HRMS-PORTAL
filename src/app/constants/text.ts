@@ -66,7 +66,8 @@ export const SIDENAV = {
   REFFER_LIST_LABEL:'Referral List',
   FINANCE_SUBLABEL:'Salary Slip',
   FINANCE_SUBLABEL_FORM: 'Form 16',
-  FINANCE_SUBLABEL_INVESTMENT:'Investment Declaration'
+  FINANCE_SUBLABEL_INVESTMENT:'Investment Declaration',
+  REVIEWS_SUBLABEL:'My Performance'
 
 };
 
@@ -714,4 +715,30 @@ export const CONFIRMATION_LOGOUT_VALUE={
   QUESTION_VALUE:'Are you sure want to logout ?',
   BUTTON1:'No',
   BUTTON2:'Yes'
+}
+export const MYPERFORMACE_VALUE={
+  BREADCRUMB_VALUE1:'Home',
+  BREADCRUMB_VALUE2:'Reviews',
+  BREADCRUMB_VALUE3:'Performance',
+  AWARDS_VALUE:'AWARDS',
+  HONOURS_VALUE:'HONOURS',
+  NULL_VALUE:'N/A',
+  TILL_NOW_VALUE:'Till Now',
+  JANUARY_LABEL:'Jan',
+  EMPLOYEE_NAME:'Harshit Kumar Jain',
+  EMPLOYEE_DESIGNATION:'Software Engineer (Angular)',
+  TECHNICAL_LABEL:'Technical Skills',
+  OWNERSHIP_LABEL:'Ownership of Delivery',
+  TEAMWORK_LABEL:'Teamwork',
+  PROCESS_LABEL:'Process Adherence',
+  YEAR_SHORTFORM:'YRS'
+}
+
+export const JOB_DETAILS ={
+  BREADCRUMB_VALUE:'Home',
+  BREADCRUMB_VALUE1:'Job Openings',
+  BREADCRUMB_VALUE2:'Details',
+  JOB_DETAILS_VALUE:'Job Details',
+
+
 }

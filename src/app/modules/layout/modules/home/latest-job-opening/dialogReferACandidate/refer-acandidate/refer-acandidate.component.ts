@@ -6,38 +6,50 @@ import { REFER_A_CANDIDATE_DIALOG } from 'src/app/constants/text';
 @Component({
   selector: 'app-refer-acandidate',
   templateUrl: './refer-acandidate.component.html',
-  styleUrls: ['./refer-acandidate.component.scss']
+  styleUrls: ['./refer-acandidate.component.scss'],
 })
 export class ReferACandidateComponent implements OnInit {
-uiText=REFER_A_CANDIDATE_DIALOG
-disableValue:boolean=true
-referCandidateForm!:FormGroup
-maxLength=200;
+  uiText = REFER_A_CANDIDATE_DIALOG;
+  disableValue: boolean = true;
+  referCandidateForm!: FormGroup;
+  maxLength = 200;
   constructor(
     private dialogRef: MatDialogRef<ReferACandidateComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
-    private _formBuilder:FormBuilder
-  ) { }
+    private _formBuilder: FormBuilder
+  ) {}
 
   ngOnInit(): void {
-    console.log(this.data,"bliiimp");
+    console.log(this.data, 'bliiimp');
     this.createForm();
-    this.referCandidateForm.get('department_name').setValue(this.data.DEPARTMENT_VALUE)
-    this.referCandidateForm.get('job_code').setValue(this.data.JOB_CODE)
-    this.referCandidateForm.get('location')?.setValue(this.data.LOCATION)
-    this.referCandidateForm.get('experience')?.setValue(this.data.EXPERIENCE_NUMBER)
-
-
+    this.setValue();
+    this.setValueDisabled();
   }
   crossClick() {
     this.dialogRef.close('cancel');
   }
-  createForm(){
-this.referCandidateForm = this._formBuilder.group({
-  department_name:['',{disabled: this.disableValue}],
-  job_code:[''],
-  location:[''],
-  experience:[''],
-})
+  createForm() {
+    this.referCandidateForm = this._formBuilder.group({
+      department_name: ['', { disabled: true }],
+      job_code: [''],
+      location: [''],
+      experience: [''],
+    });
+  }
+  setValue() {
+    this.referCandidateForm
+      .get('department_name')
+      .setValue(this.data.DEPARTMENT_VALUE);
+    this.referCandidateForm.get('job_code').setValue(this.data.JOB_CODE);
+    this.referCandidateForm.get('location')?.setValue(this.data.LOCATION);
+    this.referCandidateForm
+      .get('experience')
+      ?.setValue(this.data.EXPERIENCE_NUMBER);
+  }
+  setValueDisabled() {
+    this.referCandidateForm.get('department_name').disable();
+    this.referCandidateForm.get('job_code').disable();
+    this.referCandidateForm.get('location').disable();
+    this.referCandidateForm.get('experience').disable();
   }
 }

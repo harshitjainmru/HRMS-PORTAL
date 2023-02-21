@@ -3,7 +3,9 @@
 section{
   max-width: 500px;
   padding: 16px;
-  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 600px;
   .employee{
     display: flex;
     align-items: center;
@@ -64,3 +66,18 @@ section{
   }
 }
 
+@media (max-width:411px){
+  section{
+   height: 500px;
+    overflow-y:scroll ;
+    padding: 20px;
+    .employee{
+    flex-direction: column;
+    }
+  }
+  ::ng-deep{
+    .mat-dialog-container{
+      padding: 0px !important;
+    }
+  }
+}

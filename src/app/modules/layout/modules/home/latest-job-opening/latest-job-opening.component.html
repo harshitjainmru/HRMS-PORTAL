@@ -34,7 +34,7 @@
           <p class="experiencenumber">{{item.EXPERIENCE_NUMBER}}</p>
         </div>
         <div class="buttonGroup">
-          <button class="button-view">
+          <button class="button-view" [routerLink]="['ABS_LAYOUT_JOB_DETAIL'|absoluteRouting]">
             {{item.BUTTON_VIEW}}
           </button>
           <button class="button-refer classyButton" (click)="openDialog(item)">

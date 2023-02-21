@@ -14,7 +14,7 @@
       </span>
     </span>
   </mat-list-item>
-  <ng-container *ngIf="navlist.options;">
+  <ng-container *ngIf="navlist.options && navlist.options.length;">
     <div class="submenu" [ngClass]="{'expanded' : showSubmenu}" *ngIf="showSubmenu && isShowing">
       <span *ngFor="let item of navlist.options" >
         <ng-container *ngIf="item.routerLink; else anchor">

@@ -7,6 +7,7 @@ import {
   ABS_LAYOUT_HOME,
   ABS_LAYOUT_JOB_OPENING,
   ABS_LAYOUT_MYPROFILE,
+  ABS_LAYOUT_MY_PERFORMANCE,
   ABS_LAYOUT_POLICY_DOC,
   ABS_LAYOUT_REFER_LIST,
 } from './absolute-routes';
@@ -50,12 +51,12 @@ export const sideNavList = [
       {
         subTitle: 'Explore',
         subicon: 'horizontal_rule',
-        routerLink: ABS_LAYOUT_EXPLORE.path,
+        routerLink: ABS_LAYOUT_ENTREPRENURSHIP.path,
         isActive: true,
       },
     ],
     isActive: true,
-    routerLink: ABS_LAYOUT_ENTREPRENURSHIP.path,
+    // routerLink: ABS_LAYOUT_ENTREPRENURSHIP.path,
     rightIcon: 'fas fa-certificate',
   },
   {
@@ -111,7 +112,13 @@ export const sideNavList = [
   {
     title: SIDENAV.Reviews_LABEL,
     icon: 'fa-solid fa-cube',
-    options: [],
+    options: [
+      { subTitle: SIDENAV.REVIEWS_SUBLABEL,
+        subicon: 'calendar_today' ,
+        routerLink:ABS_LAYOUT_MY_PERFORMANCE.path,
+        isActive: true,
+      },
+    ],
     isActive: true,
   },
   {

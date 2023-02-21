@@ -8,6 +8,7 @@ import { TITLE } from 'src/app/constants/title';
   styleUrls: ['./policy-doc.component.scss']
 })
 export class PolicyDocComponent implements OnInit {
+  headerValue=TITLE.POLICY_TITLE
 
   constructor(private _title:Title) { }
 

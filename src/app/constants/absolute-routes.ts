@@ -81,8 +81,26 @@ export const ABS_LAYOUT_HOLIDAY_CALENDER: IRoute = {
     return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
   },
 };
+// export const ABS_LAYOUT_REVIEW: IRoute = {
+//   path: routes.REVIEW,
+//   get fullUrl(): string {
+//     return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
+//   },
+// };
+export const ABS_LAYOUT_MY_PERFORMANCE: IRoute = {
+  path: routes.PERFORMANCE,
+  get fullUrl(): string {
+    return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
+  },
+};
 export const ABS_LAYOUT_JOB_OPENING: IRoute = {
   path: routes.JOB_OPENING,
+  get fullUrl(): string {
+    return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
+  },
+};
+export const ABS_LAYOUT_JOB_DETAIL: IRoute = {
+  path: routes.JOB_DETAILS,
   get fullUrl(): string {
     return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
   },
