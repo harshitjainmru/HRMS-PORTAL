@@ -13,7 +13,7 @@ import { ReferACandidateComponent } from '../../home/latest-job-opening/dialogRe
 export class JobOpeningComponent implements OnInit {
   uiMessage = JOB_OPENING;
   cardLogo = LATEST_JOB_OPENING;
-  title = TITLE.JOB_OPENING_TITLE
+  title = TITLE.currentJobOpening_title
   constructor(private _title: Title,private dialog:MatDialog) { }
 
   ngOnInit(): void {

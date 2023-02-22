@@ -19,7 +19,7 @@ directoryFilterformGroup!:FormGroup
 
   ngOnInit(): void {
     this.createForm();
-    this.title.setTitle(TITLE.DIRECTORY_TITLE)
+    this.title.setTitle(TITLE.directory_title)
   }
   createForm(){
     this.directoryFilterformGroup = this._formBuilder.group({

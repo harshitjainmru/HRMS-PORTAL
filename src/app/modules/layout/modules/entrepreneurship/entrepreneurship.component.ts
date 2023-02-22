@@ -22,7 +22,7 @@ export class EntrepreneurshipComponent implements OnInit {
     }
 
     ngOnInit(): void {
-      this._title.setTitle(TITLE.ENTREPRENEURSHIP_TITLE)
+      this._title.setTitle(TITLE.entreprenurship_title)
     }
     routeToAddPitch(){
       this._route.navigate([ABS_LAYOUT_EXPLORE.fullUrl])

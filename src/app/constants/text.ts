@@ -59,16 +59,17 @@ export const SIDENAV = {
   Announcements_LABEL: 'Announcements',
   Travels_LABEL: 'Travels',
   Logout_LABEL: 'Logout',
-  Insurance_LABEL:'Insurance Verification Details',
-  CALENDER_LABEL:'Holiday Calendar 2023 ',
-  POLICY_LABEL:'Policy Documents',
-  JOB_OPENING_LABEL:'Job Openings',
-  REFFER_LIST_LABEL:'Referral List',
-  FINANCE_SUBLABEL:'Salary Slip',
+  Insurance_LABEL: 'Insurance Verification Details',
+  CALENDER_LABEL: 'Holiday Calendar 2023 ',
+  POLICY_LABEL: 'Policy Documents',
+  JOB_OPENING_LABEL: 'Job Openings',
+  RECRUITMENT_LABEL: 'Recruitment',
+  REFFER_LIST_LABEL: 'Referral List',
+  FINANCE_SUBLABEL: 'Salary Slip',
   FINANCE_SUBLABEL_FORM: 'Form 16',
-  FINANCE_SUBLABEL_INVESTMENT:'Investment Declaration',
-  REVIEWS_SUBLABEL:'My Performance'
-
+  FINANCE_SUBLABEL_INVESTMENT: 'Investment Declaration',
+  REVIEWS_SUBLABEL: 'My Performance',
+  RECRUITMENT_SUBLABEL: 'My Interview',
 };
 
 export const LAYOUT = {
@@ -118,6 +119,7 @@ export const NEW_FAMILY = {
 };
 export const LATEST_JOB_OPENING: ILATEST_JOB[] = [
   {
+    id: 1,
     image: '/assets/design.svg',
     LOCATION: 'Noida, UttarPradesh',
     DATE: '03/02/2023',
@@ -126,13 +128,14 @@ export const LATEST_JOB_OPENING: ILATEST_JOB[] = [
     TEXT: 'We are looking for Graphic Designers to create engaging and on-brand graphics for variety of media',
     OPENING_NUMBER_TEXT: 'No. of Openings',
     OPENING_NUMBER: '1',
-    JOB_CODE:'#AP0052',
+    JOB_CODE: '#AP0052',
     EXPERIENCE: 'Experience',
     EXPERIENCE_NUMBER: '5 to 9 Years',
     BUTTON_VIEW: 'View Details',
     BUTTON_REFER: 'Refer a Candidate',
   },
   {
+    id: 2,
     image: '/assets/react-native.svg',
     LOCATION: 'Noida, UttarPradesh',
     DATE: '03/02/2023',
@@ -141,13 +144,14 @@ export const LATEST_JOB_OPENING: ILATEST_JOB[] = [
     TEXT: 'We are looking for JavaScript developers  proficient with React.js -  ( Preferred Early Joiners)',
     OPENING_NUMBER_TEXT: 'No. of Openings',
     OPENING_NUMBER: '2',
-    JOB_CODE:'#AP0014',
+    JOB_CODE: '#AP0014',
     EXPERIENCE: 'Experience',
     EXPERIENCE_NUMBER: '5 to 9 Years',
     BUTTON_VIEW: 'View Details',
     BUTTON_REFER: 'Refer a Candidate',
   },
   {
+    id: 3,
     image: '/assets/design.svg',
     LOCATION: 'Noida, UttarPradesh',
     DATE: '03/02/2023',
@@ -156,19 +160,20 @@ export const LATEST_JOB_OPENING: ILATEST_JOB[] = [
     TEXT: 'We are looking for Graphic Designers to create engaging and on-brand graphics for variety of media',
     OPENING_NUMBER_TEXT: 'No. of Openings',
     OPENING_NUMBER: '1',
-    JOB_CODE:'#AP0052',
+    JOB_CODE: '#AP0052',
     EXPERIENCE: 'Experience',
     EXPERIENCE_NUMBER: '5 to 9 Years',
     BUTTON_VIEW: 'View Details',
     BUTTON_REFER: 'Refer a Candidate',
   },
   {
+    id: 4,
     image: '/assets/nodejs.svg',
     LOCATION: 'Noida, UttarPradesh',
     DATE: '03/02/2023',
     HEADING: 'Tech Lead - Node.js',
     DEPARTMENT_VALUE: ' Node.js',
-    JOB_CODE:'#AP0037',
+    JOB_CODE: '#AP0037',
     TEXT: 'TL has to oversee the technical team and all projects, identify risks & develop work schedules.',
     OPENING_NUMBER_TEXT: 'No. of Openings',
     OPENING_NUMBER: '1',
@@ -212,11 +217,13 @@ export const APPRECIATION_DATA: IAPPRECIATIONDATA[] = [
     MESSAGE: `With immense pleasure, we would like to take this moment and appreciate Ustandby Team. The team demonstrated outstanding performance and we are happy to announce that the client has appreciated the team's dedication and commitment due to which the project was a great success.`,
     GREET: 'Kudos to the team!',
     BUTTON: 'View More',
-    TEAM_MEMBER:'@Shubham K @Aditya S @Arjun singh A @Abhishek S @Faisal K @Pankaj C @Sandeep G @Sakshi Bhatia, Rajat Maheshwari, Sanjay Parida and Pankaj Thapliyal',
-    HEAD_NAME:'Surya (Ustandby)',
-    HEAD_GREET:'Your hard work and diligence is really admirable, keep growing and achieving!',
-    APPRECIATION_NAME:'Ustandby Team',
-    IMAGES:'/assets/images/default_male.jpg'
+    TEAM_MEMBER:
+      '@Shubham K @Aditya S @Arjun singh A @Abhishek S @Faisal K @Pankaj C @Sandeep G @Sakshi Bhatia, Rajat Maheshwari, Sanjay Parida and Pankaj Thapliyal',
+    HEAD_NAME: 'Surya (Ustandby)',
+    HEAD_GREET:
+      'Your hard work and diligence is really admirable, keep growing and achieving!',
+    APPRECIATION_NAME: 'Ustandby Team',
+    IMAGES: '/assets/images/default_male.jpg',
   },
   {
     HEADER_VALUE: 'Appreciation| ABP NEWS',
@@ -226,9 +233,9 @@ export const APPRECIATION_DATA: IAPPRECIATIONDATA[] = [
     GREET:
       'Thank you for all the hard work and commitment. Keep up the excellent work.',
     BUTTON: 'View More',
-    HEAD_NAME:'Dileep Gupta',
-    APPRECIATION_NAME:'Aashima Anand',
-    IMAGES:'/assets/images/ASHIMA.jpeg'
+    HEAD_NAME: 'Dileep Gupta',
+    APPRECIATION_NAME: 'Aashima Anand',
+    IMAGES: '/assets/images/ASHIMA.jpeg',
   },
   {
     HEADER_VALUE: 'Appreciation for UStandBy',
@@ -236,12 +243,13 @@ export const APPRECIATION_DATA: IAPPRECIATIONDATA[] = [
     MESSAGE: `With immense pleasure, we would like to take this moment and appreciate Ustandby Team. The team demonstrated outstanding performance and we are happy to announce that the client has appreciated the team's dedication and commitment due to which the project was a great success.`,
     GREET: 'Kudos to the team!',
     BUTTON: 'View More',
-    TEAM_MEMBER:'@Shubham K @Aditya S @Arjun singh A @Abhishek S @Faisal K @Pankaj C @Sandeep G @Sakshi Bhatia, Rajat Maheshwari, Sanjay Parida and Pankaj Thapliyal',
-    HEAD_NAME:'Surya (Ustandby)',
-    HEAD_GREET:'Your hard work and diligence is really admirable, keep growing and achieving!',
-    APPRECIATION_NAME:'Ustandby Team',
-    IMAGES:'/assets/images/default_male.jpg'
-
+    TEAM_MEMBER:
+      '@Shubham K @Aditya S @Arjun singh A @Abhishek S @Faisal K @Pankaj C @Sandeep G @Sakshi Bhatia, Rajat Maheshwari, Sanjay Parida and Pankaj Thapliyal',
+    HEAD_NAME: 'Surya (Ustandby)',
+    HEAD_GREET:
+      'Your hard work and diligence is really admirable, keep growing and achieving!',
+    APPRECIATION_NAME: 'Ustandby Team',
+    IMAGES: '/assets/images/default_male.jpg',
   },
   {
     HEADER_VALUE: 'Appreciation| ABP NEWS',
@@ -251,10 +259,9 @@ export const APPRECIATION_DATA: IAPPRECIATIONDATA[] = [
     GREET:
       'Thank you for all the hard work and commitment. Keep up the excellent work.',
     BUTTON: 'View More',
-    HEAD_NAME:'Dileep Gupta',
-    APPRECIATION_NAME:'Aashima Anand',
-    IMAGES:'/assets/images/ASHIMA.jpeg'
-
+    HEAD_NAME: 'Dileep Gupta',
+    APPRECIATION_NAME: 'Aashima Anand',
+    IMAGES: '/assets/images/ASHIMA.jpeg',
   },
 ];
 export const AWARDS_EMP_IMAGE_DATA: IAWARDDATA[] = [
@@ -375,49 +382,49 @@ export const Gallery_DATA: IGALLERYDATA[] = [
     HEADING: 'Republic Day-2023',
     NUM: 5,
     BUTTON: 'View',
-    SUBIMAGE:[
-      {IMAGES:'/assets/republic-day/award_1674822333816.jpg'},
-      {IMAGES:'/assets/republic-day/award_1674822348103.jpg'},
-      {IMAGES:'/assets/republic-day/award_1674822356821.jpg'},
-      {IMAGES:'/assets/republic-day/award_1674822361280.jpg'},
-      {IMAGES:'/assets/republic-day/award_1674822366389.jpg'}
-    ]
+    SUBIMAGE: [
+      { IMAGES: '/assets/republic-day/award_1674822333816.jpg' },
+      { IMAGES: '/assets/republic-day/award_1674822348103.jpg' },
+      { IMAGES: '/assets/republic-day/award_1674822356821.jpg' },
+      { IMAGES: '/assets/republic-day/award_1674822361280.jpg' },
+      { IMAGES: '/assets/republic-day/award_1674822366389.jpg' },
+    ],
   },
   {
     IMAGE: '/assets/gallery/award_1672378171227.jpg',
     HEADING: 'Best Place To Work Award',
     NUM: 5,
     BUTTON: 'View',
-    SUBIMAGE:[
-      {IMAGES:'/assets/best-place/award_1672378171227.jpg'},
-      {IMAGES:'/assets/best-place/award_1672378174176.jpeg'},
-      {IMAGES:'/assets/best-place/award_1672378175316.jpg'},
-      {IMAGES:'/assets/best-place/award_1672378183848.jpeg'},
-    ]
+    SUBIMAGE: [
+      { IMAGES: '/assets/best-place/award_1672378171227.jpg' },
+      { IMAGES: '/assets/best-place/award_1672378174176.jpeg' },
+      { IMAGES: '/assets/best-place/award_1672378175316.jpg' },
+      { IMAGES: '/assets/best-place/award_1672378183848.jpeg' },
+    ],
   },
   {
     IMAGE: '/assets/gallery/award_1672292016846.jpg',
     HEADING: 'Christmas Celebration -2022',
     NUM: 5,
     BUTTON: 'View',
-    SUBIMAGE:[
-      {IMAGES:'/assets/christmas/award_167229202066.jpg'},
-      {IMAGES:'/assets/christmas/award_1672292028335.jpg'},
-      {IMAGES:'/assets/christmas/award_1672292037579.jpg'},
-      {IMAGES:'/assets/christmas/award_1672292037704.jpg'}
-    ]
+    SUBIMAGE: [
+      { IMAGES: '/assets/christmas/award_167229202066.jpg' },
+      { IMAGES: '/assets/christmas/award_1672292028335.jpg' },
+      { IMAGES: '/assets/christmas/award_1672292037579.jpg' },
+      { IMAGES: '/assets/christmas/award_1672292037704.jpg' },
+    ],
   },
   {
     IMAGE: '/assets/gallery/award_166719426194.jpeg',
     HEADING: 'Diwali Party -2022',
     NUM: 5,
     BUTTON: 'View',
-    SUBIMAGE:[
-      {IMAGES:'/assets/diwali/award_1667194276825.jpeg'},
-      {IMAGES:'/assets/diwali/award_1667194285355.jpeg'},
-      {IMAGES:'/assets/diwali/award_1672292329158.jpg'},
-      {IMAGES:'/assets/diwali/award_1672292333107.jpg'},
-    ]
+    SUBIMAGE: [
+      { IMAGES: '/assets/diwali/award_1667194276825.jpeg' },
+      { IMAGES: '/assets/diwali/award_1667194285355.jpeg' },
+      { IMAGES: '/assets/diwali/award_1672292329158.jpg' },
+      { IMAGES: '/assets/diwali/award_1672292333107.jpg' },
+    ],
   },
 ];
 
@@ -526,8 +533,8 @@ export const DIRECTORY_DROPDOWN_VALUE = [
   'Marketing',
   'Quality Analyst',
   'Node.js',
-  'FINANCE'
-]
+  'FINANCE',
+];
 
 export const DIRECTORY_EMPLOYEE_DATA: IDIRECTORY_DATA[] = [
   {
@@ -624,42 +631,43 @@ export const ENTREPRENEURSHIP_VALUE = {
   HEADER_VALUE: 'Objective :',
   IDEA_MESSAGE:
     'Share your innovative startup ideas with us, get funding from us and grow on your own. We want to give the young and brilliant ideas some shape and nurture them to the fullest to become potential competitors in the market. Validate your idea, learn and grow from here.',
-  ANGEL_INVESTOR_HEADLINE:'Story about our Angel Investor (AI)',
-  NAME:'Saurabh Singh',
-  BUTTON_VALUE:'Share Your Idea',
-  FOUNDED_MESSAGE:`Founded passion driven niche startups where he served many Top Fortune companies & leading brands in making their Mobile Strategy successful as a CEO & Founder of 250+ people company AppStudioz "India's leading mobile app development company" ​(★Acquired in 2014). He also Co-founded TechAhead in 2009 & was founding partner at C&B Electronics.`
+  ANGEL_INVESTOR_HEADLINE: 'Story about our Angel Investor (AI)',
+  NAME: 'Saurabh Singh',
+  BUTTON_VALUE: 'Share Your Idea',
+  FOUNDED_MESSAGE: `Founded passion driven niche startups where he served many Top Fortune companies & leading brands in making their Mobile Strategy successful as a CEO & Founder of 250+ people company AppStudioz "India's leading mobile app development company" ​(★Acquired in 2014). He also Co-founded TechAhead in 2009 & was founding partner at C&B Electronics.`,
 };
 
 export const LIST_DATA1 = [
   'Followed by @NarendraModi Prime Minister of India | @BarackObama Ex-President US | @PiyushGoyal Railway Minister India on Twitter',
   `Listed on INDIA's Top 25 Most Inspiring Startup Stories of 2013 by YourStory`,
   'The Companies he has led have created over 4,000 jobs during his leadership tenure.',
-  `In Past, He has built successful companies from startup (Bootstrapped) to multi-million dollar in revenue.`
-]
+  `In Past, He has built successful companies from startup (Bootstrapped) to multi-million dollar in revenue.`,
+];
 export const LIST_DATA2 = [
   '16+ years of professional experience of which 11+ years are as Founding Partner of lean startups across diverse domains with an entrepreneurial drive. Always looking to innovate by bringing smart people together.',
   'Passionate for building and scaling businesses',
   'Strong experience in working in ambiguity to solve complex problems. Skilled at designing and executing successful innovative strategies.',
-  `Extensive experience in developing many successful products for the entire spectrum of users, from conceptualising the business ideas to preparing product feature road map, from consumer facing front-end to business facing back-end, designing & wire framing with unmatched track record of Success & Performance.`
-]
+  `Extensive experience in developing many successful products for the entire spectrum of users, from conceptualising the business ideas to preparing product feature road map, from consumer facing front-end to business facing back-end, designing & wire framing with unmatched track record of Success & Performance.`,
+];
 
-export const EXPOLRE_VALUE ={
-  HEADER:'Add Pitch',
-  CANCEL_BUTTON:'Cancel',
-  SUBMIT_BUTTON:'Submit',
-  MY_DETAIL:'My Details',
-  PITCH_DETAIL:'Pitch Details',
-  NAME_LABEL:'Name',
-  ID_LABEL:'Employee Id',
-  DOB_LABEL:'Date of birth',
-  PITCH_LABEL:'Pitch Title',
-  INDUSTRY_LABEL:'Industry',
-  TYPE_LABEL:'Type',
-  IDEA_LABEL:'Idea - (Share your idea in brief)',
-  PRESENTATION_LABEL:'Presentation - (Share your detailed presentation on the idea) (ppt,pdf)'
-}
+export const EXPOLRE_VALUE = {
+  HEADER: 'Add Pitch',
+  CANCEL_BUTTON: 'Cancel',
+  SUBMIT_BUTTON: 'Submit',
+  MY_DETAIL: 'My Details',
+  PITCH_DETAIL: 'Pitch Details',
+  NAME_LABEL: 'Name',
+  ID_LABEL: 'Employee Id',
+  DOB_LABEL: 'Date of birth',
+  PITCH_LABEL: 'Pitch Title',
+  INDUSTRY_LABEL: 'Industry',
+  TYPE_LABEL: 'Type',
+  IDEA_LABEL: 'Idea - (Share your idea in brief)',
+  PRESENTATION_LABEL:
+    'Presentation - (Share your detailed presentation on the idea) (ppt,pdf)',
+};
 
-export const INDUSTRY_DATA=[
+export const INDUSTRY_DATA = [
   'Select Industry',
   'Industry Domain',
   'Advertising',
@@ -669,76 +677,241 @@ export const INDUSTRY_DATA=[
   'Engineering',
   'Food',
   'Healthcare',
-  'Hospitality'
-]
+  'Hospitality',
+];
 
-export const TYPE_DATA=[
-  'Technical',
-  'Non-Technical'
-]
-export const REFER_A_CANDIDATE_DIALOG ={
-  HEADER_VALUE:'Refer a Candidate',
-  JOB_DETAIL_VALUE:'Job Details',
-  LABEL_DEPARTMENT:'Department Name',
-  LABEL_JOBCODE:'Job Code',
-  LABEL_LOCATION:'Location',
-  LABEL_EXPERIENCE:'Experience',
-  CANDIDATE_VALUE:'Candidate Details',
-  LABEL_JOBLOC:'Job Location',
-  LABEL_CANDIDATE_NAME:'Candidate Name',
-  PLACEHOLDER_CANDIDATE_NAME:'Candidate Name',
-  LABEL_POSITION:'Position Title',
-  PLACEHOLDER_EXPERIENCE:'Enter Years of experience',
-  LABEL_EMAIL:'Email ID',
-  PLACEHOLDER_EMAIL:'Enter Email ID',
-  LABEL_PHONE:'Phone Number',
-  PLACEHOLDER_PHONE:'Enter Phone Number',
-  LABEL_UPLOAD:'Upload CV (pdf,doc)',
-  LABEL_SKILL:'Skill Set',
-  PLACEHOLDER_SKILL:'Enter Skills',
-  BUTTON_CANCEL:'Cancel',
-  BUTTON_SUBMIT:'Submit'
-}
+export const TYPE_DATA = ['Technical', 'Non-Technical'];
+export const REFER_A_CANDIDATE_DIALOG = {
+  HEADER_VALUE: 'Refer a Candidate',
+  JOB_DETAIL_VALUE: 'Job Details',
+  LABEL_DEPARTMENT: 'Department Name',
+  LABEL_JOBCODE: 'Job Code',
+  LABEL_LOCATION: 'Location',
+  LABEL_EXPERIENCE: 'Experience',
+  CANDIDATE_VALUE: 'Candidate Details',
+  LABEL_JOBLOC: 'Job Location',
+  LABEL_CANDIDATE_NAME: 'Candidate Name',
+  PLACEHOLDER_CANDIDATE_NAME: 'Candidate Name',
+  LABEL_POSITION: 'Position Title',
+  PLACEHOLDER_EXPERIENCE: 'Enter Years of experience',
+  LABEL_EMAIL: 'Email ID',
+  PLACEHOLDER_EMAIL: 'Enter Email ID',
+  LABEL_PHONE: 'Phone Number',
+  PLACEHOLDER_PHONE: 'Enter Phone Number',
+  LABEL_UPLOAD: 'Upload CV (pdf,doc)',
+  LABEL_SKILL: 'Skill Set',
+  PLACEHOLDER_SKILL: 'Enter Skills',
+  BUTTON_CANCEL: 'Cancel',
+  BUTTON_SUBMIT: 'Submit',
+};
 
-export const REFER_LIST_VALUE={
-  HEADER_VALUE:'No referrals yet! Checkout current job openings and refer.',
-  BUTTON_VALUE:'Job Openings'
-}
-export const HELP_DIALOG_VALUE={
-HEADING_VALUE:'Please Mail Us',
-QUERY_VALUE:'For any query regarding HRMS, Please mail us to',
-EMAIL_VALUE:'hrms-helpdesk@appinventiv.com',
-BUTTON_VALUE:'OK'
-}
+export const REFER_LIST_VALUE = {
+  HEADER_VALUE: 'No referrals yet! Checkout current job openings and refer.',
+  BUTTON_VALUE: 'Job Openings',
+};
+export const HELP_DIALOG_VALUE = {
+  HEADING_VALUE: 'Please Mail Us',
+  QUERY_VALUE: 'For any query regarding HRMS, Please mail us to',
+  EMAIL_VALUE: 'hrms-helpdesk@appinventiv.com',
+  BUTTON_VALUE: 'OK',
+};
 
-export const CONFIRMATION_LOGOUT_VALUE={
-  QUESTION_VALUE:'Are you sure want to logout ?',
-  BUTTON1:'No',
-  BUTTON2:'Yes'
-}
-export const MYPERFORMACE_VALUE={
-  BREADCRUMB_VALUE1:'Home',
-  BREADCRUMB_VALUE2:'Reviews',
-  BREADCRUMB_VALUE3:'Performance',
-  AWARDS_VALUE:'AWARDS',
-  HONOURS_VALUE:'HONOURS',
-  NULL_VALUE:'N/A',
-  TILL_NOW_VALUE:'Till Now',
-  JANUARY_LABEL:'Jan',
-  EMPLOYEE_NAME:'Harshit Kumar Jain',
-  EMPLOYEE_DESIGNATION:'Software Engineer (Angular)',
-  TECHNICAL_LABEL:'Technical Skills',
-  OWNERSHIP_LABEL:'Ownership of Delivery',
-  TEAMWORK_LABEL:'Teamwork',
-  PROCESS_LABEL:'Process Adherence',
-  YEAR_SHORTFORM:'YRS'
-}
+export const CONFIRMATION_LOGOUT_VALUE = {
+  QUESTION_VALUE: 'Are you sure want to logout ?',
+  BUTTON1: 'No',
+  BUTTON2: 'Yes',
+};
+export const MYPERFORMACE_VALUE = {
+  BREADCRUMB_VALUE1: 'Home',
+  BREADCRUMB_VALUE2: 'Reviews',
+  BREADCRUMB_VALUE3: 'Performance',
+  AWARDS_VALUE: 'AWARDS',
+  HONOURS_VALUE: 'HONOURS',
+  NULL_VALUE: 'N/A',
+  TILL_NOW_VALUE: 'Till Now',
+  JANUARY_LABEL: 'Jan',
+  EMPLOYEE_NAME: 'Harshit Kumar Jain',
+  EMPLOYEE_DESIGNATION: 'Software Engineer (Angular)',
+  TECHNICAL_LABEL: 'Technical Skills',
+  OWNERSHIP_LABEL: 'Ownership of Delivery',
+  TEAMWORK_LABEL: 'Teamwork',
+  PROCESS_LABEL: 'Process Adherence',
+  YEAR_SHORTFORM: 'YRS',
+};
 
-export const JOB_DETAILS ={
-  BREADCRUMB_VALUE:'Home',
-  BREADCRUMB_VALUE1:'Job Openings',
-  BREADCRUMB_VALUE2:'Details',
-  JOB_DETAILS_VALUE:'Job Details',
+export const JOB_DETAILS = {
+  breadcrumb_value1: 'Home',
+  breadcrumb_value2: 'Job Openings',
+  breadcrumb_value3: 'Details',
+  job_deatils_value: 'Job Details',
+  job_tilte: 'Job Title',
+  job_type: 'Job Type',
+  department: 'department',
+  location: 'Location',
+  noofopenings: 'No. of Openings ',
+  expRequired: 'Exp. Required',
+  technicalskills: 'Technical Skills',
+  jobIntroduction: 'Job Introduction',
+  jobDescription: 'Job Description',
+  requirements: 'Requirements ',
+  shouldhave: 'Should have',
+  jobQualification: 'Job Qualification',
+  educationExp: 'Education and Experience',
+  menu:[
+    'Edit Job Details',
+    'View Applicants'
+  ]
+};
 
+export const JOB_DETAILS_DATA = [
+  {
+    id: 4,
+    title_name: 'Tech Lead',
+    type_name: 'Permanent',
+    department_name: 'Node.js',
+    location_name: 'Noida, Uttar Pradesh',
+    opening: 5,
+    experience: '5 to 9 Years ',
+    heading_referal: 'Referral bonus will be',
+    bonus_amount: 'Rs.5000',
+    more_info: 'for more information read',
+    termsAndComditions: ' Terms & Conditions',
+    skills: ['NodeJS', 'Javascript', 'Mongodb'],
+    job_intro_value: 'Urgent Requirement For Backend Architect - Node.js.',
+    job_requirements: [
+      ' At least 6 to 7 years of experience in developing and deploying large-scale enterprise applications in varied technologies (ranging from PHP, Node.js, Python to Java, J2EE, etc.) with an active user base of over 3-5 million.',
+      'Hands-on experience on frontend technologies like ReactJS, Angular 2/4/5, and Bootstrap will be an advantage',
+      ' At least 6 to 7 years of experience in developing and deploying large-scale enterprise applications in varied technologies (ranging from PHP, Node.js, Python to Java, J2EE, etc.) with an active user base of over 3-5 million.',
+      'Hands-on experience on frontend technologies like ReactJS, Angular 2/4/5, and Bootstrap will be an advantage',
+      ' At least 6 to 7 years of experience in developing and deploying large-scale enterprise applications in varied technologies (ranging from PHP, Node.js, Python to Java, J2EE, etc.) with an active user base of over 3-5 million.',
+      'Hands-on experience on frontend technologies like ReactJS, Angular 2/4/5, and Bootstrap will be an advantage',
+      ' At least 6 to 7 years of experience in developing and deploying large-scale enterprise applications in varied technologies (ranging from PHP, Node.js, Python to Java, J2EE, etc.) with an active user base of over 3-5 million.',
+      'Hands-on experience on frontend technologies like ReactJS, Angular 2/4/5, and Bootstrap will be an advantage',
+    ],
+    shouldHaveValue: [
+      '   Knowledge of the latest technology trends in Databases, Web services, and Big data',
+      'Capability to reason about the complexity of algorithms (time and space) and code (cyclomatic)',
+      ' A will to function in a support capacity, including on-call rotation, DR support, expiration, and emergency.',
+    ],
+    qualificationValue: [
+      'Bachelor’s degree in Computer Science or a related discipline or an equivalent combination of education and work experience.',
+      'Overall 7-10 years of solid, diverse work experience in the software industry',
+    ],
+  },
+  {
+    id: 2,
+    title_name: 'Tech Lead',
+    type_name: 'Permanent',
+    department_name: 'React.js',
+    location_name: 'Noida, Uttar Pradesh',
+    opening: 5,
+    experience: '5 to 9 Years ',
+    heading_referal: 'Referral bonus will be',
+    bonus_amount: 'Rs.5000',
+    more_info: 'for more information read',
+    termsAndComditions: ' Terms & Conditions',
+    skills: ['ReactJS', 'Javascript'],
+    job_intro_value:
+      'We are looking for JavaScript developers proficient with React.js - ( Preferred Early Joiners)',
+    job_requirements: [
+      ' At least 6 to 7 years of experience in developing and deploying large-scale enterprise applications in varied technologies (ranging from PHP, Node.js, Python to Java, J2EE, etc.) with an active user base of over 3-5 million.',
+      'Hands-on experience on frontend technologies like ReactJS, Angular 2/4/5, and Bootstrap will be an advantage',
+      ' At least 6 to 7 years of experience in developing and deploying large-scale enterprise applications in varied technologies (ranging from PHP, Node.js, Python to Java, J2EE, etc.) with an active user base of over 3-5 million.',
+      'Hands-on experience on frontend technologies like ReactJS, Angular 2/4/5, and Bootstrap will be an advantage',
+      ' At least 6 to 7 years of experience in developing and deploying large-scale enterprise applications in varied technologies (ranging from PHP, Node.js, Python to Java, J2EE, etc.) with an active user base of over 3-5 million.',
+      'Hands-on experience on frontend technologies like ReactJS, Angular 2/4/5, and Bootstrap will be an advantage',
+      ' At least 6 to 7 years of experience in developing and deploying large-scale enterprise applications in varied technologies (ranging from PHP, Node.js, Python to Java, J2EE, etc.) with an active user base of over 3-5 million.',
+      'Hands-on experience on frontend technologies like ReactJS, Angular 2/4/5, and Bootstrap will be an advantage',
+    ],
+    shouldHaveValue: [
+      '   Knowledge of the latest technology trends in Databases, Web services, and Big data',
+      'Capability to reason about the complexity of algorithms (time and space) and code (cyclomatic)',
+      ' A will to function in a support capacity, including on-call rotation, DR support, expiration, and emergency.',
+    ],
+    qualificationValue: [
+      'Bachelor’s degree in Computer Science or a related discipline or an equivalent combination of education and work experience.',
+      'Overall 7-10 years of solid, diverse work experience in the software industry',
+    ],
+  },
+  {
+    id: 1,
+    title_name: 'Graphic Designer',
+    type_name: 'Permanent',
+    department_name: 'Marketing',
+    location_name: 'Noida, Uttar Pradesh',
+    opening: 5,
+    experience: '5 to 9 Years ',
+    heading_referal: 'Referral bonus will be',
+    bonus_amount: 'Rs.5000',
+    more_info: 'for more information read',
+    termsAndComditions: ' Terms & Conditions',
+    skills: ['Graphic Designing'],
+    job_intro_value:
+      'We are looking for Graphic Designers to create engaging and on-brand graphics for variety of media.',
+    job_requirements: [
+      ' At least 6 to 7 years of experience in developing and deploying large-scale enterprise applications in varied technologies (ranging from PHP, Node.js, Python to Java, J2EE, etc.) with an active user base of over 3-5 million.',
+      'Hands-on experience on frontend technologies like ReactJS, Angular 2/4/5, and Bootstrap will be an advantage',
+      ' At least 6 to 7 years of experience in developing and deploying large-scale enterprise applications in varied technologies (ranging from PHP, Node.js, Python to Java, J2EE, etc.) with an active user base of over 3-5 million.',
+      'Hands-on experience on frontend technologies like ReactJS, Angular 2/4/5, and Bootstrap will be an advantage',
+      ' At least 6 to 7 years of experience in developing and deploying large-scale enterprise applications in varied technologies (ranging from PHP, Node.js, Python to Java, J2EE, etc.) with an active user base of over 3-5 million.',
+      'Hands-on experience on frontend technologies like ReactJS, Angular 2/4/5, and Bootstrap will be an advantage',
+      ' At least 6 to 7 years of experience in developing and deploying large-scale enterprise applications in varied technologies (ranging from PHP, Node.js, Python to Java, J2EE, etc.) with an active user base of over 3-5 million.',
+      'Hands-on experience on frontend technologies like ReactJS, Angular 2/4/5, and Bootstrap will be an advantage',
+    ],
+    shouldHaveValue: [
+      '   Knowledge of the latest technology trends in Databases, Web services, and Big data',
+      'Capability to reason about the complexity of algorithms (time and space) and code (cyclomatic)',
+      ' A will to function in a support capacity, including on-call rotation, DR support, expiration, and emergency.',
+    ],
+    qualificationValue: [
+      'Bachelor’s degree in Computer Science or a related discipline or an equivalent combination of education and work experience.',
+      'Overall 7-10 years of solid, diverse work experience in the software industry',
+    ],
+  },
+  {
+    id: 3,
+    title_name: 'Graphic Designer',
+    type_name: 'Permanent',
+    department_name: 'Marketing',
+    location_name: 'Noida, Uttar Pradesh',
+    opening: 5,
+    experience: '5 to 9 Years ',
+    heading_referal: 'Referral bonus will be',
+    bonus_amount: 'Rs.5000',
+    more_info: 'for more information read',
+    termsAndComditions: ' Terms & Conditions',
+    skills: ['Graphic Designing'],
+    job_intro_value:
+      'We are looking for Graphic Designers to create engaging and on-brand graphics for variety of media.',
+    job_requirements: [
+      ' At least 6 to 7 years of experience in developing and deploying large-scale enterprise applications in varied technologies (ranging from PHP, Node.js, Python to Java, J2EE, etc.) with an active user base of over 3-5 million.',
+      'Hands-on experience on frontend technologies like ReactJS, Angular 2/4/5, and Bootstrap will be an advantage',
+      ' At least 6 to 7 years of experience in developing and deploying large-scale enterprise applications in varied technologies (ranging from PHP, Node.js, Python to Java, J2EE, etc.) with an active user base of over 3-5 million.',
+      'Hands-on experience on frontend technologies like ReactJS, Angular 2/4/5, and Bootstrap will be an advantage',
+      ' At least 6 to 7 years of experience in developing and deploying large-scale enterprise applications in varied technologies (ranging from PHP, Node.js, Python to Java, J2EE, etc.) with an active user base of over 3-5 million.',
+      'Hands-on experience on frontend technologies like ReactJS, Angular 2/4/5, and Bootstrap will be an advantage',
+      ' At least 6 to 7 years of experience in developing and deploying large-scale enterprise applications in varied technologies (ranging from PHP, Node.js, Python to Java, J2EE, etc.) with an active user base of over 3-5 million.',
+      'Hands-on experience on frontend technologies like ReactJS, Angular 2/4/5, and Bootstrap will be an advantage',
+    ],
+    shouldHaveValue: [
+      '   Knowledge of the latest technology trends in Databases, Web services, and Big data',
+      'Capability to reason about the complexity of algorithms (time and space) and code (cyclomatic)',
+      ' A will to function in a support capacity, including on-call rotation, DR support, expiration, and emergency.',
+    ],
+    qualificationValue: [
+      'Bachelor’s degree in Computer Science or a related discipline or an equivalent combination of education and work experience.',
+      'Overall 7-10 years of solid, diverse work experience in the software industry',
+    ],
+  },
+];
 
-}
+export const CONDITION_REWARD_DIALOG_VALUE = {
+  headerValue: 'Additional condition for rewards',
+  points: [
+    'Bonus will be paid out once the referred candidate completes 3 months with the organization.',
+    'There is no cap on the number of referrals an employee can make. Every single hiring will make you eligible and all bonus will be paid accordingly.',
+    'If two or more employees refer the same candidate, only the first referrer will receive their bonus rewards.',
+    'Referral policy is applicable only on 1+ year of experience candidate.',
+    'Only permanent employees of Appinventiv will be eligible for referral amounts.',
+  ],
+};

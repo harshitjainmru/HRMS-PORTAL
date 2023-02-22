@@ -8,11 +8,12 @@ import { MatCardModule } from '@angular/material/card';
 import { AbsoluteRoutingModule } from './pipes/absolute-routing/absolute-routing.module';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { SharedModule } from './modules/shared/shared.module';
+import { RewardCondtionDialogComponent } from './components/reward-condtion-dialog/reward-condtion-dialog.component';
 
 
 
 @NgModule({
-  declarations: [AppComponent,],
+  declarations: [AppComponent, RewardCondtionDialogComponent,],
   imports: [
     BrowserModule,
     AppRoutingModule,

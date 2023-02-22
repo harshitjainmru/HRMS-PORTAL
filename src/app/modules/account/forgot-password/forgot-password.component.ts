@@ -24,7 +24,7 @@ errorMessage:any
     private _title:Title
 
   ) {
-    this._title.setTitle(TITLE.FORGOT_TITLE)
+    this._title.setTitle(TITLE.forgot_title)
   }
 
   ngOnInit(): void {

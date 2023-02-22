@@ -7,4 +7,33 @@ section {
       font-weight: 500;
     }
   }
+  .table-card {
+    margin: 20px;
+    padding: 30px;
+    background-color: white;
+    ::ng-deep {
+      table {
+        border: none;
+        th {
+          border-right: none !important;
+          border-top: none !important;
+          color: gray;
+          padding-left: 28px;
+          border-bottom: 1px solid rgb(248, 246, 246);
+        }
+        tr {
+          text-align: start;
+          padding-left: 10px;
+
+        }
+        td {
+          background-color: white;
+          border-right: none !important;
+          border-bottom: 1px solid rgb(248, 246, 246) !important;
+          padding: 25px;
+        }
+      }
+
+    }
+  }
 }

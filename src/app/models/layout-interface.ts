@@ -17,6 +17,7 @@ export interface IREFERRAL {
 }
 
 export interface ILATEST_JOB {
+  id?:number
   image?: string,
   LOCATION?: string,
   HEADING?:string,

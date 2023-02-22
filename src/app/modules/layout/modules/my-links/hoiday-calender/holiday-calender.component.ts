@@ -12,7 +12,7 @@ export class HolidayCalenderComponent implements OnInit {
   constructor(private _title:Title) { }
 
   ngOnInit(): void {
-    this._title.setTitle(TITLE.CALENDAR_TITLE)
+    this._title.setTitle(TITLE.calendar_title)
   }
 
 }

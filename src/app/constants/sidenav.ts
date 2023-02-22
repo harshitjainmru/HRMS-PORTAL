@@ -5,6 +5,7 @@ import {
   ABS_LAYOUT_EXPLORE,
   ABS_LAYOUT_HOLIDAY_CALENDER,
   ABS_LAYOUT_HOME,
+  ABS_LAYOUT_INTERVIEW_LIST,
   ABS_LAYOUT_JOB_OPENING,
   ABS_LAYOUT_MYPROFILE,
   ABS_LAYOUT_MY_PERFORMANCE,
@@ -20,7 +21,7 @@ export interface IsideNav {
   options?: Array<any>;
   routerLink?: string;
   rightIcon?: string;
-  active?:any
+  active?: any;
 }
 
 export const sideNavList = [
@@ -65,21 +66,21 @@ export const sideNavList = [
     options: [
       {
         subTitle: SIDENAV.Insurance_LABEL,
-        subicon: 'checklist' ,
+        subicon: 'checklist',
         routerLink: ABS_LAYOUT_HOME.path,
         isActive: true,
       },
       {
         subTitle: SIDENAV.CALENDER_LABEL,
-        subicon: 'calendar_today' ,
+        subicon: 'calendar_today',
         routerLink: ABS_LAYOUT_HOLIDAY_CALENDER.path,
         isActive: true,
       },
       {
         subTitle: SIDENAV.POLICY_LABEL,
-        subicon: 'insert_drive_file' ,
+        subicon: 'insert_drive_file',
         isActive: true,
-        routerLink:ABS_LAYOUT_POLICY_DOC.path
+        routerLink: ABS_LAYOUT_POLICY_DOC.path,
       },
     ],
     isActive: true,
@@ -88,22 +89,25 @@ export const sideNavList = [
     title: SIDENAV.Finance_LABEL,
     icon: 'fas fa-money-bill-wave',
     options: [
-      { subTitle: SIDENAV.FINANCE_SUBLABEL,
-        subicon: 'horizontal_rule' ,
-        type:'external',
-        link:'https://hrms.easysourceindia.com/Payroll/',
+      {
+        subTitle: SIDENAV.FINANCE_SUBLABEL,
+        subicon: 'horizontal_rule',
+        type: 'external',
+        link: 'https://hrms.easysourceindia.com/Payroll/',
         isActive: true,
       },
-      { subTitle: SIDENAV.FINANCE_SUBLABEL_FORM,
-        subicon: 'horizontal_rule' ,
-        type:'external',
-        link:'https://hrms.easysourceindia.com/Payroll/',
+      {
+        subTitle: SIDENAV.FINANCE_SUBLABEL_FORM,
+        subicon: 'horizontal_rule',
+        type: 'external',
+        link: 'https://hrms.easysourceindia.com/Payroll/',
         isActive: true,
       },
-      { subTitle: SIDENAV.FINANCE_SUBLABEL_INVESTMENT,
-        subicon: 'horizontal_rule' ,
-        type:'external',
-        link:'https://hrms.easysourceindia.com/Payroll/',
+      {
+        subTitle: SIDENAV.FINANCE_SUBLABEL_INVESTMENT,
+        subicon: 'horizontal_rule',
+        type: 'external',
+        link: 'https://hrms.easysourceindia.com/Payroll/',
         isActive: true,
       },
     ],
@@ -113,9 +117,10 @@ export const sideNavList = [
     title: SIDENAV.Reviews_LABEL,
     icon: 'fa-solid fa-cube',
     options: [
-      { subTitle: SIDENAV.REVIEWS_SUBLABEL,
-        subicon: 'calendar_today' ,
-        routerLink:ABS_LAYOUT_MY_PERFORMANCE.path,
+      {
+        subTitle: SIDENAV.REVIEWS_SUBLABEL,
+        subicon: 'calendar_today',
+        routerLink: ABS_LAYOUT_MY_PERFORMANCE.path,
         isActive: true,
       },
     ],
@@ -125,16 +130,31 @@ export const sideNavList = [
     title: SIDENAV.Refer_Friend_LABEL,
     icon: 'fas fa-users',
     options: [
-      { subTitle: SIDENAV.JOB_OPENING_LABEL,
-      subicon: '' ,
-      routerLink: ABS_LAYOUT_JOB_OPENING.path,
-      isActive: true,
-    },
-      { subTitle: SIDENAV.REFFER_LIST_LABEL,
-      subicon: '' ,
-      routerLink: ABS_LAYOUT_REFER_LIST.path,
-      isActive: true,
-    }
+      {
+        subTitle: SIDENAV.JOB_OPENING_LABEL,
+        subicon: '',
+        routerLink: ABS_LAYOUT_JOB_OPENING.path,
+        isActive: true,
+      },
+      {
+        subTitle: SIDENAV.REFFER_LIST_LABEL,
+        subicon: '',
+        routerLink: ABS_LAYOUT_REFER_LIST.path,
+        isActive: true,
+      },
+    ],
+    isActive: true,
+  },
+  {
+    title: SIDENAV.RECRUITMENT_LABEL,
+    icon: 'fas fa-newspaper',
+    options: [
+      {
+        subTitle:SIDENAV.RECRUITMENT_SUBLABEL,
+        subicon:'',
+        routerLink:ABS_LAYOUT_INTERVIEW_LIST.path,
+        isActive:true,
+      }
     ],
     isActive: true,
   },

@@ -45,6 +45,12 @@ const routes: Routes = [
         loadChildren:() =>
         import('./modules/reviews/my-performance/my-performance.module').then((m)=>m.MyPerformanceModule)
       },
+      {
+        path:'',
+        loadChildren:() =>
+        import('./modules/recruitment/recruitment.module').then((m)=>m.RecruitmentModule)
+      }
+
     ],
   },
 ];

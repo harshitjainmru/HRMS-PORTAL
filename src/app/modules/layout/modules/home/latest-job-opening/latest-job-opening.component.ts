@@ -9,7 +9,7 @@ import {
 } from '@angular/core';
 import { Router } from '@angular/router';
 import { NguCarouselConfig } from '@ngu/carousel';
-import { ABS_LAYOUT_JOB_OPENING } from 'src/app/constants/absolute-routes';
+import { ABS_LAYOUT_JOB_DETAIL, ABS_LAYOUT_JOB_OPENING } from 'src/app/constants/absolute-routes';
 import { JOB_OPENING, LATEST_JOB_OPENING } from 'src/app/constants/text';
 import { MatDialog } from '@angular/material/dialog';
 import { ReferACandidateComponent } from './dialogReferACandidate/refer-acandidate/refer-acandidate.component';
@@ -56,5 +56,8 @@ export class LatestJobOpeningComponent implements OnInit, AfterViewInit {
       data:item
     })
   }
+  // routeToJobDetails(){
+  //   this._route.navigate([`${ABS_LAYOUT_JOB_DETAIL.fullUrl}/{{cardLogo.id}}`])
+  // }
 }
 

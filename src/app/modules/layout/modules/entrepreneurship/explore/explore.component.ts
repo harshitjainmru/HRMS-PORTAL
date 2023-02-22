@@ -18,7 +18,7 @@ ideaForm!:FormGroup
   constructor(private _title:Title, private _formBuilder:FormBuilder,private _formService:FormServiceService) { }
 
   ngOnInit(): void {
-    this._title.setTitle(TITLE.EXPLORE_TITLE)
+    this._title.setTitle(TITLE.explore_title)
     this.createForm();
 
   }

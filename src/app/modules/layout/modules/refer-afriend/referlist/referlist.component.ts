@@ -15,7 +15,7 @@ uiText = REFER_LIST_VALUE
   constructor(private _title :Title, private _route:Router) { }
 
   ngOnInit(): void {
-    this._title.setTitle(TITLE.CANDIDATE_REFERRAL)
+    this._title.setTitle(TITLE.candidate_referral_title)
   }
   routeToJobOpening(){
     this._route.navigate([ABS_LAYOUT_JOB_OPENING.fullUrl])

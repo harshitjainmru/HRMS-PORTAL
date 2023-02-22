@@ -16,7 +16,7 @@ const routes: Routes = [
       import('./referlist/referlist.module').then((m)=>m.ReferlistModule)
     },
     {
-      path:ABS_LAYOUT_JOB_DETAIL.path,
+      path:`${ABS_LAYOUT_JOB_DETAIL.path}/:id`,
       loadChildren:() =>
       import('./job-opening/details/details.module').then((m)=>m.DetailsModule)
     }

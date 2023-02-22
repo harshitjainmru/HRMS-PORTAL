@@ -5,6 +5,7 @@ import { PolicyDocRoutingModule } from './policy-doc-routing.module';
 import { PolicyDocComponent } from './policy-doc.component';
 import {MatTableModule} from '@angular/material/table';
 import { MatCardModule } from '@angular/material/card';
+import { SharedModule } from 'src/app/modules/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MatCardModule } from '@angular/material/card';
     CommonModule,
     PolicyDocRoutingModule,
     MatTableModule,
-    MatCardModule
+    MatCardModule,
+    SharedModule
   ]
 })
 export class PolicyDocModule { }

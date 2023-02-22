@@ -3,7 +3,9 @@ import { CommonModule } from '@angular/common';
 
 import { DetailsRoutingModule } from './details-routing.module';
 import { DetailsComponent } from './details.component';
-
+import { AbsoluteRoutingModule } from 'src/app/pipes/absolute-routing/absolute-routing.module';
+import {MatMenuModule} from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -11,7 +13,10 @@ import { DetailsComponent } from './details.component';
   ],
   imports: [
     CommonModule,
-    DetailsRoutingModule
+    DetailsRoutingModule,
+    AbsoluteRoutingModule,
+    MatMenuModule,
+    MatIconModule
   ]
 })
 export class DetailsModule { }

@@ -17,7 +17,7 @@ export class LoginWithGoogleComponent implements OnInit {
     private _title:Title
 
   ) {
-    this._title.setTitle(TITLE.LOGIN_TITLE)
+    this._title.setTitle(TITLE.login_title)
   }
 
   ngOnInit(): void {

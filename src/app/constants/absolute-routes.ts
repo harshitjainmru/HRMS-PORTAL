@@ -117,3 +117,10 @@ export const ABS_LAYOUT_POLICY_DOC: IRoute = {
     return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
   },
 };
+
+export const ABS_LAYOUT_INTERVIEW_LIST: IRoute = {
+  path: routes.INTERVIEW_LIST,
+  get fullUrl(): string {
+    return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
+  },
+};
