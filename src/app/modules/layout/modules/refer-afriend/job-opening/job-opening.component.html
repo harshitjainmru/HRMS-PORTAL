@@ -31,7 +31,7 @@
         <p>{{item.EXPERIENCE_NUMBER}}</p>
       </div>
       <div class="buttonGroup">
-        <button class="button-view">
+        <button class="button-view" (click)="openCityInNewWindow(item)">
           {{item.BUTTON_VIEW}}
         </button>
         <button class="button-refer classyButton" (click)="openDialog(item)">

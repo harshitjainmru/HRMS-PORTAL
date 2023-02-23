@@ -16,3 +16,14 @@ ACTION?:string;
 SCHOOL?:string;
 TIME?:string
 }
+
+export interface POLICY_DOCUMENT {
+sNo?:number;
+name?:string;
+text_with_icon?:string;
+doctype?:string;
+size?:string;
+date?:string;
+download?:string;
+link?:string;
+}

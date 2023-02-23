@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Title } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 import { JOB_OPENING, LATEST_JOB_OPENING } from 'src/app/constants/text';
 import { TITLE } from 'src/app/constants/title';
 import { ReferACandidateComponent } from '../../home/latest-job-opening/dialogReferACandidate/refer-acandidate/refer-acandidate.component';
@@ -14,7 +15,7 @@ export class JobOpeningComponent implements OnInit {
   uiMessage = JOB_OPENING;
   cardLogo = LATEST_JOB_OPENING;
   title = TITLE.currentJobOpening_title
-  constructor(private _title: Title,private dialog:MatDialog) { }
+  constructor(private _title: Title,private dialog:MatDialog,private router: Router) { }
 
   ngOnInit(): void {
     this._title.setTitle(this.title);
@@ -26,6 +27,17 @@ export class JobOpeningComponent implements OnInit {
       disableClose:true,
       data:item
     })
+  }
+  openCityInNewWindow(item) {
+    console.log(item.id,'item');
+
+    // Converts the route into a string that can be used
+    // with the window.open() function
+    const url = this.router.serializeUrl(
+      this.router.createUrlTree([`/admin/refer-candidate/job_details/${item.id}`])
+    );
+
+    window.open(url, '_blank');
   }
 
 }

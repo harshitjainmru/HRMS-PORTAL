@@ -20,6 +20,8 @@ ideaForm!:FormGroup
   ngOnInit(): void {
     this._title.setTitle(TITLE.explore_title)
     this.createForm();
+    this.setValue();
+    this.setValueDisabled();
 
   }
   createForm(){
@@ -38,5 +40,26 @@ ideaForm!:FormGroup
   get ideaFormControl(){
     return this.ideaForm.controls
   }
+  setValue() {
+    this.ideaForm
+      .get('name')
+      .setValue('Harshit Kumar Jain');
+    this.ideaForm.get('emp_id').setValue('AI1611');
+    this.ideaForm.get('dob')?.setValue('2000-04-07');
+  }
+  setValueDisabled() {
+    this.ideaForm.get('name').disable();
+    this.ideaForm.get('emp_id').disable();
+    this.ideaForm.get('dob').disable();
+  }
+  submitHandler(){
+    console.log(this.ideaForm,'invalid');
+
+    if(this.ideaForm.valid){
+      console.log(this.ideaForm,'valid');
+
+    }
+  }
+
 
 }

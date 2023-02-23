@@ -1,56 +1,58 @@
 <section>
-  <div class="header">
-    <h3 class="heading">{{uiText.HEADER}}</h3>
-    <div class="buttonGroup">
-      <button class="cancelButton">{{uiText.CANCEL_BUTTON}}</button>
-      <button class="classyButton">{{uiText.SUBMIT_BUTTON}}</button>
-    </div>
-  </div>
-  <div class="detail-card">
-    <div class="hash-heading">
-      <h3 class="mydetails">{{uiText.MY_DETAIL}}</h3>
-    </div>
-    <div class="form">
-      <form [formGroup]="ideaForm">
-        <div class="formfield 2">
-          <label class="label">{{uiText.NAME_LABEL}}</label>
-          <mat-form-field appearance="outline">
-            <input value="Harshit Kumar Jain" matInput disabled>
-          </mat-form-field>
+  <div>
+    <form [formGroup]="ideaForm" (ngSubmit)="submitHandler()">
+      <div class="header">
+        <h3 class="heading">{{uiText.HEADER}}</h3>
+        <div class="buttonGroup">
+          <button class="cancelButton">{{uiText.CANCEL_BUTTON}}</button>
+          <button class="classyButton" type="submit">{{uiText.SUBMIT_BUTTON}}</button>
         </div>
-        <div class="inputs">
-          <div class="formfield 2">
-            <label class="label">{{uiText.ID_LABEL}}</label>
-            <mat-form-field appearance="outline" class="idFormField personalDetail">
-              <input value="AI1611" matInput disabled>
-            </mat-form-field>
-          </div>
-          <div class="formfield 2">
-            <label class="label">{{uiText.DOB_LABEL}}</label>
-            <mat-form-field appearance="outline" class="dobFormField personalDetail">
-              <input value="2000-04-07" matInput disabled>
-            </mat-form-field>
-          </div>
-        </div>
+      </div>
+      <div class="detail-card">
         <div class="hash-heading">
-          <h3 class="mydetails">{{uiText.PITCH_DETAIL}}</h3>
+          <h3 class="mydetails">{{uiText.MY_DETAIL}}</h3>
         </div>
-        <div class="formfield 2">
-          <label class="label">{{uiText.PITCH_LABEL}}</label>
-          <mat-form-field appearance="outline">
-            <input formControlName="pitch_title" matInput>
-          </mat-form-field>
-        </div>
-        <span>
-          <app-dropdown [label]="uiText.INDUSTRY_LABEL" [labelStyle]="'labelStyle'" [myControlName]="ideaFormControl.industry" [Data]="industryDropdownValue"></app-dropdown>
-        </span>
-        <span>
-          <app-dropdown [label]="uiText.TYPE_LABEL" [labelStyle]="'labelStyle'" [myControlName]="ideaFormControl.pitch_type" [Data]="typeDropdownValue"></app-dropdown>
-        </span>
-        <div class="formfield 2">
-          <label class="label">{{uiText.IDEA_LABEL}}</label>
-          <editor
-          [init]="{
+        <div class="form">
+          <div class="formfield 2">
+            <label class="label">{{uiText.NAME_LABEL}}</label>
+            <mat-form-field appearance="outline">
+              <input value="Harshit Kumar Jain" formControlName="name" matInput>
+            </mat-form-field>
+          </div>
+          <div class="inputs">
+            <div class="formfield 2">
+              <label class="label">{{uiText.ID_LABEL}}</label>
+              <mat-form-field appearance="outline" class="idFormField personalDetail">
+                <input value="AI1611" formControlName="emp_id" matInput>
+              </mat-form-field>
+            </div>
+            <div class="formfield 2">
+              <label class="label">{{uiText.DOB_LABEL}}</label>
+              <mat-form-field appearance="outline" class="dobFormField personalDetail">
+                <input value="2000-04-07" formControlName="dob" matInput>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="hash-heading">
+            <h3 class="mydetails">{{uiText.PITCH_DETAIL}}</h3>
+          </div>
+          <div class="formfield 2">
+            <label class="label">{{uiText.PITCH_LABEL}}</label>
+            <mat-form-field appearance="outline">
+              <input formControlName="pitch_title" matInput>
+            </mat-form-field>
+          </div>
+          <span>
+            <app-dropdown [label]="uiText.INDUSTRY_LABEL" [labelStyle]="'labelStyle'"
+              [myControlName]="ideaFormControl.industry" [Data]="industryDropdownValue"></app-dropdown>
+          </span>
+          <span>
+            <app-dropdown [label]="uiText.TYPE_LABEL" [labelStyle]="'labelStyle'"
+              [myControlName]="ideaFormControl.pitch_type" [Data]="typeDropdownValue"></app-dropdown>
+          </span>
+          <div class="formfield 2">
+            <label class="label">{{uiText.IDEA_LABEL}}</label>
+            <editor [init]="{
             height: 300,
             plugins: [
                'a11ychecker','advlist','advcode','advtable','autolink','checklist','export',
@@ -61,17 +63,16 @@
              'undo redo | casechange blocks | bold italic backcolor | \
              alignleft aligncenter alignright alignjustify | \
              bullist numlist checklist outdent indent | removeformat | a11ycheck code table help'
-          }"
-          formControlName="editor"
-        ></editor>
-        </div>
-        <div class="formfield 2">
-          <label class="label">{{uiText.PRESENTATION_LABEL}}</label>
-          <div class="input-file">
-            <input type="file" formControlName="presentation">
+          }" formControlName="editor"></editor>
+          </div>
+          <div class="formfield 2">
+            <label class="label">{{uiText.PRESENTATION_LABEL}}</label>
+            <div class="input-file">
+              <input type="file" formControlName="presentation">
+            </div>
           </div>
         </div>
-      </form>
-    </div>
+      </div>
+    </form>
   </div>
 </section>

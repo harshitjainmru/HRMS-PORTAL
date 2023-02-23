@@ -10,7 +10,6 @@ import { DropDownModule } from 'src/app/modules/shared/drop-down/drop-down.modul
 import { EditorModule } from '@tinymce/tinymce-angular';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-
 @NgModule({
   declarations: [
     ExploreComponent
@@ -24,7 +23,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     DropDownModule,
     EditorModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ]
 })
 export class ExploreModule { }

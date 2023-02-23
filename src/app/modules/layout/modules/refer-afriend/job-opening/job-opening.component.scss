@@ -18,11 +18,17 @@ section {
     gap: 20px;
   }
 }
-
-@media (max-width:1109px){
+@media (max-width:1798px){
   section {
     .card-content {
       grid-template-columns: auto auto;
+    }
+  }
+}
+@media (max-width:624px){
+  section {
+    .card-content {
+      grid-template-columns: auto;
     }
   }
 }
