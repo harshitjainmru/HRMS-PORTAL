@@ -120,7 +120,7 @@ export const sideNavList = [
       {
         subTitle: SIDENAV.REVIEWS_SUBLABEL,
         subicon: 'calendar_today',
-        routerLink: ABS_LAYOUT_MY_PERFORMANCE.path,
+        routerLink: ABS_LAYOUT_MY_PERFORMANCE.fullUrl,
         isActive: true,
       },
     ],

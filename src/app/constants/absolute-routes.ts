@@ -81,12 +81,12 @@ export const ABS_LAYOUT_HOLIDAY_CALENDER: IRoute = {
     return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
   },
 };
-// export const ABS_LAYOUT_REVIEW: IRoute = {
-//   path: routes.REVIEW,
-//   get fullUrl(): string {
-//     return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
-//   },
-// };
+export const ABS_LAYOUT_REVIEW: IRoute = {
+  path: routes.REVIEW,
+  get fullUrl(): string {
+    return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
+  },
+};
 export const ABS_LAYOUT_MY_PERFORMANCE: IRoute = {
   path: routes.PERFORMANCE,
   get fullUrl(): string {

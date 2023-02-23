@@ -41,9 +41,9 @@ const routes: Routes = [
 
       },
       {
-        path:ABS_LAYOUT_MY_PERFORMANCE.path,
+        path:'',
         loadChildren:() =>
-        import('./modules/reviews/my-performance/my-performance.module').then((m)=>m.MyPerformanceModule)
+        import('./modules/reviews/reviews.module').then((m)=>m.ReviewsModule)
       },
       {
         path:'',

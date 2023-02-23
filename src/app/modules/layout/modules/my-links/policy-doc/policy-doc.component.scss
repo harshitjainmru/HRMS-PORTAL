@@ -52,6 +52,9 @@ section {
               @include fpos(center,center);
               gap: 10px;
             }
+            &:hover{
+              box-shadow: 0 0 2px rgb(71, 71, 71);
+            }
           }
         }
       }

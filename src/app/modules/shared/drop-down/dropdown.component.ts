@@ -16,7 +16,8 @@ export class DropdownComponent implements OnInit {
   @Input() errorType:any;
   @Input() formfieldCSS;
   @Input() labelStyle;
-  selected = 'test';
+  @Input() selected;
+  @Input() selectionChange;
   myControl = new FormControl('');
   filteredOptions!: Observable<string[]>;
   errorMessage = validationMessage

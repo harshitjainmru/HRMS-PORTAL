@@ -7,17 +7,18 @@
       <div class="formfield 3">
         <label class="label">{{headerValue.NAME_LABEL}}</label>
         <mat-form-field appearance="outline" class="increaseFormfield">
-          <input [placeholder]="headerValue.NAME_PLACEHOLDER" formControlName="employeename" matInput >
+          <input [placeholder]="headerValue.NAME_PLACEHOLDER" formControlName="employeename"  [(ngModel)]="selectedName" (keyup)="typingName()" matInput >
         </mat-form-field>
       </div>
       <span>
+        <!-- [(ngModel)]="selectedDepartment" (selectionChange)="departmentSelection($event.value)" -->
         <app-dropdown [formfieldCSS]="'departmentDropdown'" [label]="headerValue.DEPARTMENT_LABEL" [myControlName]="directoryFilterformGroupControl.departmentname" [Data]="dropDownData"></app-dropdown>
       </span>
       <div class="buttonGroup">
         <button class="button-view" >
           {{headerValue.BUTTON_RESET}}
         </button>
-        <div class="search">
+        <div class="search" (click)="searchStaff()">
           <button class="button-refer classyButton">
             <i class="fas fa-search"></i>  {{headerValue.BUTTON_SEARCH}}
           </button>

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { slideInRight } from 'src/animations/slideInRight';
 import { PROFILE_PICTURE_VALUE } from 'src/app/constants/text';
+import { UtilityServiceService } from 'src/app/services/utility/utility-service.service';
 
 @Component({
   selector: 'app-profile-picture',
@@ -12,7 +13,7 @@ import { PROFILE_PICTURE_VALUE } from 'src/app/constants/text';
 export class ProfilePictureComponent implements OnInit {
 uiMessage=PROFILE_PICTURE_VALUE
 pictureForm!:FormGroup
-  constructor(private _formBuilder:FormBuilder) { }
+  constructor(private _formBuilder:FormBuilder, private utility:UtilityServiceService) { }
 
   ngOnInit(): void {
     this.createForm()
@@ -23,9 +24,11 @@ image:['',Validators.required]
 })
   }
   submitHandler(){
+    console.log(this.pictureForm);
     if(this.pictureForm.valid){
       console.log(this.pictureForm);
-
+    }else{
+      this.utility.showErrorToast('Select profile picture')
     }
   }
 

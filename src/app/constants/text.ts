@@ -737,6 +737,8 @@ export const MYPERFORMACE_VALUE = {
   TEAMWORK_LABEL: 'Teamwork',
   PROCESS_LABEL: 'Process Adherence',
   YEAR_SHORTFORM: 'YRS',
+  button:'Monthly Rating',
+  calendar:'Monthly Performance Calendar'
 };
 
 export const JOB_DETAILS = {

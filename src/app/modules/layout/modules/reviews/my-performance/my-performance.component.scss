@@ -123,6 +123,38 @@ section {
       }
     }
   }
+  .calendar {
+    margin-top: 20px;
+    padding: 0px !important;
+    .card-header {
+      border-bottom: 1px solid $award-text-color !important;
+      padding: 16px;
+      .button {
+        background-color: rgba(227, 236, 243, 0.46);
+        width: auto;
+        display: inline-flex;
+        border-radius: 6px;
+
+        button {
+          @include buttonTransparent();
+          background-color: $directory-header-color;
+          padding: 15px 40px;
+          color: $button-text-color;
+          margin: 5px;
+          border-radius: 6px;
+        }
+      }
+    }
+    .monthly-calendar {
+      padding: 16px;
+      h1 {
+        font-size: 26px;
+        color: #494949;
+        font-weight: 600;
+        margin: 0 0 8px;
+      }
+    }
+  }
 }
 @media (max-width: 1321px) {
   section {

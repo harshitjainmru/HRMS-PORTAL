@@ -18,7 +18,7 @@ export const JOB_OPENING ='refer-candidate/job_openings';
 export const JOB_LIST= 'refer-candidate/list';
 export const JOB_DETAILS ='refer-candidate/job_details'
 export const POLICY_DOC='policy-documents';
-// export const REVIEW='monthly-review';
+export const REVIEW='monthly-review';
 export const PERFORMANCE='monthly-review/my-performance';
 export const INTERVIEW_LIST='interview/interview-list';
 
