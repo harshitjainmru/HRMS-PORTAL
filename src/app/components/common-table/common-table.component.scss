@@ -1,5 +1,5 @@
 @import "../../scss/var";
-$padding:20px;
+$padding: 20px;
 section {
   table {
     width: 100%;
@@ -37,39 +37,55 @@ section {
       }
     }
   }
+  ::ng-deep {
+    .mat-paginator-range-label {
+      position: absolute;
+      left: 0px;
+      margin: 0 32px 0 24px;
+      &::before {
+        content: "showing";
+      }
+      &::after {
+        content: "entries";
+      }
+    }
+    .mat-paginator-page-size {
+      display: flex;
+      align-items: baseline;
+      margin-right: 8px;
+      position: absolute;
+      top: 50px;
+      left: 0px;
+    }
+    .mat-form-field-infix {
+      border: 1px solid black;
+    }
+    .mat-paginator-icon {
+      width: 4px !important;
+    }
+    button.mat-focus-indicator.mat-tooltip-trigger.mat-paginator-navigation-previous.mat-icon-button.mat-button-base::before {
+      content: "Previous";
+      font-size: 13px;
+    }
+    button.mat-focus-indicator.mat-tooltip-trigger.mat-paginator-navigation-next.mat-icon-button.mat-button-base::before {
+      content: "Next";
+      font-size: 13px;
+    }
+    .mat-paginator-range-actions {
+      gap: 15px;
+    }
+  }
 }
 
-::ng-deep {
-  .mat-paginator-range-label {
-    position: absolute;
-    left: 0px;
-    margin: 0 32px 0 24px;
-    &::before {
-      content: "showing";
+@media (min-width: 320px) and (max-width: 550px) {
+  section {
+    overflow: scroll;
+    .mat-paginator-container {
+      flex-direction: column;
     }
-    &::after {
-      content: "entries";
+    ::ng-deep .mat-paginator-page-size {
+      top: 80px !important;
+      left: 0px;
     }
   }
-  .mat-paginator-page-size {
-    display: flex;
-    align-items: baseline;
-    margin-right: 8px;
-    position: absolute;
-    top: 50px;
-    left: 0px;
-  }
-}
-
-@media (min-width:320px) and (max-width:550px){
-section{
-  overflow: scroll;
-  .mat-paginator-container{
-    flex-direction: column;
-  }
-  ::ng-deep .mat-paginator-page-size {
-    top: 80px !important;
-    left: 0px;
-  }
-}
 }

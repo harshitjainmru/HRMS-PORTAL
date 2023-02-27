@@ -19,8 +19,7 @@ export class DirectoryComponent implements OnInit {
   empData = DIRECTORY_EMPLOYEE_DATA;
   dropDownData = DIRECTORY_DROPDOWN_VALUE;
   directoryFilterformGroup!: FormGroup;
-  selectedDepartment:any;
-  selectedName!:string;
+  filterData;
   constructor(
     private _formBuilder: FormBuilder,
     private _formService: FormServiceService,
@@ -44,24 +43,40 @@ export class DirectoryComponent implements OnInit {
   get directoryFilterformGroupControl() {
     return this.directoryFilterformGroup.controls;
   }
-  searchStaff(){
-    if(this.selectedName){
-      this.empData = this.empData.filter((item:any)=> {
-        if(item.name?.toLowerCase().includes(this.selectedName?.toLowerCase())){
-          return item;
+
+  keyup(value: any) {
+    this.filterData = value.target.value;
+  }
+
+  filter(e: any) {
+    this.empData = DIRECTORY_EMPLOYEE_DATA;
+    if (e == 'All') {
+      this.empData = DIRECTORY_EMPLOYEE_DATA;
+      return;
+    }
+    this.empData = this.empData.filter((item) => item.EMP_TECHNOLOGY == e);
+  }
+
+  onSubmit() {
+    this.empData = DIRECTORY_EMPLOYEE_DATA;
+    const filterValue = this.filterData.trim();
+    const filterData=[];
+    this.empData?.filter((option: any) => {
+      if (this.directoryFilterformGroupControl.departmentname.value === 'All') {
+        if(option.EMP_NAME?.toLowerCase()?.includes(filterValue)){
+          filterData.push(option);
         }
-      })
-
-    }
+      } else {
+        if((option.EMP_NAME?.toLowerCase()?.includes(filterValue) && option.EMP_TECHNOLOGY == this.directoryFilterformGroupControl.departmentname.value)){
+          filterData.push(option);
+        }
+      }
+    });
+    this.empData=filterData;
+    return this.empData;
   }
-
-  typingName(){
-    console.log(this.selectedName,"123");
-    if(this.selectedName == "" ){
-      this.selectedDepartment = ""
-      this.empData= DIRECTORY_EMPLOYEE_DATA;
-    }
-
+  reset() {
+    this.directoryFilterformGroup.reset();
+    this.empData = DIRECTORY_EMPLOYEE_DATA;
   }
-
 }

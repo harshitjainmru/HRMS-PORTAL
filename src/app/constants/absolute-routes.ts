@@ -75,6 +75,12 @@ export const ABS_LAYOUT_EXPLORE: IRoute = {
     return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
   },
 };
+export const ABS_LAYOUT_MY_PITCH: IRoute = {
+  path: routes.MY_PITCH,
+  get fullUrl(): string {
+    return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
+  },
+};
 export const ABS_LAYOUT_HOLIDAY_CALENDER: IRoute = {
   path: routes.HOLIDAY_CALENDER,
   get fullUrl(): string {

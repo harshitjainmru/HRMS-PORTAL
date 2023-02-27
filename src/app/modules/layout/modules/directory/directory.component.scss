@@ -53,6 +53,7 @@ section {
           height: 50px;
           width: 100px;
           border: 1px solid $border-color;
+          cursor: pointer;
         }
         .button-refer {
           height: 50px;
@@ -127,6 +128,12 @@ section {
         left: 0;
       }
     }
+  }
+  .noResultFound{
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 5rem;
   }
 }
 section {

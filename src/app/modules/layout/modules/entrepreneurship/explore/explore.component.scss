@@ -95,3 +95,28 @@ section {
     }
   }
 }
+
+@media (max-width: 1842px) {
+  .inputs {
+    flex-direction: column;
+    .personalDetail {
+      width: auto !important;
+    }
+  }
+}
+@media (max-width: 359px) {
+  section{
+    overflow: hidden;
+    .header {
+      flex-direction: column;
+      .buttonGroup {
+        .cancelButton {
+          padding: 0px 10px !important;
+        }
+        .classyButton {
+          padding: 0px 10px !important;
+        }
+      }
+    }
+  }
+}

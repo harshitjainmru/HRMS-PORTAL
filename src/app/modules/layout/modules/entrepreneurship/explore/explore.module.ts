@@ -9,6 +9,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { DropDownModule } from 'src/app/modules/shared/drop-down/drop-down.module';
 import { EditorModule } from '@tinymce/tinymce-angular';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AbsoluteRoutingModule } from 'src/app/pipes/absolute-routing/absolute-routing.module';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     EditorModule,
     FormsModule,
     ReactiveFormsModule,
+    AbsoluteRoutingModule
   ]
 })
 export class ExploreModule { }

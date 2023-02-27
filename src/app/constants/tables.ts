@@ -8,6 +8,11 @@ export const SHIFT_HEADING=[
 
 export const SHIFT_TABLE_VALUES = [
   {'date-of-join':SHIFT_VALUE.DATE_VALUE, 'shift':SHIFT_VALUE.SHIFT_VALUE},
+  // {'date-of-join':SHIFT_VALUE.DATE_VALUE, 'shift':SHIFT_VALUE.SHIFT_VALUE},
+  // {'date-of-join':SHIFT_VALUE.DATE_VALUE, 'shift':SHIFT_VALUE.SHIFT_VALUE},
+  // {'date-of-join':SHIFT_VALUE.DATE_VALUE, 'shift':SHIFT_VALUE.SHIFT_VALUE},
+  // {'date-of-join':SHIFT_VALUE.DATE_VALUE, 'shift':SHIFT_VALUE.SHIFT_VALUE},
+  // {'date-of-join':SHIFT_VALUE.DATE_VALUE, 'shift':SHIFT_VALUE.SHIFT_VALUE},
 ]
 
 export const QUALIFICATION_HEADING=[
@@ -71,4 +76,12 @@ export const POLICY_DOCUMENT_VALUES : POLICY_DOCUMENT[]  = [
     download: 'Download',
     link: '/assets/images/2023.jpg',
   },
+];
+export const MY_PITCH_HEADING = [
+  { heading: '#', key: 'sNo', type: 'text' },
+  { heading: 'Title', key: 'title', type: 'text_with_icon' },
+  { heading: 'Industry', key: 'industry', type: 'text' },
+  { heading: 'Technical / Non-Technical', key: 'typeIndustry', type: 'text' },
+  { heading: 'Submitted On', key: 'date', type: 'text' },
+  { heading: 'Action', key: 'download', type: 'link' },
 ];

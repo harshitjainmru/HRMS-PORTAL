@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormControl} from '@angular/forms';
 import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
@@ -18,6 +18,7 @@ export class DropdownComponent implements OnInit {
   @Input() labelStyle;
   @Input() selected;
   @Input() selectionChange;
+  @Output() eventEmitter = new EventEmitter<any>();
   myControl = new FormControl('');
   filteredOptions!: Observable<string[]>;
   errorMessage = validationMessage
@@ -44,6 +45,11 @@ export class DropdownComponent implements OnInit {
 
       return res;
     });
+  }
+
+  onSelection(){
+    console.log("hiiii",this.myControlName.value);
+    this.eventEmitter.emit(this.myControlName.value);
   }
 
 }

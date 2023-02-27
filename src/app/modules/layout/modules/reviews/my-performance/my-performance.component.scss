@@ -146,22 +146,117 @@ section {
       }
     }
     .monthly-calendar {
-      padding: 16px;
+      padding: 10px 30px 5px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
       h1 {
         font-size: 26px;
         color: #494949;
-        font-weight: 600;
+        font-weight: 550 !important;
         margin: 0 0 8px;
+      }
+    }
+    .calendar-month {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      padding: 12px 40px 90px 40px;
+      gap: 30px;
+      .calendar-filled {
+        background-color: #f9f9f9;
+        border-radius: 20px;
+        cursor: pointer;
+        width: 300px;
+        .month {
+          border: 1px solid $border-color;
+          border-radius: 15px;
+          height: 150px;
+          background-color: #fff;
+      }
+        .whitebackground{
+          background-color: white;
+          padding: 10px 10px 110px !important;
+          border-radius: 15px;
+        }
+        .month-width {
+          border: 1px solid $border-color;
+          border-radius: 15px;
+          height: 150px;
+          width: 300px;
+            .month-name {
+              padding: 10px 10px 0px 10px;
+              font-size: 14px;
+              font-weight: 500;
+              margin: 0;
+            }
+            .rating-background {
+              .rating-in-number {
+                background: #e7fcc8;
+                border-radius: 3px;
+                margin: 0;
+                display: inline-flex;
+                float: right;
+                padding: 0px 15px;
+                margin-top: -29px;
+                margin-right: 20px;
+                font-size: 14px;
+                font-weight: 600;
+              }
+            }
+            .textShow {
+              display: flex;
+              gap: 10px;
+              font-size: 18px;
+            }
+            .award {
+              color: #f7c417;
+              padding: 30px 10px 0px 10px;
+            }
+            .icon {
+              display: flex;
+              justify-content: space-between;
+              padding: 0px 10px 0px 10px;
+              .honour {
+                color: #0086ff;
+              }
+            }
+          }
       }
     }
   }
 }
-@media (max-width: 1321px) {
+@media (max-width:1672px){
+    section {
+    .calendar {
+      .calendar-month {
+        grid-template-columns: auto auto auto;
+      }
+    }
+  }
+}
+@media (max-width: 1338px) {
   section {
     .rating-card {
       grid-template-columns: auto;
       .criteria {
         margin: 10px 38px;
+      }
+    }
+    .calendar {
+      .calendar-month {
+        grid-template-columns: auto auto;
+        .month-width{
+          width: auto !important;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 750px) {
+  section {
+    .calendar {
+      .calendar-month {
+        grid-template-columns: auto;
       }
     }
   }
@@ -186,6 +281,11 @@ section {
         .dividers {
           grid-template-columns: 80% 80%;
         }
+      }
+    }
+    .calendar {
+      .monthly-calendar {
+        flex-direction: column;
       }
     }
   }

@@ -4,7 +4,7 @@
       <div class="header">
         <h3 class="heading">{{uiText.HEADER}}</h3>
         <div class="buttonGroup">
-          <button class="cancelButton">{{uiText.CANCEL_BUTTON}}</button>
+          <button class="cancelButton" [routerLink]="['ABS_LAYOUT_MY_PITCH' | absoluteRouting]">{{uiText.CANCEL_BUTTON}}</button>
           <button class="classyButton" type="submit">{{uiText.SUBMIT_BUTTON}}</button>
         </div>
       </div>
@@ -16,20 +16,20 @@
           <div class="formfield 2">
             <label class="label">{{uiText.NAME_LABEL}}</label>
             <mat-form-field appearance="outline">
-              <input value="Harshit Kumar Jain" formControlName="name" matInput>
+              <input formControlName="name" matInput>
             </mat-form-field>
           </div>
           <div class="inputs">
             <div class="formfield 2">
               <label class="label">{{uiText.ID_LABEL}}</label>
               <mat-form-field appearance="outline" class="idFormField personalDetail">
-                <input value="AI1611" formControlName="emp_id" matInput>
+                <input formControlName="emp_id" matInput>
               </mat-form-field>
             </div>
             <div class="formfield 2">
               <label class="label">{{uiText.DOB_LABEL}}</label>
               <mat-form-field appearance="outline" class="dobFormField personalDetail">
-                <input value="2000-04-07" formControlName="dob" matInput>
+                <input formControlName="dob" matInput>
               </mat-form-field>
             </div>
           </div>

@@ -1,0 +1,25 @@
+@import "../../../../../scss/var";
+section{
+  padding: 40px;
+  .header {
+    color: $directory-header-color;
+    .heading-text {
+      font-weight: 500;
+      font-size: 25px;
+    }
+  }
+  ::ng-deep{
+    .mat-paginator-page-size {
+      display: flex;
+      align-items: baseline;
+      margin-right: 8px;
+      position: absolute;
+      top: 70px !important;
+      left: 35px !important;
+    }
+    .mat-paginator-range-label{
+      margin: 0px 32px 0 42px !important;
+    }
+  }
+}
+

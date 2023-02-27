@@ -528,11 +528,11 @@ export const DIRECTORY_DROPDOWN_VALUE = [
   '.NET',
   'Android',
   'Angular',
-  'iOS',
+  'IOS',
   'HTML',
   'Marketing',
   'Quality Analyst',
-  'Node.js',
+  'Node.Js',
   'FINANCE',
 ];
 
@@ -574,7 +574,7 @@ export const DIRECTORY_EMPLOYEE_DATA: IDIRECTORY_DATA[] = [
     IMAGE: '/assets/images/default_female.jpg',
     EMP_NAME: 'Manisha Rawat',
     EMP_DESIGNATION: ' Quality Analyst',
-    EMP_TECHNOLOGY: ' Quality Analyst',
+    EMP_TECHNOLOGY: 'Quality Analyst',
     EMAIL_ICON: 'fas fa-at',
     EMAIL: 'manisha.rawat@appinventiv.com',
     BIRTH_ICON: 'fas fa-birthday-cake',
@@ -666,6 +666,10 @@ export const EXPOLRE_VALUE = {
   PRESENTATION_LABEL:
     'Presentation - (Share your detailed presentation on the idea) (ppt,pdf)',
 };
+export const MY_PITCH = {
+  header_value:'My Ideas',
+
+}
 
 export const INDUSTRY_DATA = [
   'Select Industry',
@@ -737,8 +741,133 @@ export const MYPERFORMACE_VALUE = {
   TEAMWORK_LABEL: 'Teamwork',
   PROCESS_LABEL: 'Process Adherence',
   YEAR_SHORTFORM: 'YRS',
-  button:'Monthly Rating',
-  calendar:'Monthly Performance Calendar'
+  button: 'Monthly Rating',
+  calendar: 'Monthly Performance Calendar',
+  select_year: 'Select Year  : ',
+  year: ['2022', '2023'],
+
+  calendar_month: [
+    // {
+    //   year: '2022',
+    //   data: [
+    //     {
+    //       month_name: 'January',
+    //       Data: [],
+    //     },
+    //     { month_name: 'January', Data: [] },
+    //     { month_name: 'February', Data: [] },
+    //     { month_name: 'March', Data: [] },
+    //     {
+    //       month_name: 'April',
+    //       Data: [
+    //         {
+    //           overall_rating: '5',
+    //           award_title: 'AWARDS:',
+    //           award_value: '0',
+    //           honour_title: 'HONOURS:',
+    //           honour_value: '0',
+    //           icon: 'keyboard_arrow_right',
+    //         },
+    //       ],
+    //     },
+    //     { month_name: 'May', Data: [] },
+    //     { month_name: 'June', Data: [] },
+    //     { month_name: 'July', Data: [] },
+    //     { month_name: 'August', Data: [] },
+    //     { month_name: 'September', Data: [] },
+    //     { month_name: 'October', Data: [] },
+    //     {
+    //       month_name: 'November',
+    //       Data: [
+    //         {
+    //           overall_rating: '5',
+    //           award_title: 'AWARDS:',
+    //           award_value: '0',
+    //           honour_title: 'HONOURS',
+    //           honour_value: '0',
+    //           icon: 'keyboard_arrow_right',
+    //         },
+    //       ],
+    //     },
+    //   ],
+    // },
+    { year: '2022', month_name: 'January', Data: [] },
+    { year: '2022', month_name: 'February', Data: [] },
+    { year: '2022', month_name: 'March', Data: [] },
+    {
+      year: '2022',
+      month_name: 'April',
+      Data: [
+        {
+          overall_rating: '5',
+          award_title: 'AWARDS:',
+          award_value: '0',
+          honour_title: 'HONOURS:',
+          honour_value: '0',
+          icon: 'keyboard_arrow_right',
+        },
+      ],
+    },
+    { year: '2022', month_name: 'May', Data: [] },
+    { year: '2022', month_name: 'June', Data: [] },
+    { year: '2022', month_name: 'July', Data: [] },
+    { year: '2022', month_name: 'August', Data: [] },
+    { year: '2022', month_name: 'September', Data: [] },
+    { year: '2022', month_name: 'October', Data: [] },
+    {
+      year: '2022',
+      month_name: 'November',
+      Data: [
+        {
+          overall_rating: '5',
+          award_title: 'AWARDS:',
+          award_value: '0',
+          honour_title: 'HONOURS',
+          honour_value: '0',
+          icon: 'keyboard_arrow_right',
+        },
+      ],
+    },
+    { year: '2022', month_name: 'December', Data: [] },
+    // { year: '2023', month_name: 'January', Data: [] },
+    // { year: '2023', month_name: 'February', Data: [] },
+    // { year: '2023', month_name: 'March', Data: [] },
+    // {
+    //   year: '2023',
+    //   month_name: 'April',
+    //   Data: [
+    //     {
+    //       overall_rating: '5',
+    //       award_title: 'AWARDS:',
+    //       award_value: '0',
+    //       honour_title: 'HONOURS:',
+    //       honour_value: '0',
+    //       icon: 'keyboard_arrow_right',
+    //     },
+    //   ],
+    // },
+    // { year: '2023', month_name: 'May', Data: [] },
+    // { year: '2023', month_name: 'June', Data: [] },
+    // { year: '2023', month_name: 'July', Data: [] },
+    // { year: '2023', month_name: 'August', Data: [] },
+    // { year: '2023', month_name: 'September', Data: [] },
+    // { year: '2023', month_name: 'October', Data: [] },
+    // {
+    //   year: '2023',
+    //   month_name: 'November',
+    //   Data: [
+    //     {
+    //       overall_rating: '5',
+    //       award_title: 'AWARDS:',
+    //       award_value: '0',
+    //       honour_title: 'HONOURS',
+    //       honour_value: '0',
+    //       icon: 'keyboard_arrow_right',
+    //     },
+    //   ],
+    // },
+    // { year: '2023', month_name: 'December', Data: [] },
+  ],
 };
 
 export const JOB_DETAILS = {
@@ -759,10 +888,7 @@ export const JOB_DETAILS = {
   shouldhave: 'Should have',
   jobQualification: 'Job Qualification',
   educationExp: 'Education and Experience',
-  menu:[
-    'Edit Job Details',
-    'View Applicants'
-  ]
+  menu: ['Edit Job Details', 'View Applicants'],
 };
 
 export const JOB_DETAILS_DATA = [
