@@ -26,9 +26,10 @@ section {
   }
 @media (max-width:798px){
   section{
-    // width:auto;
+    width:auto;
     .image{
-      width: fit-content;
+      // width: auto;
+      // height: auto;
     }
   }
 }

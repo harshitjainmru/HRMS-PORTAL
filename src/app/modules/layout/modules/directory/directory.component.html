@@ -11,7 +11,7 @@
         </mat-form-field>
       </div>
       <span>
-        <app-dropdown [formfieldCSS]="'departmentDropdown'" [label]="headerValue.DEPARTMENT_LABEL" [myControlName]="directoryFilterformGroupControl.departmentname" (eventEmitter)="filter($event)" [Data]="dropDownData"></app-dropdown>
+        <app-dropdown [formfieldCSS]="'departmentDropdown'" [labelStyle]="'labelStyle'" [label]="headerValue.DEPARTMENT_LABEL" [myControlName]="directoryFilterformGroupControl.departmentname" (eventEmitter)="filter($event)" [Data]="dropDownData"></app-dropdown>
       </span>
       <div class="buttonGroup" >
         <button class="button-view" (click)="reset()">

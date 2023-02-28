@@ -1,39 +1,55 @@
 @import "../../scss/var";
 $padding: 20px;
 section {
-  table {
-    width: 100%;
-    margin-top: 50px;
-    th {
-      border-top: 1px solid $border-color;
-      font-size: 14px;
-      color: black;
-      padding-left: $padding;
+  .search-filter{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 22px;
+    .label{
+      display: flex;
+      align-items: center;
     }
-    tr {
-      td {
+    input{
+      padding: 7px 0px;
+    }
+}
+  .table {
+    table {
+      width: 100%;
+      margin-top: 50px;
+      th {
+        border-top: 1px solid $border-color;
+        font-size: 14px;
+        font-weight: 400;
+        word-spacing: normal;
+        color: black;
         padding-left: $padding;
       }
-      th {
-        border-right: 1px solid $border-color;
-        &:last-child {
-          border-right: none !important;
+      tr {
+        td {
+          padding-left: $padding;
+        }
+        th {
+          border-right: 1px solid $border-color;
+          &:last-child {
+            border-right: none !important;
+          }
         }
       }
-    }
-    .mat-column-demo-position {
-      width: 32px;
-      border-right: 1px solid currentColor;
-      padding-right: 24px;
-      text-align: center;
-    }
-    td.mat-cell:first-of-type {
-      border-right: 1px solid $border-color;
-    }
+      .mat-column-demo-position {
+        width: 32px;
+        border-right: 1px solid currentColor;
+        padding-right: 24px;
+        text-align: center;
+      }
+      td.mat-cell:first-of-type {
+        border-right: 1px solid $border-color;
+      }
 
-    .mat-row {
-      &:nth-child(odd) {
-        background-color: rgba(24, 28, 33, 0.025);
+      .mat-row {
+        &:nth-child(odd) {
+          background-color: rgba(24, 28, 33, 0.025);
+        }
       }
     }
   }
@@ -41,7 +57,7 @@ section {
     .mat-paginator-range-label {
       position: absolute;
       left: 0px;
-      margin: 0 32px 0 24px;
+      margin: 0 32px 0 10px;
       &::before {
         content: "showing";
       }
@@ -49,17 +65,21 @@ section {
         content: "entries";
       }
     }
+    .mat-select-value {
+      text-align: center !important;
+    }
     .mat-paginator-page-size {
       display: flex;
       align-items: baseline;
       margin-right: 8px;
       position: absolute;
-      top: 50px;
+      top: 55px;
       left: 0px;
     }
-    .mat-form-field-infix {
+    .mat-form-field-infix .ng-tns-c66-33{
       border: 1px solid black;
     }
+
     .mat-paginator-icon {
       width: 4px !important;
     }
@@ -76,16 +96,51 @@ section {
     }
   }
 }
-
-@media (min-width: 320px) and (max-width: 550px) {
+@media(max-width:1030px){
   section {
-    overflow: scroll;
-    .mat-paginator-container {
-      flex-direction: column;
+    .table{
+      overflow-x: scroll;
+      &::-webkit-scrollbar {
+        width: 5px;
+        height: 3px;
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: $sidenav-scroll-color;
+      }
+    }
+  }
+}
+@media (min-width: 345px) and (max-width: 550px) {
+  section {
+    ::ng-deep .mat-paginator-page-size {
+      top: 105px !important;
+      left: 0px;
+    }
+  }
+}
+@media (max-width:344px){
+  section {
+    .search-filter{
+     flex-direction: column;
+      margin-top: 0px !important;
+      input{
+        padding: 0px !important;
+      }
     }
     ::ng-deep .mat-paginator-page-size {
-      top: 80px !important;
+      top: 125px !important;
       left: 0px;
+    }
+  }
+}
+@media (max-width:319px){
+  ::ng-deep{
+    .mat-paginator-range-actions{
+      display: block !important;
+    }
+    button.mat-focus-indicator.mat-tooltip-trigger.mat-paginator-navigation-previous.mat-icon-button.mat-button-base::before {
+      margin-left: -15px;
     }
   }
 }

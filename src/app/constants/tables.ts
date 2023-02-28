@@ -85,3 +85,16 @@ export const MY_PITCH_HEADING = [
   { heading: 'Submitted On', key: 'date', type: 'text' },
   { heading: 'Action', key: 'download', type: 'link' },
 ];
+
+export const INTERVIEW_LIST_HEADING = [
+  { heading: 'S.No.', key: 'sNo', type: 'text' },
+  { heading: 'Department', key: 'department', type: 'text' },
+  { heading: 'Name', key: 'name', type: 'text' },
+  { heading: 'Email', key: 'email', type: 'text' },
+  { heading: 'Mobile No.', key: 'mobile', type: 'number' },
+  { heading: 'Round Type', key: 'round', type: 'text' },
+  { heading: 'Interview Date', key: 'interviewDate', type: 'text' },
+  { heading: 'Interview Time', key: 'interviewTime', type: 'text' },
+  { heading: 'Final Status', key: 'finalStatus', type: 'text' },
+  { heading: 'Action', key: 'action', type: 'action' },
+];

@@ -21,6 +21,7 @@ uiMessage=TABLE_DATA_UNAVAILABLE
   @Input() PageSizeInRow!:boolean;
   @Input() checkBox!: string;
   @Input() isPageable = true;
+  @Input() isSearchText = true;
   @Input() paginationSizes: number[] = [10, 25, 50 ,100];
   @Input() set pageSize(size: any) {
     if(size)

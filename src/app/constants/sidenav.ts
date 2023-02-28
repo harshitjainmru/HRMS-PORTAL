@@ -9,6 +9,7 @@ import {
   ABS_LAYOUT_JOB_OPENING,
   ABS_LAYOUT_MYPROFILE,
   ABS_LAYOUT_MY_PERFORMANCE,
+  ABS_LAYOUT_MY_TRAININGS,
   ABS_LAYOUT_POLICY_DOC,
   ABS_LAYOUT_REFER_LIST,
 } from './absolute-routes';
@@ -158,12 +159,19 @@ export const sideNavList = [
     ],
     isActive: true,
   },
-  // {
-  //   title: SIDENAV.Freshers_TrainingLABEL,
-  //   icon: 'fas fa-graduation-cap',
-  //   options: [],
-  //   // isActive: true,
-  // },
+  {
+    title: SIDENAV.Freshers_TrainingLABEL,
+    icon: 'fas fa-graduation-cap',
+    options: [
+      {
+        subTitle:SIDENAV.freshers_training_sublabel,
+        subicon:'',
+        routerLink:ABS_LAYOUT_MY_TRAININGS.path,
+        isActive:true,
+      }
+    ],
+    isActive: true,
+  },
   // {
   //   title: SIDENAV.Training_LABEL,
   //   icon: 'fas fa-graduation-cap',

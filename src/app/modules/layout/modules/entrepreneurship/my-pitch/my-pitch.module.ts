@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { MyPitchRoutingModule } from './my-pitch-routing.module';
 import { MyPitchComponent } from './my-pitch.component';
 import { SharedModule } from 'src/app/modules/shared/shared.module';
+import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { SharedModule } from 'src/app/modules/shared/shared.module';
   imports: [
     CommonModule,
     MyPitchRoutingModule,
-    SharedModule
+    SharedModule,
+    MatCardModule
   ]
 })
 export class MyPitchModule { }

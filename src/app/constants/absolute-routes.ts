@@ -130,3 +130,9 @@ export const ABS_LAYOUT_INTERVIEW_LIST: IRoute = {
     return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
   },
 };
+export const ABS_LAYOUT_MY_TRAININGS: IRoute = {
+  path: routes.MY_TRAINING,
+  get fullUrl(): string {
+    return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
+  },
+};

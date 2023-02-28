@@ -49,7 +49,12 @@ const routes: Routes = [
         path:'',
         loadChildren:() =>
         import('./modules/recruitment/recruitment.module').then((m)=>m.RecruitmentModule)
-      }
+      },
+      {
+        path:'',
+        loadChildren:() =>
+        import('./modules/fresher-training/fresher-training.module').then((m)=>m.FresherTrainingModule)
+      },
 
     ],
   },

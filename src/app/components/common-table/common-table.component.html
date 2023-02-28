@@ -1,4 +1,9 @@
 <section>
+  <div class="search-filter" *ngIf="isSearchText">
+    <label class="label">Search : </label>
+      <input >
+  </div>
+  <div class="table">
   <table mat-table *ngIf="dataSource" matSortStart="desc" [dataSource]="dataSource" matSort>
     <div class="data" *ngFor="let row of columns" [matColumnDef]="row.heading">
       <ng-container *ngIf="row.sort; else noSortable">
@@ -27,7 +32,8 @@
 
           <ng-container *ngSwitchCase="'link'">
             <div class="download-link">
-            <a [href]="element.link" class="dataLink" download>{{element[row.key]}}
+            <a [href]="element.link" class="dataLink" download>
+              {{element[row.key]}}
               <img [src]="'/assets/images/ic-download.svg'">
             </a>
           </div>
@@ -48,9 +54,10 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky:true"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
     <tr class="mat-row" *matNoDataRow>
-      <td class="noData" colspan="8" style="text-align: center;">{{uiMessage.NO_DATA}}</td>
+      <td class="noData" colspan="10" style="text-align: center;">{{uiMessage.NO_DATA}}</td>
     </tr>
   </table>
+</div>
 
   <mat-paginator appPaginator [length]="this.dataSource?.length" *ngIf="isPageable" [pageSizeOptions]="[5, 10, 25, 100]"
   [hidePageSize]="false">

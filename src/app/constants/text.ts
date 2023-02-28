@@ -70,6 +70,7 @@ export const SIDENAV = {
   FINANCE_SUBLABEL_INVESTMENT: 'Investment Declaration',
   REVIEWS_SUBLABEL: 'My Performance',
   RECRUITMENT_SUBLABEL: 'My Interview',
+  freshers_training_sublabel:'My Trainings'
 };
 
 export const LAYOUT = {
@@ -1043,3 +1044,20 @@ export const CONDITION_REWARD_DIALOG_VALUE = {
     'Only permanent employees of Appinventiv will be eligible for referral amounts.',
   ],
 };
+
+export const INTERVIEW_LIST ={
+  header_value:'List All Candidates',
+  department_label:'Department',
+  status_label:'Status',
+  status:['Selected Status','Selected','Rejected','Missed','In Progress'],
+  departemnt:[  'Select Department',
+  '.NET',
+  'Android',
+  'Angular',
+  'IOS',
+  'HTML',
+  'Marketing',
+  'Quality Analyst',
+  'Node.Js',
+  'FINANCE',]
+}
