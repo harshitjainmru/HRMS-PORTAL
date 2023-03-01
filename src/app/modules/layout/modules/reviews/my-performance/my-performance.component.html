@@ -14,7 +14,7 @@
         <div class="content">
           <h3 class="emp-name">{{uiText.EMPLOYEE_NAME}}</h3>
           <small class="emp-designation">{{uiText.EMPLOYEE_DESIGNATION}}</small>
-          <p class="years">0.9 {{uiText.YEAR_SHORTFORM}}</p>
+          <p class="years">1 {{uiText.YEAR_SHORTFORM}}</p>
         </div>
       </div>
       <div class="award">
@@ -35,7 +35,7 @@
     <div class="criteria">
       <div class="upper-content">
         <div class="overall-rating">
-          <h1 class="number">4</h1>
+          <h1 class="number">5</h1>
         </div>
         <div class="date">
           <h2 class="date-text">{{uiText.JANUARY_LABEL}} 2021 - {{uiText.TILL_NOW_VALUE}}</h2>
@@ -44,19 +44,19 @@
       <div class="dividers">
         <div class="tech skill">
           <p class="value">{{uiText.TECHNICAL_LABEL}}</p>
-          <h1 class="rating-number">4</h1>
+          <h1 class="rating-number">5</h1>
         </div>
         <div class="tech skill">
           <p class="value">{{uiText.OWNERSHIP_LABEL}}</p>
-          <h1 class="rating-number">4</h1>
+          <h1 class="rating-number">5</h1>
         </div>
         <div class="tech skill">
           <p class="value">{{uiText.TEAMWORK_LABEL}}</p>
-          <h1 class="rating-number">4</h1>
+          <h1 class="rating-number">5</h1>
         </div>
         <div class="tech skill">
           <p class="value">{{uiText.PROCESS_LABEL}}</p>
-          <h1 class="rating-number">4</h1>
+          <h1 class="rating-number">5</h1>
         </div>
       </div>
     </div>
@@ -69,44 +69,49 @@
     </div>
     <div class="monthly-calendar">
       <h1 class="headline">{{uiText.calendar}}</h1>
-      <div class="select-year">
-        <app-dropdown [label]="[uiText.select_year]" [Data]="uiText.year"></app-dropdown>
+       <div class="select-year">
+          <mat-label>Select Year :</mat-label>
+          <mat-form-field appearance="outline">
+            <mat-select
+              (selectionChange)="onSelect()"
+              [formControl]="selectControl"
+            >
+              <ng-container *ngFor="let item of uiText.reviewData">
+                <mat-option [value]="item.year">{{ item.year }} </mat-option>
+              </ng-container>
+            </mat-select>
+          </mat-form-field>
       </div>
     </div>
     <div class="calendar-month">
-      <ng-container *ngFor="let month of uiText.calendar_month">
-        <div *ngIf="month.Data.length<0; else ratings">
-          <div class="month">
-            <h3 class="month-name">{{month.month_name}}</h3>
-          </div>
-        </div>
-        <ng-template #ratings>
-          <div class="calendar-filled">
-            <div class=" month-width">
-              <h3 class="month-name data" *ngIf="month.Data.length">{{month.month_name}}</h3>
-              <h3 class="month-name data whitebackground" *ngIf="!month.Data.length">{{month.month_name}}</h3>
-              <ng-container *ngIf="month.Data.length">
-                <ng-container *ngFor="let data of month.Data">
-                  <span class="rating-background">
-                    <h3 class="rating-in-number">{{data.overall_rating}}</h3>
-                  </span>
-                  <div class="award textShow">
-                    <p class="title">{{data.award_title}}</p>
-                    <p class="value">{{data.award_value}}</p>
-                  </div>
-                  <div class="icon">
-                    <div class="honour textShow">
-                      <p class="title">{{data.honour_title}}</p>
-                      <p class="value">{{data.honour_value}}</p>
+        <ng-container *ngFor="let monthData of currentData.monthlyRating">
+          <div *ngIf="monthData.isRating; else ratings">
+            <div class="calendar-filled">
+              <div class=" month-width">
+                <h3 class="month-name">{{monthData.month}}</h3>
+                    <span class="rating-background">
+                      <h3 class="rating-in-number">{{monthData.rating}}</h3>
+                    </span>
+                    <div class="award textShow">
+                      <p class="title">{{monthData.award_title}}</p>
+                      <p class="value">{{monthData.Awards}}</p>
                     </div>
-                    <mat-icon>keyboard_arrow_right</mat-icon>
-                  </div>
-                </ng-container>
-              </ng-container>
+                    <div class="honourDiv">
+                      <div class="honour textShow">
+                        <p class="title">{{monthData.honour_title}}</p>
+                        <p class="value">{{monthData.Honour}}</p>
+                      </div>
+                      <mat-icon class="arrowIcon" (click)="openDialog(monthData)">keyboard_arrow_right</mat-icon>
+                    </div>
+              </div>
             </div>
           </div>
-        </ng-template>
-      </ng-container>
+          <ng-template #ratings>
+            <div class="month">
+              <h3 class="month-name">{{monthData.month}}</h3>
+            </div>
+          </ng-template>
+        </ng-container>
     </div>
   </mat-card>
 </section>

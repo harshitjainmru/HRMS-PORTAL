@@ -1,6 +1,12 @@
 @import "../../../../../scss/var";
 @import "../../../../../scss/mixins.scss";
 $borderRadius: 10px;
+@mixin boxSize {
+  border: 1px solid $border-color;
+  border-radius: 15px;
+  height: 150px;
+  width: 300px;
+}
 section {
   margin: 35px;
   .breadcrumb {
@@ -162,71 +168,89 @@ section {
       grid-template-columns: auto auto auto auto;
       padding: 12px 40px 90px 40px;
       gap: 30px;
+      .month {
+        @include boxSize();
+        background-color: #fff;
+        .month-name {
+          padding: 10px 10px 0px 10px;
+          font-size: 14px;
+          font-weight: 500;
+          margin: 0;
+        }
+      }
       .calendar-filled {
         background-color: #f9f9f9;
         border-radius: 20px;
-        cursor: pointer;
         width: 300px;
-        .month {
-          border: 1px solid $border-color;
-          border-radius: 15px;
-          height: 150px;
-          background-color: #fff;
-      }
-        .whitebackground{
+
+        .whitebackground {
           background-color: white;
           padding: 10px 10px 110px !important;
           border-radius: 15px;
         }
         .month-width {
-          border: 1px solid $border-color;
-          border-radius: 15px;
-          height: 150px;
-          width: 300px;
-            .month-name {
-              padding: 10px 10px 0px 10px;
-              font-size: 14px;
-              font-weight: 500;
+          @include boxSize();
+          .month-name {
+            padding: 10px 10px 0px 10px;
+            font-size: 14px;
+            font-weight: 500;
+            margin: 0;
+          }
+          .rating-background {
+            .rating-in-number {
+              background: #e7fcc8;
+              border-radius: 3px;
               margin: 0;
-            }
-            .rating-background {
-              .rating-in-number {
-                background: #e7fcc8;
-                border-radius: 3px;
-                margin: 0;
-                display: inline-flex;
-                float: right;
-                padding: 0px 15px;
-                margin-top: -29px;
-                margin-right: 20px;
-                font-size: 14px;
-                font-weight: 600;
-              }
-            }
-            .textShow {
-              display: flex;
-              gap: 10px;
-              font-size: 18px;
-            }
-            .award {
-              color: #f7c417;
-              padding: 30px 10px 0px 10px;
-            }
-            .icon {
-              display: flex;
-              justify-content: space-between;
-              padding: 0px 10px 0px 10px;
-              .honour {
-                color: #0086ff;
-              }
+              display: inline-flex;
+              float: right;
+              padding: 0px 15px;
+              margin-top: -29px;
+              margin-right: 20px;
+              font-size: 14px;
+              font-weight: 600;
             }
           }
+          .textShow {
+            display: flex;
+            gap: 10px;
+            font-size: 18px;
+          }
+          .award {
+            color: #f7c417;
+            padding: 30px 10px 0px 10px;
+          }
+          .honourDiv {
+            display: flex;
+            justify-content: space-between;
+            padding: 0px 10px 0px 10px;
+            .honour {
+              color: #0086ff;
+            }
+            .arrowIcon{
+              font-size: 40px;
+              font-weight: 400;
+              margin: -8px 30px 0px 0px;
+        cursor: pointer;
+
+            }
+          }
+        }
       }
     }
   }
 }
-@media (max-width:1672px){
-    section {
+.month-width:hover{
+  box-shadow: rgba(123, 122, 122, 0.17) 0px -23px 45px 0px inset,;
+  .honourDiv{
+    .arrowIcon{
+      margin-right: 10px !important;
+      transition: 2s;
+    }
+  }
+}
+
+@media (max-width: 1672px) {
+  section {
     .calendar {
       .calendar-month {
         grid-template-columns: auto auto auto;
@@ -239,13 +263,13 @@ section {
     .rating-card {
       grid-template-columns: auto;
       .criteria {
-        margin: 10px 38px;
+        margin: 10px 0px 10px 38px;
       }
     }
     .calendar {
       .calendar-month {
         grid-template-columns: auto auto;
-        .month-width{
+        .month-width {
           width: auto !important;
         }
       }
@@ -257,6 +281,15 @@ section {
     .calendar {
       .calendar-month {
         grid-template-columns: auto;
+        .month {
+          width: auto !important;
+        }
+        .calendar-filled {
+          width: auto !important;
+          .month-width {
+            width: auto !important;
+          }
+        }
       }
     }
   }
@@ -266,7 +299,7 @@ section {
     .rating-card {
       .left-content {
         .award {
-          grid-template-columns: 60%;
+          grid-template-columns: 100%;
         }
       }
       .criteria {

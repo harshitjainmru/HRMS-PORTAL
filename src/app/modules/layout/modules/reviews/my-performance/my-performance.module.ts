@@ -9,11 +9,15 @@ import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { DropDownModule } from 'src/app/modules/shared/drop-down/drop-down.module';
 import { MatIconModule } from '@angular/material/icon';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DivisionRatingComponent } from '../division-rating/division-rating.component';
 
 
 @NgModule({
   declarations: [
-    MyPerformanceComponent
+    MyPerformanceComponent,
+    DivisionRatingComponent
+
   ],
   imports: [
     CommonModule,
@@ -23,7 +27,9 @@ import { MatIconModule } from '@angular/material/icon';
     MatInputModule,
     MatSelectModule,
     DropDownModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class MyPerformanceModule { }

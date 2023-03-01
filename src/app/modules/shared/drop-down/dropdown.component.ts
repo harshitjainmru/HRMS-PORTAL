@@ -42,6 +42,7 @@ export class DropdownComponent implements OnInit {
 
     return this.Data.filter((option:any) => {
       const res = option?.toLowerCase().includes(filterValue);
+console.log(option,'option');
 
       return res;
     });

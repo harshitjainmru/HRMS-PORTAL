@@ -745,130 +745,47 @@ export const MYPERFORMACE_VALUE = {
   button: 'Monthly Rating',
   calendar: 'Monthly Performance Calendar',
   select_year: 'Select Year  : ',
-  year: ['2022', '2023'],
+  reviewData : [
+    {
+      year: 2022,
+      monthlyRating: [
+        { month: 'January', isRating: false },
+        { month: 'February', isRating: false },
+        { month: 'March', isRating: false },
+        { month: 'April', isRating: false },
+        { month: 'May', isRating: false},
+        { month: 'June', isRating: false },
+        { month: 'July', isRating: true , rating: 4.0, Awards: 0, Honour: 0,award_title: 'AWARDS:',honour_title: 'HONOURS:', technical_rating:4,ownership_rating:5,teamWork_rating:4,process_rating:4},
+        { month: 'August', isRating: false },
+        { month: 'September', isRating: true ,rating: 4.0, Awards: 0, Honour: 0,award_title: 'AWARDS:',honour_title: 'HONOURS:',technical_rating:5,ownership_rating:4,teamWork_rating:4,process_rating:4},
+        { month: 'October', isRating: false },
+        { month: 'November', isRating: false },
+        { month: 'December', isRating: false }
 
-  calendar_month: [
-    // {
-    //   year: '2022',
-    //   data: [
-    //     {
-    //       month_name: 'January',
-    //       Data: [],
-    //     },
-    //     { month_name: 'January', Data: [] },
-    //     { month_name: 'February', Data: [] },
-    //     { month_name: 'March', Data: [] },
-    //     {
-    //       month_name: 'April',
-    //       Data: [
-    //         {
-    //           overall_rating: '5',
-    //           award_title: 'AWARDS:',
-    //           award_value: '0',
-    //           honour_title: 'HONOURS:',
-    //           honour_value: '0',
-    //           icon: 'keyboard_arrow_right',
-    //         },
-    //       ],
-    //     },
-    //     { month_name: 'May', Data: [] },
-    //     { month_name: 'June', Data: [] },
-    //     { month_name: 'July', Data: [] },
-    //     { month_name: 'August', Data: [] },
-    //     { month_name: 'September', Data: [] },
-    //     { month_name: 'October', Data: [] },
-    //     {
-    //       month_name: 'November',
-    //       Data: [
-    //         {
-    //           overall_rating: '5',
-    //           award_title: 'AWARDS:',
-    //           award_value: '0',
-    //           honour_title: 'HONOURS',
-    //           honour_value: '0',
-    //           icon: 'keyboard_arrow_right',
-    //         },
-    //       ],
-    //     },
-    //   ],
-    // },
-    { year: '2022', month_name: 'January', Data: [] },
-    { year: '2022', month_name: 'February', Data: [] },
-    { year: '2022', month_name: 'March', Data: [] },
-    {
-      year: '2022',
-      month_name: 'April',
-      Data: [
-        {
-          overall_rating: '5',
-          award_title: 'AWARDS:',
-          award_value: '0',
-          honour_title: 'HONOURS:',
-          honour_value: '0',
-          icon: 'keyboard_arrow_right',
-        },
       ],
     },
-    { year: '2022', month_name: 'May', Data: [] },
-    { year: '2022', month_name: 'June', Data: [] },
-    { year: '2022', month_name: 'July', Data: [] },
-    { year: '2022', month_name: 'August', Data: [] },
-    { year: '2022', month_name: 'September', Data: [] },
-    { year: '2022', month_name: 'October', Data: [] },
     {
-      year: '2022',
-      month_name: 'November',
-      Data: [
-        {
-          overall_rating: '5',
-          award_title: 'AWARDS:',
-          award_value: '0',
-          honour_title: 'HONOURS',
-          honour_value: '0',
-          icon: 'keyboard_arrow_right',
-        },
+      year: 2023,
+      monthlyRating: [
+        { month: 'January', isRating: false },
+        { month: 'February', isRating: false },
+        { month: 'March', isRating: false },
+        { month: 'April', isRating: false },
+        { month: 'May', isRating: false },
+        { month: 'June', isRating: false },
+        { month: 'July', isRating: false },
+        { month: 'August', isRating: false },
+        { month: 'September', isRating: false },
+        { month: 'October', isRating: false },
+        { month: 'November', isRating: false },
+        { month: 'December', isRating: false }
       ],
     },
-    { year: '2022', month_name: 'December', Data: [] },
-    // { year: '2023', month_name: 'January', Data: [] },
-    // { year: '2023', month_name: 'February', Data: [] },
-    // { year: '2023', month_name: 'March', Data: [] },
-    // {
-    //   year: '2023',
-    //   month_name: 'April',
-    //   Data: [
-    //     {
-    //       overall_rating: '5',
-    //       award_title: 'AWARDS:',
-    //       award_value: '0',
-    //       honour_title: 'HONOURS:',
-    //       honour_value: '0',
-    //       icon: 'keyboard_arrow_right',
-    //     },
-    //   ],
-    // },
-    // { year: '2023', month_name: 'May', Data: [] },
-    // { year: '2023', month_name: 'June', Data: [] },
-    // { year: '2023', month_name: 'July', Data: [] },
-    // { year: '2023', month_name: 'August', Data: [] },
-    // { year: '2023', month_name: 'September', Data: [] },
-    // { year: '2023', month_name: 'October', Data: [] },
-    // {
-    //   year: '2023',
-    //   month_name: 'November',
-    //   Data: [
-    //     {
-    //       overall_rating: '5',
-    //       award_title: 'AWARDS:',
-    //       award_value: '0',
-    //       honour_title: 'HONOURS',
-    //       honour_value: '0',
-    //       icon: 'keyboard_arrow_right',
-    //     },
-    //   ],
-    // },
-    // { year: '2023', month_name: 'December', Data: [] },
   ],
+  project_name:'PROJECT NAME: ',
+  project_tech:'Training Project React JS',
+  reviewed_by:'REVIEWED BY: ',
+  pm_name:'Rabban Ahmad (Project Manager)',
 };
 
 export const JOB_DETAILS = {

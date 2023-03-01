@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl } from '@angular/forms';
+import { MatDialog } from '@angular/material/dialog';
 import { MYPERFORMACE_VALUE } from 'src/app/constants/text';
+import { DivisionRatingComponent } from '../division-rating/division-rating.component';
 
 @Component({
   selector: 'app-my-performance',
@@ -8,9 +11,27 @@ import { MYPERFORMACE_VALUE } from 'src/app/constants/text';
 })
 export class MyPerformanceComponent implements OnInit {
 uiText =MYPERFORMACE_VALUE
-  constructor() { }
+currentData: any;
+selectControl = new FormControl('');
+  constructor(private dialog:MatDialog) { }
 
   ngOnInit(): void {
+    this.currentData = this.uiText.reviewData[1];
+    this.selectControl.setValue(this.uiText.reviewData[1].year);
+  }
+
+  onSelect() {
+    const idx = this.uiText.reviewData.findIndex(
+      (item) => item.year === this.selectControl.value
+    );
+    this.currentData = this.uiText.reviewData[idx];
+  }
+  openDialog(item):void{
+    console.log(item,'iuten');
+    const dialogRef = this.dialog.open(DivisionRatingComponent, {
+      // disableClose:true,
+      data:item
+    })
   }
 
 }

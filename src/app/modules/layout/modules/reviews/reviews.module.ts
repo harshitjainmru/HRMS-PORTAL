@@ -7,7 +7,7 @@ import { ReviewsComponent } from './reviews.component';
 
 @NgModule({
   declarations: [
-    ReviewsComponent
+    ReviewsComponent,
   ],
   imports: [
     CommonModule,
