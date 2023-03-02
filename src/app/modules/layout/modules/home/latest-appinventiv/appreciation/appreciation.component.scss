@@ -49,6 +49,13 @@ section {
     }
   }
 }
+@media (max-width:1781px){
+  section {
+    .award-card {
+      width: 75%;
+    }
+  }
+}
 @media (min-width:400px) and (max-width:539px){
   section {
     .award-card {

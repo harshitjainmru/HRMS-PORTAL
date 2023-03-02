@@ -1,18 +1,28 @@
 @import "../../scss/var";
+@import "../../scss/mixins.scss";
 $padding: 20px;
 section {
-  .search-filter{
-    display: flex;
-    justify-content: flex-end;
+  .search-filter {
+    @include fpos(baseline, flex-end);
     margin-top: 22px;
-    .label{
-      display: flex;
-      align-items: center;
+    gap: 10px;
+    .label {
+      @include fpos(center, "");
     }
-    input{
+    input {
       padding: 7px 0px;
     }
-}
+  }
+  ::ng-deep{
+    .cdk-overlay-pane{
+      top: 355px !important;
+      left: 387px !important;
+    }
+    .mat-select-panel{
+      min-width: 60px !important;
+      margin-left: 15px !important;
+    }
+  }
   .table {
     table {
       width: 100%;
@@ -22,7 +32,7 @@ section {
         font-size: 14px;
         font-weight: 400;
         word-spacing: normal;
-        color: black;
+        color: $black-color;
         padding-left: $padding;
       }
       tr {
@@ -59,7 +69,7 @@ section {
       left: 0px;
       margin: 0 32px 0 10px;
       &::before {
-        content: "showing";
+        content: "Showing";
       }
       &::after {
         content: "entries";
@@ -76,8 +86,8 @@ section {
       top: 70px;
       left: 0px;
     }
-    .mat-form-field-infix{
-      border: 1px solid black !important;
+    .mat-form-field-infix {
+      border: 1px solid $border-color !important;
     }
 
     .mat-paginator-icon {
@@ -94,11 +104,24 @@ section {
     .mat-paginator-range-actions {
       gap: 15px;
     }
+    .mat-paginator-page-size.ng-star-inserted::after {
+      content: "entries";
+      @include matPaginatorLabel();
+    }
+    .mat-paginator-page-size.ng-star-inserted::before {
+      content: "Show";
+      @include matPaginatorLabel();
+    }
+    .mat-paginator-page-size-label {
+      display: none;
+    }
   }
+
 }
-@media(max-width:1030px){
+
+@media (max-width: 1030px) {
   section {
-    .table{
+    .table {
       overflow-x: scroll;
       &::-webkit-scrollbar {
         width: 5px;
@@ -111,32 +134,23 @@ section {
     }
   }
 }
-@media (min-width: 345px) and (max-width: 550px) {
+@media (max-width: 550px) {
   section {
-    ::ng-deep .mat-paginator-page-size {
-      top: 105px !important;
-      left: 0px;
+    .search-filter {
+      margin-top: 60px !important;
     }
   }
 }
-@media (max-width:344px){
+@media (max-width: 359px) {
   section {
-    .search-filter{
-     flex-direction: column;
-      margin-top: 0px !important;
-      input{
-        padding: 0px !important;
-      }
-    }
-    ::ng-deep .mat-paginator-page-size {
-      top: 125px !important;
-      left: 0px;
+    .search-filter {
+      flex-direction: column !important;
     }
   }
 }
-@media (max-width:319px){
-  ::ng-deep{
-    .mat-paginator-range-actions{
+@media (max-width: 319px) {
+  ::ng-deep {
+    .mat-paginator-range-actions {
       display: block !important;
     }
     button.mat-focus-indicator.mat-tooltip-trigger.mat-paginator-navigation-previous.mat-icon-button.mat-button-base::before {

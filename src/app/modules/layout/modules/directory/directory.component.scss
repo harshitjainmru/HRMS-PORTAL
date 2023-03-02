@@ -1,14 +1,8 @@
 @import "../../../../scss/job-opening-button";
 @import "../../.././../scss/mixins.scss";
 @import "../../../../scss/var";
+@import "../../../../scss/header";
 section {
-  padding: 40px;
-  .header {
-    color: $directory-header-color;
-    .heading-text {
-      font-weight: 500;
-    }
-  }
   .filter-field {
     .form {
       @include flexbox();
@@ -34,7 +28,7 @@ section {
             height: 0;
             border-left: 10px solid transparent;
             border-right: 10px solid transparent;
-            border-top: 11px solid;
+            border-top: 11px solid transparent;
             margin: 0 4px;
           }
         }
@@ -71,7 +65,7 @@ section {
       text-align: center;
       overflow: hidden;
       position: relative;
-      .card-hover{
+      .card-hover {
         width: 80%;
         height: 0px;
         margin-left: 50px;
@@ -113,12 +107,12 @@ section {
         .emp {
           @include fpos(baseline, "");
           gap: 10px;
-          .emailvalue{
+          .emailvalue {
             word-break: break-all;
           }
         }
       }
-      .social{
+      .social {
         width: 100%;
         padding: 0;
         margin: 0;
@@ -129,7 +123,7 @@ section {
       }
     }
   }
-  .noResultFound{
+  .noResultFound {
     font-size: 30px;
     font-weight: 400;
     text-align: center;
@@ -140,9 +134,8 @@ section {
   .directory-card {
     .our-team:hover {
       .card-hover {
-       height: 200px;
-       transition: all 1s ease 0.2s;
-
+        height: 200px;
+        transition: all 1s ease 0.2s;
       }
       .img {
         background-color: $hover-color;
@@ -156,16 +149,24 @@ section {
       .social {
         bottom: 0px;
         transition: all 1s ease 0.2s;
-
       }
     }
   }
 }
-@media (max-width:1650px){
+@media (max-width: 1650px) {
   .directory-card {
     .our-team {
-      .card-hover{
+      .card-hover {
         margin-left: 30px !important;
+      }
+    }
+  }
+}
+@media (max-width: 1290px) {
+  .directory-card {
+    .our-team {
+      .card-hover {
+        margin-left: 20px !important;
       }
     }
   }
@@ -179,36 +180,27 @@ section {
       }
       flex-direction: column;
     }
-    .buttonGroup{
-      margin:-10px 0px 10px 0px !important;
-
+    .buttonGroup {
+      margin: -10px 0px 10px 0px !important;
     }
   }
-
 }
-@media (max-width:929px){
-  section{
-    .directory-card{
+@media (max-width: 929px) {
+  section {
+    .directory-card {
       grid-template-columns: auto auto;
     }
-    .buttonGroup{
-      margin:-10px 0px 10px 0px !important;
-
-    }
   }
 }
-@media (max-width:649px){
-  section{
-    .directory-card{
+@media (max-width: 649px) {
+  section {
+    .directory-card {
       grid-template-columns: auto;
       .our-team {
-        .card-hover{
+        .card-hover {
           margin-left: 55px !important;
         }
       }
-    }
-    .buttonGroup{
-      margin:-10px 0px 10px 0px !important;
     }
   }
 }

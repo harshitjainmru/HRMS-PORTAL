@@ -1,0 +1,86 @@
+@import "../../../../../scss/header";
+@import "../../../../../scss/job-opening-button";
+section {
+  .training-card {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    .card {
+      border: 1px solid rgba(150, 165, 184, 0.3);
+      background-color: $button-text-color;
+      padding: 0px 16px 16px 16px;
+      border-radius: 10px;
+      width: 400px;
+      // width: calc(100%/3);
+      .image {
+        background-color: $training-image-background;
+        border-radius: 10px;
+        figure {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 30px;
+        }
+      }
+      .content {
+        .topContent {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid $border-color;
+          margin-top: 10px;
+
+          .title {
+          }
+          .completeStatus {
+            .status {
+            }
+          }
+        }
+        .middleContent {
+          border-bottom: 1px solid $border-color;
+
+          .labels {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .label {
+            }
+          }
+          .labelData {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .labelsData {
+            }
+          }
+        }
+        .buttonGroup {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 10px;
+          .view {
+          }
+          .classyButton {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1638px) {
+  .card {
+    width: auto !important;
+  }
+}
+@media (max-width: 1166px) {
+  section{
+    .training-card {
+      grid-template-columns: auto auto;
+      .card {
+      }
+    }
+  }
+}

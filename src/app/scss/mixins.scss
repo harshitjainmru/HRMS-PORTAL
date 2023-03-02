@@ -31,8 +31,6 @@ display: flex;
   cursor: pointer;
 }
 
-
-
 @mixin buttonDiv {
   border: 1px solid $button-color;
   border-radius: 2px;
@@ -80,4 +78,10 @@ display: flex;
   height: 30px;
   border-radius: 50%;
   border: none;
+}
+
+@mixin matPaginatorLabel {
+  font-size: 15px;
+  color: $black-color;
+  font-weight: 400;
 }

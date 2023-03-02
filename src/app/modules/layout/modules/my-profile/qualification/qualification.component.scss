@@ -49,6 +49,14 @@ section {
     }
   }
 }
+@media (min-width: 345px) and (max-width: 550px) {
+  section {
+    ::ng-deep .mat-paginator-page-size {
+      top: 105px !important;
+      left: 0px;
+    }
+  }
+}
 @media (min-width: 320px) and (max-width: 745px) {
   section {
     .basic-card {

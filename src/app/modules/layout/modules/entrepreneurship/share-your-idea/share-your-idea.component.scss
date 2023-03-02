@@ -1,6 +1,6 @@
 @import "src/app/scss/_job-opening-button.scss";
 section {
-  padding: 8rem 13rem;
+  padding: 8rem 11rem;
   .container {
     display: flex;
     justify-content: space-between;
@@ -43,15 +43,13 @@ section {
       }
     }
     .right-content {
-      .image1 {
-        position: absolute;
-        top: 1%;
-        right: 120px;
-      }
+      position: relative;
+      top: -124px;
       .image2 {
-        position: relative;
+        position: absolute;
+        top: 8%;
+        right: 110px;
       }
-
       .imagecard {
         margin: 0 auto;
         width: 600px;
@@ -61,4 +59,36 @@ section {
       }
     }
   }
+}
+
+@media (max-width: 1386px) {
+  section{
+    padding: 4rem !important;
+    .right-content {
+      top: 0px !important;
+      .image2 {
+        top: 4% !important;
+        right: 15px !important;
+      }
+      .backgroundImage {
+        width: 400px;
+      }
+      .imagecard {
+        width: 350px !important;
+      }
+    }
+  }
+}
+@media (max-width: 1054px) {
+  section{
+    padding: 4rem 5rem 4rem 5rem !important;
+    .left-content{
+      max-width: none !important;
+    }
+  }
+}
+@media (max-width:701px){
+  .right-content {
+     display: none !important;
+    }
 }

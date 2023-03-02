@@ -1,13 +1,9 @@
 @import "../../../../../scss/var";
+@import "../../../../../scss/header";
 section{
-  padding: 40px;
-  .header {
-    color: $directory-header-color;
     .heading-text {
-      font-weight: 400;
       font-size: 25px;
     }
-  }
   ::ng-deep{
     .mat-paginator-page-size {
       display: flex;

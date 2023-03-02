@@ -5,10 +5,6 @@ section {
   width: 600px;
   height: 600px;
   overflow: hidden;
-  .mat-dialog-container{
-    border-radius: 20px;
-    padding: 0px !important;
-  }
   .image {
     display: flex;
     width: 600px;
@@ -25,11 +21,32 @@ section {
     }
   }
 @media (max-width:798px){
-  section{
-    width:auto;
-    .image{
-      // width: auto;
-      // height: auto;
+  section {
+    width: 400px;
+    height: 400px;
+    .image {
+      width: 400px;
+      height: 350px;
+    }
+  }
+}
+@media (max-width:541px){
+  section {
+    width: 300px;
+    height: 300px;
+    .image {
+      width: 300px;
+      height: 250px;
+    }
+  }
+}
+@media (max-width:416px){
+  section {
+    width: 200px;
+    height: 250px;
+    .image {
+      width: 200px;
+      height: 180px;
     }
   }
 }

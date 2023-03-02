@@ -978,3 +978,63 @@ export const INTERVIEW_LIST ={
   'Node.Js',
   'FINANCE',]
 }
+
+export const FRESHER_TRAINING_DATA ={
+  headerValue:'Trainings',
+  label1:'Start Date',
+  label2:'End Date',
+  label3:'Mode',
+  buttonView:'View Details',
+  buttonFeedback:'Feedback',
+  cardData:[{
+    title:'Angular Training Feb- 2022',
+    completeHeading:'Completed',
+    label1Data:'Feb-28-2022',
+    label2Data:'Apr-02-2022',
+    label3Data:'Online'
+  },
+  {
+    title:'HTML/CSS/UI',
+    completeHeading:'Completed',
+    label1Data:'Feb-14-2022',
+    label2Data:'Feb-25-2022',
+    label3Data:'Offline'
+  },
+  {
+    title:'NodeJS',
+    completeHeading:'Completed',
+    label1Data:'Feb-14-2022',
+    label2Data:'Feb-25-2022',
+    label3Data:'Offline'
+  },
+  {
+    title:'HTML/CSS/UI',
+    completeHeading:'Completed',
+    label1Data:'Feb-14-2022',
+    label2Data:'Feb-25-2022',
+    label3Data:'Offline'
+  },
+  {
+    title:'NodeJS',
+    completeHeading:'Completed',
+    label1Data:'Feb-14-2022',
+    label2Data:'Feb-25-2022',
+    label3Data:'Offline'
+  },
+  {
+    title:'HTML/CSS/UI',
+    completeHeading:'Completed',
+    label1Data:'Feb-14-2022',
+    label2Data:'Feb-25-2022',
+    label3Data:'Offline'
+  },
+  {
+    title:'NodeJS',
+    completeHeading:'Completed',
+    label1Data:'Feb-14-2022',
+    label2Data:'Feb-25-2022',
+    label3Data:'Offline'
+  }
+  ]
+
+}
