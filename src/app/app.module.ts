@@ -12,6 +12,7 @@ import { RewardCondtionDialogComponent } from './components/reward-condtion-dial
 
 
 
+
 @NgModule({
   declarations: [AppComponent, RewardCondtionDialogComponent,],
   imports: [
@@ -22,6 +23,7 @@ import { RewardCondtionDialogComponent } from './components/reward-condtion-dial
     AbsoluteRoutingModule,
     MatSnackBarModule,
     SharedModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],

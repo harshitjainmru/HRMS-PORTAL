@@ -75,6 +75,9 @@ export const validationMessage =
     {type:'required',message:'Confirm Password Field is required'},
     {type:'pattern',message:'Password between 8 to 16 character like (Har:123)'},
     {type:'confirmedValidator',message:`Passsword and Confirm Password didn't match.`},
+  ],
+  title:[
+    {type:'required',message:'Title field is required'},
 
   ]
 }

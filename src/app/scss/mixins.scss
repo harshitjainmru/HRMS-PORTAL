@@ -12,6 +12,10 @@
 @mixin gridbox {
   display: grid;
 }
+@mixin grid($grid-type, $args,) {
+  @include gridbox();
+  #{$grid-type}: #{$args};
+}
 
 @mixin flexbox {
 display: flex;

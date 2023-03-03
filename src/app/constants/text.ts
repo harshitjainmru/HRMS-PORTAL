@@ -1000,41 +1000,57 @@ export const FRESHER_TRAINING_DATA ={
     label2Data:'Feb-25-2022',
     label3Data:'Offline'
   },
-  {
-    title:'NodeJS',
-    completeHeading:'Completed',
-    label1Data:'Feb-14-2022',
-    label2Data:'Feb-25-2022',
-    label3Data:'Offline'
-  },
-  {
-    title:'HTML/CSS/UI',
-    completeHeading:'Completed',
-    label1Data:'Feb-14-2022',
-    label2Data:'Feb-25-2022',
-    label3Data:'Offline'
-  },
-  {
-    title:'NodeJS',
-    completeHeading:'Completed',
-    label1Data:'Feb-14-2022',
-    label2Data:'Feb-25-2022',
-    label3Data:'Offline'
-  },
-  {
-    title:'HTML/CSS/UI',
-    completeHeading:'Completed',
-    label1Data:'Feb-14-2022',
-    label2Data:'Feb-25-2022',
-    label3Data:'Offline'
-  },
-  {
-    title:'NodeJS',
-    completeHeading:'Completed',
-    label1Data:'Feb-14-2022',
-    label2Data:'Feb-25-2022',
-    label3Data:'Offline'
-  }
+  // {
+  //   title:'NodeJS',
+  //   completeHeading:'Completed',
+  //   label1Data:'Feb-14-2022',
+  //   label2Data:'Feb-25-2022',
+  //   label3Data:'Offline'
+  // },
+  // {
+  //   title:'HTML/CSS/UI',
+  //   completeHeading:'Completed',
+  //   label1Data:'Feb-14-2022',
+  //   label2Data:'Feb-25-2022',
+  //   label3Data:'Offline'
+  // },
+  // {
+  //   title:'NodeJS',
+  //   completeHeading:'Completed',
+  //   label1Data:'Feb-14-2022',
+  //   label2Data:'Feb-25-2022',
+  //   label3Data:'Offline'
+  // },
+  // {
+  //   title:'HTML/CSS/UI',
+  //   completeHeading:'Completed',
+  //   label1Data:'Feb-14-2022',
+  //   label2Data:'Feb-25-2022',
+  //   label3Data:'Offline'
+  // },
+  // {
+  //   title:'NodeJS',
+  //   completeHeading:'Completed',
+  //   label1Data:'Feb-14-2022',
+  //   label2Data:'Feb-25-2022',
+  //   label3Data:'Offline'
+  // }
   ]
-
+}
+export const COVID19_DATA ={
+title:'Need Help!',
+lockdown_issue:'Let us know if you are facing any issue because of the lockdown, We will be giving our best to take care of your problems, Please fill the form below and provide the required details, Concerned person will get in touch with you on the earliest.',
+label1:'Title',
+label2:'Mobile No.',
+label3:'Address',
+label4:'Description',
+cancel_button:'Cancel',
+submit_button:'Submit',
+covid_precaution_advice:[
+  {title:'Wear a mask',description:`Face masks, gloves and other protective gear can help stop the spread of coronavirus.
+  Wearing a mask doesn’t imply that you disregard social distancing. In addition to social distancing, keep proper hygiene, especially, when you touch your mask.`},
+  {title:'Wash ‘Em, Wash ‘Em Good ', description:`Good hand washing is the first line of defense to stay safe from Covid-19. Respiratory viruses like Coronavirus spreads when the virus gets into your body through your eyes, throat, or nose. Most often, it happens through your hands.`},
+  {title:'Telemedicine consultation ',description:`Consult doctors or certified medical practitioners remotely and reduce the risk of transmission. Telemedicine consultation is the best alternative for steady and quick medical services.`},
+  {title:'Fight the virus ',description:`Take simple and constructive steps to help fight the spread of Coronavirus like stay at home, wash hands often, wear masks, maintain social distancing and practice respiratory hygiene.`},
+]
 }

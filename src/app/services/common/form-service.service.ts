@@ -45,7 +45,8 @@ export class FormServiceService {
     industry:[],
     pitch_type:[],
     editor:[],
-    presentation:[]
+    presentation:[],
+    title:[]
 
 
   };

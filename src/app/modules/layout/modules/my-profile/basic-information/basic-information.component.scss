@@ -84,9 +84,10 @@ section {
           }
         }
         .classyButton {
-          padding: 8px 15px;
+          padding: 0px !important;
           .saveButton {
             @include buttonTransparent();
+            padding: 8px 15px;
             color: $button-text-color;
           }
         }

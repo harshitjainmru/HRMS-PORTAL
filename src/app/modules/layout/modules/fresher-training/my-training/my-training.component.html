@@ -3,7 +3,7 @@
     <h1 class="heading-text">{{headerValue.headerValue}}</h1>
   </div>
   <div class="training-card">
-  <ng-container *ngFor="let data of headerValue.cardData">
+    <ng-container *ngFor="let data of headerValue.cardData">
       <div class="card">
         <div class="image">
           <figure>
@@ -12,26 +12,29 @@
         </div>
         <div class="content">
           <div class="topContent">
-            <h1 class="title">{{data.title}}</h1>
-            <span class="completeStatus">
-              <p class="status">{{data.completeHeading}}</p>
-            </span>
+            <h4 class="title">{{data.title}}</h4>
+            <p class="completeStatus">{{data.completeHeading}}</p>
           </div>
           <div class="middleContent">
             <div class="labels">
-              <h4 class="label">{{headerValue.label1}}</h4>
-              <h4 class="label">{{headerValue.label2}}</h4>
-              <h4 class="label">{{headerValue.label3}}</h4>
-            </div>
-            <div class="labelData">
-              <h2 class="labelsData">{{data.label1Data}}</h2>
-              <h2 class="labelsData">{{data.label2Data}}</h2>
-              <h2 class="labelsData">{{data.label3Data}}</h2>
+              <div class="labelData">
+                <h4 class="label">{{headerValue.label1}}</h4>
+                <h4 class="labelsData">{{data.label1Data}}</h4>
+              </div>
+              <div class="labelData">
+                <h4 class="label">{{headerValue.label2}}</h4>
+                <h4 class="labelsData">{{data.label2Data}}</h4>
+              </div>
+              <div class="labelData">
+                <h4 class="label">{{headerValue.label3}}</h4>
+                <h4 class="labelsData">{{data.label3Data}}</h4>
+              </div>
+
             </div>
           </div>
           <div class="buttonGroup">
             <button class="view" mat-raised-button>{{headerValue.buttonView}}</button>
-            <button class="classyButton">{{headerValue.buttonFeedback}}</button>
+            <button class="classyButton" mat-raised-button>{{headerValue.buttonFeedback}}</button>
           </div>
         </div>
       </div>

@@ -14,6 +14,11 @@ import { FooterComponent } from './layout-components/footer/footer.component';
 import { HelpDialogComponent } from 'src/app/components/help-dialog/help-dialog.component';
 import { AbsoluteRoutingModule } from 'src/app/pipes/absolute-routing/absolute-routing.module';
 import { LogoutConfirmationComponent } from 'src/app/components/logout-confirmation/logout-confirmation.component';
+import { Covid19Component } from 'src/app/components/covid19/covid19.component';
+import { MatInputModule } from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CarouselModule } from '../shared/carousel/carousel.module';
 @NgModule({
   declarations: [
     LayoutComponent,
@@ -22,7 +27,8 @@ import { LogoutConfirmationComponent } from 'src/app/components/logout-confirmat
     ListItemComponent,
     FooterComponent,
     HelpDialogComponent,
-    LogoutConfirmationComponent
+    LogoutConfirmationComponent,
+    Covid19Component
 
   ],
   imports: [
@@ -33,9 +39,17 @@ import { LogoutConfirmationComponent } from 'src/app/components/logout-confirmat
     MatSidenavModule,
     MatMenuModule,
     MatListModule,
-    AbsoluteRoutingModule
-
-
+    AbsoluteRoutingModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatIconModule,
+    FormsModule,
+    ReactiveFormsModule,
+    CarouselModule
+  ],
+  exports:[
+    Covid19Component
   ]
 })
+
 export class LayoutModule { }

@@ -1,68 +1,84 @@
 @import "../../../../../scss/header";
 @import "../../../../../scss/job-opening-button";
+@import "../../../../../scss/mixins.scss";
 section {
   .training-card {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 20px;
+    @include grid('grid-template-columns','33% 33% 33%');
+    gap: 10px;
+    margin-top: 30px;
     .card {
       border: 1px solid rgba(150, 165, 184, 0.3);
       background-color: $button-text-color;
       padding: 0px 16px 16px 16px;
       border-radius: 10px;
-      width: 400px;
-      // width: calc(100%/3);
+      width: 450px;
       .image {
         background-color: $training-image-background;
         border-radius: 10px;
         figure {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          @include fpos(center,center);
           padding: 30px;
         }
       }
       .content {
         .topContent {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
+          @include fpos(center,space-between);
           border-bottom: 1px solid $border-color;
           margin-top: 10px;
-
+          height: 50px;
           .title {
+            font-weight: 500;
+            font-size: 22px;
           }
           .completeStatus {
-            .status {
-            }
+            background-color: $training-status-background;
+            color: $button-text-color;
+            padding: 0px 6px;
+            font-size: 13px;
+            font-weight: 500;
           }
         }
         .middleContent {
           border-bottom: 1px solid $border-color;
-
           .labels {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .label {
-            }
-          }
-          .labelData {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .labelsData {
+            @include fpos(center,space-between);
+            .labelData {
+              // height:88px ;
+              .label {
+                font-size: 12px;
+                color: $award-text-color;
+                margin-bottom: 0px !important;
+              }
+              .labelsData {
+                font-weight: 500;
+                font-size: 18px;
+              }
             }
           }
         }
         .buttonGroup {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
+          @include fpos(center,space-between);
           margin-top: 10px;
           .view {
+            padding: 1px 64.5px;
+            border: none;
+            color: $directory-header-color;
+            cursor: pointer;
+            background-color: rgba(24, 28, 33, 0.06);
+            &:hover {
+              box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 15%), 0px 4px 5px 0px rgb(0 0 0 / 10%),
+                0px 1px 10px 0px rgb(0 0 0 / 6%);
+              color: $black-color;
+            }
           }
           .classyButton {
+            padding: 9.36px 70px;
+            border-radius: 2px !important;
+            font-size: 15px;
+            &:hover {
+              box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 15%), 0px 4px 5px 0px rgb(0 0 0 / 10%),
+                0px 1px 10px 0px rgb(0 0 0 / 6%);
+            }
           }
         }
       }
@@ -70,17 +86,51 @@ section {
   }
 }
 
-@media (max-width: 1638px) {
+@media (max-width: 1767px) {
   .card {
     width: auto !important;
   }
+  .buttonGroup {
+    flex-direction: column;
+    gap: 20px;
+    .view {
+      width: 100% !important;
+    }
+    .classyButton {
+      width: 100% !important;
+    }
+  }
 }
-@media (max-width: 1166px) {
-  section{
+@media (max-width: 1231px) {
+  section {
     .training-card {
       grid-template-columns: auto auto;
-      .card {
+    }
+  }
+}
+@media (max-width: 679px) {
+  section {
+    .training-card {
+      grid-template-columns: auto;
+    }
+  }
+}
+@media(max-width:374px){
+  .middleContent {
+    .labels {
+      .labelData {
+        height: 75px;
       }
     }
+  }
+}
+@media (max-width: 319px) {
+  section {
+    padding: 10px !important;
+  }
+}
+@media (max-width: 289px) {
+  section {
+    padding: 0px !important;
   }
 }
