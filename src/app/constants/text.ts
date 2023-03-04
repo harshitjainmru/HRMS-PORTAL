@@ -1039,6 +1039,7 @@ export const FRESHER_TRAINING_DATA = {
       label1Data: 'Feb-28-2022',
       label2Data: 'Apr-02-2022',
       label3Data: 'Online',
+      departmentData:'Angular'
     },
     {
       title: 'HTML/CSS/UI',
@@ -1046,6 +1047,8 @@ export const FRESHER_TRAINING_DATA = {
       label1Data: 'Feb-14-2022',
       label2Data: 'Feb-25-2022',
       label3Data: 'Offline',
+      departmentData:'Angular'
+
     },
     // {
     //   title:'NodeJS',
@@ -1094,6 +1097,7 @@ export const FEEDBACK_fORM_DATA = {
     'Do you feel that the objective/goal of the training has been fulfilled? *',
   yesLabel:'Yes',
   noLabel:'No',
+  missingQuestion:'What is missing? *',
   question2: 'How relevant and helpful do you think it was for your job? *',
   question3: 'How would you rate the overall training? *',
   question4: 'How satisfied were you with the session content? *',
@@ -1104,7 +1108,9 @@ export const FEEDBACK_fORM_DATA = {
   notGood:'Not Good',
   excellent:'Excellent',
   poor:'Poor',
-  placeholderOverallFeedback:'Type your answer here'
+  placeholderOverallFeedback:'Type your answer here',
+  cancel_button: 'Cancel',
+  submit_button: 'Submit',
 };
 export const COVID19_DATA = {
   title: 'Need Help!',
