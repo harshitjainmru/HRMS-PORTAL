@@ -5,17 +5,21 @@ import { MyTrainingRoutingModule } from './my-training-routing.module';
 import { MyTrainingComponent } from './my-training.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { FeedbackFormComponent } from './feedback-form/feedback-form.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
   declarations: [
-    MyTrainingComponent
+    MyTrainingComponent,
+    FeedbackFormComponent
   ],
   imports: [
     CommonModule,
     MyTrainingRoutingModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDialogModule,
   ]
 })
 export class MyTrainingModule { }
