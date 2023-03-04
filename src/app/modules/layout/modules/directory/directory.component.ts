@@ -55,9 +55,12 @@ export class DirectoryComponent implements OnInit {
       return;
     }
     if(this.filterData){
+      console.log(this.filterData,'filterdata');
+
       this.empData = this.empData.filter((item)=>{
         item.EMP_TECHNOLOGY == e && item.EMP_NAME==this.filterData
       })
+      this.onSubmit();
     }
     this.empData = this.empData.filter((item) => item.EMP_TECHNOLOGY == e);
   }
