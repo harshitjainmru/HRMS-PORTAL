@@ -38,6 +38,12 @@ section {
       tr {
         td {
           padding-left: $padding;
+          .text-success{
+            color: green;
+          }
+          .text-danger{
+            color: red;
+          }
         }
         th {
           border-right: 1px solid $border-color;

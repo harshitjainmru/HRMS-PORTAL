@@ -12,6 +12,7 @@ import {
   ABS_LAYOUT_MY_TRAININGS,
   ABS_LAYOUT_POLICY_DOC,
   ABS_LAYOUT_REFER_LIST,
+  ABS_LAYOUT_UPCOMING_TRAININGS,
 } from './absolute-routes';
 import { LAYOUT, SIDENAV } from './text';
 
@@ -172,12 +173,19 @@ export const sideNavList = [
     ],
     isActive: true,
   },
-  // {
-  //   title: SIDENAV.Training_LABEL,
-  //   icon: 'fas fa-graduation-cap',
-  //   options: [],
-  //   isActive: true,
-  // },
+  {
+    title: SIDENAV.Training_LABEL,
+    icon: 'fas fa-graduation-cap',
+    options: [
+      {
+        subTitle:SIDENAV.training_sublabel,
+        subicon:'',
+        routerLink:ABS_LAYOUT_UPCOMING_TRAININGS.path,
+        isActive:true,
+      }
+    ],
+    isActive: true,
+  },
   // {
   //   title: SIDENAV.Assests_LABEL,
   //   icon: 'fa-solid fa-flask',

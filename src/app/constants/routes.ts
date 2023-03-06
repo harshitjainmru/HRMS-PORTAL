@@ -23,5 +23,6 @@ export const REVIEW='monthly-review';
 export const PERFORMANCE='monthly-review/my-performance';
 export const INTERVIEW_LIST='interview/interview-list';
 export const MY_TRAINING='freshers/my_trainings';
-export const MY_TRAINING_DETAILS='freshers/training_details_trainee'
+export const MY_TRAINING_DETAILS='freshers/training_details_trainee';
+export const UPCOMING_TRAININGS = 'upcoming_trainings';
 

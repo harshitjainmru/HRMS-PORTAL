@@ -55,6 +55,11 @@ const routes: Routes = [
         loadChildren:() =>
         import('./modules/fresher-training/fresher-training.module').then((m)=>m.FresherTrainingModule)
       },
+      {
+        path:'',
+        loadChildren:() =>
+        import('./modules/training/training.module').then((m)=>m.TrainingModule)
+      },
 
     ],
   },

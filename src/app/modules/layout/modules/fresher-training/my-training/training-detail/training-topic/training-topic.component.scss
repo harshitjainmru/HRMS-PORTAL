@@ -52,3 +52,19 @@ section {
     border-radius: none !important;
   }
 }
+
+@media (max-width: 1040px) {
+  section {
+    .fieldGroup {
+      .fields {
+        grid-template-columns: auto;
+      }
+    }
+  }
+}
+@media (max-width: 795px) {
+  section {
+    margin-top: 45px;
+  }
+}
+

@@ -14,8 +14,14 @@
       </ng-template>
       <td mat-cell *matCellDef="let element; let i=index">
         <ng-container class="value" [ngSwitch]="row.type">
-          <ng-container *ngSwitchCase="'text'">
-            {{element[row.key]}}
+          <ng-container *ngSwitchCase="'text'"  >
+              {{element[row.key]}}
+          </ng-container>
+          <ng-container *ngSwitchCase="'attendance'"  >
+            <!-- [ngClass]="(element.attendance=='Present')?'text-success':'text-danger'" -->
+            <span [ngClass]="(element.attendance=='Present')?'text-success':'text-danger'">
+              {{element[row.key]}}
+            </span>
           </ng-container>
           <ng-container *ngSwitchCase="'text_with_icon'">
             <ng-container *ngIf="element[row.type]=='1';else fileLogo">

@@ -200,6 +200,98 @@ export const TRAINING_TOPIC_DATA : TRAINING_TOPIC[]=[
     endDate:'Mar-23-2022',
     url:'-'
   },
+]
+export const TRAINING_TOPIC_DATA1 : TRAINING_TOPIC[]=[
+  {
+    sNo:1,
+    topic:'HTML/CSS',
+    topictrainer:'Raj Dixit',
+    email:'raj.dixit@appinventiv.com',
+    startDate:'Feb-14-2022',
+    endDate:'Feb-14-2022',
+    url:'-'
+  },
+  {
+    sNo:2,
+    topic:'HTML/CSS',
+    topictrainer:'Raj Dixit',
+    email:'raj.dixit@appinventiv.com',
+    startDate:'Feb-15-2022',
+    endDate:'Feb-15-2022',
+    url:'-'
+  },
+  {
+    sNo:3,
+    topic:'HTML/CSS',
+    topictrainer:'Raj Dixit',
+    email:'raj.dixit@appinventiv.com',
+    startDate:'Feb-16-2022',
+    endDate:'Feb-16-2022',
+    url:'-'
+  },
+  {
+    sNo:4,
+    topic:'HTML/CSS',
+    topictrainer:'Raj Dixit',
+    email:'raj.dixit@appinventiv.com',
+    startDate:'Feb-17-2022',
+    endDate:'Feb-17-2022',
+    url:'-'
+  },
+  {
+    sNo:5,
+    topic:'HTML/CSS',
+    topictrainer:'Raj Dixit',
+    email:'raj.dixit@appinventiv.com',
+    startDate:'Feb-18-2022',
+    endDate:'Feb-18-2022',
+    url:'-'
+  },
+  {
+    sNo:6,
+    topic:'HTML/CSS',
+    topictrainer:'Raj Dixit',
+    email:'raj.dixit@appinventiv.com',
+    startDate:'Feb-21-2022',
+    endDate:'Feb-21-2022',
+    url:'-'
+  },
+  {
+    sNo:7,
+    topic:'HTML/CSS',
+    topictrainer:'Raj Dixit',
+    email:'raj.dixit@appinventiv.com',
+    startDate:'Feb-22-2022',
+    endDate:'Feb-22-2022',
+    url:'-'
+  },
+  {
+    sNo:8,
+    topic:'HTML/CSS',
+    topictrainer:'Raj Dixit',
+    email:'raj.dixit@appinventiv.com',
+    startDate:'Feb-23-2022',
+    endDate:'Feb-23-2022',
+    url:'-'
+  },
+  {
+    sNo:9,
+    topic:'HTML/CSS',
+    topictrainer:'Raj Dixit',
+    email:'raj.dixit@appinventiv.com',
+    startDate:'Feb-24-2022',
+    endDate:'Feb-24-2022',
+    url:'-'
+  },
+  {
+    sNo:10,
+    topic:'file',
+    topictrainer:'Raj Dixit',
+    email:'raj.dixit@appinventiv.com',
+    startDate:'Feb-25-2022',
+    endDate:'Feb-25-2022',
+    url:'-'
+  },
 
 ]
 export const SUBTOPIC_HEADING = [
@@ -320,72 +412,46 @@ export const SUB_TOPIC_DATA : SUB_TOPIC[]=[
 export const SUB_TOPIC_DATA1 : SUB_TOPIC[]=[
   {
     sNo:1,
-    subtopic:'What is SPADifference between SPA and MPAWhat is AngularWhy should we use it?',
-    topic:'Introduction',
-    topictrainer:'Sandeep Gupta',
-    email:'Sandeep.Gupta@appinventiv.com',
-    startDate:'Feb-28-2022',
-    endDate:'Feb-28-2022',
+    subtopic:`HTML: 1. Complete overview of HTML, CSS and their relation. 2. Basic structure of HTML document. 3. Text Content-
+    'to'
+    ','
+    ','
+    , . CSS: 1. Inline, Internal and External CSS.`,
+    topic:'HTML/CSS',
+    topictrainer:'Raj Dixit',
+    email:'raj.dixit@appinventiv.com',
+    startDate:'Feb-14-2022',
+    endDate:'Feb-14-2022',
     url:'-'
   },
   {
     sNo:2,
-    subtopic:'Basic building blocks Basic diff between Angular & other SPA’s Basics of CLI usage',
-    topic:'Basic building block',
-    topictrainer:'Sandeep Gupta',
-    email:'Sandeep.Gupta@appinventiv.com',
-    startDate:'Mar-01-2022',
-    endDate:'Mar-01-2022',
+    subtopic:'HTML: 1. , ,  and their attributes. CSS: 1. Detailed knowledge of Flex.',
+    topic:'HTML/CSS',
+    topictrainer:'Raj Dixit',
+    email:'raj.dixit@appinventiv.com',
+    startDate:'Feb-14-2022',
+    endDate:'Feb-14-2022',
     url:'-'
   },
   {
     sNo:3,
-    subtopic:'What is component. How to use component Defines template and style Data pass TS to View(HTML)',
-    topic:'Components',
-    topictrainer:'Sandeep Gupta',
-    email:'Sandeep.Gupta@appinventiv.com',
-    startDate:'Mar-02-2022	',
-    endDate:'Mar-04-2022',
+    subtopic:'	HTML: 1. List and its types. CSS: 1. Positioning 2. Centring our page.',
+    topic:'HTML/CSS',
+    topictrainer:'Raj Dixit',
+    email:'raj.dixit@appinventiv.com',
+    startDate:'Feb-14-2022',
+    endDate:'Feb-14-2022',
     url:'-'
   },
   {
     sNo:4,
-    subtopic:'What is the parent child relationship When should we use parent child components',
-    topic:'Components',
-    topictrainer:'Sandeep Gupta',
-    email:'Sandeep.Gupta@appinventiv.com',
-    startDate:'Mar-03-2022	',
-    endDate:'Mar-03-2022',
-    url:'-'
-  },
-  {
-    sNo:5,
-    subtopic:'Component lifecycle hooks overview',
-    topic:'Components',
-    topictrainer:'Sandeep Gupta',
-    email:'Sandeep.Gupta@appinventiv.com',
-    startDate:'Mar-04-2022	',
-    endDate:'Mar-04-2022',
-    url:'-'
-  },
-  {
-    sNo:6,
-    subtopic:'Ist - Assignment',
-    topic:'	Ist - Assignment',
-    topictrainer:'Sandeep Gupta',
-    email:'Sandeep.Gupta@appinventiv.com',
-    startDate:'Mar-05-2022',
-    endDate:'Mar-05-2022',
-    url:'-'
-  },
-  {
-    sNo:7,
-    subtopic:'	What are modules. How to create modules. How to break application in modules',
-    topic:'Modules',
-    topictrainer:'Parwinder Singh',
-    email:'parwinder.singh@appinventiv.com',
-    startDate:'Mar-07-2022',
-    endDate:'Mar-07-2022',
+    subtopic:'		HTML: 1. Forms and its components. CSS: 1. Combinators. 2. Class, tag and Id selectors.',
+    topic:'HTML/CSS',
+    topictrainer:'Raj Dixit',
+    email:'raj.dixit@appinventiv.com',
+    startDate:'Feb-14-2022',
+    endDate:'Feb-14-2022',
     url:'-'
   },
 ]
@@ -393,7 +459,7 @@ export const ATTENDANCE_HEADING =[
   { heading: 'S.No.', key: 'sNo', type: 'text' },
   { heading: 'Topic', key: 'topic', type: 'text' },
   { heading: 'Date', key: 'date', type: 'text' },
-  { heading: 'Attendance', key: 'attendance', type: 'text' },
+  { heading: 'Attendance', key: 'attendance', type: 'attendance' },
 ]
 
 export const ATTENDANCE_TABLEDATA = [
@@ -401,139 +467,154 @@ export const ATTENDANCE_TABLEDATA = [
     sNo:1,
     topic:'Introduction',
     date:'Feb-28-2022',
-    attendance:'Present'
+    attendance:'Present',
+    attendance_id:1
   },
   {
     sNo:2,
     topic:'Basic building block',
     date:'Mar-01-2022',
-    attendance:'Present'
+    attendance:'Present',
+    attendance_id:1
+
   },
   {
     sNo:3,
     topic:'Components',
     date:'Mar-02-2022	',
-    attendance:'Present'
+    attendance:'Present',
+    attendance_id:1
+
   },
   {
     sNo:4,
     topic:'	Ist - Assignment',
     date:'Mar-05-2022',
-    attendance:'Present'
+    attendance:'Present',
+    attendance_id:1
+
 
   },
   {
     sNo:5,
     topic:'Modules',
     date:'Mar-07-2022',
-    attendance:'Present'
+    attendance:'Present',
+    attendance_id:1
+
 
   },
   {
     sNo:6,
     topic:'Modules',
     date:'Mar-08-2022',
-    attendance:'Present'
+    attendance:'Present',
+    attendance_id:1
+
 
   },
   {
     sNo:7,
     topic:'Routing',
     date:'Mar-09-2022',
-    attendance:'Present'
+    attendance:'Present',
+    attendance_id:1
+
 
   },
   {
     sNo:8,
     topic:'IInd - Assignment',
     date:'Mar-12-2022',
-    attendance:'Present'
+    attendance:'Present',
+    attendance_id:1
+
 
   },
   {
     sNo:9,
     topic:'RxJs',
     date:'Mar-21-2022',
-    attendance:'Present'
+    attendance:'Present',
+    attendance_id:1
+
 
   },
   {
     sNo:10,
     topic:'HTTP',
     date:'Mar-23-2022',
-    attendance:'Present'
+    attendance:'Present',
+    attendance_id:1
+
 
   },
 ]
 export const ATTENDANCE_TABLEDATA1 = [
   {
     sNo:1,
-    topic:'Introduction',
-    date:'Feb-28-2022',
-    attendance:'Present'
+    topic:'	HTML/CSS',
+    date:'Feb-14-2022',
+    attendance:'Present',
+    attendance_id:1
+
   },
   {
     sNo:2,
-    topic:'Basic building block',
-    date:'Mar-01-2022',
-    attendance:'Present'
+    topic:'	HTML/CSS',
+    date:'Feb-15-2022',
+    attendance:'Present',
+    attendance_id:1
+
   },
   {
     sNo:3,
-    topic:'Components',
-    date:'Mar-02-2022	',
-    attendance:'Present'
+    topic:'	HTML/CSS',
+    date:'Feb-16-2022',
+    attendance:'Absent',
+    attendance_id:2
+
   },
   {
     sNo:4,
-    topic:'	Ist - Assignment',
-    date:'Mar-05-2022',
-    attendance:'Present'
+    topic:'	HTML/CSS',
+    date:'Feb-17-2022',
+    attendance:'Absent',
+    attendance_id:2
 
   },
   {
     sNo:5,
-    topic:'Modules',
-    date:'Mar-07-2022',
-    attendance:'Present'
+    topic:'	HTML/CSS',
+    date:'Feb-18-2022',
+    attendance:'Present',
+    attendance_id:1
+
 
   },
   {
     sNo:6,
-    topic:'Modules',
-    date:'Mar-08-2022',
-    attendance:'Present'
+    topic:'	HTML/CSS',
+    date:'Feb-21-2022',
+    attendance:'Present',
+    attendance_id:1
+
+  },
+  {
+    sNo:7,
+    topic:'	HTML/CSS',
+    date:'Feb-22-2022',
+    attendance:'Present',
+    attendance_id:1
+
+  },
+  {
+    sNo:8,
+    topic:'	HTML/CSS',
+    date:'Feb-23-2022',
+    attendance:'Present',
+    attendance_id:1
 
   },
 ]
 
-
-
-// export const TRAINING_DETAILS = [{
-//   training_label:'Training Details',
-//   title_label:'Title :',
-//   title_data:'Angular Training Feb- 2022',
-//   start_date_label:'Start dates :',
-//   start_date_data:'Feb-28-2022',
-//   end_date_label:'End dates :',
-//   end_date_data:'Apr-02-2022',
-//   mode_label:'Training mode :',
-//   mode_data:'Online',
-//   batch_label:'Batch :',
-//   batch_data:'Feb-2022',
-//   description_label:'Description',
-//   description_data:'Angular Training Feb- 2022 - Uploaded from sheet',
-//   topic_label:'Topics',
-//   table_heading:TRAINING_TOPIC_HEADING,
-//   table_data:TRAINING_TOPIC_DATA
-//   }];
-//   export const SUBTOPIC_DATA =[{
-//     subtopic_label:'Sub Topics',
-//     table_heading:SUBTOPIC_HEADING,
-//     table_data:SUB_TOPIC_DATA
-//   }]
-//   export const ATTENDANCE_DATA =[{
-//     attendance_label:'Attendance',
-//     table_heading:ATTENDANCE_HEADING,
-//     table_data:ATTENDANCE_TABLEDATA
-//   }]

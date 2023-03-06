@@ -27,6 +27,7 @@ import {
   SUB_TOPIC_DATA,
   SUB_TOPIC_DATA1,
   TRAINING_TOPIC_DATA,
+  TRAINING_TOPIC_DATA1,
   TRAINING_TOPIC_HEADING,
 } from './tables';
 
@@ -81,6 +82,7 @@ export const SIDENAV = {
   REVIEWS_SUBLABEL: 'My Performance',
   RECRUITMENT_SUBLABEL: 'My Interview',
   freshers_training_sublabel: 'My Trainings',
+  training_sublabel:'Upcoming Trainings'
 };
 
 export const LAYOUT = {
@@ -1156,20 +1158,20 @@ export const TRAINING_DETAILS = [
     id: 2,
     training_label: 'Training Details',
     title_label: 'Title :',
-    title_data: 'HTML',
+    title_data: 'HTML/CSS/UI',
     start_date_label: 'Start dates :',
-    start_date_data: 'Feb-28-2022',
+    start_date_data: 'Feb-14-2022',
     end_date_label: 'End dates :',
-    end_date_data: 'Apr-02-2022',
+    end_date_data: 'Feb-25-2022',
     mode_label: 'Training mode :',
-    mode_data: 'Online',
+    mode_data: 'Offline',
     batch_label: 'Batch :',
     batch_data: 'Feb-2022',
     description_label: 'Description',
-    description_data: 'Angular Training Feb- 2022 - Uploaded from sheet',
+    description_data: 'HTML/CSS/UI - Uploaded from sheet',
     topic_label: 'Topics',
     table_heading: TRAINING_TOPIC_HEADING,
-    table_data: TRAINING_TOPIC_DATA,
+    table_data: TRAINING_TOPIC_DATA1,
   },
 ];
 export const SUBTOPIC_DATA = [
