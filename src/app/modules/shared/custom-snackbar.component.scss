@@ -1,11 +1,13 @@
 @import "../../scss/mixins.scss";
 section {
   @include flexbox();
+  align-items: center;
   gap: 10px;
   padding: 0px 20px;
   .icon {
+    // margin-top: -2px;
     .customIcon {
-      font-size: 25px;
+      font-size: 35px;
       font-weight: bold;
     }
   }
@@ -13,4 +15,19 @@ section {
 ::ng-deep.mat-snack-bar-container {
   margin: 0.5px !important;
   border-radius: 0% !important;
+}
+
+@media (max-width:578px){
+  ::ng-deep{
+    .mat-snack-bar-handset{
+      width: auto !important;
+    }
+  }
+}
+@media (max-width:468px){
+  ::ng-deep{
+    .mat-snack-bar-handset{
+      width: 70% !important;
+    }
+  }
 }

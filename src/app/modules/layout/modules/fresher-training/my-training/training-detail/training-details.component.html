@@ -1,0 +1,29 @@
+<section>
+  <div class="breadcrumbs">
+    <a class="home-link" [routerLink]="['ABS_LAYOUT_HOME' | absoluteRouting]">{{trainingDetailData.breadcrumb_value1}} /
+    </a>
+    <a class="job-link">{{trainingDetailData.breadcrumb_value2}} / </a>
+    <a class="present-link">{{trainingDetailData.breadcrumb_value3}}</a>
+  </div>
+  <div class="title">
+    <h1 class="titleText">{{trainingDetailData.title}}</h1>
+  </div>
+  <div class="card">
+    <div class="status">
+      <button>{{trainingDetailData.completeHeading}}</button>
+    </div>
+    <div class="header">
+      <mat-tab-group animationDuration="0ms">
+        <mat-tab label="Training Details" >
+          <app-training-topic></app-training-topic>
+        </mat-tab>
+        <mat-tab label="Sub-Topics">
+          <app-sub-topics></app-sub-topics>
+        </mat-tab>
+        <mat-tab label="Attendance">
+          <app-attendance></app-attendance>
+        </mat-tab>
+      </mat-tab-group>
+    </div>
+  </div>
+</section>

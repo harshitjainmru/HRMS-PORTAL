@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { ABS_LAYOUT_MY_TRAININGS_DETAILS } from 'src/app/constants/absolute-routes';
 import { MyTrainingComponent } from './my-training.component';
 
 const routes: Routes = [

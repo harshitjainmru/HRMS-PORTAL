@@ -27,3 +27,22 @@ date?:string;
 download?:string;
 link?:string;
 }
+export interface TRAINING_TOPIC {
+  sNo?:number,
+  topic?:string,
+  topictrainer?:string,
+  email?:string,
+  startDate?:string,
+  endDate?:string,
+  url?:string
+}
+export interface SUB_TOPIC {
+  sNo?:number,
+  topic?:string,
+  subtopic?:string,
+  topictrainer?:string,
+  email?:string,
+  startDate?:string,
+  endDate?:string,
+  url?:string
+}

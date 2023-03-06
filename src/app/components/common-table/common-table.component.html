@@ -30,13 +30,18 @@
 
           </ng-container>
 
-          <ng-container *ngSwitchCase="'link'">
+          <ng-container *ngSwitchCase="'downloadLink'">
             <div class="download-link">
             <a [href]="element.link" class="dataLink" download>
               {{element[row.key]}}
               <img [src]="'/assets/images/ic-download.svg'">
             </a>
           </div>
+          </ng-container>
+          <ng-container *ngSwitchCase="'link'">
+            <a [href]="element.link" class="dataLink">
+              {{element[row.key]}}
+            </a>
           </ng-container>
           <!-- <ng-container *ngSwitchCase="'action'">
             <div class="actionIcon">

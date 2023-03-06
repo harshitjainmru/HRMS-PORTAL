@@ -22,6 +22,8 @@ indexwiseData;
     this.title.setTitle(TITLE.jobOpening_title)
     this.detailId = this._activatedRoute.snapshot.paramMap.get('id')
     this.indexwiseData= this.detailData.find(x => x.id ==this.detailId)
+    console.log(this.indexwiseData,'indexjob');
+
   }
 
   openDialog():void{

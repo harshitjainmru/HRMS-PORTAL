@@ -108,10 +108,18 @@ section {
     }
   }
 }
-@media (max-width: 679px) {
+@media (max-width:957px){
+  .card{
+    width: 300px !important;
+  }
+}
+@media (max-width: 725px) {
   section {
     .training-card {
       grid-template-columns: auto;
+      .card{
+        width: auto !important;
+      }
     }
   }
 }

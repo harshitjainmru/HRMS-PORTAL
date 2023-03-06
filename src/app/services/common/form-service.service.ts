@@ -46,7 +46,13 @@ export class FormServiceService {
     pitch_type:[],
     editor:[],
     presentation:[],
-    title:[]
+    title:[],
+    goalTraining:[],
+    missingDescription:[Validators.maxLength(LIMIT.max_missing_textbox)],
+    relevantFeedback:[],
+    overallFeedback:[],
+    satisfiedWithContent:[],
+    overallTrainingDescription:[Validators.maxLength(LIMIT.max_missing_textbox)],
 
 
   };

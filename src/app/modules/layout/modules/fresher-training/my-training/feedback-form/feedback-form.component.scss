@@ -1,19 +1,16 @@
 @import "../../../../../../scss/dialog-cancel-icon";
 @import "../../../../../../scss/var";
 @import "../../../../../../scss/job-opening-button";
+@import "../../../../../../scss/error";
 @mixin buttonSize() {
   padding: 0 25px;
   height: 40px;
 }
 section {
   width: 614px !important;
-
   .header {
-    // background: $formField-border-color;
-    background-color: #F3F3F3;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
+    background-color: #f3f3f3;
+    @include fpos(baseline,space-between);
     .heading {
       padding: 16px 16px 5px 16px;
       font-size: 20px;
@@ -32,7 +29,6 @@ section {
   }
   .topContent {
     padding: 16px 16px 0px 16px;
-    // border-bottom: 1px solid $border-color;
     .content {
       display: grid;
       grid-template-columns: 25% auto;
@@ -51,63 +47,56 @@ section {
       font-size: 14px;
     }
     .dateData {
-      display: grid;
-      grid-template-columns: auto auto;
-    border-bottom: 1px solid $border-color;
+      @include grid('grid-template-columns','auto auto');
+      border-bottom: 1px solid $border-color;
 
       .date-content {
-        display: grid;
-        grid-template-columns: 50% auto;
+      @include grid('grid-template-columns','50%  auto');
+
         align-items: baseline;
       }
     }
   }
   .form {
     padding: 16px;
-    .question{
+    .question {
       font-size: 14px;
       color: #4e5155 !important;
       font-weight: 500;
       font-family: sans-serif;
       line-height: 1.4;
       margin-bottom: 4px;
-      // word-spacing: 2px;
     }
-    .goalfulfilled{
+    .goalfulfilled {
     }
-    .feedback{
+    .feedback {
       padding: 15px 0px;
-      .feedback-question{
-        .presented{
+      .feedback-question {
+        .presented {
           margin-bottom: -2px !important;
         }
       }
-      .feedback-content{
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-    //     padding-right: 20px;
-    // padding-left: 20px;
-    padding: 0px 3px 0px 6px;
-        .inputMessage{
+      .feedback-content {
+    @include fpos(baseline,space-between);
+        padding: 0px 3px 0px 6px;
+        .inputMessage {
           width: 100% !important;
           margin-bottom: 10px;
         }
-        .text{
+        .text {
           width: 15%;
-          .text-danger{
+          .text-danger {
             color: $error-color;
             font-weight: 400;
             font-size: 14px;
           }
         }
-        .success{
+        .success {
           width: 16%;
-          .success-text{
-            color: #02BC77 !important;
+          .success-text {
+            color: #02bc77 !important;
             font-weight: 400;
             font-size: 14px;
-
           }
         }
       }
@@ -139,24 +128,24 @@ section {
   .cdk-overlay-dark-backdrop {
     background: rgba(0, 0, 0, 0.8);
   }
-  .mat-radio-button{
+  .mat-radio-button {
     margin: 6px 10px !important;
   }
-  .mat-radio-container{
+  .mat-radio-container {
     width: 16px !important;
   }
-  .mat-radio-outer-circle .mat-radio-inner-circle{
+  .mat-radio-outer-circle .mat-radio-inner-circle {
     width: 15px !important;
     height: 16px !important;
   }
-  .mat-radio-label-content{
+  .mat-radio-label-content {
     margin-top: -2px !important;
   }
   .mat-radio-outer-circle {
     border-color: #d8d8d8 !important;
     background-color: $button-text-color;
   }
-  .mat-radio-ripple{
+  .mat-radio-ripple {
     display: none !important;
   }
   .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
@@ -166,17 +155,47 @@ section {
   .mat-radio-button.mat-accent .mat-radio-inner-circle {
     color: #3f51b5;
     background-color: #3f51b5 !important;
-
   }
 }
 
-@media(max-height:800px){
-  ::ng-deep{
-    .mat-dialog-container{
+@media (max-height: 800px) {
+  ::ng-deep {
+    .mat-dialog-container {
       max-height: 500px;
       @include scrollbarStyle();
       border-radius: 10px !important;
     }
   }
 }
-
+@media (max-width: 773px) {
+  section {
+    width: auto !important;
+    .topContent {
+      .dateData {
+        grid-template-columns: auto ;
+        .date-content {
+          grid-template-columns: 25% auto;
+        }
+      }
+    }
+    .form {
+        .feedback-content {
+          flex-direction: column;
+          .inputMessage {
+            width: auto !important;
+            margin-bottom: 10px;
+          }
+      }
+    }
+  }
+}
+@media (max-width: 452px) {
+  section {
+    width: auto !important;
+    .topContent {
+      .content {
+        grid-template-columns: auto;
+      }
+    }
+  }
+}

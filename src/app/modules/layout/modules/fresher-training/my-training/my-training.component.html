@@ -33,7 +33,7 @@
             </div>
           </div>
           <div class="buttonGroup">
-            <button class="view" mat-raised-button>{{headerValue.buttonView}}</button>
+            <button class="view" mat-raised-button (click)="openJobDetailsInNewWindow(data)">{{headerValue.buttonView}}</button>
             <button class="classyButton" mat-raised-button (click)="openDialog(data)">{{headerValue.buttonFeedback}}</button>
           </div>
         </div>
@@ -41,3 +41,4 @@
     </ng-container>
   </div>
 </section>
+<!-- <router-outlet></router-outlet> -->

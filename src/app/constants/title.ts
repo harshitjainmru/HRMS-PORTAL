@@ -13,5 +13,6 @@ calendar_title:'Holiday Calendar | 2023',
 policy_title:'Policy Documents',
 jobOpening_title:'Job Openings / Details',
 interview_list:'Interview List',
-my_training_title:'My trainings'
+my_training_title:'My trainings',
+training_details:'Training Details'
 }

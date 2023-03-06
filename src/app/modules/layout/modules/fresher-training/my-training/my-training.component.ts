@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Title } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 import { FRESHER_TRAINING_DATA } from 'src/app/constants/text';
 import { TITLE } from 'src/app/constants/title';
+import { TrainingDataService } from 'src/app/services/training-data.service';
 import { FeedbackFormComponent } from './feedback-form/feedback-form.component';
 
 @Component({
@@ -11,11 +13,12 @@ import { FeedbackFormComponent } from './feedback-form/feedback-form.component';
   styleUrls: ['./my-training.component.scss']
 })
 export class MyTrainingComponent implements OnInit {
-  headerValue=FRESHER_TRAINING_DATA
-  constructor(private title:Title, private dialog:MatDialog) { }
+  headerValue
+  constructor(private title:Title, private dialog:MatDialog,private router:Router,private data:TrainingDataService) { }
 
   ngOnInit(): void {
     this.title.setTitle(TITLE.my_training_title)
+    this.headerValue = this.data.headerValue
   }
   openDialog(item):void{
     console.log(item,'feedback');
@@ -23,6 +26,13 @@ export class MyTrainingComponent implements OnInit {
       disableClose:true,
       data:item
     })
+  }
+  openJobDetailsInNewWindow(item) {
+    console.log(item,'item');
+    const url = this.router.serializeUrl(
+      this.router.createUrlTree([`/admin/freshers/training_details_trainee/${item.id}`])
+    );
+    window.open(url, '_blank');
   }
 
 }

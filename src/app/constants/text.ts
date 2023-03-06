@@ -19,6 +19,16 @@ import {
   QUALIFICATION,
   SHIFT,
 } from './routes';
+import {
+  ATTENDANCE_HEADING,
+  ATTENDANCE_TABLEDATA,
+  ATTENDANCE_TABLEDATA1,
+  SUBTOPIC_HEADING,
+  SUB_TOPIC_DATA,
+  SUB_TOPIC_DATA1,
+  TRAINING_TOPIC_DATA,
+  TRAINING_TOPIC_HEADING,
+} from './tables';
 
 export const ACCOUNT = {
   COPYRIGHT: '2023 © Appinventiv HR System',
@@ -497,20 +507,6 @@ export const EDUCATION_DROPDOWN = [
   'B.Sc Animation & Film Making',
 ];
 export const LANGUAGE_DROPDOWN = ['English', 'Hindi'];
-
-export const SHIFT_VALUE = {
-  DATE_OF_JOIN_VALUE: 'Date of Joining',
-  OFFICE_SHIFT_VALUE: 'Office Shift',
-  DATE_VALUE: 'Feb-07-2022',
-  SHIFT_VALUE: 'Morning Shift',
-};
-
-export const QUALIFICATION_VALUE = {
-  ACTION_VALUE: 'Action',
-  SCHOOL_VALUE: FORM_LABEL.SCHOOL,
-  TIME_VALUE: FORM_LABEL.TIME,
-  EDUCATION_VALUE: FORM_LABEL.EDUCATION,
-};
 
 export const TABLE_DATA_UNAVAILABLE = {
   NO_DATA: 'No data available in table',
@@ -1034,57 +1030,50 @@ export const FRESHER_TRAINING_DATA = {
   buttonFeedback: 'Feedback',
   cardData: [
     {
+      id: 1,
       title: 'Angular Training Feb- 2022',
       completeHeading: 'Completed',
       label1Data: 'Feb-28-2022',
       label2Data: 'Apr-02-2022',
       label3Data: 'Online',
-      departmentData:'Angular'
+      departmentData: 'Angular',
+      breadcrumb_value1: 'Home',
+      breadcrumb_value2: 'My Trainings ',
+      breadcrumb_value3: 'Details',
+      button1: 'Training Details',
+      button2: 'Sub-Topics',
+      button3: 'Attendance',
+      attendance_data:
+        [
+          {id: 1,
+          attendance_label: 'Attendance',
+          table_heading: ATTENDANCE_HEADING,
+          table_data: ATTENDANCE_TABLEDATA,}
+        ]
     },
     {
+      id: 2,
       title: 'HTML/CSS/UI',
       completeHeading: 'Completed',
       label1Data: 'Feb-14-2022',
       label2Data: 'Feb-25-2022',
       label3Data: 'Offline',
-      departmentData:'Angular'
-
+      departmentData: 'Angular',
+      breadcrumb_value1: 'Home',
+      breadcrumb_value2: 'My Trainings ',
+      breadcrumb_value3: 'Details',
+      button1: 'Training Details',
+      button2: 'Sub-Topics',
+      button3: 'Attendance',
+      attendance_data:[
+        {
+          id: 2,
+          attendance_label: 'Attendance',
+          table_heading: ATTENDANCE_HEADING,
+          table_data: ATTENDANCE_TABLEDATA,
+        },
+      ]
     },
-    // {
-    //   title:'NodeJS',
-    //   completeHeading:'Completed',
-    //   label1Data:'Feb-14-2022',
-    //   label2Data:'Feb-25-2022',
-    //   label3Data:'Offline'
-    // },
-    // {
-    //   title:'HTML/CSS/UI',
-    //   completeHeading:'Completed',
-    //   label1Data:'Feb-14-2022',
-    //   label2Data:'Feb-25-2022',
-    //   label3Data:'Offline'
-    // },
-    // {
-    //   title:'NodeJS',
-    //   completeHeading:'Completed',
-    //   label1Data:'Feb-14-2022',
-    //   label2Data:'Feb-25-2022',
-    //   label3Data:'Offline'
-    // },
-    // {
-    //   title:'HTML/CSS/UI',
-    //   completeHeading:'Completed',
-    //   label1Data:'Feb-14-2022',
-    //   label2Data:'Feb-25-2022',
-    //   label3Data:'Offline'
-    // },
-    // {
-    //   title:'NodeJS',
-    //   completeHeading:'Completed',
-    //   label1Data:'Feb-14-2022',
-    //   label2Data:'Feb-25-2022',
-    //   label3Data:'Offline'
-    // }
   ],
 };
 export const FEEDBACK_fORM_DATA = {
@@ -1095,20 +1084,20 @@ export const FEEDBACK_fORM_DATA = {
   endDate: 'End date :',
   question1:
     'Do you feel that the objective/goal of the training has been fulfilled? *',
-  yesLabel:'Yes',
-  noLabel:'No',
-  missingQuestion:'What is missing? *',
+  yesLabel: 'Yes',
+  noLabel: 'No',
+  missingQuestion: 'What is missing? *',
   question2: 'How relevant and helpful do you think it was for your job? *',
   question3: 'How would you rate the overall training? *',
   question4: 'How satisfied were you with the session content? *',
   readMaterial: '(Both presented and pre-read material)',
   question5: 'Any overall feedback for the training? *',
-  notvery:'Not very',
-  veryMuch:'Very much',
-  notGood:'Not Good',
-  excellent:'Excellent',
-  poor:'Poor',
-  placeholderOverallFeedback:'Type your answer here',
+  notvery: 'Not very',
+  veryMuch: 'Very much',
+  notGood: 'Not Good',
+  excellent: 'Excellent',
+  poor: 'Poor',
+  placeholderOverallFeedback: 'Type your answer here',
   cancel_button: 'Cancel',
   submit_button: 'Submit',
 };
@@ -1142,3 +1131,72 @@ export const COVID19_DATA = {
     },
   ],
 };
+
+export const TRAINING_DETAILS = [
+  {
+    id: 1,
+    training_label: 'Training Details',
+    title_label: 'Title :',
+    title_data: 'Angular Training Feb- 2022',
+    start_date_label: 'Start dates :',
+    start_date_data: 'Feb-28-2022',
+    end_date_label: 'End dates :',
+    end_date_data: 'Apr-02-2022',
+    mode_label: 'Training mode :',
+    mode_data: 'Online',
+    batch_label: 'Batch :',
+    batch_data: 'Feb-2022',
+    description_label: 'Description',
+    description_data: 'Angular Training Feb- 2022 - Uploaded from sheet',
+    topic_label: 'Topics',
+    table_heading: TRAINING_TOPIC_HEADING,
+    table_data: TRAINING_TOPIC_DATA,
+  },
+  {
+    id: 2,
+    training_label: 'Training Details',
+    title_label: 'Title :',
+    title_data: 'HTML',
+    start_date_label: 'Start dates :',
+    start_date_data: 'Feb-28-2022',
+    end_date_label: 'End dates :',
+    end_date_data: 'Apr-02-2022',
+    mode_label: 'Training mode :',
+    mode_data: 'Online',
+    batch_label: 'Batch :',
+    batch_data: 'Feb-2022',
+    description_label: 'Description',
+    description_data: 'Angular Training Feb- 2022 - Uploaded from sheet',
+    topic_label: 'Topics',
+    table_heading: TRAINING_TOPIC_HEADING,
+    table_data: TRAINING_TOPIC_DATA,
+  },
+];
+export const SUBTOPIC_DATA = [
+  {
+    id: 1,
+    subtopic_label: 'Sub Topics',
+    table_heading: SUBTOPIC_HEADING,
+    table_data: SUB_TOPIC_DATA,
+  },
+  {
+    id: 2,
+    subtopic_label: 'Sub Topics',
+    table_heading: SUBTOPIC_HEADING,
+    table_data: SUB_TOPIC_DATA1,
+  },
+];
+export const ATTENDANCE_DATA = [
+  {
+    id: 1,
+    attendance_label: 'Attendance',
+    table_heading: ATTENDANCE_HEADING,
+    table_data: ATTENDANCE_TABLEDATA,
+  },
+  {
+    id: 2,
+    attendance_label: 'Attendance',
+    table_heading: ATTENDANCE_HEADING,
+    table_data: ATTENDANCE_TABLEDATA1,
+  },
+];

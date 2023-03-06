@@ -33,21 +33,21 @@
       </div>
     </div>
   </div>
-  <div class="form">
+  <form class="form" [formGroup]="feedbackForm">
     <div class="goalfulfilled">
       <h4 class="question">{{uiText.question1}}</h4>
-      <mat-radio-group aria-label="Select an option" [(ngModel)]="isVisible">
-        <mat-radio-button [value]="1">{{uiText.yesLabel}}</mat-radio-button><br>
-        <mat-radio-button [value]="2" [checked]="isSelected">{{uiText.noLabel}}</mat-radio-button>
+      <mat-radio-group aria-label="Select an option"  formControlName="goalTraining">
+        <mat-radio-button [value]="'yes'" >{{uiText.yesLabel}}</mat-radio-button><br>
+        <mat-radio-button [value]="'no'" >{{uiText.noLabel}}</mat-radio-button>
       </mat-radio-group>
     </div>
-     <div class="feedback" *ngIf="isVisible==2">
+     <div class="feedback" *ngIf="this.feedbackForm.controls['goalTraining'].value=='no'">
       <div class="feedback-question">
         <h4 class="question">{{uiText.missingQuestion}}</h4>
       </div>
       <div class="feedback-content">
         <textarea type="text" placeholder="Message" class="inputMessage" matInput cdkTextareaAutosize
-          cdkAutosizeMinRows="4" cdkAutosizeMaxRows="7" [placeholder]="uiText.placeholderOverallFeedback"></textarea>
+          cdkAutosizeMinRows="4" cdkAutosizeMaxRows="7" [placeholder]="uiText.placeholderOverallFeedback" formControlName="missingDescription"></textarea>
       </div>
     </div>
 
@@ -60,7 +60,7 @@
           <p class="text-danger">{{uiText.notvery}}</p>
         </div>
         <div class="radio-group">
-          <mat-radio-group aria-label="Select an option">
+          <mat-radio-group aria-label="Select an option" formControlName="relevantFeedback">
             <mat-radio-button value="1">1</mat-radio-button>
             <mat-radio-button value="2">2</mat-radio-button>
             <mat-radio-button value="3">3</mat-radio-button>
@@ -82,7 +82,7 @@
           <p class="text-danger">{{uiText.notGood}}</p>
         </div>
         <div class="radio-group">
-          <mat-radio-group aria-label="Select an option">
+          <mat-radio-group aria-label="Select an option" formControlName="overallFeedback">
             <mat-radio-button value="1">1</mat-radio-button>
             <mat-radio-button value="2">2</mat-radio-button>
             <mat-radio-button value="3">3</mat-radio-button>
@@ -105,7 +105,7 @@
           <p class="text-danger">{{uiText.poor}}</p>
         </div>
         <div class="radio-group">
-          <mat-radio-group aria-label="Select an option">
+          <mat-radio-group aria-label="Select an option" formControlName="satisfiedWithContent">
             <mat-radio-button value="1">1</mat-radio-button>
             <mat-radio-button value="2">2</mat-radio-button>
             <mat-radio-button value="3">3</mat-radio-button>
@@ -125,12 +125,12 @@
       <div class="feedback-content">
         <!-- <mat-form-field appearance="outline" class=""></mat-form-field> -->
         <textarea type="text" placeholder="Message" class="inputMessage" matInput cdkTextareaAutosize
-          cdkAutosizeMinRows="4" cdkAutosizeMaxRows="7" [placeholder]="uiText.placeholderOverallFeedback"></textarea>
+          cdkAutosizeMinRows="4" cdkAutosizeMaxRows="7" [placeholder]="uiText.placeholderOverallFeedback" formControlName="overallTrainingDescription"></textarea>
       </div>
     </div>
     <div class="buttonGroup">
       <button class="cancelButton" (click)="crossClick()">{{uiText.cancel_button}}</button>
-      <button class="classyButton">{{uiText.submit_button}}</button>
+      <button class="classyButton" (click)="submit()">{{uiText.submit_button}}</button>
     </div>
-  </div>
+  </form>
 </section>

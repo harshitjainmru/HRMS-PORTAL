@@ -78,6 +78,25 @@ export const validationMessage =
   ],
   title:[
     {type:'required',message:'Title field is required'},
+  ],
+  goalTraining:[
+    {type:'required',message:'Objective/goal rating is required'}
+  ],
+  missingDescription:[
+    {type:'required',message:'"What is missing" field is required'},
+    {type:'maxlength',message:'"What is missing" textbox requires atleast 25 characters'}
 
-  ]
+  ],
+  relevantFeedback:[
+    {type:'required',message:'Relevant rating is required'}
+  ],
+  overallFeedback:[
+    {type:'required',message:'Overall rating is required'}
+  ],
+  satisfiedWithContent:[
+    {type:'required',message:'Satisfied rating is required'}
+  ],
+  overallTrainingDescription:[
+    {type:'required',message:'Overall feeback field is required'}
+  ],
 }
