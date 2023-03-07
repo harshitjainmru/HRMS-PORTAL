@@ -1,6 +1,7 @@
 import { Component, Inject, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { validationMessage } from 'src/app/constants/error-messages';
 import { REQUEST_TRAINING_DATA } from 'src/app/constants/text';
 import { FormServiceService } from 'src/app/services/common/form-service.service';
 
@@ -12,6 +13,7 @@ import { FormServiceService } from 'src/app/services/common/form-service.service
 export class RequestForTrainingComponent implements OnInit {
   uiText = REQUEST_TRAINING_DATA;
   requestedForm!: FormGroup;
+  errorMessage
   constructor(
     private dialogRef: MatDialogRef<RequestForTrainingComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
@@ -21,6 +23,7 @@ export class RequestForTrainingComponent implements OnInit {
 
   ngOnInit(): void {
     this.createForm();
+    this.errorMessage = validationMessage
   }
   crossClick() {
     this.dialogRef.close('cancel');

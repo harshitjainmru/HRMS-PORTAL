@@ -166,4 +166,10 @@ export const ABS_LAYOUT_REQUESTED_TRAININGS: IRoute = {
     return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
   },
 };
+export const ABS_LAYOUT_TRAINING_DETAILS: IRoute ={
+  path: routes.TRAINING_DETAILS,
+  get fullUrl(): string{
+  return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
+  }
+}
 

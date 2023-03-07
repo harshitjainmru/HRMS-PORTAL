@@ -79,29 +79,24 @@ export const validationMessage =
   title:[
     {type:'required',message:'Title field is required'},
   ],
-  goalTraining:[
-    {type:'required',message:'Objective/goal rating is required'}
-  ],
-  missingDescription:[
-    {type:'required',message:'"What is missing" field is required'},
-    {type:'maxlength',message:'"What is missing" textbox requires atleast 25 characters'}
-
-  ],
-  relevantFeedback:[
-    {type:'required',message:'Relevant rating is required'}
-  ],
-  overallFeedback:[
-    {type:'required',message:'Overall rating is required'}
-  ],
-  satisfiedWithContent:[
-    {type:'required',message:'Satisfied rating is required'}
-  ],
-  overallTrainingDescription:[
-    {type:'required',message:'Overall feeback field is required'}
-  ],
   briefReason:[
     {type:'required',message:'Brief Reason field is required'},
     {type:'minlength',message:'Reason requires atleast 25 characters'}
   ],
+  skill_enhancement:[
+    {type:'required',message:'skill_enhancement field is required'},
+    {type:'minlength',message:'skill_enhancement requires atleast 25 characters'}
 
+  ],
+  skill_needed:[
+    {type:'required',message:'skill_needed field is required'},
+    {type:'minlength',message:'skill_needed requires atleast 25 characters'}
+
+  ],
+  interested:[
+    {type:'required',message:'interested field is required'},
+  ],
+  timeline:[
+    {type:'required',message:'timeline field is required'},
+  ]
 }

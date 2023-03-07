@@ -10,12 +10,13 @@ import { DropDownModule } from 'src/app/modules/shared/drop-down/drop-down.modul
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatRadioModule } from '@angular/material/radio';
+import { CancelEnrollmentModule } from '../upcoming-trainings/cancel-enrollment/cancel-enrollment.module';
 
 
 @NgModule({
   declarations: [
     MyInternalTrainingComponent,
-    RequestForTrainingComponent
+    RequestForTrainingComponent,
   ],
   imports: [
     CommonModule,
@@ -27,6 +28,7 @@ import { MatRadioModule } from '@angular/material/radio';
     MatFormFieldModule,
     MatInputModule,
     MatRadioModule,
+    CancelEnrollmentModule
 
 
   ]

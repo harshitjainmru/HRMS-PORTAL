@@ -56,10 +56,10 @@ export class FormServiceService {
     briefReason:[Validators.minLength(LIMIT.min_missing_textbox)],
     training_name:[],
     team_name:[],
-    skill_enhancement:[],
-    skill_needed:[],
+    skill_enhancement:[Validators.minLength(LIMIT.min_missing_textbox)],
+    skill_needed:[Validators.minLength(LIMIT.min_missing_textbox)],
     interested:[],
-    timeline:[]
+    timeline:[],
 
 
   };

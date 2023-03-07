@@ -7,10 +7,10 @@
   </div>
   <form class="form" [formGroup]="requestedForm">
     <span>
-      <app-dropdown [formfieldCSS]="'requestDropdown'" [labelStyle]="'requestLabel'" [label]="uiText.training_name_label" [Data]="uiText.training_name_data" [myControlName]="this.requestedFormControl.training_name"></app-dropdown>
+      <app-dropdown [errorType]="this.requestedFormControl.training_name" [formfieldCSS]="'requestDropdown'" [labelStyle]="'requestLabel'" [label]="uiText.training_name_label" [Data]="uiText.training_name_data" [myControlName]="this.requestedFormControl.training_name"></app-dropdown>
     </span>
     <span>
-      <app-dropdown [formfieldCSS]="'requestDropdown'"  [labelStyle]="'requestLabel'" [label]="uiText.team_name_label" [Data]="uiText.team_name_data" [myControlName]="this.requestedFormControl.team_name"></app-dropdown>
+      <app-dropdown [errorType]="this.requestedFormControl.team_name" [formfieldCSS]="'requestDropdown'"  [labelStyle]="'requestLabel'" [label]="uiText.team_name_label" [Data]="uiText.team_name_data" [myControlName]="this.requestedFormControl.team_name"></app-dropdown>
     </span>
     <div class="feedback">
       <div class="feedback-question">
@@ -20,6 +20,11 @@
         <mat-form-field appearance="outline">
         <textarea type="text" placeholder="Message" matInput class="inputMessage"  cdkTextareaAutosize
           cdkAutosizeMinRows="4" cdkAutosizeMaxRows="7" [placeholder]="uiText.placeholder" formControlName="skill_enhancement"></textarea>
+          <mat-error *ngFor="let error of errorMessage?.skill_enhancement">
+            <mat-error *ngIf="requestedForm?.get('skill_enhancement')?.hasError(error?.type)" class="alertMessage">
+              <span class="errorMessage">{{error.message}}</span>
+            </mat-error>
+          </mat-error>
         </mat-form-field>
       </div>
     </div>
@@ -31,6 +36,11 @@
         <mat-form-field appearance="outline">
         <textarea type="text" placeholder="Message" matInput class="inputMessage" cdkTextareaAutosize
           cdkAutosizeMinRows="4" cdkAutosizeMaxRows="7" [placeholder]="uiText.placeholder" formControlName="skill_needed"></textarea>
+          <mat-error *ngFor="let error of errorMessage?.skill_needed">
+            <mat-error *ngIf="requestedForm?.get('skill_needed')?.hasError(error?.type)" class="alertMessage">
+              <span class="errorMessage">{{error.message}}</span>
+            </mat-error>
+          </mat-error>
         </mat-form-field>
       </div>
     </div>

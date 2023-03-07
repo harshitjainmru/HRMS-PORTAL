@@ -1,7 +1,7 @@
 <section>
   <div class="top">
   <div class="header">
-    <h1 class="heading-text">{{headerValue.headerValue}}</h1>
+    <h1 class="heading-text">{{headerValue.headerValue2}}</h1>
   </div>
   <div class="button">
     <button class="classyButton" (click)="openDialog()">{{headerValue.requestButton}}</button>
@@ -44,7 +44,7 @@
           </div>
           <div class="buttonGroup">
             <button class="view" mat-raised-button (click)="openJobDetailsInNewWindow(data)">{{headerValue.buttonView}}</button>
-            <button class="classyButton enrollment" mat-raised-button>{{headerValue.buttonEnrollment}}</button>
+            <button class="classyButton enrollment" mat-raised-button (click)="openDialogEnrollment()">{{headerValue.buttonEnrollment}}</button>
           </div>
         </div>
       </div>

@@ -44,49 +44,49 @@
         <div class="formfield 11">
           <label class="label">{{uiText.LABEL_JOBLOC}}</label>
           <mat-form-field appearance="outline">
-            <input matInput>
+            <input formControlName="job_location" matInput>
           </mat-form-field>
         </div>
         <div class="formfield 5">
           <label class="label">{{uiText.LABEL_CANDIDATE_NAME}}</label>
           <mat-form-field appearance="outline">
-            <input matInput>
+            <input formControlName="candidate_name" matInput>
           </mat-form-field>
         </div>
         <div class="formfield 6">
           <label class="label">{{uiText.LABEL_POSITION}}</label>
           <mat-form-field appearance="outline">
-            <input matInput>
+            <input formControlName="position_title" matInput>
           </mat-form-field>
         </div>
         <div class="formfield 7">
           <label class="label">{{uiText.LABEL_EXPERIENCE}}</label>
           <mat-form-field appearance="outline">
-            <input matInput>
+            <input formControlName="experience_candidate" matInput>
           </mat-form-field>
         </div>
         <div class="formfield 8">
           <label class="label">{{uiText.LABEL_EMAIL}}</label>
           <mat-form-field appearance="outline">
-            <input matInput>
+            <input formControlName="email" matInput>
           </mat-form-field>
         </div>
         <div class="formfield 9">
           <label class="label">{{uiText.LABEL_PHONE}}</label>
           <mat-form-field appearance="outline">
-            <input matInput>
+            <input formControlName="contact" matInput>
           </mat-form-field>
         </div>
         <div class="formfield 10">
           <label class="label">{{uiText.LABEL_UPLOAD}}</label>
-          <mat-form-field appearance="outline">
-            <input matInput>
-          </mat-form-field>
+          <!-- <mat-form-field appearance="outline"> -->
+            <input formControlName="upload" type="file" class="fileField" >
+          <!-- </mat-form-field> -->
         </div>
         <div class="formfield 12">
           <label class="label">{{uiText.LABEL_SKILL}}</label>
           <mat-form-field appearance="outline">
-            <textarea [maxLength]="maxLength" #textarea matInput></textarea>
+            <textarea [maxLength]="maxLength" #textarea formControlName="skill" matInput></textarea>
           </mat-form-field>
           <p class="maxlength">
           {{textarea.value.length}}/{{maxLength}}</p>

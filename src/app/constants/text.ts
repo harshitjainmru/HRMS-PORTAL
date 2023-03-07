@@ -1198,6 +1198,7 @@ title:'No Ongoing trainings for now'
 
 export const UPCOMING_TRAINING_DATA = {
   headerValue: 'Upcoming Trainings',
+  headerValue2:'My Trainings',
   whocanattend:'Who can attend',
   label1: 'Start Date',
   label2: 'End Date',

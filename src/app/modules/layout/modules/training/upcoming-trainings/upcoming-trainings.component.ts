@@ -22,11 +22,12 @@ headerValue = UPCOMING_TRAINING_DATA
     })
   }
   openJobDetailsInNewWindow(item) {
-    console.log(item,'item');
-    // const url = this.router.serializeUrl(
-    //   this.router.createUrlTree([`/admin/training_details_trainee/${item.id}`])
-    // );
-    // window.open(url, '_blank');
+    console.log(item.id,'item');
+    const url = this.router.serializeUrl(
+      this.router.createUrlTree([`/admin/training_details_trainee/${item.id}`])
+    );
+
+    window.open(url, '_blank');
   }
 
 }
