@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { Router } from '@angular/router';
 import { UPCOMING_TRAINING_DATA } from 'src/app/constants/text';
 import { CancelEnrollmentComponent } from './cancel-enrollment/cancel-enrollment.component';
 
@@ -10,15 +11,22 @@ import { CancelEnrollmentComponent } from './cancel-enrollment/cancel-enrollment
 })
 export class UpcomingTrainingsComponent implements OnInit {
 headerValue = UPCOMING_TRAINING_DATA
-  constructor(private dialog : MatDialog) { }
+  constructor(private dialog : MatDialog,private router:Router) { }
 
   ngOnInit(): void {
   }
 
   openDialog():void{
     const dialogRef = this.dialog.open(CancelEnrollmentComponent, {
-      // disableClose:true,
+      disableClose:true,
     })
+  }
+  openJobDetailsInNewWindow(item) {
+    console.log(item,'item');
+    // const url = this.router.serializeUrl(
+    //   this.router.createUrlTree([`/admin/training_details_trainee/${item.id}`])
+    // );
+    // window.open(url, '_blank');
   }
 
 }

@@ -49,41 +49,50 @@ export class FeedbackFormComponent implements OnInit {
     if (this.feedbackForm.controls['goalTraining'].hasError('required')) {
       this.uitlity.showErrorToast('Objective/goal rating is required');
     } else if (
-      this.feedbackForm.controls['missingDescription'].hasError('maxlength')
-      ){
-        console.log('wgwg');
-       {
-          this.uitlity.showErrorToast(
-            '"What is missing" textbox requires atleast 25 characters'
-          );
-        }
+      this.feedbackForm.controls['relevantFeedback'].hasError('required')
+    ) {
+      this.uitlity.showErrorToast('Relevant rating is required');
+    } else if (
+      this.feedbackForm.controls['overallFeedback'].hasError('required')
+    ) {
+      this.uitlity.showErrorToast('Overall rating is required');
+    } else if (
+      this.feedbackForm.controls['satisfiedWithContent'].hasError('required')
+    ) {
+      this.uitlity.showErrorToast('Satisfied rating is required');
+    } else if (
+      this.feedbackForm.controls['overallTrainingDescription'].hasError(
+        'required'
+      )
+    ) {
+      this.uitlity.showErrorToast('Overall feeback field  is required');
+    } else if (
+      this.feedbackForm.controls['overallTrainingDescription'].hasError(
+        'minlength'
+      )
+    ) {
+      console.log('wgwg');
+      {
+        this.uitlity.showErrorToast(
+          '"What is missing" textbox requires atleast 25 characters'
+        );
       }
-      else if (
-        this.feedbackForm.controls['relevantFeedback'].hasError('required')
-      ) {
-        this.uitlity.showErrorToast('Relevant rating is required');
-      } else if (
-        this.feedbackForm.controls['overallFeedback'].hasError('required')
-      ) {
-        this.uitlity.showErrorToast('Overall rating is required');
-      } else if (
-        this.feedbackForm.controls['satisfiedWithContent'].hasError('required')
-      ) {
-        this.uitlity.showErrorToast('Satisfied rating is required');
-      } else if (
-        this.feedbackForm.controls['overallTrainingDescription'].hasError(
-          'required'
-        )
-      ) {
-        this.uitlity.showErrorToast('Overall feeback field  is required');
-      }
+    }
     if (this.feedbackForm.controls['goalTraining'].value == 'no') {
       if (
         this.feedbackForm.controls['missingDescription'].hasError('required')
       ) {
         this.uitlity.showErrorToast('"What is missing" field is required');
+      } else if (
+        this.feedbackForm.controls['missingDescription'].hasError('minlength')
+      ) {
+        console.log('wgwg');
+        {
+          this.uitlity.showErrorToast(
+            '"What is missing" textbox requires atleast 25 characters'
+          );
+        }
       }
     }
   }
 }
-

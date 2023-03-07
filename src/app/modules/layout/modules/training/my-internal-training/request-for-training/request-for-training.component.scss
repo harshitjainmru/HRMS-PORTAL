@@ -27,36 +27,6 @@ section {
       }
     }
   }
-  .topContent {
-    padding: 16px 16px 0px 16px;
-    .content {
-      display: grid;
-      grid-template-columns: 25% auto;
-      align-items: baseline;
-    }
-    .title {
-      font-size: 14px;
-      color: #4e5155 !important;
-      font-weight: 500;
-      font-family: sans-serif;
-      line-height: 1.4;
-      margin-bottom: 4px;
-    }
-    .titleData {
-      color: #000;
-      font-size: 14px;
-    }
-    .dateData {
-      @include grid('grid-template-columns','auto auto');
-      border-bottom: 1px solid $border-color;
-
-      .date-content {
-      @include grid('grid-template-columns','50%  auto');
-
-        align-items: baseline;
-      }
-    }
-  }
   .form {
     padding: 16px;
     .question {
@@ -67,37 +37,11 @@ section {
       line-height: 1.4;
       margin-bottom: 4px;
     }
-    .goalfulfilled {
-    }
     .feedback {
-      padding: 15px 0px;
-      .feedback-question {
-        .presented {
-          margin-bottom: -2px !important;
-        }
-      }
       .feedback-content {
-    @include fpos(baseline,space-between);
-        padding: 0px 3px 0px 6px;
         .inputMessage {
           width: 100% !important;
           margin-bottom: 10px;
-        }
-        .text {
-          width: 15%;
-          .text-danger {
-            color: $error-color;
-            font-weight: 400;
-            font-size: 14px;
-          }
-        }
-        .success {
-          width: 16%;
-          .success-text {
-            color: #02bc77 !important;
-            font-weight: 400;
-            font-size: 14px;
-          }
         }
       }
     }
@@ -173,31 +117,12 @@ section {
 @media (max-width: 773px) {
   section {
     width: auto !important;
-    .topContent {
-      .dateData {
-        grid-template-columns: auto ;
-        .date-content {
-          grid-template-columns: 25% auto;
-        }
-      }
-    }
     .form {
         .feedback-content {
-          flex-direction: column;
           .inputMessage {
             width: auto !important;
             margin-bottom: 10px;
           }
-      }
-    }
-  }
-}
-@media (max-width: 452px) {
-  section {
-    width: auto !important;
-    .topContent {
-      .content {
-        grid-template-columns: auto;
       }
     }
   }

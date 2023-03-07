@@ -48,12 +48,18 @@ export class FormServiceService {
     presentation:[],
     title:[],
     goalTraining:[],
-    missingDescription:[Validators.maxLength(LIMIT.max_missing_textbox)],
+    missingDescription:[Validators.minLength(LIMIT.max_missing_textbox)],
     relevantFeedback:[],
     overallFeedback:[],
     satisfiedWithContent:[],
-    overallTrainingDescription:[Validators.maxLength(LIMIT.max_missing_textbox)],
-    briefReason:[Validators.minLength(LIMIT.min_missing_textbox)]
+    overallTrainingDescription:[Validators.minLength(LIMIT.max_missing_textbox)],
+    briefReason:[Validators.minLength(LIMIT.min_missing_textbox)],
+    training_name:[],
+    team_name:[],
+    skill_enhancement:[],
+    skill_needed:[],
+    interested:[],
+    timeline:[]
 
 
   };

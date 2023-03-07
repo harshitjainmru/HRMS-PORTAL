@@ -1202,8 +1202,10 @@ export const UPCOMING_TRAINING_DATA = {
   label1: 'Start Date',
   label2: 'End Date',
   label3: 'Seats',
+  mode:'Mode',
   buttonView: 'View Details',
   buttonEnrollment: 'Cancel Enrollment',
+  requestButton:'+ Request for training',
   cardData: [
     {
       id: 1,
@@ -1212,7 +1214,8 @@ export const UPCOMING_TRAINING_DATA = {
       whoattenddata:'Angular',
       label1Data: 'Jan-05-2023',
       label2Data: 'Jan-05-2023',
-      label3Data: '41'
+      label3Data: '41',
+      mode_data:'Online'
     },
   ],
 };
@@ -1224,4 +1227,51 @@ export const CANCEL_ENROLLMENT_DIALOG_DATA ={
   placeholder_value:'Enter Detail Reason',
   buttonCancel:'Cancel',
   buttonSubmit:'Submit'
+}
+
+export const TRAINING_DETAILS_UPCOMING =[
+  {
+    id:1,
+    breadcrumb_value1:'Home',
+    breadcrumb_value2:'Trainings',
+    breadcrumb_value3:'Training Details',
+    title:'Micro Frontend Angular',
+    buttonEnrollment:'Cancel Enrollment',
+    proposed_button:'Proposed',
+    title_label:'Title :',
+    trainingduration:'Training duration :',
+    date:'Training dates :',
+    mode:'Training mode :',
+    attend:'Who can attend :',
+    seats:'No. of seats :',
+    duration_data:'1 Hrs',
+    data_data:'Jan-05-2023 - Jan-05-2023',
+    mode_data:'Online',
+    seat_data:'55',
+    attendTeam:'Angular',
+    description_label:'Description',
+    description_data:'Micro Frontends is to think about a website or web app as a composition of features which are owned by independent teams. Each team has a distinct area of business or mission it cares about and specialises in. A team is cross functional and develops its features end-to-end, from database to user interface.',
+    support_label:'Support details',
+    support_data:'This is online training, so no support required.'
+  }
+]
+
+export const REQUEST_TRAINING_DATA = {
+  header_value:'Request for training',
+  training_name_label:'Training name',
+  team_name_label:'Team name',
+  skill_enhancement:'Please mention the training/learning area’s you feel can be beneficial for your skill enhancement and job performance *',
+  skill_needed_label:'Why do you feel these skills are needed and how they will benefit your personal and organizational needs *',
+  placeholder:'Type your answer here',
+  interest_given_training:'Are you interested to give the Trainings? *',
+  timeline:'What should be the timeline to conduct this training? *',
+  buttonCancel:'Cancel',
+  buttonSubmit:'Submit',
+  yesLabel:'Yes',
+  noLabel:'No',
+  immediateLabel:'Immediate',
+  months:'3-6 Months',
+  more_months:'More than 6 Months',
+  training_name_data:['Micro Frontend Angular'],
+  team_name_data:['.net','angular','android','html','finance']
 }

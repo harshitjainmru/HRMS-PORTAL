@@ -46,8 +46,10 @@
         <h4 class="question">{{uiText.missingQuestion}}</h4>
       </div>
       <div class="feedback-content">
+        <mat-form-field appearance="outline">
         <textarea type="text" placeholder="Message" class="inputMessage" matInput cdkTextareaAutosize
           cdkAutosizeMinRows="4" cdkAutosizeMaxRows="7" [placeholder]="uiText.placeholderOverallFeedback" formControlName="missingDescription"></textarea>
+        </mat-form-field>
       </div>
     </div>
 
@@ -123,9 +125,10 @@
         <h4 class="question">{{uiText.question5}}</h4>
       </div>
       <div class="feedback-content">
-        <!-- <mat-form-field appearance="outline" class=""></mat-form-field> -->
-        <textarea type="text" placeholder="Message" class="inputMessage" matInput cdkTextareaAutosize
+        <mat-form-field appearance="outline" class="">
+          <textarea type="text" placeholder="Message" class="inputMessage" matInput cdkTextareaAutosize
           cdkAutosizeMinRows="4" cdkAutosizeMaxRows="7" [placeholder]="uiText.placeholderOverallFeedback" formControlName="overallTrainingDescription"></textarea>
+        </mat-form-field>
       </div>
     </div>
     <div class="buttonGroup">

@@ -166,3 +166,4 @@ export const ABS_LAYOUT_REQUESTED_TRAININGS: IRoute = {
     return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
   },
 };
+

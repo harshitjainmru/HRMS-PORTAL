@@ -14,6 +14,14 @@
     line-height: 1.4;
     margin-bottom: 4px;
   }
+  .requestLabel{
+    font-size: 14px;
+    color: #4e5155 !important;
+    font-weight: 500;
+    font-family: sans-serif;
+    line-height: 1.4;
+    margin-bottom: 4px;
+  }
   .increaseFormfield {
     width: 369px;
   }
@@ -22,6 +30,9 @@
   }
   .departmentDropdown{
     width: 400px;
+  }
+  .requestDropdown{
+    width: auto !important;
   }
   ::ng-deep {
    .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
@@ -76,6 +87,13 @@
 @media (max-width:1411px){
   .formfield {
     .departmentDropdown{
+      width: auto;
+    }
+  }
+}
+@media (max-width:773px){
+  .formfield{
+    .requestDropdown{
       width: auto;
     }
   }

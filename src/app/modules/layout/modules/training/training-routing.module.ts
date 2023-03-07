@@ -33,8 +33,7 @@ const routes: Routes = [
         path:ABS_LAYOUT_MY_TRAINING.path,
         loadChildren: ()=>
         import('./my-internal-training/my-internal-training.module').then((m)=>m.MyInternalTrainingModule)
-      }
-    ],
+      },    ],
   },
 ];
 
