@@ -14,5 +14,9 @@ policy_title:'Policy Documents',
 jobOpening_title:'Job Openings / Details',
 interview_list:'Interview List',
 my_training_title:'My trainings',
-training_details:'Training Details'
+training_details:'Training Details',
+requested_trainings:'Requested Trainings',
+ongoing_trainings:'Ongoing Trainings',
+my_trainings:'My Trainings',
+upcoming_trainings:'Upcoming Trainings'
 }

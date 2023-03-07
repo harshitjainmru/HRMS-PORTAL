@@ -618,3 +618,13 @@ export const ATTENDANCE_TABLEDATA1 = [
   },
 ]
 
+export const REQUESTED_TRAINING_HEADING =[
+  { heading: 'S.No', key: 'sNo', type: 'text' },
+  { heading: 'Training Name', key: 'trainingname', type: 'text' },
+  { heading: 'Timeline to conduct', key: 'timeline', type: 'text' },
+  { heading: 'Requested date', key: 'date', type: 'text' },
+  { heading: 'Status', key: 'status', type: 'text' },
+  { heading: 'Action', key: 'action', type: 'text' },
+
+]
+

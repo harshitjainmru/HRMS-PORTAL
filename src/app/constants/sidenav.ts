@@ -8,10 +8,13 @@ import {
   ABS_LAYOUT_INTERVIEW_LIST,
   ABS_LAYOUT_JOB_OPENING,
   ABS_LAYOUT_MYPROFILE,
+  ABS_LAYOUT_MY_FRESHER_TRAININGS,
   ABS_LAYOUT_MY_PERFORMANCE,
-  ABS_LAYOUT_MY_TRAININGS,
+  ABS_LAYOUT_MY_TRAINING,
+  ABS_LAYOUT_ONGOING_TRAININGS,
   ABS_LAYOUT_POLICY_DOC,
   ABS_LAYOUT_REFER_LIST,
+  ABS_LAYOUT_REQUESTED_TRAININGS,
   ABS_LAYOUT_UPCOMING_TRAININGS,
 } from './absolute-routes';
 import { LAYOUT, SIDENAV } from './text';
@@ -167,7 +170,7 @@ export const sideNavList = [
       {
         subTitle:SIDENAV.freshers_training_sublabel,
         subicon:'',
-        routerLink:ABS_LAYOUT_MY_TRAININGS.path,
+        routerLink:ABS_LAYOUT_MY_FRESHER_TRAININGS.path,
         isActive:true,
       }
     ],
@@ -182,7 +185,25 @@ export const sideNavList = [
         subicon:'',
         routerLink:ABS_LAYOUT_UPCOMING_TRAININGS.path,
         isActive:true,
-      }
+      },
+      {
+        subTitle:SIDENAV.ongoing_training_sublabel,
+        subicon:'',
+        routerLink:ABS_LAYOUT_ONGOING_TRAININGS.path,
+        isActive:true,
+      },
+      {
+        subTitle:SIDENAV.my_training_sublabel,
+        subicon:'',
+        routerLink:ABS_LAYOUT_MY_TRAINING.fullUrl,
+        isActive:true,
+      },
+      {
+        subTitle:SIDENAV.requested_training_sublabel,
+        subicon:'',
+        routerLink:ABS_LAYOUT_REQUESTED_TRAININGS.path,
+        isActive:true,
+      },
     ],
     isActive: true,
   },

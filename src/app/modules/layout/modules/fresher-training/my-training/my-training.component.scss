@@ -120,7 +120,15 @@ section {
       .card{
         width: auto !important;
       }
+      .buttonGroup {
+        flex-direction: row;
+      }
     }
+  }
+}
+@media (max-width:512px){
+  .buttonGroup {
+    flex-direction: column !important;
   }
 }
 @media(max-width:374px){

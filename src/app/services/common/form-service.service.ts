@@ -53,6 +53,7 @@ export class FormServiceService {
     overallFeedback:[],
     satisfiedWithContent:[],
     overallTrainingDescription:[Validators.maxLength(LIMIT.max_missing_textbox)],
+    briefReason:[Validators.minLength(LIMIT.min_missing_textbox)]
 
 
   };

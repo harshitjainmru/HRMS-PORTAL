@@ -82,7 +82,10 @@ export const SIDENAV = {
   REVIEWS_SUBLABEL: 'My Performance',
   RECRUITMENT_SUBLABEL: 'My Interview',
   freshers_training_sublabel: 'My Trainings',
-  training_sublabel:'Upcoming Trainings'
+  training_sublabel:'Upcoming Trainings',
+  ongoing_training_sublabel:'Ongoing Trainings',
+  my_training_sublabel:'My Trainings',
+  requested_training_sublabel:'Requested Trainings'
 };
 
 export const LAYOUT = {
@@ -1045,13 +1048,6 @@ export const FRESHER_TRAINING_DATA = {
       button1: 'Training Details',
       button2: 'Sub-Topics',
       button3: 'Attendance',
-      attendance_data:
-        [
-          {id: 1,
-          attendance_label: 'Attendance',
-          table_heading: ATTENDANCE_HEADING,
-          table_data: ATTENDANCE_TABLEDATA,}
-        ]
     },
     {
       id: 2,
@@ -1067,14 +1063,6 @@ export const FRESHER_TRAINING_DATA = {
       button1: 'Training Details',
       button2: 'Sub-Topics',
       button3: 'Attendance',
-      attendance_data:[
-        {
-          id: 2,
-          attendance_label: 'Attendance',
-          table_heading: ATTENDANCE_HEADING,
-          table_data: ATTENDANCE_TABLEDATA,
-        },
-      ]
     },
   ],
 };
@@ -1202,3 +1190,38 @@ export const ATTENDANCE_DATA = [
     table_data: ATTENDANCE_TABLEDATA1,
   },
 ];
+
+export const ONGOING_TRAININGS_DATA ={
+header_value:'Ongoing Trainings',
+title:'No Ongoing trainings for now'
+}
+
+export const UPCOMING_TRAINING_DATA = {
+  headerValue: 'Upcoming Trainings',
+  whocanattend:'Who can attend',
+  label1: 'Start Date',
+  label2: 'End Date',
+  label3: 'Seats',
+  buttonView: 'View Details',
+  buttonEnrollment: 'Cancel Enrollment',
+  cardData: [
+    {
+      id: 1,
+      title: 'Micro Frontend Angular',
+      completeHeading: 'Enrolled',
+      whoattenddata:'Angular',
+      label1Data: 'Jan-05-2023',
+      label2Data: 'Jan-05-2023',
+      label3Data: '41'
+    },
+  ],
+};
+
+export const CANCEL_ENROLLMENT_DIALOG_DATA ={
+  headerValue:'Cancel Enrollment',
+  alert_instruction:'After cancelling this enrollment you can re-enroll one time only.',
+  label_value:'Please provide brief reason *',
+  placeholder_value:'Enter Detail Reason',
+  buttonCancel:'Cancel',
+  buttonSubmit:'Submit'
+}

@@ -99,4 +99,9 @@ export const validationMessage =
   overallTrainingDescription:[
     {type:'required',message:'Overall feeback field is required'}
   ],
+  briefReason:[
+    {type:'required',message:'Brief Reason field is required'},
+    {type:'minlength',message:'Reason requires atleast 25 characters'}
+  ],
+
 }

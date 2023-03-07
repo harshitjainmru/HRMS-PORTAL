@@ -22,7 +22,10 @@ export const POLICY_DOC='policy-documents';
 export const REVIEW='monthly-review';
 export const PERFORMANCE='monthly-review/my-performance';
 export const INTERVIEW_LIST='interview/interview-list';
-export const MY_TRAINING='freshers/my_trainings';
+export const MY_FRESHER_TRAINING='freshers/my_trainings';
 export const MY_TRAINING_DETAILS='freshers/training_details_trainee';
 export const UPCOMING_TRAININGS = 'upcoming_trainings';
+export const ONGOING_TRAININGS = 'ongoing_trainings';
+export const MY_TRAININGS='my_trainings';
+export const REQUEST_TRAININGS='requested_trainings'
 

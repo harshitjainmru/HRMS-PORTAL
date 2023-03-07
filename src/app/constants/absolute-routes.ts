@@ -130,8 +130,8 @@ export const ABS_LAYOUT_INTERVIEW_LIST: IRoute = {
     return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
   },
 };
-export const ABS_LAYOUT_MY_TRAININGS: IRoute = {
-  path: routes.MY_TRAINING,
+export const ABS_LAYOUT_MY_FRESHER_TRAININGS: IRoute = {
+  path: routes.MY_FRESHER_TRAINING,
   get fullUrl(): string {
     return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
   },
@@ -144,6 +144,24 @@ export const ABS_LAYOUT_MY_TRAININGS_DETAILS: IRoute = {
 };
 export const ABS_LAYOUT_UPCOMING_TRAININGS: IRoute = {
   path: routes.UPCOMING_TRAININGS,
+  get fullUrl(): string {
+    return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
+  },
+};
+export const ABS_LAYOUT_ONGOING_TRAININGS: IRoute = {
+  path: routes.ONGOING_TRAININGS,
+  get fullUrl(): string {
+    return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
+  },
+};
+export const ABS_LAYOUT_MY_TRAINING: IRoute = {
+  path: routes.MY_TRAININGS,
+  get fullUrl(): string {
+    return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
+  },
+};
+export const ABS_LAYOUT_REQUESTED_TRAININGS: IRoute = {
+  path: routes.REQUEST_TRAININGS,
   get fullUrl(): string {
     return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
   },
