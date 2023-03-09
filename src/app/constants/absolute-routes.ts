@@ -196,4 +196,22 @@ export const ABS_LAYOUT_ASSETS_DECLARATION: IRoute ={
   return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
   }
 }
+export const ABS_LAYOUT_ATTENDANCE_CALENDAR: IRoute ={
+  path: routes.ATTENDANCE_CALENDAR,
+  get fullUrl(): string{
+  return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
+  }
+}
+export const ABS_LAYOUT_MANUAL_PUNCH: IRoute ={
+  path: routes.MANUAL_PUNCH,
+  get fullUrl(): string{
+  return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
+  }
+}
+export const ABS_LAYOUT_PUNCH_LOG: IRoute ={
+  path: routes.PUNCH_LOG,
+  get fullUrl(): string{
+  return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
+  }
+}
 

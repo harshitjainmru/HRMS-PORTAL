@@ -3,6 +3,7 @@ import {
   ABS_LAYOUT_ASSETS_DECLARATION,
   ABS_LAYOUT_ASSETS_INVENTROY,
   ABS_LAYOUT_ASSETS_REQUESTS,
+  ABS_LAYOUT_ATTENDANCE_CALENDAR,
   ABS_LAYOUT_DIRECTORY,
   ABS_LAYOUT_ENTREPRENURSHIP,
   ABS_LAYOUT_EXPLORE,
@@ -10,12 +11,14 @@ import {
   ABS_LAYOUT_HOME,
   ABS_LAYOUT_INTERVIEW_LIST,
   ABS_LAYOUT_JOB_OPENING,
+  ABS_LAYOUT_MANUAL_PUNCH,
   ABS_LAYOUT_MYPROFILE,
   ABS_LAYOUT_MY_FRESHER_TRAININGS,
   ABS_LAYOUT_MY_PERFORMANCE,
   ABS_LAYOUT_MY_TRAINING,
   ABS_LAYOUT_ONGOING_TRAININGS,
   ABS_LAYOUT_POLICY_DOC,
+  ABS_LAYOUT_PUNCH_LOG,
   ABS_LAYOUT_REFER_LIST,
   ABS_LAYOUT_REQUESTED_TRAININGS,
   ABS_LAYOUT_UPCOMING_TRAININGS,
@@ -237,12 +240,31 @@ export const sideNavList = [
     ],
     isActive: true,
   },
-  // {
-  //   title: SIDENAV.Attendance_LABEL,
-  //   icon: 'fa-solid fa-clock',
-  //   options: [],
-  //   isActive: true,
-  // },
+  {
+    title: SIDENAV.Attendance_LABEL,
+    icon: 'fa-solid fa-clock',
+    options: [
+      {
+        subTitle:SIDENAV.attendance_calendar_sublabel,
+        subicon:'',
+        routerLink:ABS_LAYOUT_ATTENDANCE_CALENDAR.path,
+        isActive:true
+      },
+      {
+        subTitle:SIDENAV.manual_punch_sublabel,
+        subicon:'',
+        routerLink:ABS_LAYOUT_MANUAL_PUNCH.path,
+        isActive:true
+      },
+      {
+        subTitle:SIDENAV.punch_log_sublabel,
+        subicon:'',
+        routerLink:ABS_LAYOUT_PUNCH_LOG.path,
+        isActive:true
+      },
+    ],
+    isActive: true,
+  },
   // {
   //   title: SIDENAV.Leave_LABEL,
   //   icon: 'fa-regular fa-calendar',

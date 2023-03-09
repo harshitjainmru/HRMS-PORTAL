@@ -88,7 +88,10 @@ export const SIDENAV = {
   requested_training_sublabel:'Requested Trainings',
   assets_inventory_sublabel:'My Assets inventory',
   request_asset_sublabel:'Request Asset',
-  asset_declaration_sublabel:'Asset Declaration'
+  asset_declaration_sublabel:'Asset Declaration',
+  attendance_calendar_sublabel:'Attendance Calendar',
+  manual_punch_sublabel:'Manual Punch',
+  punch_log_sublabel:'Punch Log'
 };
 
 export const LAYOUT = {

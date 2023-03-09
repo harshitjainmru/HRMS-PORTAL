@@ -33,5 +33,8 @@ export const ASSETS='user';
 export const ASSETS_INVENTROY=`${ASSETS}/assets`;
 export const ASSETS_REQUESTS=`${ASSETS}/asset-requests`;
 export const ASSETS_DECLARATION=`${ASSETS}/asset-declaration`;
+export const ATTENDANCE_CALENDAR=`${ASSETS}/attendance`;
+export const MANUAL_PUNCH=`${ASSETS}/manual_punch`;
+export const PUNCH_LOG=`${ASSETS}/punch_log`;
 
 

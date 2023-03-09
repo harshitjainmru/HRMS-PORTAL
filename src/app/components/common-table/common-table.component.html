@@ -70,7 +70,7 @@
   </table>
 </div>
 
-  <mat-paginator appPaginator [length]="this.dataSource?.length" *ngIf="isPageable" [pageSizeOptions]="[5, 10, 25, 100]"
+  <mat-paginator appPaginatorStyleDirectives [length]="this.dataSource?.length" *ngIf="isPageable" [pageSizeOptions]="[5, 10, 25, 100]"
   [hidePageSize]="false">
 </mat-paginator>
 </section>

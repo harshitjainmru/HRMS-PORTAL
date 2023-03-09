@@ -114,12 +114,21 @@ section {
   }
 }
 @media (max-width: 307px) {
+  .newRequestForm {
+    padding: 7px !important;
+    .button {
+      padding: 0px !important;
+    }
+  }
   ::ng-deep {
     .mat-paginator-page-size {
       top: 225px !important;
     }
     .mat-paginator-size-page-expand {
       top: 980px !important ;
+    }
+    .mat-raised-button{
+      padding: 0px !important;
     }
   }
 }

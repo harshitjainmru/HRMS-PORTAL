@@ -98,8 +98,8 @@
       </span>
     </div>
       <div class="formfield">
-        <label class="label">{{uiText.asset_image_label}}</label>
-        <p class="alertMessage">{{uiText.instruction_label}}</p>
+        <label class="label">{{uiText.asset_image_label}} <span class="alertMessage">{{uiText.instruction_label}}</span></label>
+
           <input type="file" formControlName="assetimage" class="fileField" accept="image/png, image/gif, image/jpeg, image/jpg">
           <!-- <mat-error *ngFor="let error of errorMessage?.assetimage">
             <mat-error *ngIf="assetDeclarationForm?.get('assetimage')?.hasError(error?.type)" class="alertMessage">

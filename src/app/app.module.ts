@@ -9,12 +9,13 @@ import { AbsoluteRoutingModule } from './pipes/absolute-routing/absolute-routing
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { SharedModule } from './modules/shared/shared.module';
 import { RewardCondtionDialogComponent } from './components/reward-condtion-dialog/reward-condtion-dialog.component';
+import { PaginatorStyleDirectivesDirective } from './directives/paginator-style-directives.directive';
 
 
 
 
 @NgModule({
-  declarations: [AppComponent, RewardCondtionDialogComponent,],
+  declarations: [AppComponent, RewardCondtionDialogComponent, PaginatorStyleDirectivesDirective,],
   imports: [
     BrowserModule,
     AppRoutingModule,
