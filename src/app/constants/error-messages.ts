@@ -98,5 +98,35 @@ export const validationMessage =
   ],
   timeline:[
     {type:'required',message:'timeline field is required'},
-  ]
+  ],
+  date:[
+    {type:'required',message:'Required Date field is required'},
+  ],
+  reason:[
+    {type:'required',message:'Required Reason field is required'},
+  ],
+  id:[
+    {type:'required',message:'Employee ID field is required'},
+  ],
+  code:[
+    {type:'required',message:'Unique Asset Code field is required'},
+  ],
+  serialnumber:[
+    {type:'required',message:'Serial Number field is required'},
+  ],
+  modelnumber:[
+    {type:'required',message:'Model Number field is required'},
+  ],
+  osversion:[
+    {type:'required',message:'OS Version field is required'},
+  ],
+  brand:[
+    {type:'required',message:'Brand field is required'},
+  ],
+  color:[
+    {type:'required',message:'Colour field is required'},
+  ],
+  assetimage:[
+    {type:'required',message:'Asset Image field is required'},
+  ],
 }

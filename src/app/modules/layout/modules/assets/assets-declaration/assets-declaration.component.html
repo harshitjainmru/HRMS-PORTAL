@@ -1,1 +1,127 @@
-<p>assets-declaration works!</p>
+<section class="newRequestForm">
+  <div class="button">
+    <button class="assetsButton" mat-raised-button (click)="showForm()">
+      <mat-icon class="addIcon">add</mat-icon>{{uiText.button_asset_request}}
+    </button>
+  </div>
+  <div class="newRequest" *ngIf="requestShow">
+    <form [formGroup]="assetDeclarationForm">
+      <div class="form">
+        <div class="formfield">
+          <label class="label">{{uiText.id_label}}{{uiText.id}}</label>
+          <mat-form-field appearance="outline">
+            <input type="text"  matInput formControlName="id">
+            <mat-error *ngFor="let error of errorMessage?.id">
+              <mat-error *ngIf="assetDeclarationForm?.get('id')?.hasError(error?.type)" class="alertMessage">
+                <span class="errorMessage">{{error.message}}</span>
+              </mat-error>
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="formfield">
+          <label class="label">{{uiText.code_label}}</label>
+          <mat-form-field appearance="outline">
+            <input type="text"  matInput formControlName="code">
+            <mat-error *ngFor="let error of errorMessage?.code">
+              <mat-error *ngIf="assetDeclarationForm?.get('code')?.hasError(error?.type)" class="alertMessage">
+                <span class="errorMessage">{{error.message}}</span>
+              </mat-error>
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="formfield">
+          <label class="label">{{uiText.serial_label}}</label>
+          <mat-form-field appearance="outline">
+            <input type="text"  matInput formControlName="serialnumber">
+            <mat-error *ngFor="let error of errorMessage?.serialnumber">
+              <mat-error *ngIf="assetDeclarationForm?.get('serialnumber')?.hasError(error?.type)" class="alertMessage">
+                <span class="errorMessage">{{error.message}}</span>
+              </mat-error>
+            </mat-error>
+          </mat-form-field>
+        </div>
+        <div class="formfield">
+          <label class="label">{{uiText.model_label}}</label>
+          <mat-form-field appearance="outline">
+            <input type="text"  matInput formControlName="modelnumber">
+            <mat-error *ngFor="let error of errorMessage?.modelnumber">
+              <mat-error *ngIf="assetDeclarationForm?.get('modelnumber')?.hasError(error?.type)" class="alertMessage">
+                <span class="errorMessage">{{error.message}}</span>
+              </mat-error>
+            </mat-error>
+          </mat-form-field>
+        </div>
+
+        <span class="dropDown 3">
+          <app-dropdown [label]="uiText.os_label" [errorType]="this.assetDeclarationFormControl.os"
+            [myControlName]="this.assetDeclarationFormControl.os" [Data]="uiText.os_data"
+            ></app-dropdown>
+        </span>
+
+      <div class="formfield">
+        <label class="label">{{uiText.os_version_label}}</label>
+        <mat-form-field appearance="outline">
+          <input type="text"  matInput formControlName="osversion">
+          <mat-error *ngFor="let error of errorMessage?.osversion">
+            <mat-error *ngIf="assetDeclarationForm?.get('osversion')?.hasError(error?.type)" class="alertMessage">
+              <span class="errorMessage">{{error.message}}</span>
+            </mat-error>
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="formfield">
+        <label class="label">{{uiText.brand_label}}</label>
+        <mat-form-field appearance="outline">
+          <input type="text"  matInput formControlName="brand">
+          <mat-error *ngFor="let error of errorMessage?.brand">
+            <mat-error *ngIf="assetDeclarationForm?.get('brand')?.hasError(error?.type)" class="alertMessage">
+              <span class="errorMessage">{{error.message}}</span>
+            </mat-error>
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <div class="formfield">
+        <label class="label">{{uiText.color_label}}</label>
+        <mat-form-field appearance="outline">
+          <input type="text"  matInput formControlName="color">
+          <mat-error *ngFor="let error of errorMessage?.color">
+            <mat-error *ngIf="assetDeclarationForm?.get('color')?.hasError(error?.type)" class="alertMessage">
+              <span class="errorMessage">{{error.message}}</span>
+            </mat-error>
+          </mat-error>
+        </mat-form-field>
+      </div>
+      <span class="dropDown 3">
+        <app-dropdown [label]="uiText.work_condition_label" [errorType]="this.assetDeclarationFormControl.workingcondition"
+          [myControlName]="this.assetDeclarationFormControl.workingcondition" [Data]="uiText.work_condition_data"
+          ></app-dropdown>
+      </span>
+    </div>
+      <div class="formfield">
+        <label class="label">{{uiText.asset_image_label}}</label>
+        <p class="alertMessage">{{uiText.instruction_label}}</p>
+          <input type="file" formControlName="assetimage" class="fileField" accept="image/png, image/gif, image/jpeg, image/jpg">
+          <!-- <mat-error *ngFor="let error of errorMessage?.assetimage">
+            <mat-error *ngIf="assetDeclarationForm?.get('assetimage')?.hasError(error?.type)" class="alertMessage">
+              <span class="errorMessage">{{error.message}}</span>
+            </mat-error>
+          </mat-error> -->
+      </div>
+      <div class="buttonGroup">
+        <button class="classyButton">{{uiText.submit_button}}</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+<section>
+  <div class="content">
+    <div class="header">
+      <h1 class="header-text">{{uiText.assets_inventory_title}}</h1>
+    </div>
+    <app-common-table [columns]="heading" [dataSource]="dataSource" [isPageable]="true" [isSearchText]="true">
+    </app-common-table>
+  </div>
+</section>
+

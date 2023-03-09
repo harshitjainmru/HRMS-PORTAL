@@ -35,7 +35,12 @@ section {
         color: $black-color;
         padding-left: $padding;
       }
+
       tr {
+        .noData{
+          text-align: center;
+          border-right: none !important;
+        }
         td {
           padding-left: $padding;
         border-right: 1px solid $border-color;
@@ -60,8 +65,8 @@ section {
         padding-right: 24px;
         text-align: center;
       }
-      td.mat-cell:first-of-type {
-        border-right: 1px solid $border-color;
+      td.mat-cell:last-of-type {
+        border-right: none !important;
       }
 
       .mat-row {
@@ -90,9 +95,9 @@ section {
       display: flex;
       align-items: baseline;
       margin-right: 8px;
-      position: absolute;
-      top: 70px;
-      left: 0px;
+      // position: absolute;
+      // top: 70px;
+      // left: 0px;
     }
     .mat-form-field-infix {
       border: 1px solid $border-color !important;
@@ -127,7 +132,7 @@ section {
 
 }
 
-@media (max-width: 1030px) {
+@media (max-width: 1146px) {
   section {
     .table {
       overflow-x: scroll;

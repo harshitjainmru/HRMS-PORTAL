@@ -1,0 +1,55 @@
+@import "../request-assets/request-assets.component.scss";
+@import "../../../../../scss/var";
+@import "../../../../../scss/error";
+section {
+  .alertMessage {
+    color: $error-color;
+    font-weight: 500;
+  }
+  .fileField {
+    border: 1px solid gainsboro;
+    padding: 12px;
+    border-radius: 6px;
+    width: 720px;
+    margin-bottom: 10px;
+  }
+}
+
+  @media (max-width: 1193px) {
+    .newRequestForm {
+      .newRequest {
+        .form {
+          grid-template-columns: auto auto;
+        }
+      }
+    }
+    section {
+      .fileField {
+        width: auto !important;
+      }
+    }
+  }
+  @media (max-width: 499px) {
+    .newRequestForm {
+      overflow: hidden;
+      .newRequest {
+        .form {
+          grid-template-columns: auto;
+        }
+      }
+    }
+  }
+  @media (max-width: 388px) {
+    ::ng-deep {
+      .mat-paginator-page-size {
+        top: 215px !important;
+      }
+    }
+  }
+  @media (max-width: 307px) {
+    ::ng-deep {
+      .mat-paginator-page-size {
+        top: 245px !important;
+      }
+    }
+  }

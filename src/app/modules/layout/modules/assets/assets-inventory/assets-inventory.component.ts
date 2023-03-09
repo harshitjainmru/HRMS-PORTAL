@@ -18,6 +18,7 @@ dataSource = new MatTableDataSource<any>();
 
 ngOnInit(): void {
   this.dataSource = new MatTableDataSource<any>(this.table_data);
+  console.log(this.table_data.length,'vet');
 
 }
 

@@ -1,11 +1,13 @@
 @import "../../../../../scss/var";
 @import "../../../../../scss/mixins.scss";
 section {
-  margin:  40px 20px;
+  margin:20px 30px;
   background-color: $button-text-color;
+  border-radius: 10px;
   .content {
     padding: 20px;
     .header {
+      border-bottom: 1px solid $border-color;
       .header-text {
         color: $header-text-color;
         font-weight: 500;
@@ -14,11 +16,12 @@ section {
   }
   ::ng-deep{
     .mat-paginator-range-label {
-      left: 30px !important;
+      left: 45px !important;
     }
     .mat-paginator-page-size {
-      top: 120px !important;
-      left: 40px !important;
+      position: absolute;
+      top: 110px ;
+      left: 60px ;
     }
   }
 }

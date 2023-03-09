@@ -38,11 +38,11 @@ import { DropDownModule } from 'src/app/modules/shared/drop-down/drop-down.modul
         MatButtonModule,
         ReactiveFormsModule,
         FormsModule,
+        MatDatepickerModule,
+        MatNativeDateModule,
         MatFormFieldModule,
         MatInputModule,
         MatSelectModule,
-        MatDatepickerModule,
-        MatNativeDateModule,
         MatAutocompleteModule,
         SharedModule,
         DropDownModule

@@ -647,5 +647,141 @@ export const ASSETS_INVENTROY_Data=[
   model:'ZBOOK',
   working:'Yes',
   company:'	Appinventiv Technology'
-}
+},
+{
+  name:'LAPTOP',
+  category:'Laptop',
+  code:'L0075',
+  brand:'HP',
+  sno:'5CG9322W1X',
+  model:'ZBOOK',
+  working:'Yes',
+  company:'	Appinventiv Technology'
+},
+{
+  name:'LAPTOP',
+  category:'Laptop',
+  code:'L0075',
+  brand:'HP',
+  sno:'5CG9322W1X',
+  model:'ZBOOK',
+  working:'Yes',
+  company:'	Appinventiv Technology'
+},
+{
+  name:'LAPTOP',
+  category:'Laptop',
+  code:'L0075',
+  brand:'HP',
+  sno:'5CG9322W1X',
+  model:'ZBOOK',
+  working:'Yes',
+  company:'	Appinventiv Technology'
+},
+{
+  name:'LAPTOP',
+  category:'Laptop',
+  code:'L0075',
+  brand:'HP',
+  sno:'5CG9322W1X',
+  model:'ZBOOK',
+  working:'Yes',
+  company:'	Appinventiv Technology'
+},
+{
+  name:'LAPTOP',
+  category:'Laptop',
+  code:'L0075',
+  brand:'HP',
+  sno:'5CG9322W1X',
+  model:'ZBOOK',
+  working:'Yes',
+  company:'	Appinventiv Technology'
+},
+{
+  name:'LAPTOP',
+  category:'Laptop',
+  code:'L0075',
+  brand:'HP',
+  sno:'5CG9322W1X',
+  model:'ZBOOK',
+  working:'Yes',
+  company:'	Appinventiv Technology'
+},
+{
+  name:'LAPTOP',
+  category:'Laptop',
+  code:'L0075',
+  brand:'HP',
+  sno:'5CG9322W1X',
+  model:'ZBOOK',
+  working:'Yes',
+  company:'	Appinventiv Technology'
+},
+{
+  name:'LAPTOP',
+  category:'Laptop',
+  code:'L0075',
+  brand:'HP',
+  sno:'5CG9322W1X',
+  model:'ZBOOK',
+  working:'Yes',
+  company:'	Appinventiv Technology'
+},
+{
+  name:'LAPTOP',
+  category:'Laptop',
+  code:'L0075',
+  brand:'HP',
+  sno:'5CG9322W1X',
+  model:'ZBOOK',
+  working:'Yes',
+  company:'	Appinventiv Technology'
+},
+{
+  name:'LAPTOP',
+  category:'Laptop',
+  code:'L0075',
+  brand:'HP',
+  sno:'5CG9322W1X',
+  model:'ZBOOK',
+  working:'Yes',
+  company:'	Appinventiv Technology'
+},
+{
+  name:'LAPTOP',
+  category:'Laptop',
+  code:'L0075',
+  brand:'HP',
+  sno:'5CG9322W1X',
+  model:'ZBOOK',
+  working:'Yes',
+  company:'	Appinventiv Technology'
+},
+]
+export const ASSET_REQUEST_HEADING =[
+  { heading: 'S.No', key: 'sNo', type: 'text' },
+  { heading: 'Status', key: 'status', type: 'text' },
+  { heading: 'Request Reason', key: 'reason', type: 'text' },
+  { heading: 'Priority', key: 'priority', type: 'text' },
+  { heading: 'Requested At', key: 'requestedat', type: 'text' },
+  { heading: 'Assets Category', key: 'category', type: 'text' },
+  { heading: 'Allocation type', key: 'type', type: 'text' },
+  { heading: 'Company', key: 'company', type: 'text' },
+
+]
+
+export const ASSET_DECLARATION_HEADING =[
+  { heading: 'S.No', key: 'sNo', type: 'text' },
+  { heading: 'Employee Id', key: 'id', type: 'text' },
+  { heading: 'Unique Asset Code', key: 'code', type: 'text' },
+  { heading: 'Serial Number', key: 'serial', type: 'text' },
+  { heading: 'Model Number', key: 'model', type: 'text' },
+  { heading: 'OS', key: 'os', type: 'text' },
+  { heading: 'OS version', key: 'osversion', type: 'text' },
+  { heading: 'Brand', key: 'brand', type: 'text' },
+  { heading: 'Colour', key: 'colour', type: 'text' },
+  { heading: 'Images', key: 'image', type: 'text' },
+  { heading: 'Is Working?', key: 'working', type: 'text' },
+  { heading: 'Added', key: 'added', type: 'text' },
 ]

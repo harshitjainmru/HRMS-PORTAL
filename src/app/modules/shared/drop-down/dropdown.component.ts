@@ -18,6 +18,7 @@ export class DropdownComponent implements OnInit {
   @Input() labelStyle;
   @Input() selected;
   @Input() selectionChange;
+  @Input() showRequiredStar:boolean =false
   @Output() eventEmitter = new EventEmitter<any>();
   myControl = new FormControl('');
   filteredOptions!: Observable<string[]>;

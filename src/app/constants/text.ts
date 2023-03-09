@@ -1282,3 +1282,37 @@ export const REQUEST_TRAINING_DATA = {
 export const ASSETS_DATA ={
   assets_inventory_title:'List All Assets inventory'
 }
+export const REQUEST_ASSETS_DATA ={
+  assets_inventory_title:'List All Request Assets',
+  button_asset_request:' Add new asset request',
+  category_label:'Assets Categories',
+  category_data:['Laptop','Desktop','Mobile'],
+  quantity_label:'Quantity',
+  quantity_data:['1','2','3','4','5'],
+  priority_label:'Priority',
+  priority_data:['Low','Medium','High'],
+  require_date_label:'Required by Date',
+  type_label:'Allocation type',
+  type_data:['Permanent','Temporary'],
+  reason_label:'Request Reason',
+  submit_button:'Submit'
+}
+export const DECLARATION_ASSETS_DATA ={
+  assets_inventory_title:'List All Declaration Assets',
+  button_asset_request:' Add new assets declaration',
+  id_label:'Employee Id',
+  id:'AI1611',
+  code_label:'Unique Asset Code',
+  serial_label:'Serial Number',
+  model_label:'Model Number ',
+  os_label:'OS',
+  os_data:['Android','IOS'],
+  os_version_label:'OS version',
+  brand_label:'Brand',
+  color_label:'Colour',
+  work_condition_label:'Device is in working condition?',
+  work_condition_data:['Yes','No'],
+  asset_image_label:'Asset Image(Allowed Format: jpg,jpeg,JPEG,JPG,png,PNG,GIF)',
+  instruction_label:'Upload front and backside image*',
+  submit_button:'Submit'
+}

@@ -60,8 +60,22 @@ export class FormServiceService {
     skill_needed:[Validators.minLength(LIMIT.min_missing_textbox)],
     interested:[],
     timeline:[],
-
-
+    category:[],
+    quantity:[],
+    priority:[],
+    date:[],
+    type:[],
+    reason:[],
+    id:[],
+    code:[],
+    serialnumber:[],
+    modelnumber:[],
+    os:[],
+    osversion:[],
+    brand:[],
+    color:[],
+    workingcondition:[],
+    assetimage:[]
   };
 
   getControl(name: string, required = true ,drop:any = '') {

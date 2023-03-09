@@ -1,5 +1,5 @@
 <div class="formfield 2">
-  <label class="label" [ngClass]="labelStyle">{{label}}</label>
+  <label class="label" [ngClass]="labelStyle">{{label}} <span *ngIf="showRequiredStar" class="required">*</span></label>
   <mat-form-field appearance="outline" [ngClass]="formfieldCSS">
     <mat-select [formControl]="myControlName" (selectionChange)="onSelection()">
       <input [formControl]="myControl"  class="filter">
