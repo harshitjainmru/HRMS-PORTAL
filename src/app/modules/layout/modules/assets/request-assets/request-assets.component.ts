@@ -9,47 +9,52 @@ import { FormServiceService } from 'src/app/services/common/form-service.service
 @Component({
   selector: 'app-request-assets',
   templateUrl: './request-assets.component.html',
-  styleUrls: ['./request-assets.component.scss']
+  styleUrls: ['./request-assets.component.scss'],
 })
 export class RequestAssetsComponent implements OnInit {
   yesterday = new Date();
-  uiText = REQUEST_ASSETS_DATA
+  uiText = REQUEST_ASSETS_DATA;
   heading = ASSET_REQUEST_HEADING;
-  table_data = []
+  table_data = [];
   dataSource = new MatTableDataSource<any>();
-  requestShow:boolean=false
-  assetRequestForm!:FormGroup
-  errorMessage
-    constructor(private _formBuilder:FormBuilder,private _formService:FormServiceService) {
+  requestShow: boolean = false;
+  assetRequestForm!: FormGroup;
+  errorMessage;
+  constructor(
+    private _formBuilder: FormBuilder,
+    private _formService: FormServiceService
+  ) {
     this.yesterday.setDate(this.yesterday.getDate() - 0);
-     }
-
+  }
 
   ngOnInit(): void {
     this.createForm();
     this.dataSource = new MatTableDataSource<any>(this.table_data);
-    this.errorMessage = validationMessage
+    this.errorMessage = validationMessage;
   }
-  showForm(){
-    this.requestShow = !this.requestShow
-   const element = document.querySelector(".mat-paginator-page-size")
-  //  element.innerHTML = 'Harshit'
-   console.log(element,'elemnet');
-
-
+  showForm() {
+    this.requestShow = !this.requestShow;
+    const element = document.querySelector('.mat-paginator-page-size');
+    console.log(element, 'elemnet');
+    element.classList.add('mat-paginator-size-page-expand');
+    if (!this.requestShow) {
+      element.classList.remove('mat-paginator-size-page-expand');
+    }
   }
-  createForm(){
+  createForm() {
     this.assetRequestForm = this._formBuilder.group({
-      category:this._formService.getControl('category'),
-      quantity:this._formService.getControl('quantity'),
-      priority:this._formService.getControl('priority'),
-      date:this._formService.getControl('date'),
-      type:this._formService.getControl('type'),
-      reason:this._formService.getControl('reason'),
-    })
+      category: this._formService.getControl('category'),
+      quantity: this._formService.getControl('quantity'),
+      priority: this._formService.getControl('priority'),
+      date: this._formService.getControl('date'),
+      type: this._formService.getControl('type'),
+      reason: this._formService.getControl('reason'),
+    });
   }
-  get assetRequestFormControl(){
+  get assetRequestFormControl() {
     return this.assetRequestForm.controls;
   }
+  submit(){
 
+  }
 }

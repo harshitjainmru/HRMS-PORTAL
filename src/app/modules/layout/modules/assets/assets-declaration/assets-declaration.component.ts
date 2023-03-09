@@ -19,7 +19,10 @@ export class AssetsDeclarationComponent implements OnInit {
   requestShow: boolean = false;
   assetDeclarationForm!: FormGroup;
   errorMessage;
-  constructor(private _formBuilder:FormBuilder,private _formService:FormServiceService) {}
+  constructor(
+    private _formBuilder: FormBuilder,
+    private _formService: FormServiceService
+  ) {}
 
   ngOnInit(): void {
     this.dataSource = new MatTableDataSource<any>(this.table_data);
@@ -28,22 +31,31 @@ export class AssetsDeclarationComponent implements OnInit {
   }
   showForm() {
     this.requestShow = !this.requestShow;
+    const element = document.querySelector('.mat-paginator-page-size');
+    console.log(element, 'elemnet');
+    element.classList.add('mat-paginator-size-expand');
+    if (!this.requestShow) {
+      element.classList.remove('mat-paginator-size-expand');
+    }
   }
-  createForm(){
+  createForm() {
     this.assetDeclarationForm = this._formBuilder.group({
-      id:this._formService.getControl('id'),
-      code:this._formService.getControl('code'),
-      serialnumber:this._formService.getControl('serialnumber'),
-      modelnumber:this._formService.getControl('modelnumber'),
-      os:this._formService.getControl('os'),
-      osversion:this._formService.getControl('osversion'),
-      brand:this._formService.getControl('brand'),
-      color:this._formService.getControl('color'),
-      workingcondition:this._formService.getControl('workingcondition'),
-      assetimage:this._formService.getControl('assetimage'),
-    })
+      id: this._formService.getControl('id'),
+      code: this._formService.getControl('code'),
+      serialnumber: this._formService.getControl('serialnumber'),
+      modelnumber: this._formService.getControl('modelnumber'),
+      os: this._formService.getControl('os'),
+      osversion: this._formService.getControl('osversion'),
+      brand: this._formService.getControl('brand'),
+      color: this._formService.getControl('color'),
+      workingcondition: this._formService.getControl('workingcondition'),
+      assetimage: this._formService.getControl('assetimage'),
+    });
   }
-  get assetDeclarationFormControl(){
-    return this.assetDeclarationForm.controls
+  get assetDeclarationFormControl() {
+    return this.assetDeclarationForm.controls;
+  }
+  submit(){
+
   }
 }

@@ -13,43 +13,59 @@ section {
     width: 720px;
     margin-bottom: 10px;
   }
+  ::ng-deep.mat-paginator-size-expand {
+    position: absolute;
+    top: 700px;
+  }
 }
 
-  @media (max-width: 1193px) {
-    .newRequestForm {
-      .newRequest {
-        .form {
-          grid-template-columns: auto auto;
-        }
-      }
-    }
-    section {
-      .fileField {
-        width: auto !important;
+@media (max-width: 1193px) {
+  .newRequestForm {
+    .newRequest {
+      .form {
+        grid-template-columns: auto auto;
       }
     }
   }
-  @media (max-width: 499px) {
-    .newRequestForm {
-      overflow: hidden;
-      .newRequest {
-        .form {
-          grid-template-columns: auto;
-        }
+  section {
+    .fileField {
+      width: auto !important;
+    }
+    ::ng-deep.mat-paginator-size-expand {
+      top: 930px;
+    }
+  }
+}
+@media (max-width: 499px) {
+  .newRequestForm {
+    overflow: hidden;
+    .newRequest {
+      .form {
+        grid-template-columns: auto;
       }
     }
   }
-  @media (max-width: 388px) {
-    ::ng-deep {
-      .mat-paginator-page-size {
-        top: 215px !important;
-      }
+  ::ng-deep.mat-paginator-size-expand {
+    top: 1410px !important ;
+  }
+}
+@media (max-width: 388px) {
+  ::ng-deep {
+    .mat-paginator-page-size {
+      top: 215px !important;
+    }
+    .mat-paginator-size-expand {
+      top: 1445px !important ;
     }
   }
-  @media (max-width: 307px) {
-    ::ng-deep {
-      .mat-paginator-page-size {
-        top: 245px !important;
-      }
+}
+@media (max-width: 307px) {
+  ::ng-deep {
+    .mat-paginator-page-size {
+      top: 245px !important;
+    }
+    .mat-paginator-size-expand {
+      top: 1480px !important ;
     }
   }
+}
