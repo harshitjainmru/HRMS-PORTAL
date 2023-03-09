@@ -60,6 +60,11 @@ const routes: Routes = [
         loadChildren:() =>
         import('./modules/training/training.module').then((m)=>m.TrainingModule)
       },
+      {
+        path:'',
+        loadChildren:() =>
+        import('./modules/assets/assets.module').then((m)=>m.AssetsModule)
+      },
 
     ],
   },

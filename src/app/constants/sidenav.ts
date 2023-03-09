@@ -1,5 +1,8 @@
 import { RoutesRecognized } from '@angular/router';
 import {
+  ABS_LAYOUT_ASSETS_DECLARATION,
+  ABS_LAYOUT_ASSETS_INVENTROY,
+  ABS_LAYOUT_ASSETS_REQUESTS,
   ABS_LAYOUT_DIRECTORY,
   ABS_LAYOUT_ENTREPRENURSHIP,
   ABS_LAYOUT_EXPLORE,
@@ -207,12 +210,33 @@ export const sideNavList = [
     ],
     isActive: true,
   },
-  // {
-  //   title: SIDENAV.Assests_LABEL,
-  //   icon: 'fa-solid fa-flask',
-  //   options: [],
-  //   isActive: true,
-  // },
+  {
+    title: SIDENAV.Assests_LABEL,
+    icon: 'fa-solid fa-flask',
+    options: [
+      {
+        subTitle:SIDENAV.assets_inventory_sublabel,
+        subicon:'laptop_chromebook',
+        routerLink:ABS_LAYOUT_ASSETS_INVENTROY.path,
+        isActive:true
+      },
+      {
+        subTitle:SIDENAV.request_asset_sublabel,
+        subicon:'send',
+        routerLink:ABS_LAYOUT_ASSETS_REQUESTS.path,
+        isActive:true
+
+      },
+      {
+        subTitle:SIDENAV.asset_declaration_sublabel,
+        subicon:'error',
+        routerLink:ABS_LAYOUT_ASSETS_DECLARATION.path,
+        isActive:true
+
+      },
+    ],
+    isActive: true,
+  },
   // {
   //   title: SIDENAV.Attendance_LABEL,
   //   icon: 'fa-solid fa-clock',
@@ -247,17 +271,17 @@ export const sideNavList = [
     icon: 'fas fa-hand-holding-usd',
     isActive: false,
   },
-  // {
-  //   title: SIDENAV.Announcements_LABEL,
-  //   icon: 'fas fa-bullhorn',
-  //   isActive: false,
-  // },
-  // { title: SIDENAV.Travels_LABEL, icon: 'fas fa-plane', isActive: false },
-  // {
-  //   title: SIDENAV.Logout_LABEL,
-  //   icon: 'fa-solid fa-right-from-bracket',
-  //   isActive: true,
-  // },
+  {
+    title: SIDENAV.Announcements_LABEL,
+    icon: 'fas fa-bullhorn',
+    isActive: false,
+  },
+  { title: SIDENAV.Travels_LABEL, icon: 'fas fa-plane', isActive: false },
+  {
+    title: SIDENAV.Logout_LABEL,
+    icon: 'fa-solid fa-right-from-bracket',
+    isActive: true,
+  },
 ];
 
 export const profileMenuData = [

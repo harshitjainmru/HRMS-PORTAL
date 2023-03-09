@@ -38,6 +38,8 @@ section {
       tr {
         td {
           padding-left: $padding;
+        border-right: 1px solid $border-color;
+
           .text-success{
             color: green;
           }

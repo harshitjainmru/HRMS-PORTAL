@@ -172,4 +172,28 @@ export const ABS_LAYOUT_TRAINING_DETAILS: IRoute ={
   return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
   }
 }
+export const ABS_LAYOUT_ASSETS: IRoute ={
+  path: routes.ASSETS,
+  get fullUrl(): string{
+  return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
+  }
+}
+export const ABS_LAYOUT_ASSETS_INVENTROY: IRoute ={
+  path: routes.ASSETS_INVENTROY,
+  get fullUrl(): string{
+  return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
+  }
+}
+export const ABS_LAYOUT_ASSETS_REQUESTS: IRoute ={
+  path: routes.ASSETS_REQUESTS,
+  get fullUrl(): string{
+  return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
+  }
+}
+export const ABS_LAYOUT_ASSETS_DECLARATION: IRoute ={
+  path: routes.ASSETS_DECLARATION,
+  get fullUrl(): string{
+  return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
+  }
+}
 

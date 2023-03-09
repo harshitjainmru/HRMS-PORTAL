@@ -85,7 +85,10 @@ export const SIDENAV = {
   training_sublabel:'Upcoming Trainings',
   ongoing_training_sublabel:'Ongoing Trainings',
   my_training_sublabel:'My Trainings',
-  requested_training_sublabel:'Requested Trainings'
+  requested_training_sublabel:'Requested Trainings',
+  assets_inventory_sublabel:'My Assets inventory',
+  request_asset_sublabel:'Request Asset',
+  asset_declaration_sublabel:'Asset Declaration'
 };
 
 export const LAYOUT = {
@@ -1275,4 +1278,7 @@ export const REQUEST_TRAINING_DATA = {
   more_months:'More than 6 Months',
   training_name_data:['Micro Frontend Angular'],
   team_name_data:['.net','angular','android','html','finance']
+}
+export const ASSETS_DATA ={
+  assets_inventory_title:'List All Assets inventory'
 }

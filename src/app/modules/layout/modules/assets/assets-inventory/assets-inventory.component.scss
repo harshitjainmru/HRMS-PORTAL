@@ -1,0 +1,24 @@
+@import "../../../../../scss/var";
+@import "../../../../../scss/mixins.scss";
+section {
+  margin:  40px 20px;
+  background-color: $button-text-color;
+  .content {
+    padding: 20px;
+    .header {
+      .header-text {
+        color: $header-text-color;
+        font-weight: 500;
+      }
+    }
+  }
+  ::ng-deep{
+    .mat-paginator-range-label {
+      left: 30px !important;
+    }
+    .mat-paginator-page-size {
+      top: 120px !important;
+      left: 40px !important;
+    }
+  }
+}

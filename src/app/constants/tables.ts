@@ -625,6 +625,27 @@ export const REQUESTED_TRAINING_HEADING =[
   { heading: 'Requested date', key: 'date', type: 'text' },
   { heading: 'Status', key: 'status', type: 'text' },
   { heading: 'Action', key: 'action', type: 'text' },
-
 ]
 
+export const ASSETS_INVENTROY_HEADING=[
+  {heading: 'Asset Name', key:'name',type:'text',sort:true},
+  {heading: 'Asset Category', key:'category',type:'text',sort:true},
+  {heading: 'Company Asset Code', key:'code',type:'text',sort:true},
+  {heading: 'Brand', key:'brand',type:'text',sort:true},
+  {heading: 'Serial No.', key:'sno',type:'text',sort:true},
+  {heading: 'Model', key:'model',type:'text',sort:true},
+  {heading: 'is Working?', key:'working',type:'text',sort:true},
+  {heading: 'Company', key:'company',type:'text',sort:true},
+]
+export const ASSETS_INVENTROY_Data=[
+{
+  name:'LAPTOP',
+  category:'Laptop',
+  code:'L0075',
+  brand:'HP',
+  sno:'5CG9322W1X',
+  model:'ZBOOK',
+  working:'Yes',
+  company:'	Appinventiv Technology'
+}
+]

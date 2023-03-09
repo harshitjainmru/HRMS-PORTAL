@@ -28,5 +28,10 @@ export const UPCOMING_TRAININGS = 'upcoming_trainings';
 export const ONGOING_TRAININGS = 'ongoing_trainings';
 export const MY_TRAININGS='my_trainings';
 export const REQUEST_TRAININGS='requested_trainings';
-export const TRAINING_DETAILS='training_details_trainee'
+export const TRAINING_DETAILS='training_details_trainee';
+export const ASSETS='user';
+export const ASSETS_INVENTROY=`${ASSETS}/assets`;
+export const ASSETS_REQUESTS=`${ASSETS}/asset-requests`;
+export const ASSETS_DECLARATION=`${ASSETS}/asset-declaration`;
+
 
