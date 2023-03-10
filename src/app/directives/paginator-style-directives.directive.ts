@@ -89,9 +89,9 @@ export class PaginatorStyleDirectivesDirective {
     }
 
     //initialize next page and last page buttons
-    if (this._buttons.length == 0) {
-      let nodeArray = this.vr.element.nativeElement.childNodes[0].childNodes[0]
-        .childNodes[2].childNodes;
+    // if (this._buttons.length == 0) {
+    //   let nodeArray = this.vr.element.nativeElement.childNodes[0].childNodes[0]
+    //     .childNodes[2].childNodes;
 
       // setTimeout(() => {
       //   for (let i = 0; i < nodeArray.length; i++) {
@@ -121,7 +121,7 @@ export class PaginatorStyleDirectivesDirective {
       //     }
       //   }
       // });
-    }
+    // }
 
     for (let i = 0; i < this.numOfPages; i++) {
       if (i >= this._rangeStart && i <= this._rangeEnd) {
@@ -131,6 +131,11 @@ export class PaginatorStyleDirectivesDirective {
           nextPageNode
         );
       }
+
+
+
+
+
 
       // if (i == this._rangeEnd) {
       //   this.ren.insertBefore(

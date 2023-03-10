@@ -1,55 +1,55 @@
 <section>
   <div class="search-filter" *ngIf="isSearchText">
     <label class="label">Search: </label>
-      <input >
+    <input>
   </div>
   <div class="table">
-  <table mat-table *ngIf="dataSource" matSortStart="desc" [dataSource]="dataSource" matSort>
-    <div class="data" *ngFor="let row of columns" [matColumnDef]="row.heading">
-      <ng-container *ngIf="row.sort; else noSortable">
-        <th class="isSort" mat-header-cell *matHeaderCellDef [mat-sort-header]="row.key">{{row.heading}}</th>
-      </ng-container>
-      <ng-template #noSortable>
-        <th mat-header-cell *matHeaderCellDef>{{row.heading}}</th>
-      </ng-template>
-      <td mat-cell *matCellDef="let element; let i=index">
-        <ng-container class="value" [ngSwitch]="row.type">
-          <ng-container *ngSwitchCase="'text'"  >
+    <table mat-table *ngIf="dataSource" matSortStart="desc" [dataSource]="dataSource" matSort>
+      <div class="data" *ngFor="let row of columns" [matColumnDef]="row.heading">
+        <ng-container *ngIf="row.sort; else noSortable">
+          <th class="isSort" mat-header-cell *matHeaderCellDef [mat-sort-header]="row.key">{{row.heading}}</th>
+        </ng-container>
+        <ng-template #noSortable>
+          <th mat-header-cell *matHeaderCellDef>{{row.heading}}</th>
+        </ng-template>
+        <td mat-cell *matCellDef="let element; let i=index">
+          <ng-container class="value" [ngSwitch]="row.type">
+            <ng-container *ngSwitchCase="'text'">
               {{element[row.key]}}
-          </ng-container>
-          <ng-container *ngSwitchCase="'attendance'"  >
-            <!-- [ngClass]="(element.attendance=='Present')?'text-success':'text-danger'" -->
-            <span [ngClass]="(element.attendance=='Present')?'text-success':'text-danger'">
-              {{element[row.key]}}
-            </span>
-          </ng-container>
-          <ng-container *ngSwitchCase="'text_with_icon'">
-            <ng-container *ngIf="element[row.type]=='1';else fileLogo">
-                <img [src]="['/assets/images/design.svg']" class="imageLogo">
             </ng-container>
-            <ng-template #fileLogo>
-              <img [src]="['/assets/images/description_black_24dp.svg']" class="imageLogo">
-            </ng-template>
-            <span style="display:inline-flex ;">
-              <p class="text-element">{{element[row.key]}}</p>
-            </span>
+            <ng-container *ngSwitchCase="'attendance'">
+              <!-- [ngClass]="(element.attendance=='Present')?'text-success':'text-danger'" -->
+              <span [ngClass]="(element.attendance=='Present')?'text-success':'text-danger'">
+                {{element[row.key]}}
+              </span>
+            </ng-container>
+            <ng-container *ngSwitchCase="'text_with_icon'">
+              <ng-container *ngIf="element[row.type]=='1';else fileLogo">
+                <img [src]="['/assets/images/design.svg']" class="imageLogo">
+              </ng-container>
+              <ng-template #fileLogo>
+                <img [src]="['/assets/images/description_black_24dp.svg']" class="imageLogo">
+              </ng-template>
+              <span style="display:inline-flex ;">
+                <p class="text-element">{{element[row.key]}}</p>
+              </span>
 
-          </ng-container>
+            </ng-container>
 
-          <ng-container *ngSwitchCase="'downloadLink'">
-            <div class="download-link">
-            <a [href]="element.link" class="dataLink" download>
-              {{element[row.key]}}
-              <img [src]="'/assets/images/ic-download.svg'">
-            </a>
-          </div>
-          </ng-container>
-          <ng-container *ngSwitchCase="'link'">
-            <a [href]="element.link" class="dataLink">
-              {{element[row.key]}}
-            </a>
-          </ng-container>
-          <!-- <ng-container *ngSwitchCase="'action'">
+            <ng-container *ngSwitchCase="'downloadLink'">
+              <div class="download-link">
+                <a [href]="element.link" class="dataLink" download>
+                  {{element[row.key]}}
+                  <img [src]="'/assets/images/ic-download.svg'">
+                </a>
+              </div>
+            </ng-container>
+            <ng-container *ngSwitchCase="'link'">
+              <a [href]="element.link" class="dataLink">
+                {{element[row.key]}}
+              </a>
+            </ng-container>
+            <!-- <ng-container *ngSwitchCase="'action'">
             <div class="actionIcon">
               <ng-container *ngFor="let icon of row.action; let i=index;">
                 <mat-icon class="showIcon">visibility</mat-icon>
@@ -59,18 +59,20 @@
               </ng-container>
             </div>
           </ng-container> -->
-        </ng-container>
-      </td>
-    </div>
-    <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky:true"></tr>
-    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-    <tr class="mat-row" *matNoDataRow>
-      <td class="noData" colspan="20">{{uiMessage.NO_DATA}}</td>
-    </tr>
-  </table>
-</div>
+          </ng-container>
+        </td>
+      </div>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky:true"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+      <tr class="mat-row" *matNoDataRow>
+        <td class="noData" colspan="20">{{uiMessage.NO_DATA}}</td>
+      </tr>
+    </table>
+  </div>
 
-  <mat-paginator appPaginatorStyleDirectives [length]="this.dataSource?.length" *ngIf="isPageable" [pageSizeOptions]="[5, 10, 25, 100]"
-  [hidePageSize]="false">
-</mat-paginator>
+
+  <mat-paginator appPaginatorStyleDirectives [length]="this.dataSource.length" *ngIf="isPageable" [showTotalPages]="3"
+    [pageSizeOptions]="[5, 10, 25, 100]" [hidePageSize]="false">
+  </mat-paginator>
+
 </section>

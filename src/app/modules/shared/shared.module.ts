@@ -13,11 +13,13 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { PaginatorStyleDirectivesDirective } from 'src/app/directives/paginator-style-directives.directive';
 @NgModule({
   declarations: [
     CustomSnackbarComponent,
     CommonTableComponent,
-    ReferACandidateComponent
+    ReferACandidateComponent,
+    PaginatorStyleDirectivesDirective
 
   ],
   imports: [CommonModule,

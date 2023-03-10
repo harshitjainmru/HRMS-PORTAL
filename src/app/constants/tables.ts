@@ -648,116 +648,116 @@ export const ASSETS_INVENTROY_Data=[
   working:'Yes',
   company:'	Appinventiv Technology'
 },
-{
-  name:'LAPTOP',
-  category:'Laptop',
-  code:'L0075',
-  brand:'HP',
-  sno:'5CG9322W1X',
-  model:'ZBOOK',
-  working:'Yes',
-  company:'	Appinventiv Technology'
-},
-{
-  name:'LAPTOP',
-  category:'Laptop',
-  code:'L0075',
-  brand:'HP',
-  sno:'5CG9322W1X',
-  model:'ZBOOK',
-  working:'Yes',
-  company:'	Appinventiv Technology'
-},
-{
-  name:'LAPTOP',
-  category:'Laptop',
-  code:'L0075',
-  brand:'HP',
-  sno:'5CG9322W1X',
-  model:'ZBOOK',
-  working:'Yes',
-  company:'	Appinventiv Technology'
-},
-{
-  name:'LAPTOP',
-  category:'Laptop',
-  code:'L0075',
-  brand:'HP',
-  sno:'5CG9322W1X',
-  model:'ZBOOK',
-  working:'Yes',
-  company:'	Appinventiv Technology'
-},
-{
-  name:'LAPTOP',
-  category:'Laptop',
-  code:'L0075',
-  brand:'HP',
-  sno:'5CG9322W1X',
-  model:'ZBOOK',
-  working:'Yes',
-  company:'	Appinventiv Technology'
-},
-{
-  name:'LAPTOP',
-  category:'Laptop',
-  code:'L0075',
-  brand:'HP',
-  sno:'5CG9322W1X',
-  model:'ZBOOK',
-  working:'Yes',
-  company:'	Appinventiv Technology'
-},
-{
-  name:'LAPTOP',
-  category:'Laptop',
-  code:'L0075',
-  brand:'HP',
-  sno:'5CG9322W1X',
-  model:'ZBOOK',
-  working:'Yes',
-  company:'	Appinventiv Technology'
-},
-{
-  name:'LAPTOP',
-  category:'Laptop',
-  code:'L0075',
-  brand:'HP',
-  sno:'5CG9322W1X',
-  model:'ZBOOK',
-  working:'Yes',
-  company:'	Appinventiv Technology'
-},
-{
-  name:'LAPTOP',
-  category:'Laptop',
-  code:'L0075',
-  brand:'HP',
-  sno:'5CG9322W1X',
-  model:'ZBOOK',
-  working:'Yes',
-  company:'	Appinventiv Technology'
-},
-{
-  name:'LAPTOP',
-  category:'Laptop',
-  code:'L0075',
-  brand:'HP',
-  sno:'5CG9322W1X',
-  model:'ZBOOK',
-  working:'Yes',
-  company:'	Appinventiv Technology'
-},
-{
-  name:'LAPTOP',
-  category:'Laptop',
-  code:'L0075',
-  brand:'HP',
-  sno:'5CG9322W1X',
-  model:'ZBOOK',
-  working:'Yes',
-  company:'	Appinventiv Technology'
-},
+// {
+//   name:'LAPTOP',
+//   category:'Laptop',
+//   code:'L0075',
+//   brand:'HP',
+//   sno:'5CG9322W1X',
+//   model:'ZBOOK',
+//   working:'Yes',
+//   company:'	Appinventiv Technology'
+// },
+// {
+//   name:'LAPTOP',
+//   category:'Laptop',
+//   code:'L0075',
+//   brand:'HP',
+//   sno:'5CG9322W1X',
+//   model:'ZBOOK',
+//   working:'Yes',
+//   company:'	Appinventiv Technology'
+// },
+// {
+//   name:'LAPTOP',
+//   category:'Laptop',
+//   code:'L0075',
+//   brand:'HP',
+//   sno:'5CG9322W1X',
+//   model:'ZBOOK',
+//   working:'Yes',
+//   company:'	Appinventiv Technology'
+// },
+// {
+//   name:'LAPTOP',
+//   category:'Laptop',
+//   code:'L0075',
+//   brand:'HP',
+//   sno:'5CG9322W1X',
+//   model:'ZBOOK',
+//   working:'Yes',
+//   company:'	Appinventiv Technology'
+// },
+// {
+//   name:'LAPTOP',
+//   category:'Laptop',
+//   code:'L0075',
+//   brand:'HP',
+//   sno:'5CG9322W1X',
+//   model:'ZBOOK',
+//   working:'Yes',
+//   company:'	Appinventiv Technology'
+// },
+// {
+//   name:'LAPTOP',
+//   category:'Laptop',
+//   code:'L0075',
+//   brand:'HP',
+//   sno:'5CG9322W1X',
+//   model:'ZBOOK',
+//   working:'Yes',
+//   company:'	Appinventiv Technology'
+// },
+// {
+//   name:'LAPTOP',
+//   category:'Laptop',
+//   code:'L0075',
+//   brand:'HP',
+//   sno:'5CG9322W1X',
+//   model:'ZBOOK',
+//   working:'Yes',
+//   company:'	Appinventiv Technology'
+// },
+// {
+//   name:'LAPTOP',
+//   category:'Laptop',
+//   code:'L0075',
+//   brand:'HP',
+//   sno:'5CG9322W1X',
+//   model:'ZBOOK',
+//   working:'Yes',
+//   company:'	Appinventiv Technology'
+// },
+// {
+//   name:'LAPTOP',
+//   category:'Laptop',
+//   code:'L0075',
+//   brand:'HP',
+//   sno:'5CG9322W1X',
+//   model:'ZBOOK',
+//   working:'Yes',
+//   company:'	Appinventiv Technology'
+// },
+// {
+//   name:'LAPTOP',
+//   category:'Laptop',
+//   code:'L0075',
+//   brand:'HP',
+//   sno:'5CG9322W1X',
+//   model:'ZBOOK',
+//   working:'Yes',
+//   company:'	Appinventiv Technology'
+// },
+// {
+//   name:'LAPTOP',
+//   category:'Laptop',
+//   code:'L0075',
+//   brand:'HP',
+//   sno:'5CG9322W1X',
+//   model:'ZBOOK',
+//   working:'Yes',
+//   company:'	Appinventiv Technology'
+// },
 ]
 export const ASSET_REQUEST_HEADING =[
   { heading: 'S.No', key: 'sNo', type: 'text' },

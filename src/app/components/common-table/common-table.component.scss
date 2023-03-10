@@ -125,8 +125,27 @@ section {
       content: "Show";
       @include matPaginatorLabel();
     }
+    .mat-paginator-navigation-next{
+      margin: 0px -5px;
+    }
     .mat-paginator-page-size-label {
       display: none;
+    }
+    .mat-fab:not([class*=mat-elevation-z]), .mat-mini-fab:not([class*=mat-elevation-z]){
+      box-shadow: none !important;
+      background-color: $button-color;
+    }
+    .mat-mini-fab{
+      border-radius: 0px !important;
+      color: $button-text-color !important;
+      width: 30px !important;
+      height: 30px !important;
+      font-size: 18px;
+      line-height: -1 !important;
+    }
+    .mat-button{
+      min-width: 0px !important;
+      padding: 0px !important;
     }
   }
 
