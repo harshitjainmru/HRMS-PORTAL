@@ -23,6 +23,8 @@ import {
   ATTENDANCE_HEADING,
   ATTENDANCE_TABLEDATA,
   ATTENDANCE_TABLEDATA1,
+  MANUAL_TABLE_HEADING,
+  PUCH_LOG_TABLE_HEADING,
   SUBTOPIC_HEADING,
   SUB_TOPIC_DATA,
   SUB_TOPIC_DATA1,
@@ -91,7 +93,9 @@ export const SIDENAV = {
   asset_declaration_sublabel:'Asset Declaration',
   attendance_calendar_sublabel:'Attendance Calendar',
   manual_punch_sublabel:'Manual Punch',
-  punch_log_sublabel:'Punch Log'
+  punch_log_sublabel:'Punch Log',
+  my_leave_sublabel:'My Leave',
+  floating_leave_sublabel:'Floating Leave'
 };
 
 export const LAYOUT = {
@@ -1318,4 +1322,23 @@ export const DECLARATION_ASSETS_DATA ={
   asset_image_label:'Asset Image(Allowed Format: jpg,jpeg,JPEG,JPG,png,PNG,GIF)',
   instruction_label:'Upload front and backside image*',
   submit_button:'Submit'
+}
+
+export const MANUAL_PUNCH_DATA ={
+  employee_title:'Employee Detail',
+  puch_request_label:'Punch Request',
+  company_label:'Company',
+  employee_label:'Employee',
+  company_data:['Appinventiv Technology'],
+  manual_title:'Manual Punch List',
+  add_new_button:'Add New',
+  table_heading:MANUAL_TABLE_HEADING
+}
+export const PUNCH_LOG_DATA ={
+  punch_title:'Punch Log',
+  date_label:'Date',
+  company_label:'Company',
+  company_data:['Appinventiv Technology'],
+  get_button:'Get',
+  table_heading:PUCH_LOG_TABLE_HEADING
 }

@@ -3,6 +3,12 @@ import { CommonModule } from '@angular/common';
 
 import { ManualPunchRoutingModule } from './manual-punch-routing.module';
 import { ManualPunchComponent } from './manual-punch.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { SharedModule } from 'src/app/modules/shared/shared.module';
+import { DropDownModule } from 'src/app/modules/shared/drop-down/drop-down.module';
+import { MatIconModule } from '@angular/material/icon';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -11,7 +17,14 @@ import { ManualPunchComponent } from './manual-punch.component';
   ],
   imports: [
     CommonModule,
-    ManualPunchRoutingModule
+    ManualPunchRoutingModule,
+    MatFormFieldModule,
+    MatInputModule,
+    SharedModule,
+    DropDownModule,
+    MatIconModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class ManualPunchModule { }

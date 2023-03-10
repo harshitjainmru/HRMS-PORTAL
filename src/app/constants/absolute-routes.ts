@@ -214,4 +214,16 @@ export const ABS_LAYOUT_PUNCH_LOG: IRoute ={
   return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
   }
 }
+export const ABS_LAYOUT_LEAVE: IRoute ={
+  path: routes.LEAVE,
+  get fullUrl(): string{
+  return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
+  }
+}
+export const ABS_LAYOUT_FLOATING_LEAVE: IRoute ={
+  path: routes.FLOATING_LEAVE,
+  get fullUrl(): string{
+  return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
+  }
+}
 

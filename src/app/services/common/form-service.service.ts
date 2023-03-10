@@ -75,7 +75,9 @@ export class FormServiceService {
     brand:[],
     color:[],
     workingcondition:[],
-    assetimage:[]
+    assetimage:[],
+    employee:[],
+    company:[]
   };
 
   getControl(name: string, required = true ,drop:any = '') {

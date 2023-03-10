@@ -7,10 +7,12 @@ import {
   ABS_LAYOUT_DIRECTORY,
   ABS_LAYOUT_ENTREPRENURSHIP,
   ABS_LAYOUT_EXPLORE,
+  ABS_LAYOUT_FLOATING_LEAVE,
   ABS_LAYOUT_HOLIDAY_CALENDER,
   ABS_LAYOUT_HOME,
   ABS_LAYOUT_INTERVIEW_LIST,
   ABS_LAYOUT_JOB_OPENING,
+  ABS_LAYOUT_LEAVE,
   ABS_LAYOUT_MANUAL_PUNCH,
   ABS_LAYOUT_MYPROFILE,
   ABS_LAYOUT_MY_FRESHER_TRAININGS,
@@ -265,12 +267,25 @@ export const sideNavList = [
     ],
     isActive: true,
   },
-  // {
-  //   title: SIDENAV.Leave_LABEL,
-  //   icon: 'fa-regular fa-calendar',
-  //   options: [],
-  //   isActive: true,
-  // },
+  {
+    title: SIDENAV.Leave_LABEL,
+    icon: 'fa-regular fa-calendar',
+    options: [
+      {
+        subTitle:SIDENAV.my_leave_sublabel,
+        subicon:'',
+        routerLink:ABS_LAYOUT_LEAVE.path,
+        isActive:true
+      },
+      {
+        subTitle:SIDENAV.floating_leave_sublabel,
+        subicon:'',
+        routerLink:ABS_LAYOUT_FLOATING_LEAVE.path,
+        isActive:true
+      },
+    ],
+    isActive: true,
+  },
   // {
   //   title: SIDENAV.Tickets_LABEL,
   //   icon: 'fa-solid fa-ticket',

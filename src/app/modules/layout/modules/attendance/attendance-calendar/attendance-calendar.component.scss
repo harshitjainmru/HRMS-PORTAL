@@ -1,0 +1,14 @@
+@import "../../../../../scss/var";
+section{
+  margin: 20px 35px;
+  .card{
+    padding: 20px;
+    background-color: $button-text-color;
+  }
+  ::ng-deep{
+    .fc-unthemed .fc-disabled-day {
+      background-color: #d7d7d7;
+      opacity: 0.3;
+  }
+  }
+}

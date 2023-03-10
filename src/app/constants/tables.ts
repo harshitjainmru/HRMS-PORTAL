@@ -785,3 +785,15 @@ export const ASSET_DECLARATION_HEADING =[
   { heading: 'Is Working?', key: 'working', type: 'text' },
   { heading: 'Added', key: 'added', type: 'text' },
 ]
+
+export const MANUAL_TABLE_HEADING=[
+  { heading: 'Edit', key: 'edit', type: 'text' },
+  { heading: 'Manual Punch Date', key: 'punchdate', type: 'text' },
+  { heading: 'In Time', key: 'intime', type: 'text' },
+  { heading: 'Out Time', key: 'outtime', type: 'text' },
+]
+export const PUCH_LOG_TABLE_HEADING=[
+  { heading: 'Name', key: 'name', type: 'text' },
+  { heading: 'Punch Time', key: 'punchtime', type: 'text' },
+  { heading: 'Direction', key: 'direction', type: 'text' },
+]
