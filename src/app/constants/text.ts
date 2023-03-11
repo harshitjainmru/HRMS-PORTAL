@@ -23,6 +23,8 @@ import {
   ATTENDANCE_HEADING,
   ATTENDANCE_TABLEDATA,
   ATTENDANCE_TABLEDATA1,
+  FLOATING_LEAVE_HEADING,
+  FLOATING_LEAVE_TABLE_DATA,
   MANUAL_TABLE_HEADING,
   PUCH_LOG_TABLE_HEADING,
   SUBTOPIC_HEADING,
@@ -84,18 +86,18 @@ export const SIDENAV = {
   REVIEWS_SUBLABEL: 'My Performance',
   RECRUITMENT_SUBLABEL: 'My Interview',
   freshers_training_sublabel: 'My Trainings',
-  training_sublabel:'Upcoming Trainings',
-  ongoing_training_sublabel:'Ongoing Trainings',
-  my_training_sublabel:'My Trainings',
-  requested_training_sublabel:'Requested Trainings',
-  assets_inventory_sublabel:'My Assets inventory',
-  request_asset_sublabel:'Request Asset',
-  asset_declaration_sublabel:'Asset Declaration',
-  attendance_calendar_sublabel:'Attendance Calendar',
-  manual_punch_sublabel:'Manual Punch',
-  punch_log_sublabel:'Punch Log',
-  my_leave_sublabel:'My Leave',
-  floating_leave_sublabel:'Floating Leave'
+  training_sublabel: 'Upcoming Trainings',
+  ongoing_training_sublabel: 'Ongoing Trainings',
+  my_training_sublabel: 'My Trainings',
+  requested_training_sublabel: 'Requested Trainings',
+  assets_inventory_sublabel: 'My Assets inventory',
+  request_asset_sublabel: 'Request Asset',
+  asset_declaration_sublabel: 'Asset Declaration',
+  attendance_calendar_sublabel: 'Attendance Calendar',
+  manual_punch_sublabel: 'Manual Punch',
+  punch_log_sublabel: 'Punch Log',
+  my_leave_sublabel: 'My Leave',
+  floating_leave_sublabel: 'Floating Leave',
 };
 
 export const LAYOUT = {
@@ -1201,144 +1203,177 @@ export const ATTENDANCE_DATA = [
   },
 ];
 
-export const ONGOING_TRAININGS_DATA ={
-header_value:'Ongoing Trainings',
-title:'No Ongoing trainings for now'
-}
+export const ONGOING_TRAININGS_DATA = {
+  header_value: 'Ongoing Trainings',
+  title: 'No Ongoing trainings for now',
+};
 
 export const UPCOMING_TRAINING_DATA = {
   headerValue: 'Upcoming Trainings',
-  headerValue2:'My Trainings',
-  whocanattend:'Who can attend',
+  headerValue2: 'My Trainings',
+  whocanattend: 'Who can attend',
   label1: 'Start Date',
   label2: 'End Date',
   label3: 'Seats',
-  mode:'Mode',
+  mode: 'Mode',
   buttonView: 'View Details',
   buttonEnrollment: 'Cancel Enrollment',
-  requestButton:'+ Request for training',
+  requestButton: '+ Request for training',
   cardData: [
     {
       id: 1,
       title: 'Micro Frontend Angular',
       completeHeading: 'Enrolled',
-      whoattenddata:'Angular',
+      whoattenddata: 'Angular',
       label1Data: 'Jan-05-2023',
       label2Data: 'Jan-05-2023',
       label3Data: '41',
-      mode_data:'Online'
+      mode_data: 'Online',
     },
   ],
 };
 
-export const CANCEL_ENROLLMENT_DIALOG_DATA ={
-  headerValue:'Cancel Enrollment',
-  alert_instruction:'After cancelling this enrollment you can re-enroll one time only.',
-  label_value:'Please provide brief reason *',
-  placeholder_value:'Enter Detail Reason',
-  buttonCancel:'Cancel',
-  buttonSubmit:'Submit'
-}
+export const CANCEL_ENROLLMENT_DIALOG_DATA = {
+  headerValue: 'Cancel Enrollment',
+  alert_instruction:
+    'After cancelling this enrollment you can re-enroll one time only.',
+  label_value: 'Please provide brief reason *',
+  placeholder_value: 'Enter Detail Reason',
+  buttonCancel: 'Cancel',
+  buttonSubmit: 'Submit',
+};
 
-export const TRAINING_DETAILS_UPCOMING =[
+export const TRAINING_DETAILS_UPCOMING = [
   {
-    id:1,
-    breadcrumb_value1:'Home',
-    breadcrumb_value2:'Trainings',
-    breadcrumb_value3:'Training Details',
-    title:'Micro Frontend Angular',
-    buttonEnrollment:'Cancel Enrollment',
-    proposed_button:'Proposed',
-    title_label:'Title :',
-    trainingduration:'Training duration :',
-    date:'Training dates :',
-    mode:'Training mode :',
-    attend:'Who can attend :',
-    seats:'No. of seats :',
-    duration_data:'1 Hrs',
-    data_data:'Jan-05-2023 - Jan-05-2023',
-    mode_data:'Online',
-    seat_data:'55',
-    attendTeam:'Angular',
-    description_label:'Description',
-    description_data:'Micro Frontends is to think about a website or web app as a composition of features which are owned by independent teams. Each team has a distinct area of business or mission it cares about and specialises in. A team is cross functional and develops its features end-to-end, from database to user interface.',
-    support_label:'Support details',
-    support_data:'This is online training, so no support required.'
-  }
-]
+    id: 1,
+    breadcrumb_value1: 'Home',
+    breadcrumb_value2: 'Trainings',
+    breadcrumb_value3: 'Training Details',
+    title: 'Micro Frontend Angular',
+    buttonEnrollment: 'Cancel Enrollment',
+    proposed_button: 'Proposed',
+    title_label: 'Title :',
+    trainingduration: 'Training duration :',
+    date: 'Training dates :',
+    mode: 'Training mode :',
+    attend: 'Who can attend :',
+    seats: 'No. of seats :',
+    duration_data: '1 Hrs',
+    data_data: 'Jan-05-2023 - Jan-05-2023',
+    mode_data: 'Online',
+    seat_data: '55',
+    attendTeam: 'Angular',
+    description_label: 'Description',
+    description_data:
+      'Micro Frontends is to think about a website or web app as a composition of features which are owned by independent teams. Each team has a distinct area of business or mission it cares about and specialises in. A team is cross functional and develops its features end-to-end, from database to user interface.',
+    support_label: 'Support details',
+    support_data: 'This is online training, so no support required.',
+  },
+];
 
 export const REQUEST_TRAINING_DATA = {
-  header_value:'Request for training',
-  training_name_label:'Training name',
-  team_name_label:'Team name',
-  skill_enhancement:'Please mention the training/learning area’s you feel can be beneficial for your skill enhancement and job performance *',
-  skill_needed_label:'Why do you feel these skills are needed and how they will benefit your personal and organizational needs *',
-  placeholder:'Type your answer here',
-  interest_given_training:'Are you interested to give the Trainings? *',
-  timeline:'What should be the timeline to conduct this training? *',
-  buttonCancel:'Cancel',
-  buttonSubmit:'Submit',
-  yesLabel:'Yes',
-  noLabel:'No',
-  immediateLabel:'Immediate',
-  months:'3-6 Months',
-  more_months:'More than 6 Months',
-  training_name_data:['Micro Frontend Angular'],
-  team_name_data:['.net','angular','android','html','finance']
-}
-export const ASSETS_DATA ={
-  assets_inventory_title:'List All Assets inventory'
-}
-export const REQUEST_ASSETS_DATA ={
-  assets_inventory_title:'List All Request Assets',
-  button_asset_request:' Add new asset request',
-  category_label:'Assets Categories',
-  category_data:['Laptop','Desktop','Mobile'],
-  quantity_label:'Quantity',
-  quantity_data:['1','2','3','4','5'],
-  priority_label:'Priority',
-  priority_data:['Low','Medium','High'],
-  require_date_label:'Required by Date',
-  type_label:'Allocation type',
-  type_data:['Permanent','Temporary'],
-  reason_label:'Request Reason',
-  submit_button:'Submit'
-}
-export const DECLARATION_ASSETS_DATA ={
-  assets_inventory_title:'List All Declaration Assets',
-  button_asset_request:' Add new assets declaration',
-  id_label:'Employee Id',
-  id:'AI1611',
-  code_label:'Unique Asset Code',
-  serial_label:'Serial Number',
-  model_label:'Model Number ',
-  os_label:'OS',
-  os_data:['Android','IOS'],
-  os_version_label:'OS version',
-  brand_label:'Brand',
-  color_label:'Colour',
-  work_condition_label:'Device is in working condition?',
-  work_condition_data:['Yes','No'],
-  asset_image_label:'Asset Image(Allowed Format: jpg,jpeg,JPEG,JPG,png,PNG,GIF)',
-  instruction_label:'Upload front and backside image*',
-  submit_button:'Submit'
-}
+  header_value: 'Request for training',
+  training_name_label: 'Training name',
+  team_name_label: 'Team name',
+  skill_enhancement:
+    'Please mention the training/learning area’s you feel can be beneficial for your skill enhancement and job performance *',
+  skill_needed_label:
+    'Why do you feel these skills are needed and how they will benefit your personal and organizational needs *',
+  placeholder: 'Type your answer here',
+  interest_given_training: 'Are you interested to give the Trainings? *',
+  timeline: 'What should be the timeline to conduct this training? *',
+  buttonCancel: 'Cancel',
+  buttonSubmit: 'Submit',
+  yesLabel: 'Yes',
+  noLabel: 'No',
+  immediateLabel: 'Immediate',
+  months: '3-6 Months',
+  more_months: 'More than 6 Months',
+  training_name_data: ['Micro Frontend Angular'],
+  team_name_data: ['.net', 'angular', 'android', 'html', 'finance'],
+};
+export const ASSETS_DATA = {
+  assets_inventory_title: 'List All Assets inventory',
+};
+export const REQUEST_ASSETS_DATA = {
+  assets_inventory_title: 'List All Request Assets',
+  button_asset_request: ' Add new asset request',
+  category_label: 'Assets Categories',
+  category_data: ['Laptop', 'Desktop', 'Mobile'],
+  quantity_label: 'Quantity',
+  quantity_data: ['1', '2', '3', '4', '5'],
+  priority_label: 'Priority',
+  priority_data: ['Low', 'Medium', 'High'],
+  require_date_label: 'Required by Date',
+  type_label: 'Allocation type',
+  type_data: ['Permanent', 'Temporary'],
+  reason_label: 'Request Reason',
+  submit_button: 'Submit',
+};
+export const DECLARATION_ASSETS_DATA = {
+  assets_inventory_title: 'List All Declaration Assets',
+  button_asset_request: ' Add new assets declaration',
+  id_label: 'Employee Id',
+  id: 'AI1611',
+  code_label: 'Unique Asset Code',
+  serial_label: 'Serial Number',
+  model_label: 'Model Number ',
+  os_label: 'OS',
+  os_data: ['Android', 'IOS'],
+  os_version_label: 'OS version',
+  brand_label: 'Brand',
+  color_label: 'Colour',
+  work_condition_label: 'Device is in working condition?',
+  work_condition_data: ['Yes', 'No'],
+  asset_image_label:
+    'Asset Image(Allowed Format: jpg,jpeg,JPEG,JPG,png,PNG,GIF)',
+  instruction_label: 'Upload front and backside image*',
+  submit_button: 'Submit',
+};
 
-export const MANUAL_PUNCH_DATA ={
-  employee_title:'Employee Detail',
-  puch_request_label:'Punch Request',
-  company_label:'Company',
-  employee_label:'Employee',
-  company_data:['Appinventiv Technology'],
-  manual_title:'Manual Punch List',
-  add_new_button:'Add New',
-  table_heading:MANUAL_TABLE_HEADING
-}
-export const PUNCH_LOG_DATA ={
-  punch_title:'Punch Log',
-  date_label:'Date',
-  company_label:'Company',
-  company_data:['Appinventiv Technology'],
-  get_button:'Get',
-  table_heading:PUCH_LOG_TABLE_HEADING
-}
+export const MANUAL_PUNCH_DATA = {
+  employee_title: 'Employee Detail',
+  puch_request_label: 'Punch Request',
+  company_label: 'Company',
+  employee_label: 'Employee',
+  company_data: ['Appinventiv Technology'],
+  manual_title: 'Manual Punch List',
+  add_new_button: 'Add New',
+  table_heading: MANUAL_TABLE_HEADING,
+};
+export const PUNCH_LOG_DATA = {
+  punch_title: 'Punch Log',
+  date_label: 'Date',
+  company_label: 'Company',
+  company_data: ['Appinventiv Technology'],
+  get_button: 'Get',
+  table_heading: PUCH_LOG_TABLE_HEADING,
+};
+export const MY_LEAVE_DATA = {
+  leave_data: [
+    {
+      leave_title: 'Planned Leave (CL) (6.00)',
+      leave_balance: 'Planned Leave (CL) Balance (6)',
+    },
+    {
+      leave_title: 'Privileged Leave (5.50)',
+      leave_balance: 'Privileged Leave Balance (5.5)',
+    },
+    {
+      leave_title: 'Emergency Leave (CL) (6.00)',
+      leave_balance: 'Emergency Leave (CL) Balance (6)',
+    },
+    {
+      leave_title: 'Short Leaves (2/10.00)',
+      leave_balance: 'Short Leaves Balance (8)',
+    },
+  ],
+  add_leave:'Add Leave',
+  add_new_button:'Add New'
+};
+export const FLOATING_LEAVE_DATA = {
+  floating_title: 'Floating Leave',
+  availed_floating_label: 'Availed Floating Holiday',
+  table_heading: FLOATING_LEAVE_HEADING,
+  table_data: FLOATING_LEAVE_TABLE_DATA,
+};

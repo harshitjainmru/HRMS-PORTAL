@@ -1,6 +1,14 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ABS_LAYOUT_DIRECTORY, ABS_LAYOUT_ENTREPRENURSHIP, ABS_LAYOUT_HOME, ABS_LAYOUT_JOB_OPENING, ABS_LAYOUT_MYPROFILE, ABS_LAYOUT_MY_PERFORMANCE, ABS_LAYOUT_REFER_LIST } from 'src/app/constants/absolute-routes';
+import {
+  ABS_LAYOUT_DIRECTORY,
+  ABS_LAYOUT_ENTREPRENURSHIP,
+  ABS_LAYOUT_HOME,
+  ABS_LAYOUT_JOB_OPENING,
+  ABS_LAYOUT_MYPROFILE,
+  ABS_LAYOUT_MY_PERFORMANCE,
+  ABS_LAYOUT_REFER_LIST,
+} from 'src/app/constants/absolute-routes';
 import { LayoutComponent } from './layout.component';
 
 const routes: Routes = [
@@ -17,60 +25,83 @@ const routes: Routes = [
       {
         path: ABS_LAYOUT_MYPROFILE.path,
         loadChildren: () =>
-          import('./modules/my-profile/my-profile.module').then((m) => m.MyProfileModule),
+          import('./modules/my-profile/my-profile.module').then(
+            (m) => m.MyProfileModule
+          ),
       },
       {
         path: ABS_LAYOUT_DIRECTORY.path,
         loadChildren: () =>
-          import('./modules/directory/directory.module').then((m) => m.DirectoryModule),
+          import('./modules/directory/directory.module').then(
+            (m) => m.DirectoryModule
+          ),
       },
       {
         path: '',
         loadChildren: () =>
-          import('./modules/entrepreneurship/entrepreneurship.module').then((m) => m.EntrepreneurshipModule),
+          import('./modules/entrepreneurship/entrepreneurship.module').then(
+            (m) => m.EntrepreneurshipModule
+          ),
       },
       {
-        path:'',
-        loadChildren:() =>
-        import('./modules/my-links/my-links.module').then((m)=>m.MyLinksModule)
+        path: '',
+        loadChildren: () =>
+          import('./modules/my-links/my-links.module').then(
+            (m) => m.MyLinksModule
+          ),
       },
       {
-        path:'',
-        loadChildren:() =>
-        import('./modules/refer-afriend/refer-afriend.module').then((m)=>m.ReferAFriendModule)
-
+        path: '',
+        loadChildren: () =>
+          import('./modules/refer-afriend/refer-afriend.module').then(
+            (m) => m.ReferAFriendModule
+          ),
       },
       {
-        path:'',
-        loadChildren:() =>
-        import('./modules/reviews/reviews.module').then((m)=>m.ReviewsModule)
+        path: '',
+        loadChildren: () =>
+          import('./modules/reviews/reviews.module').then(
+            (m) => m.ReviewsModule
+          ),
       },
       {
-        path:'',
-        loadChildren:() =>
-        import('./modules/recruitment/recruitment.module').then((m)=>m.RecruitmentModule)
+        path: '',
+        loadChildren: () =>
+          import('./modules/recruitment/recruitment.module').then(
+            (m) => m.RecruitmentModule
+          ),
       },
       {
-        path:'',
-        loadChildren:() =>
-        import('./modules/fresher-training/fresher-training.module').then((m)=>m.FresherTrainingModule)
+        path: '',
+        loadChildren: () =>
+          import('./modules/fresher-training/fresher-training.module').then(
+            (m) => m.FresherTrainingModule
+          ),
       },
       {
-        path:'',
-        loadChildren:() =>
-        import('./modules/training/training.module').then((m)=>m.TrainingModule)
+        path: '',
+        loadChildren: () =>
+          import('./modules/training/training.module').then(
+            (m) => m.TrainingModule
+          ),
       },
       {
-        path:'',
-        loadChildren:() =>
-        import('./modules/assets/assets.module').then((m)=>m.AssetsModule)
+        path: '',
+        loadChildren: () =>
+          import('./modules/assets/assets.module').then((m) => m.AssetsModule),
       },
       {
-        path:'',
-        loadChildren:() =>
-        import('./modules/attendance/attendance.module').then((m)=>m.AttendanceModule)
+        path: '',
+        loadChildren: () =>
+          import('./modules/attendance/attendance.module').then(
+            (m) => m.AttendanceModule
+          ),
       },
-
+      {
+        path: '',
+        loadChildren: () =>
+          import('./modules/leave/leave.module').then((m) => m.LeaveModule),
+      },
     ],
   },
 ];

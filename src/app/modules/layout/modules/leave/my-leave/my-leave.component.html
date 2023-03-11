@@ -1,0 +1,29 @@
+<section>
+  <div class="top-container">
+ <ng-container *ngFor="let item of uiText.leave_data">
+   <div class="leave-type-data">
+     <div class="leave">
+       <mat-icon class="text-success">event</mat-icon>
+       <div class="leave-data">
+         <h3 class="leave-balance">{{item.leave_title}}</h3>
+         <h3 class="leave-balance">{{item.leave_balance}}</h3>
+       </div>
+     </div>
+   </div>
+ </ng-container>
+ </div>
+ <div class="middle-container">
+  <div class="title">
+    <h1 class="title-text">{{uiText.add_leave}}</h1>
+    <div class="buttonGroup" (click)="showDiv()">
+      <mat-icon class="addIcon">add</mat-icon>
+      <button class="add-new">
+        {{uiText.add_new_button}}
+      </button>
+    </div>
+  </div>
+  <div class="" *ngIf="requestShow">
+    <p>hhhhhhhhhhhhhhhhhhhhh</p>
+  </div>
+  </div>
+</section>

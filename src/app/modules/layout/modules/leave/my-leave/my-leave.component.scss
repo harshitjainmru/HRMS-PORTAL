@@ -1,0 +1,55 @@
+@import "../../../../../scss/var";
+@import "../../../../../scss/mixins.scss";
+section{
+  margin: 30px;
+  .top-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
+    .leave-type-data{
+      background-color: $button-text-color;
+      padding: 20px;
+      .leave{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        .text-success{
+          color: $training-status-background;
+          font-size: 40px;
+        }
+        .leave-data{
+          .leave-balance{
+            margin-bottom: -12px !important;
+            font-size: 12px;
+            color: #a3a4a6 !important;
+          }
+        }
+      }
+    }
+  }
+  .middle-container{
+    background-color: $button-text-color;
+    margin: 30px 0px;
+    .title{
+      @include fpos(baseline,space-between);
+      border-bottom: 1px solid $border-color;
+      padding: 12px 20px;
+      .title-text{
+        color: $header-text-color;
+        font-weight: 500;
+      }
+      .buttonGroup{
+        border: 1px solid $directory-header-color;
+        color: $directory-header-color;
+        background-color: $button-text-color;
+        display: flex;
+        cursor: pointer;
+        .add-new{
+          @include buttonTransparent();
+          color: $directory-header-color;
+        }
+      }
+    }
+  }
+}

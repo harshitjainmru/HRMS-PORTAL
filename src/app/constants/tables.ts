@@ -797,3 +797,20 @@ export const PUCH_LOG_TABLE_HEADING=[
   { heading: 'Punch Time', key: 'punchtime', type: 'text' },
   { heading: 'Direction', key: 'direction', type: 'text' },
 ]
+export const FLOATING_LEAVE_HEADING=[
+  { heading: 'S.No', key: 'sno', type: 'text' },
+  { heading: 'Event Name', key: 'eventname', type: 'text' },
+  { heading: 'Date', key: 'date', type: 'text' },
+]
+export const FLOATING_LEAVE_TABLE_DATA=[
+ {
+  sno:'1',
+  eventname:'Gurupurab',
+  date:'27th Nov, 2023'
+ },
+ {
+  sno:'2',
+  eventname:'Janmashtami',
+  date:'7th Sep, 2023'
+ },
+]
