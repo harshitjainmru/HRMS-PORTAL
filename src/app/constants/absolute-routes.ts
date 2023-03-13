@@ -226,4 +226,10 @@ export const ABS_LAYOUT_FLOATING_LEAVE: IRoute ={
   return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
   }
 }
+export const ABS_LAYOUT_TICKETS: IRoute ={
+  path: routes.TICKETS,
+  get fullUrl(): string{
+  return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
+  }
+}
 

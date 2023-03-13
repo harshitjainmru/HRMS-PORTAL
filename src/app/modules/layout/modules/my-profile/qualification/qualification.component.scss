@@ -32,6 +32,15 @@ section {
     min-width: calc(100% + 15px) !important;
     margin: 2.5rem 0rem 0rem 0.425rem !important;
   }
+  .mat-paginator-page-size {
+    position: absolute;
+    top: 70px ;
+    left: 15px ;
+  }
+  // section{
+  //   padding: 0px 10px;
+
+  // }
 }
 @media (max-width: 1798px) {
   section {

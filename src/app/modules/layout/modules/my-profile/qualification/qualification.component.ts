@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
+import { MatPaginator } from '@angular/material/paginator';
 import { MatTableDataSource } from '@angular/material/table';
 import { Observable } from 'rxjs';
 import { map, startWith } from 'rxjs/operators';
 import { slideInRight } from 'src/animations/slideInRight';
 import { validationMessage } from 'src/app/constants/error-messages';
-import { QUALIFICATION_HEADING } from 'src/app/constants/tables';
+import { QUALIFICATION_DATA, QUALIFICATION_HEADING } from 'src/app/constants/tables';
 import {
   BASIC_INFORMATION,
   EDUCATION_DROPDOWN,
@@ -28,11 +29,13 @@ export class QualificationComponent implements OnInit {
   languageDropdown = LANGUAGE_DROPDOWN;
   heading = QUALIFICATION_HEADING;
   qualificationForm!: FormGroup;
-  Table_DATA: any;
+  Table_DATA=QUALIFICATION_DATA;
   myControl = new FormControl('');
   dropDownField = 'width:369px';
   pageSize = false;
   dataSource = new MatTableDataSource<QUALIFICATIONTABLE>();
+  @ViewChild(MatPaginator, { static: false }) matPaginator!: MatPaginator;
+
   errorMessage:any;
   constructor(
     private _formBuilder: FormBuilder,
@@ -43,7 +46,7 @@ export class QualificationComponent implements OnInit {
   ngOnInit(): void {
     this.dataSource = new MatTableDataSource<QUALIFICATIONTABLE>(
       this.Table_DATA
-    );
+    )
     this.errorMessage = validationMessage
     this.createForm();
     this.filteredOptions = this.myControl.valueChanges.pipe(
@@ -83,9 +86,19 @@ export class QualificationComponent implements OnInit {
     });
   }
   submitHandler(){
+    // debugger
+    this.Table_DATA.push({action:'bye',
+    school:'y',
+    fromTimetotoTime:'hii',
+    educationLevel:'hii'
+    })
+    this.dataSource = new MatTableDataSource<QUALIFICATIONTABLE>(
+      this.Table_DATA
+    )
+    this.dataSource.paginator = this.matPaginator;
+
     if(this.qualificationForm.valid){
       console.log(this.qualificationForm);
-
     }
   }
 }

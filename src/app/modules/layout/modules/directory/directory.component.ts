@@ -85,6 +85,7 @@ export class DirectoryComponent implements OnInit {
   }
   reset() {
     this.directoryFilterformGroup.reset();
+    this.directoryFilterformGroup.controls['departmentname'].patchValue(this.dropDownData[0])
     this.empData = DIRECTORY_EMPLOYEE_DATA;
   }
 }

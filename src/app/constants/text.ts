@@ -98,6 +98,8 @@ export const SIDENAV = {
   punch_log_sublabel: 'Punch Log',
   my_leave_sublabel: 'My Leave',
   floating_leave_sublabel: 'Floating Leave',
+  tickets_sublabel: 'Tickets',
+
 };
 
 export const LAYOUT = {
@@ -1369,7 +1371,28 @@ export const MY_LEAVE_DATA = {
     },
   ],
   add_leave:'Add Leave',
-  add_new_button:'Add New'
+  add_new_button:'Add New',
+  type_label:'Leave Type',
+  half_day_label:'Half Day?',
+  start_date_label:'Start Date',
+  end_date_label:'End Date',
+  remarks_label:'Remarks',
+  upload_label:'Upload Document',
+  reason_label:'Leave Reason',
+  save_button:'Save',
+  cancel_button:'Cancel',
+  start_time_label:'Start Time',
+  end_time_label:'End Time',
+  type_dropdown_data:[
+    {value:'plannedleave',viewValue:'Planned Leave (CL)'},
+    {value:'privilegedleave',viewValue:'Privileged Leave'},
+    {value:'emergencyleave',viewValue:'Emergency Leave (CL)'},
+    {value:'shortleave',viewValue:'Short Leaves'},
+    {value:'allleave',viewValue:'All Remaining Leaves (17.5)'},
+  ],
+  all_leave_instruction:['*You can apply minimum 7 Leaves and Maximum 20 Leaves as per availability of leaves.',
+  '*This leave can only be used in case of medical emergency or any pre approved long leave. (Due to some urgency)'],
+  list_leave:'List All Leave'
 };
 export const FLOATING_LEAVE_DATA = {
   floating_title: 'Floating Leave',

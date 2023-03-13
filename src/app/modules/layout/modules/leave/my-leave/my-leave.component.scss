@@ -1,25 +1,25 @@
 @import "../../../../../scss/var";
 @import "../../../../../scss/mixins.scss";
-section{
+section {
   margin: 30px;
-  .top-container{
+  .top-container {
     display: grid;
     grid-template-columns: auto auto auto;
     gap: 30px;
-    .leave-type-data{
+    .leave-type-data {
       background-color: $button-text-color;
       padding: 20px;
-      .leave{
+      .leave {
         display: flex;
         justify-content: flex-start;
         align-items: center;
         gap: 20px;
-        .text-success{
+        .text-success {
           color: $training-status-background;
           font-size: 40px;
         }
-        .leave-data{
-          .leave-balance{
+        .leave-data {
+          .leave-balance {
             margin-bottom: -12px !important;
             font-size: 12px;
             color: #a3a4a6 !important;
@@ -28,27 +28,240 @@ section{
       }
     }
   }
-  .middle-container{
+  .middle-container {
     background-color: $button-text-color;
     margin: 30px 0px;
-    .title{
-      @include fpos(baseline,space-between);
+    .title {
+      @include fpos(baseline, space-between);
       border-bottom: 1px solid $border-color;
       padding: 12px 20px;
-      .title-text{
+      .title-text {
         color: $header-text-color;
         font-weight: 500;
       }
-      .buttonGroup{
+      .buttonGroup {
         border: 1px solid $directory-header-color;
         color: $directory-header-color;
         background-color: $button-text-color;
         display: flex;
         cursor: pointer;
-        .add-new{
+        .add-new {
           @include buttonTransparent();
           color: $directory-header-color;
         }
+      }
+    }
+    .add-leave {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 20px !important;
+      padding: 20px 50px;
+
+      .container {
+        .formfield {
+          display: flex;
+          flex-direction: column;
+          .label {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.4;
+            margin-bottom: 4px;
+          }
+        }
+        .half-day {
+          display: flex;
+          gap: 40px;
+          .half-day-checkbox {
+          }
+          .radiobutton {
+            // gap: 10px;
+          }
+        }
+        .shorttime {
+          display: flex;
+          gap: 20px;
+        }
+        .datefield {
+          display: grid;
+          grid-template-columns: auto auto;
+          gap: 20px !important;
+        }
+        .input-file {
+          border: 1px solid $formField-border-color;
+          padding: 14px;
+          border-radius: 5px;
+          box-shadow: 0px 4px 8px rgb(44 39 56 / 4%) !important;
+
+        }
+        .buttonGroup {
+          margin-top: 50px;
+          display: flex;
+          gap: 20px;
+          .saveButton {
+            background-color: $success-color;
+            color: $button-text-color;
+            width: 70px;
+          }
+          .cancelButton {
+            background-color: $error-color;
+            color: $button-text-color;
+            width: 70px;
+          }
+        }
+      }
+    }
+  }
+  .last-container{
+    // margin:20px 30px;
+    background-color: $button-text-color;
+    border-radius: 10px;
+    .content {
+      padding: 20px;
+      .header {
+        border-bottom: 1px solid $border-color;
+        .header-text {
+          color: $header-text-color;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  ::ng-deep {
+    .mat-datepicker-toggle {
+      color: $border-color;
+      position: absolute;
+      right: -12px;
+      top: -5px;
+    }
+    .mat-form-field-appearance-outline .mat-form-field-outline {
+      box-shadow: 0px 4px 8px rgb(44 39 56 / 4%) !important;
+    }
+    .tox-tinymce {
+      border: none !important;
+      border-radius: 0px !important;
+    }
+    editor {
+      box-shadow: 0px 4px 8px rgb(44 39 56 / 4%) !important;
+      border: 1px solid #d8d8d8;
+    }
+    .tox-editor-header,
+    .tox-menubar,
+    .tox-toolbar__primary {
+      background-color: #ecf0f1 !important;
+      padding: 0px !important;
+    }
+    .tox-menubar + .tox-toolbar-overlord {
+      background-color: #d7e0e2;
+    }
+    .tox .tox-mbtn:hover:not(:disabled):not(.tox-mbtn--active),
+    .tox .tox-tbtn:hover {
+      background-color: $button-text-color !important;
+    }
+    .mat-radio-button {
+      margin: 0px 10px !important;
+    }
+    .mat-radio-container {
+      width: 16px !important;
+    }
+    .mat-radio-outer-circle .mat-radio-inner-circle {
+      width: 15px !important;
+      height: 16px !important;
+    }
+    .mat-radio-label-content {
+      margin-top: -2px !important;
+    }
+    .mat-radio-outer-circle {
+      border-color: #d8d8d8 !important;
+      background-color: $button-text-color;
+    }
+    .mat-radio-ripple {
+      display: none !important;
+    }
+    .mat-radio-button.mat-accent.mat-radio-checked .mat-radio-outer-circle {
+      border-color: #3f51b5 !important;
+    }
+
+    .mat-radio-button.mat-accent .mat-radio-inner-circle {
+      color: #3f51b5;
+      background-color: #3f51b5 !important;
+    }
+    .mat-checkbox-checked.mat-accent .mat-checkbox-background {
+      background-color: #3f51b5 !important;
+    }
+    .mat-checkbox .mat-checkbox-ripple {
+      display: none !important;
+    }
+    .mat-paginator-range-label {
+      left: 45px !important;
+    }
+    .mat-paginator-page-size {
+      position: absolute;
+      top: 425px;
+      left: 60px ;
+    }
+    .mat-paginator-size-page-expand{
+      top: 960px;
+    }
+  }
+
+}
+@media (max-width: 1237px) {
+  section {
+    .top-container {
+      grid-template-columns: auto auto;
+    }
+    .middle-container {
+      .container {
+        .shorttime {
+          flex-direction: column;
+        }
+        .datefield {
+          grid-template-columns: auto !important;
+        }
+      }
+    }
+    ::ng-deep{
+      .mat-paginator-size-page-expand{
+        top: 1080px;
+      }
+    }
+  }
+}
+@media (max-width:950px){
+  section{
+    .middle-container{
+      .add-leave{
+        grid-template-columns: auto !important;
+      }
+    }
+    ::ng-deep{
+      .mat-paginator-size-page-expand{
+        top: 1425px;
+      }
+    }
+  }
+}
+@media (max-width:606px){
+  section{
+    .top-container{
+      grid-template-columns: auto;
+    }
+    ::ng-deep{
+      .mat-paginator-page-size {
+        top: 625px;
+      }
+        .mat-paginator-size-page-expand{
+          top: 1620px;
+        }
+    }
+  }
+}
+
+@media (max-width:420px){
+  section{
+    .middle-container{
+      .add-leave{
+        padding: 10px !important;
       }
     }
   }

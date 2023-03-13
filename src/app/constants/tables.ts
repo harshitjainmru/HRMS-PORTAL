@@ -1,29 +1,77 @@
-import { POLICY_DOCUMENT, SUB_TOPIC, TRAINING_TOPIC } from "../models/table-interface";
+import {
+  POLICY_DOCUMENT,
+  SUB_TOPIC,
+  TRAINING_TOPIC,
+} from '../models/table-interface';
 
-export const SHIFT_HEADING=[
-  {heading: 'Date of Joining', key:'dateofjoin',type:'text',sort:''},
-  {heading: 'Office Shift', key:'shift',type:'text',sort:''},
-]
+export const SHIFT_HEADING = [
+  { heading: 'Date of Joining', key: 'dateofjoin', type: 'text', sort: '' },
+  { heading: 'Office Shift', key: 'shift', type: 'text', sort: '' },
+];
 
 export const SHIFT_TABLE_VALUES = [
-  {dateofjoin:'Feb-07-2022', shift:'Morning Shift'},
+  { dateofjoin: 'Feb-07-2022', shift: 'Morning Shift' },
   // {'date-of-join':SHIFT_VALUE.DATE_VALUE, 'shift':SHIFT_VALUE.SHIFT_VALUE},
   // {'date-of-join':SHIFT_VALUE.DATE_VALUE, 'shift':SHIFT_VALUE.SHIFT_VALUE},
   // {'date-of-join':SHIFT_VALUE.DATE_VALUE, 'shift':SHIFT_VALUE.SHIFT_VALUE},
   // {'date-of-join':SHIFT_VALUE.DATE_VALUE, 'shift':SHIFT_VALUE.SHIFT_VALUE},
   // {'date-of-join':SHIFT_VALUE.DATE_VALUE, 'shift':SHIFT_VALUE.SHIFT_VALUE},
-]
+];
 
-export const QUALIFICATION_HEADING=[
-  {heading: 'Action', key:'action',type:'text',sort:true},
-  {heading: 'School/University', key:'school',type:'text',sort:true},
-  {heading: 'Time Period', key:'time',type:'text',sort:true},
-  {heading:'Education Level', key:'education',type:'text',sort:true},
-]
+export const QUALIFICATION_HEADING = [
+  { heading: 'Action', key: 'action', type: 'text', sort: true },
+  { heading: 'School/University', key: 'school', type: 'text', sort: true },
+  { heading: 'Time Period', key: 'fromTimetotoTime', type: 'text', sort: true },
+  {
+    heading: 'Education Level',
+    key: 'educationLevel',
+    type: 'text',
+    sort: true,
+  },
+];
+
+export const QUALIFICATION_DATA = [
+  {
+    action: 'hii',
+    school: 'hii',
+    fromTimetotoTime: 'hii',
+    educationLevel: 'hii',
+  },
+  // {
+  //   action: 'hii',
+  //   school: 'hii',
+  //   fromTimetotoTime: 'hii',
+  //   educationLevel: 'hii',
+  // },
+  // {
+  //   action: 'hii',
+  //   school: 'hii',
+  //   fromTimetotoTime: 'hii',
+  //   educationLevel: 'hii',
+  // },
+  // {
+  //   action: 'hii',
+  //   school: 'hii',
+  //   fromTimetotoTime: 'hii',
+  //   educationLevel: 'hii',
+  // },
+  // {
+  //   action: 'hii',
+  //   school: 'hii',
+  //   fromTimetotoTime: 'hii',
+  //   educationLevel: 'hii',
+  // },
+  // {
+  //   action: 'hii',
+  //   school: 'hii',
+  //   fromTimetotoTime: 'hii',
+  //   educationLevel: 'hii',
+  // },
+];
 
 export const QUALIFICATION_TABLE_VALUES = [
   // {'date-of-join':SHIFT_VALUE.DATE_VALUE, 'shift':SHIFT_VALUE.SHIFT_VALUE},
-]
+];
 
 export const POLICY_DOCUMENT_HEADING = [
   { heading: '#', key: 'sNo', type: 'text' },
@@ -34,7 +82,7 @@ export const POLICY_DOCUMENT_HEADING = [
   { heading: 'Action', key: 'download', type: 'downloadLink' },
 ];
 
-export const POLICY_DOCUMENT_VALUES : POLICY_DOCUMENT[]  = [
+export const POLICY_DOCUMENT_VALUES: POLICY_DOCUMENT[] = [
   {
     sNo: 1,
     name: 'Appinventiv_policy_manual',
@@ -105,195 +153,194 @@ export const TRAINING_TOPIC_HEADING = [
   { heading: 'Trainer Email', key: 'email', type: 'text' },
   { heading: 'Start Date', key: 'startDate', type: 'text' },
   { heading: 'End Date', key: 'endDate', type: 'text' },
-  { heading: 'Resource URL', key: 'url', type: 'text' }
+  { heading: 'Resource URL', key: 'url', type: 'text' },
   // { heading: 'Resource URL', key: 'url', type: 'link' }
-]
+];
 
-export const TRAINING_TOPIC_DATA : TRAINING_TOPIC[]=[
+export const TRAINING_TOPIC_DATA: TRAINING_TOPIC[] = [
   {
-    sNo:1,
-    topic:'Introduction',
-    topictrainer:'Sandeep Gupta',
-    email:'Sandeep.Gupta@appinventiv.com',
-    startDate:'Feb-28-2022',
-    endDate:'Feb-28-2022',
-    url:'-'
+    sNo: 1,
+    topic: 'Introduction',
+    topictrainer: 'Sandeep Gupta',
+    email: 'Sandeep.Gupta@appinventiv.com',
+    startDate: 'Feb-28-2022',
+    endDate: 'Feb-28-2022',
+    url: '-',
   },
   {
-    sNo:2,
-    topic:'Basic building block',
-    topictrainer:'Sandeep Gupta',
-    email:'Sandeep.Gupta@appinventiv.com',
-    startDate:'Mar-01-2022',
-    endDate:'Mar-01-2022',
-    url:'-'
+    sNo: 2,
+    topic: 'Basic building block',
+    topictrainer: 'Sandeep Gupta',
+    email: 'Sandeep.Gupta@appinventiv.com',
+    startDate: 'Mar-01-2022',
+    endDate: 'Mar-01-2022',
+    url: '-',
   },
   {
-    sNo:3,
-    topic:'Components',
-    topictrainer:'Sandeep Gupta',
-    email:'Sandeep.Gupta@appinventiv.com',
-    startDate:'Mar-02-2022	',
-    endDate:'Mar-04-2022',
-    url:'-'
+    sNo: 3,
+    topic: 'Components',
+    topictrainer: 'Sandeep Gupta',
+    email: 'Sandeep.Gupta@appinventiv.com',
+    startDate: 'Mar-02-2022	',
+    endDate: 'Mar-04-2022',
+    url: '-',
   },
   {
-    sNo:4,
-    topic:'	Ist - Assignment',
-    topictrainer:'Sandeep Gupta',
-    email:'Sandeep.Gupta@appinventiv.com',
-    startDate:'Mar-05-2022',
-    endDate:'Mar-05-2022',
-    url:'-'
+    sNo: 4,
+    topic: '	Ist - Assignment',
+    topictrainer: 'Sandeep Gupta',
+    email: 'Sandeep.Gupta@appinventiv.com',
+    startDate: 'Mar-05-2022',
+    endDate: 'Mar-05-2022',
+    url: '-',
   },
   {
-    sNo:5,
-    topic:'Modules',
-    topictrainer:'Parwinder Singh',
-    email:'parwinder.singh@appinventiv.com',
-    startDate:'Mar-07-2022',
-    endDate:'Mar-07-2022',
-    url:'-'
+    sNo: 5,
+    topic: 'Modules',
+    topictrainer: 'Parwinder Singh',
+    email: 'parwinder.singh@appinventiv.com',
+    startDate: 'Mar-07-2022',
+    endDate: 'Mar-07-2022',
+    url: '-',
   },
   {
-    sNo:6,
-    topic:'Modules',
-    topictrainer:'Parwinder Singh',
-    email:'parwinder.singh@appinventiv.com',
-    startDate:'Mar-08-2022',
-    endDate:'Mar-08-2022',
-    url:'-'
+    sNo: 6,
+    topic: 'Modules',
+    topictrainer: 'Parwinder Singh',
+    email: 'parwinder.singh@appinventiv.com',
+    startDate: 'Mar-08-2022',
+    endDate: 'Mar-08-2022',
+    url: '-',
   },
   {
-    sNo:7,
-    topic:'Routing',
-    topictrainer:'Parwinder Singh',
-    email:'parwinder.singh@appinventiv.com',
-    startDate:'Mar-09-2022',
-    endDate:'Mar-11-2022',
-    url:'-'
+    sNo: 7,
+    topic: 'Routing',
+    topictrainer: 'Parwinder Singh',
+    email: 'parwinder.singh@appinventiv.com',
+    startDate: 'Mar-09-2022',
+    endDate: 'Mar-11-2022',
+    url: '-',
   },
   {
-    sNo:8,
-    topic:'IInd - Assignment',
-    topictrainer:'Parwinder Singh',
-    email:'parwinder.singh@appinventiv.com',
-    startDate:'Mar-12-2022',
-    endDate:'Mar-12-2022',
-    url:'-'
+    sNo: 8,
+    topic: 'IInd - Assignment',
+    topictrainer: 'Parwinder Singh',
+    email: 'parwinder.singh@appinventiv.com',
+    startDate: 'Mar-12-2022',
+    endDate: 'Mar-12-2022',
+    url: '-',
   },
   {
-    sNo:9,
-    topic:'RxJs',
-    topictrainer:'Mohit Sahore',
-    email:'mohit.sahore@appinventiv.com',
-    startDate:'Mar-21-2022',
-    endDate:'Mar-21-2022',
-    url:'-'
+    sNo: 9,
+    topic: 'RxJs',
+    topictrainer: 'Mohit Sahore',
+    email: 'mohit.sahore@appinventiv.com',
+    startDate: 'Mar-21-2022',
+    endDate: 'Mar-21-2022',
+    url: '-',
   },
   {
-    sNo:10,
-    topic:'HTTP',
-    topictrainer:'Mohit Sahore',
-    email:'mohit.sahore@appinventiv.com',
-    startDate:'Mar-23-2022',
-    endDate:'Mar-23-2022',
-    url:'-'
+    sNo: 10,
+    topic: 'HTTP',
+    topictrainer: 'Mohit Sahore',
+    email: 'mohit.sahore@appinventiv.com',
+    startDate: 'Mar-23-2022',
+    endDate: 'Mar-23-2022',
+    url: '-',
   },
-]
-export const TRAINING_TOPIC_DATA1 : TRAINING_TOPIC[]=[
+];
+export const TRAINING_TOPIC_DATA1: TRAINING_TOPIC[] = [
   {
-    sNo:1,
-    topic:'HTML/CSS',
-    topictrainer:'Raj Dixit',
-    email:'raj.dixit@appinventiv.com',
-    startDate:'Feb-14-2022',
-    endDate:'Feb-14-2022',
-    url:'-'
-  },
-  {
-    sNo:2,
-    topic:'HTML/CSS',
-    topictrainer:'Raj Dixit',
-    email:'raj.dixit@appinventiv.com',
-    startDate:'Feb-15-2022',
-    endDate:'Feb-15-2022',
-    url:'-'
+    sNo: 1,
+    topic: 'HTML/CSS',
+    topictrainer: 'Raj Dixit',
+    email: 'raj.dixit@appinventiv.com',
+    startDate: 'Feb-14-2022',
+    endDate: 'Feb-14-2022',
+    url: '-',
   },
   {
-    sNo:3,
-    topic:'HTML/CSS',
-    topictrainer:'Raj Dixit',
-    email:'raj.dixit@appinventiv.com',
-    startDate:'Feb-16-2022',
-    endDate:'Feb-16-2022',
-    url:'-'
+    sNo: 2,
+    topic: 'HTML/CSS',
+    topictrainer: 'Raj Dixit',
+    email: 'raj.dixit@appinventiv.com',
+    startDate: 'Feb-15-2022',
+    endDate: 'Feb-15-2022',
+    url: '-',
   },
   {
-    sNo:4,
-    topic:'HTML/CSS',
-    topictrainer:'Raj Dixit',
-    email:'raj.dixit@appinventiv.com',
-    startDate:'Feb-17-2022',
-    endDate:'Feb-17-2022',
-    url:'-'
+    sNo: 3,
+    topic: 'HTML/CSS',
+    topictrainer: 'Raj Dixit',
+    email: 'raj.dixit@appinventiv.com',
+    startDate: 'Feb-16-2022',
+    endDate: 'Feb-16-2022',
+    url: '-',
   },
   {
-    sNo:5,
-    topic:'HTML/CSS',
-    topictrainer:'Raj Dixit',
-    email:'raj.dixit@appinventiv.com',
-    startDate:'Feb-18-2022',
-    endDate:'Feb-18-2022',
-    url:'-'
+    sNo: 4,
+    topic: 'HTML/CSS',
+    topictrainer: 'Raj Dixit',
+    email: 'raj.dixit@appinventiv.com',
+    startDate: 'Feb-17-2022',
+    endDate: 'Feb-17-2022',
+    url: '-',
   },
   {
-    sNo:6,
-    topic:'HTML/CSS',
-    topictrainer:'Raj Dixit',
-    email:'raj.dixit@appinventiv.com',
-    startDate:'Feb-21-2022',
-    endDate:'Feb-21-2022',
-    url:'-'
+    sNo: 5,
+    topic: 'HTML/CSS',
+    topictrainer: 'Raj Dixit',
+    email: 'raj.dixit@appinventiv.com',
+    startDate: 'Feb-18-2022',
+    endDate: 'Feb-18-2022',
+    url: '-',
   },
   {
-    sNo:7,
-    topic:'HTML/CSS',
-    topictrainer:'Raj Dixit',
-    email:'raj.dixit@appinventiv.com',
-    startDate:'Feb-22-2022',
-    endDate:'Feb-22-2022',
-    url:'-'
+    sNo: 6,
+    topic: 'HTML/CSS',
+    topictrainer: 'Raj Dixit',
+    email: 'raj.dixit@appinventiv.com',
+    startDate: 'Feb-21-2022',
+    endDate: 'Feb-21-2022',
+    url: '-',
   },
   {
-    sNo:8,
-    topic:'HTML/CSS',
-    topictrainer:'Raj Dixit',
-    email:'raj.dixit@appinventiv.com',
-    startDate:'Feb-23-2022',
-    endDate:'Feb-23-2022',
-    url:'-'
+    sNo: 7,
+    topic: 'HTML/CSS',
+    topictrainer: 'Raj Dixit',
+    email: 'raj.dixit@appinventiv.com',
+    startDate: 'Feb-22-2022',
+    endDate: 'Feb-22-2022',
+    url: '-',
   },
   {
-    sNo:9,
-    topic:'HTML/CSS',
-    topictrainer:'Raj Dixit',
-    email:'raj.dixit@appinventiv.com',
-    startDate:'Feb-24-2022',
-    endDate:'Feb-24-2022',
-    url:'-'
+    sNo: 8,
+    topic: 'HTML/CSS',
+    topictrainer: 'Raj Dixit',
+    email: 'raj.dixit@appinventiv.com',
+    startDate: 'Feb-23-2022',
+    endDate: 'Feb-23-2022',
+    url: '-',
   },
   {
-    sNo:10,
-    topic:'file',
-    topictrainer:'Raj Dixit',
-    email:'raj.dixit@appinventiv.com',
-    startDate:'Feb-25-2022',
-    endDate:'Feb-25-2022',
-    url:'-'
+    sNo: 9,
+    topic: 'HTML/CSS',
+    topictrainer: 'Raj Dixit',
+    email: 'raj.dixit@appinventiv.com',
+    startDate: 'Feb-24-2022',
+    endDate: 'Feb-24-2022',
+    url: '-',
   },
-
-]
+  {
+    sNo: 10,
+    topic: 'file',
+    topictrainer: 'Raj Dixit',
+    email: 'raj.dixit@appinventiv.com',
+    startDate: 'Feb-25-2022',
+    endDate: 'Feb-25-2022',
+    url: '-',
+  },
+];
 export const SUBTOPIC_HEADING = [
   { heading: 'S.No.', key: 'sNo', type: 'text' },
   { heading: 'Sub-Topic', key: 'subtopic', type: 'text' },
@@ -302,464 +349,447 @@ export const SUBTOPIC_HEADING = [
   { heading: 'Trainer Email', key: 'email', type: 'text' },
   { heading: 'Start Date', key: 'startDate', type: 'text' },
   { heading: 'End Date', key: 'endDate', type: 'text' },
-  { heading: 'Resource URL', key: 'url', type: 'text' }
+  { heading: 'Resource URL', key: 'url', type: 'text' },
   // { heading: 'Resource URL', key: 'url', type: 'link' }
-]
+];
 
-export const SUB_TOPIC_DATA : SUB_TOPIC[]=[
+export const SUB_TOPIC_DATA: SUB_TOPIC[] = [
   {
-    sNo:1,
-    subtopic:'What is SPADifference between SPA and MPAWhat is AngularWhy should we use it?',
-    topic:'Introduction',
-    topictrainer:'Sandeep Gupta',
-    email:'Sandeep.Gupta@appinventiv.com',
-    startDate:'Feb-28-2022',
-    endDate:'Feb-28-2022',
-    url:'-'
+    sNo: 1,
+    subtopic:
+      'What is SPADifference between SPA and MPAWhat is AngularWhy should we use it?',
+    topic: 'Introduction',
+    topictrainer: 'Sandeep Gupta',
+    email: 'Sandeep.Gupta@appinventiv.com',
+    startDate: 'Feb-28-2022',
+    endDate: 'Feb-28-2022',
+    url: '-',
   },
   {
-    sNo:2,
-    subtopic:'Basic building blocks Basic diff between Angular & other SPA’s Basics of CLI usage',
-    topic:'Basic building block',
-    topictrainer:'Sandeep Gupta',
-    email:'Sandeep.Gupta@appinventiv.com',
-    startDate:'Mar-01-2022',
-    endDate:'Mar-01-2022',
-    url:'-'
+    sNo: 2,
+    subtopic:
+      'Basic building blocks Basic diff between Angular & other SPA’s Basics of CLI usage',
+    topic: 'Basic building block',
+    topictrainer: 'Sandeep Gupta',
+    email: 'Sandeep.Gupta@appinventiv.com',
+    startDate: 'Mar-01-2022',
+    endDate: 'Mar-01-2022',
+    url: '-',
   },
   {
-    sNo:3,
-    subtopic:'What is component. How to use component Defines template and style Data pass TS to View(HTML)',
-    topic:'Components',
-    topictrainer:'Sandeep Gupta',
-    email:'Sandeep.Gupta@appinventiv.com',
-    startDate:'Mar-02-2022	',
-    endDate:'Mar-04-2022',
-    url:'-'
+    sNo: 3,
+    subtopic:
+      'What is component. How to use component Defines template and style Data pass TS to View(HTML)',
+    topic: 'Components',
+    topictrainer: 'Sandeep Gupta',
+    email: 'Sandeep.Gupta@appinventiv.com',
+    startDate: 'Mar-02-2022	',
+    endDate: 'Mar-04-2022',
+    url: '-',
   },
   {
-    sNo:4,
-    subtopic:'What is the parent child relationship When should we use parent child components',
-    topic:'Components',
-    topictrainer:'Sandeep Gupta',
-    email:'Sandeep.Gupta@appinventiv.com',
-    startDate:'Mar-03-2022	',
-    endDate:'Mar-03-2022',
-    url:'-'
+    sNo: 4,
+    subtopic:
+      'What is the parent child relationship When should we use parent child components',
+    topic: 'Components',
+    topictrainer: 'Sandeep Gupta',
+    email: 'Sandeep.Gupta@appinventiv.com',
+    startDate: 'Mar-03-2022	',
+    endDate: 'Mar-03-2022',
+    url: '-',
   },
   {
-    sNo:5,
-    subtopic:'Component lifecycle hooks overview',
-    topic:'Components',
-    topictrainer:'Sandeep Gupta',
-    email:'Sandeep.Gupta@appinventiv.com',
-    startDate:'Mar-04-2022	',
-    endDate:'Mar-04-2022',
-    url:'-'
+    sNo: 5,
+    subtopic: 'Component lifecycle hooks overview',
+    topic: 'Components',
+    topictrainer: 'Sandeep Gupta',
+    email: 'Sandeep.Gupta@appinventiv.com',
+    startDate: 'Mar-04-2022	',
+    endDate: 'Mar-04-2022',
+    url: '-',
   },
   {
-    sNo:6,
-    subtopic:'Ist - Assignment',
-    topic:'	Ist - Assignment',
-    topictrainer:'Sandeep Gupta',
-    email:'Sandeep.Gupta@appinventiv.com',
-    startDate:'Mar-05-2022',
-    endDate:'Mar-05-2022',
-    url:'-'
+    sNo: 6,
+    subtopic: 'Ist - Assignment',
+    topic: '	Ist - Assignment',
+    topictrainer: 'Sandeep Gupta',
+    email: 'Sandeep.Gupta@appinventiv.com',
+    startDate: 'Mar-05-2022',
+    endDate: 'Mar-05-2022',
+    url: '-',
   },
   {
-    sNo:7,
-    subtopic:'	What are modules. How to create modules. How to break application in modules',
-    topic:'Modules',
-    topictrainer:'Parwinder Singh',
-    email:'parwinder.singh@appinventiv.com',
-    startDate:'Mar-07-2022',
-    endDate:'Mar-07-2022',
-    url:'-'
+    sNo: 7,
+    subtopic:
+      '	What are modules. How to create modules. How to break application in modules',
+    topic: 'Modules',
+    topictrainer: 'Parwinder Singh',
+    email: 'parwinder.singh@appinventiv.com',
+    startDate: 'Mar-07-2022',
+    endDate: 'Mar-07-2022',
+    url: '-',
   },
   {
-    sNo:8,
-    subtopic:'What is routing How to generate routing What are router outlets',
-    topic:'Routing',
-    topictrainer:'Parwinder Singh',
-    email:'parwinder.singh@appinventiv.com',
-    startDate:'Mar-09-2022',
-    endDate:'Mar-11-2022',
-    url:'-'
+    sNo: 8,
+    subtopic: 'What is routing How to generate routing What are router outlets',
+    topic: 'Routing',
+    topictrainer: 'Parwinder Singh',
+    email: 'parwinder.singh@appinventiv.com',
+    startDate: 'Mar-09-2022',
+    endDate: 'Mar-11-2022',
+    url: '-',
   },
   {
-    sNo:9,
-    subtopic:'IInd - Assignment',
-    topic:'IInd - Assignment',
-    topictrainer:'Parwinder Singh',
-    email:'parwinder.singh@appinventiv.com',
-    startDate:'Mar-12-2022',
-    endDate:'Mar-12-2022',
-    url:'-'
+    sNo: 9,
+    subtopic: 'IInd - Assignment',
+    topic: 'IInd - Assignment',
+    topictrainer: 'Parwinder Singh',
+    email: 'parwinder.singh@appinventiv.com',
+    startDate: 'Mar-12-2022',
+    endDate: 'Mar-12-2022',
+    url: '-',
   },
   {
-    sNo:10,
-    subtopic:'RxJs',
-    topic:'RxJs',
-    topictrainer:'Mohit Sahore',
-    email:'mohit.sahore@appinventiv.com',
-    startDate:'Mar-21-2022',
-    endDate:'Mar-21-2022',
-    url:'-'
+    sNo: 10,
+    subtopic: 'RxJs',
+    topic: 'RxJs',
+    topictrainer: 'Mohit Sahore',
+    email: 'mohit.sahore@appinventiv.com',
+    startDate: 'Mar-21-2022',
+    endDate: 'Mar-21-2022',
+    url: '-',
   },
-]
+];
 
-export const SUB_TOPIC_DATA1 : SUB_TOPIC[]=[
+export const SUB_TOPIC_DATA1: SUB_TOPIC[] = [
   {
-    sNo:1,
-    subtopic:`HTML: 1. Complete overview of HTML, CSS and their relation. 2. Basic structure of HTML document. 3. Text Content-
+    sNo: 1,
+    subtopic: `HTML: 1. Complete overview of HTML, CSS and their relation. 2. Basic structure of HTML document. 3. Text Content-
     'to'
     ','
     ','
     , . CSS: 1. Inline, Internal and External CSS.`,
-    topic:'HTML/CSS',
-    topictrainer:'Raj Dixit',
-    email:'raj.dixit@appinventiv.com',
-    startDate:'Feb-14-2022',
-    endDate:'Feb-14-2022',
-    url:'-'
+    topic: 'HTML/CSS',
+    topictrainer: 'Raj Dixit',
+    email: 'raj.dixit@appinventiv.com',
+    startDate: 'Feb-14-2022',
+    endDate: 'Feb-14-2022',
+    url: '-',
   },
   {
-    sNo:2,
-    subtopic:'HTML: 1. , ,  and their attributes. CSS: 1. Detailed knowledge of Flex.',
-    topic:'HTML/CSS',
-    topictrainer:'Raj Dixit',
-    email:'raj.dixit@appinventiv.com',
-    startDate:'Feb-14-2022',
-    endDate:'Feb-14-2022',
-    url:'-'
+    sNo: 2,
+    subtopic:
+      'HTML: 1. , ,  and their attributes. CSS: 1. Detailed knowledge of Flex.',
+    topic: 'HTML/CSS',
+    topictrainer: 'Raj Dixit',
+    email: 'raj.dixit@appinventiv.com',
+    startDate: 'Feb-14-2022',
+    endDate: 'Feb-14-2022',
+    url: '-',
   },
   {
-    sNo:3,
-    subtopic:'	HTML: 1. List and its types. CSS: 1. Positioning 2. Centring our page.',
-    topic:'HTML/CSS',
-    topictrainer:'Raj Dixit',
-    email:'raj.dixit@appinventiv.com',
-    startDate:'Feb-14-2022',
-    endDate:'Feb-14-2022',
-    url:'-'
+    sNo: 3,
+    subtopic:
+      '	HTML: 1. List and its types. CSS: 1. Positioning 2. Centring our page.',
+    topic: 'HTML/CSS',
+    topictrainer: 'Raj Dixit',
+    email: 'raj.dixit@appinventiv.com',
+    startDate: 'Feb-14-2022',
+    endDate: 'Feb-14-2022',
+    url: '-',
   },
   {
-    sNo:4,
-    subtopic:'		HTML: 1. Forms and its components. CSS: 1. Combinators. 2. Class, tag and Id selectors.',
-    topic:'HTML/CSS',
-    topictrainer:'Raj Dixit',
-    email:'raj.dixit@appinventiv.com',
-    startDate:'Feb-14-2022',
-    endDate:'Feb-14-2022',
-    url:'-'
+    sNo: 4,
+    subtopic:
+      '		HTML: 1. Forms and its components. CSS: 1. Combinators. 2. Class, tag and Id selectors.',
+    topic: 'HTML/CSS',
+    topictrainer: 'Raj Dixit',
+    email: 'raj.dixit@appinventiv.com',
+    startDate: 'Feb-14-2022',
+    endDate: 'Feb-14-2022',
+    url: '-',
   },
-]
-export const ATTENDANCE_HEADING =[
+];
+export const ATTENDANCE_HEADING = [
   { heading: 'S.No.', key: 'sNo', type: 'text' },
   { heading: 'Topic', key: 'topic', type: 'text' },
   { heading: 'Date', key: 'date', type: 'text' },
   { heading: 'Attendance', key: 'attendance', type: 'attendance' },
-]
+];
 
 export const ATTENDANCE_TABLEDATA = [
   {
-    sNo:1,
-    topic:'Introduction',
-    date:'Feb-28-2022',
-    attendance:'Present',
-    attendance_id:1
+    sNo: 1,
+    topic: 'Introduction',
+    date: 'Feb-28-2022',
+    attendance: 'Present',
+    attendance_id: 1,
   },
   {
-    sNo:2,
-    topic:'Basic building block',
-    date:'Mar-01-2022',
-    attendance:'Present',
-    attendance_id:1
-
+    sNo: 2,
+    topic: 'Basic building block',
+    date: 'Mar-01-2022',
+    attendance: 'Present',
+    attendance_id: 1,
   },
   {
-    sNo:3,
-    topic:'Components',
-    date:'Mar-02-2022	',
-    attendance:'Present',
-    attendance_id:1
-
+    sNo: 3,
+    topic: 'Components',
+    date: 'Mar-02-2022	',
+    attendance: 'Present',
+    attendance_id: 1,
   },
   {
-    sNo:4,
-    topic:'	Ist - Assignment',
-    date:'Mar-05-2022',
-    attendance:'Present',
-    attendance_id:1
-
-
+    sNo: 4,
+    topic: '	Ist - Assignment',
+    date: 'Mar-05-2022',
+    attendance: 'Present',
+    attendance_id: 1,
   },
   {
-    sNo:5,
-    topic:'Modules',
-    date:'Mar-07-2022',
-    attendance:'Present',
-    attendance_id:1
-
-
+    sNo: 5,
+    topic: 'Modules',
+    date: 'Mar-07-2022',
+    attendance: 'Present',
+    attendance_id: 1,
   },
   {
-    sNo:6,
-    topic:'Modules',
-    date:'Mar-08-2022',
-    attendance:'Present',
-    attendance_id:1
-
-
+    sNo: 6,
+    topic: 'Modules',
+    date: 'Mar-08-2022',
+    attendance: 'Present',
+    attendance_id: 1,
   },
   {
-    sNo:7,
-    topic:'Routing',
-    date:'Mar-09-2022',
-    attendance:'Present',
-    attendance_id:1
-
-
+    sNo: 7,
+    topic: 'Routing',
+    date: 'Mar-09-2022',
+    attendance: 'Present',
+    attendance_id: 1,
   },
   {
-    sNo:8,
-    topic:'IInd - Assignment',
-    date:'Mar-12-2022',
-    attendance:'Present',
-    attendance_id:1
-
-
+    sNo: 8,
+    topic: 'IInd - Assignment',
+    date: 'Mar-12-2022',
+    attendance: 'Present',
+    attendance_id: 1,
   },
   {
-    sNo:9,
-    topic:'RxJs',
-    date:'Mar-21-2022',
-    attendance:'Present',
-    attendance_id:1
-
-
+    sNo: 9,
+    topic: 'RxJs',
+    date: 'Mar-21-2022',
+    attendance: 'Present',
+    attendance_id: 1,
   },
   {
-    sNo:10,
-    topic:'HTTP',
-    date:'Mar-23-2022',
-    attendance:'Present',
-    attendance_id:1
-
-
+    sNo: 10,
+    topic: 'HTTP',
+    date: 'Mar-23-2022',
+    attendance: 'Present',
+    attendance_id: 1,
   },
-]
+];
 export const ATTENDANCE_TABLEDATA1 = [
   {
-    sNo:1,
-    topic:'	HTML/CSS',
-    date:'Feb-14-2022',
-    attendance:'Present',
-    attendance_id:1
-
+    sNo: 1,
+    topic: '	HTML/CSS',
+    date: 'Feb-14-2022',
+    attendance: 'Present',
+    attendance_id: 1,
   },
   {
-    sNo:2,
-    topic:'	HTML/CSS',
-    date:'Feb-15-2022',
-    attendance:'Present',
-    attendance_id:1
-
+    sNo: 2,
+    topic: '	HTML/CSS',
+    date: 'Feb-15-2022',
+    attendance: 'Present',
+    attendance_id: 1,
   },
   {
-    sNo:3,
-    topic:'	HTML/CSS',
-    date:'Feb-16-2022',
-    attendance:'Absent',
-    attendance_id:2
-
+    sNo: 3,
+    topic: '	HTML/CSS',
+    date: 'Feb-16-2022',
+    attendance: 'Absent',
+    attendance_id: 2,
   },
   {
-    sNo:4,
-    topic:'	HTML/CSS',
-    date:'Feb-17-2022',
-    attendance:'Absent',
-    attendance_id:2
-
+    sNo: 4,
+    topic: '	HTML/CSS',
+    date: 'Feb-17-2022',
+    attendance: 'Absent',
+    attendance_id: 2,
   },
   {
-    sNo:5,
-    topic:'	HTML/CSS',
-    date:'Feb-18-2022',
-    attendance:'Present',
-    attendance_id:1
-
-
+    sNo: 5,
+    topic: '	HTML/CSS',
+    date: 'Feb-18-2022',
+    attendance: 'Present',
+    attendance_id: 1,
   },
   {
-    sNo:6,
-    topic:'	HTML/CSS',
-    date:'Feb-21-2022',
-    attendance:'Present',
-    attendance_id:1
-
+    sNo: 6,
+    topic: '	HTML/CSS',
+    date: 'Feb-21-2022',
+    attendance: 'Present',
+    attendance_id: 1,
   },
   {
-    sNo:7,
-    topic:'	HTML/CSS',
-    date:'Feb-22-2022',
-    attendance:'Present',
-    attendance_id:1
-
+    sNo: 7,
+    topic: '	HTML/CSS',
+    date: 'Feb-22-2022',
+    attendance: 'Present',
+    attendance_id: 1,
   },
   {
-    sNo:8,
-    topic:'	HTML/CSS',
-    date:'Feb-23-2022',
-    attendance:'Present',
-    attendance_id:1
-
+    sNo: 8,
+    topic: '	HTML/CSS',
+    date: 'Feb-23-2022',
+    attendance: 'Present',
+    attendance_id: 1,
   },
-]
+];
 
-export const REQUESTED_TRAINING_HEADING =[
+export const REQUESTED_TRAINING_HEADING = [
   { heading: 'S.No', key: 'sNo', type: 'text' },
   { heading: 'Training Name', key: 'trainingname', type: 'text' },
   { heading: 'Timeline to conduct', key: 'timeline', type: 'text' },
   { heading: 'Requested date', key: 'date', type: 'text' },
   { heading: 'Status', key: 'status', type: 'text' },
   { heading: 'Action', key: 'action', type: 'text' },
-]
+];
 
-export const ASSETS_INVENTROY_HEADING=[
-  {heading: 'Asset Name', key:'name',type:'text',sort:true},
-  {heading: 'Asset Category', key:'category',type:'text',sort:true},
-  {heading: 'Company Asset Code', key:'code',type:'text',sort:true},
-  {heading: 'Brand', key:'brand',type:'text',sort:true},
-  {heading: 'Serial No.', key:'sno',type:'text',sort:true},
-  {heading: 'Model', key:'model',type:'text',sort:true},
-  {heading: 'is Working?', key:'working',type:'text',sort:true},
-  {heading: 'Company', key:'company',type:'text',sort:true},
-]
-export const ASSETS_INVENTROY_Data=[
-{
-  name:'LAPTOP',
-  category:'Laptop',
-  code:'L0075',
-  brand:'HP',
-  sno:'5CG9322W1X',
-  model:'ZBOOK',
-  working:'Yes',
-  company:'	Appinventiv Technology'
-},
-// {
-//   name:'LAPTOP',
-//   category:'Laptop',
-//   code:'L0075',
-//   brand:'HP',
-//   sno:'5CG9322W1X',
-//   model:'ZBOOK',
-//   working:'Yes',
-//   company:'	Appinventiv Technology'
-// },
-// {
-//   name:'LAPTOP',
-//   category:'Laptop',
-//   code:'L0075',
-//   brand:'HP',
-//   sno:'5CG9322W1X',
-//   model:'ZBOOK',
-//   working:'Yes',
-//   company:'	Appinventiv Technology'
-// },
-// {
-//   name:'LAPTOP',
-//   category:'Laptop',
-//   code:'L0075',
-//   brand:'HP',
-//   sno:'5CG9322W1X',
-//   model:'ZBOOK',
-//   working:'Yes',
-//   company:'	Appinventiv Technology'
-// },
-// {
-//   name:'LAPTOP',
-//   category:'Laptop',
-//   code:'L0075',
-//   brand:'HP',
-//   sno:'5CG9322W1X',
-//   model:'ZBOOK',
-//   working:'Yes',
-//   company:'	Appinventiv Technology'
-// },
-// {
-//   name:'LAPTOP',
-//   category:'Laptop',
-//   code:'L0075',
-//   brand:'HP',
-//   sno:'5CG9322W1X',
-//   model:'ZBOOK',
-//   working:'Yes',
-//   company:'	Appinventiv Technology'
-// },
-// {
-//   name:'LAPTOP',
-//   category:'Laptop',
-//   code:'L0075',
-//   brand:'HP',
-//   sno:'5CG9322W1X',
-//   model:'ZBOOK',
-//   working:'Yes',
-//   company:'	Appinventiv Technology'
-// },
-// {
-//   name:'LAPTOP',
-//   category:'Laptop',
-//   code:'L0075',
-//   brand:'HP',
-//   sno:'5CG9322W1X',
-//   model:'ZBOOK',
-//   working:'Yes',
-//   company:'	Appinventiv Technology'
-// },
-// {
-//   name:'LAPTOP',
-//   category:'Laptop',
-//   code:'L0075',
-//   brand:'HP',
-//   sno:'5CG9322W1X',
-//   model:'ZBOOK',
-//   working:'Yes',
-//   company:'	Appinventiv Technology'
-// },
-// {
-//   name:'LAPTOP',
-//   category:'Laptop',
-//   code:'L0075',
-//   brand:'HP',
-//   sno:'5CG9322W1X',
-//   model:'ZBOOK',
-//   working:'Yes',
-//   company:'	Appinventiv Technology'
-// },
-// {
-//   name:'LAPTOP',
-//   category:'Laptop',
-//   code:'L0075',
-//   brand:'HP',
-//   sno:'5CG9322W1X',
-//   model:'ZBOOK',
-//   working:'Yes',
-//   company:'	Appinventiv Technology'
-// },
-// {
-//   name:'LAPTOP',
-//   category:'Laptop',
-//   code:'L0075',
-//   brand:'HP',
-//   sno:'5CG9322W1X',
-//   model:'ZBOOK',
-//   working:'Yes',
-//   company:'	Appinventiv Technology'
-// },
-]
-export const ASSET_REQUEST_HEADING =[
+export const ASSETS_INVENTROY_HEADING = [
+  { heading: 'Asset Name', key: 'name', type: 'text', sort: true },
+  { heading: 'Asset Category', key: 'category', type: 'text', sort: true },
+  { heading: 'Company Asset Code', key: 'code', type: 'text', sort: true },
+  { heading: 'Brand', key: 'brand', type: 'text', sort: true },
+  { heading: 'Serial No.', key: 'sno', type: 'text', sort: true },
+  { heading: 'Model', key: 'model', type: 'text', sort: true },
+  { heading: 'is Working?', key: 'working', type: 'text', sort: true },
+  { heading: 'Company', key: 'company', type: 'text', sort: true },
+];
+export const ASSETS_INVENTROY_Data = [
+  {
+    name: 'LAPTOP',
+    category: 'Laptop',
+    code: 'L0075',
+    brand: 'HP',
+    sno: '5CG9322W1X',
+    model: 'ZBOOK',
+    working: 'Yes',
+    company: '	Appinventiv Technology',
+  },
+  {
+    name: 'LAPTOP',
+    category: 'Laptop',
+    code: 'L0075',
+    brand: 'HP',
+    sno: '5CG9322W1X',
+    model: 'ZBOOK',
+    working: 'Yes',
+    company: '	Appinventiv Technology',
+  },
+  {
+    name: 'LAPTOP',
+    category: 'Laptop',
+    code: 'L0075',
+    brand: 'HP',
+    sno: '5CG9322W1X',
+    model: 'ZBOOK',
+    working: 'Yes',
+    company: '	Appinventiv Technology',
+  },
+  {
+    name: 'LAPTOP',
+    category: 'Laptop',
+    code: 'L0075',
+    brand: 'HP',
+    sno: '5CG9322W1X',
+    model: 'ZBOOK',
+    working: 'Yes',
+    company: '	Appinventiv Technology',
+  },
+  {
+    name: 'LAPTOP',
+    category: 'Laptop',
+    code: 'L0075',
+    brand: 'HP',
+    sno: '5CG9322W1X',
+    model: 'ZBOOK',
+    working: 'Yes',
+    company: '	Appinventiv Technology',
+  },
+  {
+    name: 'LAPTOP',
+    category: 'Laptop',
+    code: 'L0075',
+    brand: 'HP',
+    sno: '5CG9322W1X',
+    model: 'ZBOOK',
+    working: 'Yes',
+    company: '	Appinventiv Technology',
+  },
+  {
+    name: 'LAPTOP',
+    category: 'Laptop',
+    code: 'L0075',
+    brand: 'HP',
+    sno: '5CG9322W1X',
+    model: 'ZBOOK',
+    working: 'Yes',
+    company: '	Appinventiv Technology',
+  },
+  {
+    name: 'LAPTOP',
+    category: 'Laptop',
+    code: 'L0075',
+    brand: 'HP',
+    sno: '5CG9322W1X',
+    model: 'ZBOOK',
+    working: 'Yes',
+    company: '	Appinventiv Technology',
+  },
+  {
+    name: 'LAPTOP',
+    category: 'Laptop',
+    code: 'L0075',
+    brand: 'HP',
+    sno: '5CG9322W1X',
+    model: 'ZBOOK',
+    working: 'Yes',
+    company: '	Appinventiv Technology',
+  },
+  {
+    name: 'LAPTOP',
+    category: 'Laptop',
+    code: 'L0075',
+    brand: 'HP',
+    sno: '5CG9322W1X',
+    model: 'ZBOOK',
+    working: 'Yes',
+    company: '	Appinventiv Technology',
+  },
+  // {
+  //   name:'LAPTOP',
+  //   category:'Laptop',
+  //   code:'L0075',
+  //   brand:'HP',
+  //   sno:'5CG9322W1X',
+  //   model:'ZBOOK',
+  //   working:'Yes',
+  //   company:'	Appinventiv Technology'
+  // },
+  // {
+  //   name:'LAPTOP',
+  //   category:'Laptop',
+  //   code:'L0075',
+  //   brand:'HP',
+  //   sno:'5CG9322W1X',
+  //   model:'ZBOOK',
+  //   working:'Yes',
+  //   company:'	Appinventiv Technology'
+  // },
+];
+export const ASSET_REQUEST_HEADING = [
   { heading: 'S.No', key: 'sNo', type: 'text' },
   { heading: 'Status', key: 'status', type: 'text' },
   { heading: 'Request Reason', key: 'reason', type: 'text' },
@@ -768,10 +798,9 @@ export const ASSET_REQUEST_HEADING =[
   { heading: 'Assets Category', key: 'category', type: 'text' },
   { heading: 'Allocation type', key: 'type', type: 'text' },
   { heading: 'Company', key: 'company', type: 'text' },
+];
 
-]
-
-export const ASSET_DECLARATION_HEADING =[
+export const ASSET_DECLARATION_HEADING = [
   { heading: 'S.No', key: 'sNo', type: 'text' },
   { heading: 'Employee Id', key: 'id', type: 'text' },
   { heading: 'Unique Asset Code', key: 'code', type: 'text' },
@@ -784,33 +813,56 @@ export const ASSET_DECLARATION_HEADING =[
   { heading: 'Images', key: 'image', type: 'text' },
   { heading: 'Is Working?', key: 'working', type: 'text' },
   { heading: 'Added', key: 'added', type: 'text' },
-]
+];
 
-export const MANUAL_TABLE_HEADING=[
+export const MANUAL_TABLE_HEADING = [
   { heading: 'Edit', key: 'edit', type: 'text' },
   { heading: 'Manual Punch Date', key: 'punchdate', type: 'text' },
   { heading: 'In Time', key: 'intime', type: 'text' },
   { heading: 'Out Time', key: 'outtime', type: 'text' },
-]
-export const PUCH_LOG_TABLE_HEADING=[
+];
+export const PUCH_LOG_TABLE_HEADING = [
   { heading: 'Name', key: 'name', type: 'text' },
   { heading: 'Punch Time', key: 'punchtime', type: 'text' },
   { heading: 'Direction', key: 'direction', type: 'text' },
-]
-export const FLOATING_LEAVE_HEADING=[
+];
+export const FLOATING_LEAVE_HEADING = [
   { heading: 'S.No', key: 'sno', type: 'text' },
   { heading: 'Event Name', key: 'eventname', type: 'text' },
   { heading: 'Date', key: 'date', type: 'text' },
+];
+export const FLOATING_LEAVE_TABLE_DATA = [
+  {
+    sno: '1',
+    eventname: 'Gurupurab',
+    date: '27th Nov, 2023',
+  },
+  {
+    sno: '2',
+    eventname: 'Janmashtami',
+    date: '7th Sep, 2023',
+  },
+];
+
+export const MY_LEAVE_HEADING=[
+  { heading: 'Action', key: 'action', type: 'text' },
+  { heading: 'Leave Type', key: 'type', type: 'text' },
+  { heading: 'Request From', key: 'requestfrom', type: 'text' },
+  { heading: 'Request To', key: 'requestto', type: 'text' },
+  { heading: 'Applied On', key: 'applied', type: 'text' },
+  { heading: 'Status', key: 'status', type: 'text' },
+  { heading: 'Level 1', key: 'level1', type: 'level' },
+  { heading: 'Level 2', key: 'level2', type: 'level' },
 ]
-export const FLOATING_LEAVE_TABLE_DATA=[
- {
-  sno:'1',
-  eventname:'Gurupurab',
-  date:'27th Nov, 2023'
- },
- {
-  sno:'2',
-  eventname:'Janmashtami',
-  date:'7th Sep, 2023'
- },
+export const MY_LEAVE_DATA=[
+  {
+    action:'',
+    type:'Planned Leave (CL)',
+    requestfrom:'Dec-26-2022',
+    requestto:'Dec-26-2022',
+    applied:'Dec-19-2022',
+    status:'Pending',
+    level1:'Rabban Ahmad(AI139)',
+    level2:'HR (Human Resourse)'
+  },
 ]

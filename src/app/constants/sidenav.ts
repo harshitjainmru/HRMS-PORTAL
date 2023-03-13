@@ -23,6 +23,7 @@ import {
   ABS_LAYOUT_PUNCH_LOG,
   ABS_LAYOUT_REFER_LIST,
   ABS_LAYOUT_REQUESTED_TRAININGS,
+  ABS_LAYOUT_TICKETS,
   ABS_LAYOUT_UPCOMING_TRAININGS,
 } from './absolute-routes';
 import { LAYOUT, SIDENAV } from './text';
@@ -286,12 +287,19 @@ export const sideNavList = [
     ],
     isActive: true,
   },
-  // {
-  //   title: SIDENAV.Tickets_LABEL,
-  //   icon: 'fa-solid fa-ticket',
-  //   options: [],
-  //   isActive: true,
-  // },
+  {
+    title: SIDENAV.Tickets_LABEL,
+    icon: 'fa-solid fa-ticket',
+    options: [
+      {
+        subTitle:SIDENAV.tickets_sublabel,
+        subicon:'',
+        routerLink:ABS_LAYOUT_TICKETS.path,
+        isActive:true
+      },
+    ],
+    isActive: true,
+  },
   // {
   //   title: SIDENAV.DSR_LABEL,
   //   icon: 'fa-solid fa-ticket',

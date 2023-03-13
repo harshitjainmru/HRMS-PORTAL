@@ -11,10 +11,10 @@ DATE?:string;
 shift?:string
 }
 export interface QUALIFICATIONTABLE {
-EDUCATION?:string;
-ACTION?:string;
-SCHOOL?:string;
-TIME?:string
+educationLevel?:string;
+action?:string;
+school?:string;
+fromTimetotoTime?:string;
 }
 
 export interface POLICY_DOCUMENT {

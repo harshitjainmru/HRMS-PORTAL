@@ -71,7 +71,7 @@
   </div>
 
 
-  <mat-paginator appPaginatorStyleDirectives [length]="this.dataSource.length" *ngIf="isPageable" [showTotalPages]="3"
+  <mat-paginator appPaginatorStyleDirectives  [length]="this.dataSource.value" *ngIf="isPageable" [showTotalPages]="3"
     [pageSizeOptions]="[5, 10, 25, 100]" [hidePageSize]="false">
   </mat-paginator>
 
