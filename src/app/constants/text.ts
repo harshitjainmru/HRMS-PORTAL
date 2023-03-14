@@ -25,6 +25,7 @@ import {
   ATTENDANCE_TABLEDATA1,
   FLOATING_LEAVE_HEADING,
   FLOATING_LEAVE_TABLE_DATA,
+  LIST_TICKET_HEADING,
   MANUAL_TABLE_HEADING,
   PUCH_LOG_TABLE_HEADING,
   SUBTOPIC_HEADING,
@@ -99,6 +100,7 @@ export const SIDENAV = {
   my_leave_sublabel: 'My Leave',
   floating_leave_sublabel: 'Floating Leave',
   tickets_sublabel: 'Tickets',
+  dsr_sublabel:'My DSR'
 
 };
 
@@ -1400,3 +1402,27 @@ export const FLOATING_LEAVE_DATA = {
   table_heading: FLOATING_LEAVE_HEADING,
   table_data: FLOATING_LEAVE_TABLE_DATA,
 };
+
+export const TICKET_DATA ={
+  header_value:'Create New Ticket',
+  add_new_button:'Add New',
+  subject_label:'Subject',
+  department_label:'Department',
+  category_label:'Ticket Category',
+  priority_label:'Priority',
+  description_label:'Ticket Description',
+  department_data:[
+    'Admin',
+    'IT'
+  ],
+  category_data:[' '],
+  priority_data:[
+    'High',
+    'Low',
+    'Normal'
+  ],
+  saveButton:'Save',
+  list_ticket:'List All Tickets',
+  table_heading:LIST_TICKET_HEADING,
+  table_data:[]
+}

@@ -5,6 +5,7 @@ import {
   ABS_LAYOUT_ASSETS_REQUESTS,
   ABS_LAYOUT_ATTENDANCE_CALENDAR,
   ABS_LAYOUT_DIRECTORY,
+  ABS_LAYOUT_DSR,
   ABS_LAYOUT_ENTREPRENURSHIP,
   ABS_LAYOUT_EXPLORE,
   ABS_LAYOUT_FLOATING_LEAVE,
@@ -300,12 +301,19 @@ export const sideNavList = [
     ],
     isActive: true,
   },
-  // {
-  //   title: SIDENAV.DSR_LABEL,
-  //   icon: 'fa-solid fa-ticket',
-  //   options: [],
-  //   isActive: true,
-  // },
+  {
+    title: SIDENAV.DSR_LABEL,
+    icon: 'fa-solid fa-ticket',
+    options: [
+      {
+        subTitle:SIDENAV.dsr_sublabel,
+        subicon:'list',
+        routerLink:ABS_LAYOUT_DSR.path,
+        isActive:true
+      },
+    ],
+    isActive: true,
+  },
   // {
   //   title: SIDENAV.Projects_LABEL,
   //   icon: 'fa-brands fa-buffer',

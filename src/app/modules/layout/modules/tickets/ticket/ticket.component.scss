@@ -1,0 +1,92 @@
+@import "../../../../../scss/var";
+@import "../../../../../scss/mixins.scss";
+@import "../../../../../scss/job-opening-button";
+section {
+  .formfield {
+    display: flex;
+    flex-direction: column;
+    .label {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.4;
+      margin-bottom: 4px;
+    }
+  }
+  .save-button{
+    background-color: $training-status-background;
+    padding: 10px 12px;
+    border-radius: 0px !important;
+    font-size: 15px;
+
+  }
+  .last-container{
+    margin:30px 20px;
+    background-color: $button-text-color;
+    border-radius: 10px;
+    .content {
+      padding: 20px;
+      .header {
+        border-bottom: 1px solid $border-color;
+        .header-text {
+          color: $header-text-color;
+          font-weight: 500;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  ::ng-deep{
+    .mat-paginator-page-size {
+      position: absolute;
+      top: 210px;
+      left: 60px ;
+    }
+    .mat-paginator-range-label {
+      left: 45px !important;
+    }
+    .mat-paginator-size-page-expand{
+      top: 680px;
+    }
+    .mat-form-field-appearance-outline .mat-form-field-outline {
+      box-shadow: 0px 4px 8px rgb(44 39 56 / 4%) !important;
+    }
+    .tox-tinymce {
+      border: none !important;
+      border-radius: 0px !important;
+    }
+    editor {
+      box-shadow: 0px 4px 8px rgb(44 39 56 / 4%) !important;
+      border: 1px solid #d8d8d8;
+    }
+    .tox-editor-header,
+    .tox-menubar,
+    .tox-toolbar__primary {
+      background-color: #ecf0f1 !important;
+      padding: 0px !important;
+    }
+    .tox-menubar + .tox-toolbar-overlord {
+      background-color: #d7e0e2;
+    }
+    .tox .tox-mbtn:hover:not(:disabled):not(.tox-mbtn--active),
+    .tox .tox-tbtn:hover {
+      background-color: $button-text-color !important;
+    }
+  }
+}
+@media (max-width:800px){
+  ::ng-deep{
+    .mat-paginator-size-page-expand {
+      top: 1030px !important;
+    }
+  }
+}
+@media (max-width:377px){
+  ::ng-deep{
+    .mat-paginator-page-size {
+      top: 250px !important;
+    }
+    .mat-paginator-size-page-expand {
+      top: 1060px !important;
+    }
+  }
+}

@@ -39,5 +39,6 @@ export const PUNCH_LOG=`${ASSETS}/punch_log`;
 export const LEAVE=`${ASSETS}/leave`;
 export const FLOATING_LEAVE=`${ASSETS}/restricted_leave`;
 export const TICKETS=`${ASSETS}/tickets`;
+export const DSR='dsr';
 
 

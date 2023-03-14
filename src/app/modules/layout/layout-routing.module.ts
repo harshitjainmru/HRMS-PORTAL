@@ -102,6 +102,16 @@ const routes: Routes = [
         loadChildren: () =>
           import('./modules/leave/leave.module').then((m) => m.LeaveModule),
       },
+      {
+        path: '',
+        loadChildren: () =>
+          import('./modules/tickets/tickets.module').then((m) => m.TicketsModule),
+      },
+      {
+        path: '',
+        loadChildren: () =>
+          import('./modules/dsr/dsr.module').then((m) => m.DsrModule),
+      },
     ],
   },
 ];

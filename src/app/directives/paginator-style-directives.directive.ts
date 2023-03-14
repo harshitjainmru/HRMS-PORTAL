@@ -56,6 +56,8 @@ export class PaginatorStyleDirectivesDirective {
   ) {
     //to rerender buttons on items per page change and first, last, next and prior buttons
     this.matPag.page.subscribe((e: PageObject) => {
+      console.log(e.pageSize,"jijiji");
+
       if (
         this._curPageObj.pageSize != e.pageSize &&
         this._curPageObj.pageIndex != 0
@@ -65,7 +67,6 @@ export class PaginatorStyleDirectivesDirective {
         this._rangeEnd = this._showTotalPages - 1;
       }
       this._curPageObj = e;
-
       this.initPageRange();
     });
   }
@@ -88,41 +89,6 @@ export class PaginatorStyleDirectivesDirective {
       this._buttons.length = 0;
     }
 
-    //initialize next page and last page buttons
-    // if (this._buttons.length == 0) {
-    //   let nodeArray = this.vr.element.nativeElement.childNodes[0].childNodes[0]
-    //     .childNodes[2].childNodes;
-
-      // setTimeout(() => {
-      //   for (let i = 0; i < nodeArray.length; i++) {
-      //     if (nodeArray[i].nodeName === "BUTTON") {
-      //       if (nodeArray[i].innerHTML.length > 100 && nodeArray[i].disabled) {
-      //         this.ren.setStyle(
-      //           nodeArray[i],
-      //           "background-color",
-      //           "rgba(190, 130, 130, 1)"
-      //         );
-      //         this.ren.setStyle(nodeArray[i], "color", "white");
-      //         this.ren.setStyle(nodeArray[i], "margin", ".5%");
-      //       } else if (
-      //         nodeArray[i].innerHTML.length > 100 &&
-      //         !nodeArray[i].disabled
-      //       ) {
-      //         this.ren.setStyle(
-      //           nodeArray[i],
-      //           "background-color",
-      //           "rgba(255, 0, 0, 1)"
-      //         );
-      //         this.ren.setStyle(nodeArray[i], "color", "white");
-      //         this.ren.setStyle(nodeArray[i], "margin", ".5%");
-      //       } else if (nodeArray[i].disabled) {
-      //         this.ren.setStyle(nodeArray[i], "background-color", "lightgray");
-      //       }
-      //     }
-      //   }
-      // });
-    // }
-
     for (let i = 0; i < this.numOfPages; i++) {
       if (i >= this._rangeStart && i <= this._rangeEnd) {
         this.ren.insertBefore(
@@ -131,19 +97,6 @@ export class PaginatorStyleDirectivesDirective {
           nextPageNode
         );
       }
-
-
-
-
-
-
-      // if (i == this._rangeEnd) {
-      //   this.ren.insertBefore(
-      //     actionContainer,
-      //     this.createButton(this._pageGapTxt, this._rangeEnd),
-      //     nextPageNode
-      //   );
-      // }
     }
   }
 

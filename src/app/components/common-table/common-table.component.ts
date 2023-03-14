@@ -26,7 +26,7 @@ export class CommonTableComponent implements OnInit {
     this.dataSource.sort = sort;
   }
   @Input() columns!: any;
-  @Input() dataSource!: any;
+  @Input() dataSource:any=[];
   @Input() Table_DATA!: any;
   @Input() PageSizeInRow!: boolean;
   @Input() checkBox!: string;
@@ -35,6 +35,7 @@ export class CommonTableComponent implements OnInit {
   @Input() paginationSizes: number[] = [10, 25, 50, 100];
   @Output() userDetail: EventEmitter<any> = new EventEmitter();
   public displayedColumns: any = [];
+
   constructor() {}
 
   // get ds(){
@@ -42,7 +43,6 @@ export class CommonTableComponent implements OnInit {
 
   //   return this.dataSource.data;
   // }
-
   ngOnInit(): void {
     this.columns.forEach((item: any) => {
       this.displayedColumns.push(item.heading);

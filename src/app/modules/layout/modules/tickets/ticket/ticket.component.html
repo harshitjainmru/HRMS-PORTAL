@@ -1,0 +1,33 @@
+<section>
+  <app-addnew [title]="uiText.header_value" [button]="uiText.add_new_button" (buttonToggle)="showDiv($event)" [labelData]="uiText.description_label">
+    <form [formGroup]="ticketForm">
+    <div class="formfield">
+      <label class="label">{{uiText.subject_label}}</label>
+      <mat-form-field appearance="outline">
+        <input formControlName="subject" matInput>
+      </mat-form-field>
+    </div>
+    <span>
+      <app-dropdown [label]="uiText.department_label" [Data]="uiText.department_data" [myControlName]="ticketFormControl.department"></app-dropdown>
+    </span>
+    <span>
+      <app-dropdown [label]="uiText.category_label" [Data]="uiText.category_data" [myControlName]="ticketFormControl.ticketCategory"></app-dropdown>
+    </span>
+    <span>
+      <app-dropdown [label]="uiText.priority_label" [Data]="uiText.priority_data" [myControlName]="ticketFormControl.priority"></app-dropdown>
+    </span>
+    <div class="buttonGroup">
+      <button class="classyButton save-button" mat-raised-button (click)="submitHandler()">{{uiText.saveButton}}</button>
+    </div>
+  </form>
+  </app-addnew>
+  <div class="last-container">
+    <div class="content">
+      <div class="header">
+        <h1 class="header-text">{{uiText.list_ticket}}</h1>
+      </div>
+      <app-common-table [columns]="uiText.table_heading" [dataSource]="dataSource" [isPageable]="true" [isSearchText]="true">
+      </app-common-table>
+    </div>
+  </div>
+</section>

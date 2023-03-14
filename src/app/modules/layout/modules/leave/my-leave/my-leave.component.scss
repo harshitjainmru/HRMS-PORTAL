@@ -38,6 +38,8 @@ section {
       .title-text {
         color: $header-text-color;
         font-weight: 500;
+        font-size: 20px;
+        margin-bottom: 5px !important;
       }
       .buttonGroup {
         border: 1px solid $directory-header-color;
@@ -122,6 +124,7 @@ section {
         .header-text {
           color: $header-text-color;
           font-weight: 500;
+          font-size: 20px;
         }
       }
     }

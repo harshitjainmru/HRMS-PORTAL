@@ -232,4 +232,10 @@ export const ABS_LAYOUT_TICKETS: IRoute ={
   return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
   }
 }
+export const ABS_LAYOUT_DSR: IRoute ={
+  path: routes.DSR,
+  get fullUrl(): string{
+  return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
+  }
+}
 

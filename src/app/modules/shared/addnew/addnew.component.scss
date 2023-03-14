@@ -1,0 +1,54 @@
+@import "../../../scss/mixins.scss";
+@import "../../../scss/var";
+section{
+  background-color: $button-text-color;
+  margin: 30px 20px;
+  .title {
+    @include fpos(baseline, space-between);
+    border-bottom: 1px solid $border-color;
+    padding: 12px 20px;
+    .title-text {
+      color: $header-text-color;
+      font-weight: 500;
+      font-size: 20px;
+      margin-bottom: 5px !important;
+    }
+    .buttonGroup {
+      border: 1px solid $directory-header-color;
+      color: $directory-header-color;
+      background-color: $button-text-color;
+      display: flex;
+      cursor: pointer;
+      .add-new {
+        @include buttonTransparent();
+        color: $directory-header-color;
+      }
+    }
+  }
+  .content{
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 20px !important;
+      padding: 20px 50px;
+      .container{
+        .formfield {
+          display: flex;
+          flex-direction: column;
+          .label {
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.4;
+            margin-bottom: 10px;
+          }
+        }
+      }
+  }
+}
+
+@media (max-width:800px){
+  section{
+    .content{
+      grid-template-columns: auto;
+    }
+  }
+}

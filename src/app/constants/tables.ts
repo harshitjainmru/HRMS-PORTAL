@@ -31,12 +31,12 @@ export const QUALIFICATION_HEADING = [
 ];
 
 export const QUALIFICATION_DATA = [
-  {
-    action: 'hii',
-    school: 'hii',
-    fromTimetotoTime: 'hii',
-    educationLevel: 'hii',
-  },
+  // {
+  //   action: 'hii',
+  //   school: 'hii',
+  //   fromTimetotoTime: 'hii',
+  //   educationLevel: 'hii',
+  // },
   // {
   //   action: 'hii',
   //   school: 'hii',
@@ -865,4 +865,15 @@ export const MY_LEAVE_DATA=[
     level1:'Rabban Ahmad(AI139)',
     level2:'HR (Human Resourse)'
   },
+]
+
+export const LIST_TICKET_HEADING=[
+  { heading: 'Action', key: 'action', type: 'text' },
+  { heading: 'Ticket Code', key: 'code', type: 'text' },
+  { heading: 'Priority', key: 'priority', type: 'text' },
+  { heading: 'Employee', key: 'employee', type: 'text' },
+  { heading: 'Subject', key: 'subject', type: 'text' },
+  { heading: 'Status', key: 'status', type: 'text' },
+  { heading: 'Date', key: 'date', type: 'text' },
+
 ]
