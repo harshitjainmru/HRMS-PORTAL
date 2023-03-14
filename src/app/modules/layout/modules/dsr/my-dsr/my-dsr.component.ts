@@ -12,6 +12,7 @@ export class MyDsrComponent implements OnInit {
   uiText = DSR_DATA;
   dsrForm!: FormGroup;
   dataSource = new MatTableDataSource<any>();
+  maxDate = new Date();
   constructor(private _formBuilder: FormBuilder) {}
 
   ngOnInit(): void {

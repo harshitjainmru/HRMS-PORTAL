@@ -1,5 +1,6 @@
-import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { MatDrawer } from '@angular/material/sidenav';
 import { Router } from '@angular/router';
 import { HelpDialogComponent } from 'src/app/components/help-dialog/help-dialog.component';
 import { LogoutConfirmationComponent } from 'src/app/components/logout-confirmation/logout-confirmation.component';
@@ -13,6 +14,7 @@ import { LAYOUT } from 'src/app/constants/text';
 })
 export class HeaderComponent implements OnInit {
   uiText = LAYOUT;
+  @ViewChild("drawer", { static: true }) drawer: MatDrawer;
 
   @Output() stateChange: EventEmitter<boolean> = new EventEmitter<boolean>();
   @Input() smallWindow!: boolean;
@@ -46,5 +48,18 @@ export class HeaderComponent implements OnInit {
         this._router.navigate([ABS_ACCOUNT_LOGIN.fullUrl])
       }
     });
+  }
+  toggleNotification() {
+    this.drawer.toggle();
+    console.log('hiii');
+    // console.log(this.items.length);
+    // console.log(this.drawer.opened);
+    if (this.drawer.opened) {
+      setTimeout(() => {
+        // this.toggleList();
+      }, 400);
+    } else {
+      // this.clearList();
+    }
   }
 }

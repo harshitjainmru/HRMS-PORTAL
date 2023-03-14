@@ -48,10 +48,15 @@
           {{uiText.HEADER_BUTTON | titlecase}}
         </button>
       </div>
-      <div class="notificationIcon">
+      <div class="notificationIcon" (click)="toggleNotification()">
         <mat-icon class="notification icon">notifications</mat-icon>
       </div>
-
     </div>
   </div>
 </section>
+
+<mat-drawer-container class="example-container">
+  <mat-drawer #drawer class="example-sidenav" mode="side" position="end">
+    <p>Notification</p>
+  </mat-drawer>
+</mat-drawer-container>

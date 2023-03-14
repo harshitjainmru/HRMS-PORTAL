@@ -10,7 +10,7 @@
         <div class="formfield">
           <label class="label">{{uiText.date_label}}</label>
           <mat-form-field appearance="outline" class="increaseFormfield">
-            <input matInput [matDatepicker]="picker1" formControlName="date" readonly>
+            <input matInput [matDatepicker]="picker1" [max]="maxDate"  formControlName="date" readonly>
             <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
             <mat-datepicker #picker1></mat-datepicker>
           </mat-form-field>
@@ -33,7 +33,7 @@
       <div class="formfield">
         <label class="label">{{uiText.from_date_label}}</label>
         <mat-form-field appearance="outline" class="increaseFormfield">
-          <input matInput [matDatepicker]="picker2" readonly>
+          <input matInput [matDatepicker]="picker2" [max]="maxDate" readonly>
           <mat-datepicker-toggle matIconSuffix [for]="picker2"></mat-datepicker-toggle>
           <mat-datepicker #picker2></mat-datepicker>
         </mat-form-field>
@@ -41,7 +41,7 @@
       <div class="formfield">
         <label class="label">{{uiText.end_date_label}}</label>
         <mat-form-field appearance="outline" class="increaseFormfield">
-          <input matInput [matDatepicker]="picker3" readonly>
+          <input matInput [matDatepicker]="picker3" [max]="maxDate" readonly>
           <mat-datepicker-toggle matIconSuffix [for]="picker3"></mat-datepicker-toggle>
           <mat-datepicker #picker3></mat-datepicker>
         </mat-form-field>

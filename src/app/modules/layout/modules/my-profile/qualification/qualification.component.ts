@@ -49,28 +49,7 @@ export class QualificationComponent implements OnInit {
     )
     this.errorMessage = validationMessage
     this.createForm();
-    // this.filteredOptions = this.myControl.valueChanges.pipe(
-    //   startWith(''),
-    //   map((value) => {
-    //     let res = this._filter(value || '');
-    //     if (!res.length) {
-    //       res = ['no results Found'];
-    //     }
-    //     console.log(res);
-    //     return res;
-    //   })
-    // );
   }
-  // private _filter(value: string): string[] {
-  //   const filterValue = value.toLowerCase();
-
-  //   return this.educationDropdown.filter((option) => {
-  //     const res = option.toLowerCase().includes(filterValue);
-
-  //     return res;
-  //   });
-  // }
-
   get qualificationFormControl(){
     return this.qualificationForm.controls;
   }
@@ -98,15 +77,19 @@ export class QualificationComponent implements OnInit {
 //   if (day.length < 2) day = '0' + day;
 //   return [month, day, year].join('-');
 // }
+  // getvalue(){
+  //  return this.qualificationFormControl['fromTime'].value.toLocaleString().substr(1,10) + this.qualificationFormControl['fromTime'].value.toLocaleString().substr(0,10)
+  // }
   getvalue(){
-    this.qualificationFormControl.fromTime.value
+   return this.qualificationFormControl['fromTime'].value.toDateString().substr(4,12).replace(" ", "-")
   }
   submitHandler(){
     this.getvalue();
-    // debugger
+    console.log(this.getvalue(),'hfwyigfy');
+
     this.Table_DATA.push({action:'bye',
     school:'y',
-    fromTimetotoTime:this.qualificationFormControl['fromTime'].value + ' and ' + this.qualificationFormControl['fromTime'].value,
+    fromTimetotoTime:this.qualificationFormControl['fromTime'].value.toDateString().substr(4,12).replace(" ", "-") + ' - ' + this.qualificationFormControl['toTime'].value.toDateString().substr(4,12).replace(" ", "-") ,
     educationLevel:'hii'
     })
     this.dataSource = new MatTableDataSource<QUALIFICATIONTABLE>(

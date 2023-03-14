@@ -3,7 +3,7 @@
     <app-header [smallWindow]="smallWindow" (stateChange)="updateIsExpanded($event)"></app-header>
   </header>
   <mat-sidenav-container autosize>
-    <mat-sidenav #sidenav="matSidenav" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
+    <mat-sidenav #sidenav="matSidenav" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()" position="start">
       <app-sidenav [isShowing]="isShowing"></app-sidenav>
     </mat-sidenav>
     <mat-sidenav-content class="sideContent">
@@ -15,5 +15,4 @@
       </footer>
     </mat-sidenav-content>
   </mat-sidenav-container>
-
 </section>
