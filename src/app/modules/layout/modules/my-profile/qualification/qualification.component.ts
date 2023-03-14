@@ -49,27 +49,28 @@ export class QualificationComponent implements OnInit {
     )
     this.errorMessage = validationMessage
     this.createForm();
-    this.filteredOptions = this.myControl.valueChanges.pipe(
-      startWith(''),
-      map((value) => {
-        let res = this._filter(value || '');
-        if (!res.length) {
-          res = ['no results Found'];
-        }
-        console.log(res);
-        return res;
-      })
-    );
+    // this.filteredOptions = this.myControl.valueChanges.pipe(
+    //   startWith(''),
+    //   map((value) => {
+    //     let res = this._filter(value || '');
+    //     if (!res.length) {
+    //       res = ['no results Found'];
+    //     }
+    //     console.log(res);
+    //     return res;
+    //   })
+    // );
   }
-  private _filter(value: string): string[] {
-    const filterValue = value.toLowerCase();
+  // private _filter(value: string): string[] {
+  //   const filterValue = value.toLowerCase();
 
-    return this.educationDropdown.filter((option) => {
-      const res = option.toLowerCase().includes(filterValue);
+  //   return this.educationDropdown.filter((option) => {
+  //     const res = option.toLowerCase().includes(filterValue);
 
-      return res;
-    });
-  }
+  //     return res;
+  //   });
+  // }
+
   get qualificationFormControl(){
     return this.qualificationForm.controls;
   }
@@ -84,12 +85,28 @@ export class QualificationComponent implements OnInit {
       professionalCourses: this._formService.getControl('professionalCourses'),
       description: this._formService.getControl('description'),
     });
+    // this.qualificationForm.get('fromTime').patchValue(this.formatDate(new Date()));
+    // this.qualificationForm.get('toTime').patchValue(this.formatDate(new Date()));
+  }
+
+// private formatDate(date:any) {
+//   const d = new Date(date);
+//   let month = '' + (d.getMonth() + 1);
+//   let day = '' + d.getDate();
+//   const year = d.getFullYear();
+//   if (month.length < 2) month = '0' + month;
+//   if (day.length < 2) day = '0' + day;
+//   return [month, day, year].join('-');
+// }
+  getvalue(){
+    this.qualificationFormControl.fromTime.value
   }
   submitHandler(){
+    this.getvalue();
     // debugger
     this.Table_DATA.push({action:'bye',
     school:'y',
-    fromTimetotoTime:'hii',
+    fromTimetotoTime:this.qualificationFormControl['fromTime'].value + ' and ' + this.qualificationFormControl['fromTime'].value,
     educationLevel:'hii'
     })
     this.dataSource = new MatTableDataSource<QUALIFICATIONTABLE>(

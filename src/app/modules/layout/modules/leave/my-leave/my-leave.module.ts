@@ -15,6 +15,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
+import { AddnewModule } from 'src/app/modules/shared/addnew/addnew.module';
 @NgModule({
   declarations: [
     MyLeaveComponent
@@ -35,7 +36,8 @@ import {MatSelectModule} from '@angular/material/select';
     ReactiveFormsModule,
     MatCheckboxModule,
     MatRadioModule,
-    MatSelectModule
+    MatSelectModule,
+    AddnewModule
 
   ]
 })

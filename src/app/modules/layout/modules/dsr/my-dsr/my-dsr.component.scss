@@ -1,0 +1,172 @@
+@import "../../../../../scss/var";
+@import "../../../../../scss/mixins.scss";
+@import "../../../../../scss/job-opening-button";
+@import "../../../../../scss/editoroverrideStyle";
+section {
+  margin: 30px;
+  .formfield {
+    display: flex;
+    flex-direction: column;
+    .label {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.4;
+      margin-bottom: 4px;
+    }
+  }
+  .save-button{
+    background-color: $training-status-background;
+    padding: 10px 12px;
+    border-radius: 0px !important;
+    font-size: 15px;
+    margin-top: 80px;
+  }
+    .inputFields {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      align-items: center;
+      gap: 25px;
+    }
+  .middle-conatiner {
+    background-color: $button-text-color;
+    .inputs {
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      align-items: center;
+      gap: 20px;
+      padding: 20px 25px;
+    }
+    .buttonGroup {
+      .classyButton {
+        padding: 12px 25px;
+        font-size: 15px;
+      }
+    }
+  }
+  .last-container {
+    margin: 30px 0px;
+    background-color: $button-text-color;
+    border-radius: 10px;
+    .content {
+      padding: 20px;
+      .header {
+        border-bottom: 1px solid $border-color;
+        .header-text {
+          color: $header-text-color;
+          font-weight: 500;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  ::ng-deep {
+    .mat-datepicker-toggle {
+      color: $border-color;
+      position: absolute;
+      right: -12px;
+      top: -5px;
+    }
+    .mat-paginator-page-size {
+      position: absolute;
+      top: 500px;
+      left: 60px;
+    }
+    .mat-paginator-range-label {
+      left: 45px !important;
+    }
+    .mat-paginator-size-page-expand {
+      top: 1015px;
+    }
+
+  }
+}
+@media (max-width:1488px){
+  section{
+    .inputFields{
+      grid-template-columns: auto auto;
+    }
+    // ::ng-deep{
+    //   .mat-paginator-size-page-expand {
+    //     top: 910px;
+    //   }
+    // }
+  }
+}
+@media (max-width:1214px){
+  section{
+    .inputFields{
+      grid-template-columns: auto;
+    }
+    ::ng-deep{
+      .mat-paginator-size-page-expand {
+        top: 1055px;
+      }
+    }
+  }
+}
+@media (max-width: 1189px) {
+  section {
+    .middle-conatiner {
+      .inputs {
+        grid-template-columns: auto auto auto;
+      }
+    }
+    ::ng-deep {
+      .mat-paginator-page-size {
+        top: 565px;
+      }
+      .mat-paginator-size-page-expand {
+        top: 1120px;
+      }
+    }
+  }
+}
+@media (max-width:800px){
+  section{
+    ::ng-deep{
+      .mat-paginator-size-page-expand {
+        top: 1450px;
+      }
+    }
+  }
+}
+@media (max-width: 720px) {
+  section {
+    .save-button{
+      margin-top: 0px;
+    }
+    .middle-conatiner {
+      .inputs {
+        grid-template-columns: auto auto;
+      }
+    }
+    ::ng-deep {
+      .mat-paginator-page-size {
+        top: 680px;
+      }
+      .mat-paginator-size-page-expand {
+        top: 1485px;
+      }
+    }
+  }
+}
+@media (max-width: 495px) {
+  section {
+    .save-button{
+      margin-top: 0px;
+    }
+    .middle-conatiner {
+      .inputs {
+        grid-template-columns: auto;
+      }
+    }
+    ::ng-deep {
+      .mat-paginator-page-size {
+        top: 1040px;
+      }
+      .mat-paginator-size-page-expand {
+        top: 1845px;
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 <section>
-  <app-addnew [title]="uiText.header_value" [button]="uiText.add_new_button" (buttonToggle)="showDiv($event)" [labelData]="uiText.description_label">
-    <form [formGroup]="ticketForm">
+  <form [formGroup]="ticketForm">
+  <app-addnew [title]="uiText.header_value" [button]="uiText.add_button" (buttonToggle)="showDiv($event)" [labelData]="uiText.description_label" [formControlname]="this.ticketFormControl.editor">
     <div class="formfield">
       <label class="label">{{uiText.subject_label}}</label>
       <mat-form-field appearance="outline">
@@ -19,8 +19,8 @@
     <div class="buttonGroup">
       <button class="classyButton save-button" mat-raised-button (click)="submitHandler()">{{uiText.saveButton}}</button>
     </div>
-  </form>
   </app-addnew>
+</form>
   <div class="last-container">
     <div class="content">
       <div class="header">

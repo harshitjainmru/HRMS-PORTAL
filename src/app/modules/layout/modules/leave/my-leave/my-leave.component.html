@@ -13,7 +13,86 @@
     </ng-container>
   </div>
   <div class="middle-container">
-    <div class="title">
+    <form [formGroup]="myLeaveForm">
+    <app-addnew [title]="uiText.add_leave" [button]="uiText.add_button" (buttonToggle)="showDiv($event)"
+    [labelData]="uiText.reason_label" [formControlname]="this.myLeaveFormControl.editor">
+        <div class="formfield">
+          <label class="label">{{uiText.type_label}}</label>
+          <mat-form-field appearance="outline" class="typeformfield" >
+            <mat-select formControlName="typeData">
+              <mat-option *ngFor="let option of uiText.type_dropdown_data" [value]="option.value">
+                {{option.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
+        <div class="half-day" *ngIf="myLeaveFormControl['typeData'].value != 'shortleave' && myLeaveFormControl['typeData'].value != 'allleave'">
+          <mat-checkbox class="half-day-checkbox" formControlName="halfDay">{{uiText.half_day_label}}</mat-checkbox>
+          <div class="radiobutton" *ngIf="myLeaveFormControl['halfDay'].value ==true">
+            <mat-radio-group formControlName="halfTime">
+              <mat-radio-button class="example-margin" value="1st">1st Half</mat-radio-button>
+              <mat-radio-button class="example-margin" value="2nd">2nd Half</mat-radio-button>
+            </mat-radio-group>
+          </div>
+        </div>
+        <div class="shorttime" *ngIf="myLeaveFormControl['typeData'].value == 'shortleave'">
+          <div class="formfield" >
+            <label class="label">{{uiText.start_time_label}}</label>
+            <mat-form-field appearance="outline" >
+              <mat-select formControlName="typeData">
+              </mat-select>
+            </mat-form-field>
+          </div>
+          <div class="formfield">
+            <label class="label">{{uiText.end_time_label}}</label>
+            <mat-form-field appearance="outline" >
+              <mat-select formControlName="typeData">
+              </mat-select>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="allLeaveInstruction" *ngIf="myLeaveFormControl['typeData'].value == 'allleave'">
+          <ul *ngFor="let item of uiText.all_leave_instruction">
+            <li>{{item}}</li>
+          </ul>
+        </div>
+        <div class="datefield">
+          <div class="formfield 3">
+            <label class="label">{{uiText.start_date_label}}</label>
+            <mat-form-field appearance="outline" class="increaseFormfield">
+              <input matInput [matDatepicker]="picker1" formControlName="startDate" readonly>
+              <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
+              <mat-datepicker #picker1></mat-datepicker>
+            </mat-form-field>
+          </div>
+          <div class="formfield 3">
+            <label class="label">{{uiText.end_date_label}}</label>
+            <mat-form-field appearance="outline" class="increaseFormfield">
+              <input matInput [matDatepicker]="picker2" formControlName="endDate" readonly>
+              <mat-datepicker-toggle matIconSuffix [for]="picker2"></mat-datepicker-toggle>
+              <mat-datepicker #picker2></mat-datepicker>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="formfield">
+          <label class="label">{{uiText.remarks_label}}</label>
+          <mat-form-field appearance="outline">
+            <input formControlName="remarks" matInput>
+          </mat-form-field>
+        </div>
+        <div class="formfield 2">
+          <label class="label">{{uiText.upload_label}}</label>
+          <div class="input-file">
+            <input formControlName="upload" type="file">
+          </div>
+        </div>
+        <div class="buttonGroup">
+          <button class="saveButton" mat-raised-button (click)="submit()">{{uiText.save_button}}</button>
+          <button class="cancelButton" mat-raised-button>{{uiText.cancel_button}}</button>
+        </div>
+    </app-addnew>
+  </form>
+    <!-- <div class="title">
       <h1 class="title-text">{{uiText.add_leave}}</h1>
       <div class="buttonGroup" (click)="showDiv()">
         <mat-icon class="addIcon">add</mat-icon>
@@ -21,8 +100,8 @@
           {{uiText.add_new_button}}
         </button>
       </div>
-    </div>
-    <div  *ngIf="requestShow">
+    </div> -->
+    <!-- <div  *ngIf="requestShow">
       <form class="add-leave" [formGroup]="myLeaveForm">
         <div class="left container">
           <div class="formfield">
@@ -49,9 +128,6 @@
               <label class="label">{{uiText.start_time_label}}</label>
               <mat-form-field appearance="outline" >
                 <mat-select formControlName="typeData">
-                  <!-- <mat-option *ngFor="let option of uiText.type_dropdown_data" [value]="option.value">
-                    {{option.viewValue}}
-                  </mat-option> -->
                 </mat-select>
               </mat-form-field>
             </div>
@@ -59,9 +135,6 @@
               <label class="label">{{uiText.end_time_label}}</label>
               <mat-form-field appearance="outline" >
                 <mat-select formControlName="typeData">
-                  <!-- <mat-option *ngFor="let option of uiText.type_dropdown_data" [value]="option.value">
-                    {{option.viewValue}}
-                  </mat-option> -->
                 </mat-select>
               </mat-form-field>
             </div>
@@ -124,7 +197,7 @@
           </div>
         </div>
       </form>
-    </div>
+    </div> -->
   </div>
   <div class="last-container">
     <div class="content">

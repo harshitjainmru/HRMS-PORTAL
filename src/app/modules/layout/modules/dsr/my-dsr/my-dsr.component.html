@@ -1,1 +1,75 @@
-<p>my-dsr works!</p>
+<section>
+  <form [formGroup]="dsrForm">
+    <app-addnew [title]="uiText.header_value" [button]="uiText.add_button" (buttonToggle)="showDiv($event)"
+      [labelData]="uiText.description_label" [formControlname]="this.dsrFormControl.editor">
+      <span>
+        <app-dropdown [label]="uiText.project_label" [Data]="uiText.project_data"
+          [myControlName]="this.dsrFormControl.project"></app-dropdown>
+      </span>
+      <div class="inputFields">
+        <div class="formfield">
+          <label class="label">{{uiText.date_label}}</label>
+          <mat-form-field appearance="outline" class="increaseFormfield">
+            <input matInput [matDatepicker]="picker1" formControlName="date" readonly>
+            <mat-datepicker-toggle matIconSuffix [for]="picker1"></mat-datepicker-toggle>
+            <mat-datepicker #picker1></mat-datepicker>
+          </mat-form-field>
+        </div>
+        <div class="formfield">
+          <label class="label">{{uiText.hour_label}}</label>
+          <mat-form-field appearance="outline" class="increaseFormfield">
+            <input matInput formControlName="hour">
+          </mat-form-field>
+        </div>
+        <mat-checkbox class="half-day-checkbox" formControlName="nowork">{{uiText.no_work_label}}</mat-checkbox>
+      </div>
+      <div class="buttonGroup">
+        <button class="classyButton save-button" mat-raised-button (click)="submitHandler()">{{uiText.add_button}}</button>
+      </div>
+    </app-addnew>
+  </form>
+  <div class="middle-conatiner">
+    <div class="inputs">
+      <div class="formfield">
+        <label class="label">{{uiText.from_date_label}}</label>
+        <mat-form-field appearance="outline" class="increaseFormfield">
+          <input matInput [matDatepicker]="picker2" readonly>
+          <mat-datepicker-toggle matIconSuffix [for]="picker2"></mat-datepicker-toggle>
+          <mat-datepicker #picker2></mat-datepicker>
+        </mat-form-field>
+      </div>
+      <div class="formfield">
+        <label class="label">{{uiText.end_date_label}}</label>
+        <mat-form-field appearance="outline" class="increaseFormfield">
+          <input matInput [matDatepicker]="picker3" readonly>
+          <mat-datepicker-toggle matIconSuffix [for]="picker3"></mat-datepicker-toggle>
+          <mat-datepicker #picker3></mat-datepicker>
+        </mat-form-field>
+      </div>
+      <span class="dropdown">
+        <app-dropdown [label]="uiText.status_label" [Data]="uiText.status_data"></app-dropdown>
+      </span>
+      <span class="dropdown">
+        <app-dropdown [label]="uiText.project_label" [Data]="uiText.filter_project_data"></app-dropdown>
+      </span>
+      <span class="dropdown">
+        <app-dropdown [label]="uiText.approval_status_label" [Data]="uiText.approval_status_data"></app-dropdown>
+      </span>
+      <span class="dropdown">
+        <app-dropdown [label]="uiText.hours_label" [Data]="uiText.hours_data"></app-dropdown>
+      </span>
+      <div class="buttonGroup">
+        <button class="classyButton">{{uiText.reset_button}}</button>
+      </div>
+    </div>
+  </div>
+  <div class="last-container">
+    <div class="content">
+      <div class="header">
+        <h1 class="header-text">{{uiText.list_title}}</h1>
+      </div>
+      <app-common-table [columns]="uiText.table_heading" [dataSource]="dataSource" [isPageable]="true" [isSearchText]="true">
+      </app-common-table>
+    </div>
+  </div>
+</section>

@@ -238,4 +238,10 @@ export const ABS_LAYOUT_DSR: IRoute ={
   return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
   }
 }
+export const ABS_LAYOUT_PROJECT: IRoute ={
+  path: routes.PROJECT,
+  get fullUrl(): string{
+  return `/${ABS_LAYOUT.fullUrl}/${this.path}`;
+  }
+}
 

@@ -1,7 +1,9 @@
 @import "../../../../../scss/var";
 @import "../../../../../scss/mixins.scss";
 @import "../../../../../scss/job-opening-button";
+@import "../../../../../scss/editoroverrideStyle";
 section {
+  margin: 30px;
   .formfield {
     display: flex;
     flex-direction: column;
@@ -20,7 +22,6 @@ section {
 
   }
   .last-container{
-    margin:30px 20px;
     background-color: $button-text-color;
     border-radius: 10px;
     .content {
@@ -38,55 +39,55 @@ section {
   ::ng-deep{
     .mat-paginator-page-size {
       position: absolute;
-      top: 210px;
+      top: 215px;
       left: 60px ;
     }
     .mat-paginator-range-label {
       left: 45px !important;
     }
     .mat-paginator-size-page-expand{
-      top: 680px;
+      top: 710px;
     }
     .mat-form-field-appearance-outline .mat-form-field-outline {
       box-shadow: 0px 4px 8px rgb(44 39 56 / 4%) !important;
     }
-    .tox-tinymce {
-      border: none !important;
-      border-radius: 0px !important;
-    }
-    editor {
-      box-shadow: 0px 4px 8px rgb(44 39 56 / 4%) !important;
-      border: 1px solid #d8d8d8;
-    }
-    .tox-editor-header,
-    .tox-menubar,
-    .tox-toolbar__primary {
-      background-color: #ecf0f1 !important;
-      padding: 0px !important;
-    }
-    .tox-menubar + .tox-toolbar-overlord {
-      background-color: #d7e0e2;
-    }
-    .tox .tox-mbtn:hover:not(:disabled):not(.tox-mbtn--active),
-    .tox .tox-tbtn:hover {
-      background-color: $button-text-color !important;
-    }
+    // .tox-tinymce {
+    //   border: none !important;
+    //   border-radius: 0px !important;
+    // }
+    // editor {
+    //   box-shadow: 0px 4px 8px rgb(44 39 56 / 4%) !important;
+    //   border: 1px solid #d8d8d8;
+    // }
+    // .tox-editor-header,
+    // .tox-menubar,
+    // .tox-toolbar__primary {
+    //   background-color: #ecf0f1 !important;
+    //   padding: 0px !important;
+    // }
+    // .tox-menubar + .tox-toolbar-overlord {
+    //   background-color: #d7e0e2;
+    // }
+    // .tox .tox-mbtn:hover:not(:disabled):not(.tox-mbtn--active),
+    // .tox .tox-tbtn:hover {
+    //   background-color: $button-text-color !important;
+    // }
   }
 }
 @media (max-width:800px){
   ::ng-deep{
     .mat-paginator-size-page-expand {
-      top: 1030px !important;
+      top: 1050px !important;
     }
   }
 }
 @media (max-width:377px){
   ::ng-deep{
-    .mat-paginator-page-size {
-      top: 250px !important;
-    }
+    // .mat-paginator-page-size {
+    //   top: 230px !important;
+    // }
     .mat-paginator-size-page-expand {
-      top: 1060px !important;
+      top: 1080px !important;
     }
   }
 }

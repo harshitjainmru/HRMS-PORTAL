@@ -10,6 +10,7 @@ export class AddnewComponent implements OnInit {
   @Input() title;
   @Input() labelData;
   @Input() button;
+  @Input() formControlname
   @Output() buttonToggle : EventEmitter <any> = new EventEmitter();
   constructor() { }
 

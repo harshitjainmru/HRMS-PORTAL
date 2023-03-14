@@ -21,6 +21,7 @@ import {
   ABS_LAYOUT_MY_TRAINING,
   ABS_LAYOUT_ONGOING_TRAININGS,
   ABS_LAYOUT_POLICY_DOC,
+  ABS_LAYOUT_PROJECT,
   ABS_LAYOUT_PUNCH_LOG,
   ABS_LAYOUT_REFER_LIST,
   ABS_LAYOUT_REQUESTED_TRAININGS,
@@ -314,11 +315,12 @@ export const sideNavList = [
     ],
     isActive: true,
   },
-  // {
-  //   title: SIDENAV.Projects_LABEL,
-  //   icon: 'fa-brands fa-buffer',
-  //   isActive: true,
-  // },
+  {
+    title: SIDENAV.Projects_LABEL,
+    icon: 'fa-brands fa-buffer',
+    routerLink:ABS_LAYOUT_PROJECT.path,
+    isActive: true,
+  },
   {
     title: SIDENAV.Expense_LABEL,
     icon: 'fas fa-hand-holding-usd',

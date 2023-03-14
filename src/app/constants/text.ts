@@ -25,6 +25,7 @@ import {
   ATTENDANCE_TABLEDATA1,
   FLOATING_LEAVE_HEADING,
   FLOATING_LEAVE_TABLE_DATA,
+  LIST_DSR_HEADING,
   LIST_TICKET_HEADING,
   MANUAL_TABLE_HEADING,
   PUCH_LOG_TABLE_HEADING,
@@ -1373,7 +1374,7 @@ export const MY_LEAVE_DATA = {
     },
   ],
   add_leave:'Add Leave',
-  add_new_button:'Add New',
+  add_button:'Add New',
   type_label:'Leave Type',
   half_day_label:'Half Day?',
   start_date_label:'Start Date',
@@ -1405,7 +1406,7 @@ export const FLOATING_LEAVE_DATA = {
 
 export const TICKET_DATA ={
   header_value:'Create New Ticket',
-  add_new_button:'Add New',
+  add_button:'Add New',
   subject_label:'Subject',
   department_label:'Department',
   category_label:'Ticket Category',
@@ -1425,4 +1426,49 @@ export const TICKET_DATA ={
   list_ticket:'List All Tickets',
   table_heading:LIST_TICKET_HEADING,
   table_data:[]
+}
+export const DSR_DATA ={
+header_value:'Create New DSR',
+add_button:'Add',
+project_label:'Project',
+project_data:[
+  'Training Project React JS',
+  'Miscellaneous',
+  'Interview'
+],
+date_label:'Date',
+hour_label:'Estimated Hour',
+no_work_label:'No Work Done',
+description_label:'Description',
+from_date_label:'From Date',
+end_date_label:'End Date',
+status_label:'Submission Status',
+status_data:[
+  'All',
+  'Submitted',
+  'Due'
+],
+filter_project_data:[
+  'All',
+  'Training Project React JS',
+],
+approval_status_label:'Final Approval Status',
+approval_status_data:[
+  'All',
+  'Pending',
+  'Approved',
+  'Rejected'
+],
+hours_label:'Hours',
+hours_data:[
+  'Hours',
+  'Less than 5 Hours',
+  'Greater than 5 and Less than equal to 8',
+  'Greater than 8',
+  'Greater than 10'
+],
+reset_button:'Reset',
+list_title:'List All Worksheets',
+table_heading:LIST_DSR_HEADING,
+table_data:[]
 }

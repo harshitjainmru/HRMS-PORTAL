@@ -875,5 +875,15 @@ export const LIST_TICKET_HEADING=[
   { heading: 'Subject', key: 'subject', type: 'text' },
   { heading: 'Status', key: 'status', type: 'text' },
   { heading: 'Date', key: 'date', type: 'text' },
+]
+export const LIST_DSR_HEADING=[
+  { heading: 'Sr.No.', key: 'sno', type: 'text' },
+  { heading: 'Emp Name', key: 'empname', type: 'text' },
+  { heading: 'EmpId', key: 'empid', type: 'text' },
+  { heading: 'Email', key: 'email', type: 'text' },
+  { heading: 'Employment Type', key: 'type', type: 'text' },
+  { heading: 'Date', key: 'date', type: 'text' },
+  { heading: 'Total(Logged Hr)', key: 'logged', type: 'text' },
+  { heading: 'Final Approval.', key: 'finalapproval', type: 'text' },
 
 ]

@@ -26,14 +26,17 @@ export class MyLeaveComponent implements OnInit {
     this.dataSource = new MatTableDataSource<any>(this.table_data);
     console.log(this.table_data.length,'wyifgi');
   }
-  showDiv(){
-    this.requestShow = !this.requestShow;
-    const element = document.querySelector('.mat-paginator-page-size');
-    console.log(element, 'elemnet');
-    element.classList.add('mat-paginator-size-page-expand');
-    if (!this.requestShow) {
-      element.classList.remove('mat-paginator-size-page-expand');
-    }
+  // showDiv(){
+  //   this.requestShow = !this.requestShow;
+  //   const element = document.querySelector('.mat-paginator-page-size');
+  //   console.log(element, 'elemnet');
+  //   element.classList.add('mat-paginator-size-page-expand');
+  //   if (!this.requestShow) {
+  //     element.classList.remove('mat-paginator-size-page-expand');
+  //   }
+  // }
+  showDiv(data) {
+    console.log(data);
   }
   createForm(){
     this.myLeaveForm = this._formbuilder.group({

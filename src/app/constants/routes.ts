@@ -40,5 +40,6 @@ export const LEAVE=`${ASSETS}/leave`;
 export const FLOATING_LEAVE=`${ASSETS}/restricted_leave`;
 export const TICKETS=`${ASSETS}/tickets`;
 export const DSR='dsr';
+export const PROJECT='project_dashboard/projects_details';
 
 

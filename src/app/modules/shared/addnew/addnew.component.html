@@ -26,8 +26,12 @@
        'undo redo | casechange blocks | bold italic backcolor | \
        alignleft aligncenter alignright alignjustify | \
        bullist numlist checklist outdent indent | removeformat | a11ycheck code table help'
-    }"></editor>
+    }" [formControl]="formControlname" ></editor>
       </div>
     </div>
+    <ng-content select=".buttonGroup"></ng-content>
+    <ng-content select=".saveButton"></ng-content>
+    <ng-content select=".cancelButton"></ng-content>
+
   </div>
 </section>

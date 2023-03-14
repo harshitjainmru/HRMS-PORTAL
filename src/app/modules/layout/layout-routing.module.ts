@@ -7,6 +7,7 @@ import {
   ABS_LAYOUT_JOB_OPENING,
   ABS_LAYOUT_MYPROFILE,
   ABS_LAYOUT_MY_PERFORMANCE,
+  ABS_LAYOUT_PROJECT,
   ABS_LAYOUT_REFER_LIST,
 } from 'src/app/constants/absolute-routes';
 import { LayoutComponent } from './layout.component';
@@ -111,6 +112,11 @@ const routes: Routes = [
         path: '',
         loadChildren: () =>
           import('./modules/dsr/dsr.module').then((m) => m.DsrModule),
+      },
+      {
+        path: ABS_LAYOUT_PROJECT.path,
+        loadChildren: () =>
+          import('./modules/project/project.module').then((m) => m.ProjectModule),
       },
     ],
   },
